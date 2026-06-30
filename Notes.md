@@ -39,6 +39,7 @@ Two independent reasons, either one of which would be enough on its own:
 
 ### Open question for the user
 The Agentic account only has $39.93 in buying power. If the intent is for this routine to actually trade, the account likely needs to be funded further — otherwise these daily reviews will mostly be "no trade, capital too small" for a while.
+USER ANSWER: I am funding this account as capital comes. If you have a suggestion of how much money you need, let me know. Otherwise in the meantime you will have to work with the amount we have unfortunately. Purchasing fractional shares is allowed and fine as well if it helps! Sorry
 
 ### Action items for next session
 - Re-check why buying_power ($39.93) < cash ($86.65) on a cash account.
