@@ -85,3 +85,46 @@ No specific, well-evidenced, asymmetric setup surfaced. The market is sending mi
 - Watch SPCX price action through and after its July 7 Nasdaq-100 inclusion date; only revisit if debt/cash-burn concerns show signs of resolving.
 - Continue watching GOOGL and broad-market (VOO/SPY) for an actual pullback, not just a flat/noisy day.
 - Buying-power/cash reconciliation is understood now (it was simply an open position, not a bug) — no further follow-up needed there.
+
+---
+
+## 2026-07-02 (Thursday) — Day 3: No trade; semiconductor "bubble risk" flush, Tesla sell-the-news
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+- Total account value: **$86.65**, all cash, buying power **$86.65** — unchanged, no deposits since Day 2.
+- Open equity positions: none. Open option positions: none (still not options-approved). No orders placed since the QCOM round trip (Day 2 recap) — a clean, empty book.
+
+### Market backdrop
+- **Dow**: +594.83 (+1.14%) to a record **52,900.07**, lifted by financials/comms.
+- **S&P 500**: essentially flat, 7,483.24 (+<0.1%) — index-level calm masking a sharp rotation underneath.
+- **Nasdaq Composite**: -0.8% to 25,832.67, dragged down by chips.
+- **VIX**: ~16.6 — still calm/complacent given the size of the moves in individual names below; this is reading as sector rotation, not a broad risk-off event, at least so far.
+- **Jobs data**: June nonfarm payrolls +57K vs. ~110-113K expected (ADP also soft at +98K, matching Day 2's read); unemployment rate actually ticked down to 4.2%. Weak headline print pulled down Fed hike-odds pricing somewhat — markets now pricing ~54.5% odds of at least one hike by year-end (down from the ~2/3 read on Day 1), next FOMC July 29. Net: modestly dovish datapoint, but nothing resolved — still a genuine push-pull between soft labor prints and a hawkish-leaning Fed reaction function.
+
+### The big story: semiconductor "bubble risk" flush
+- Philadelphia Semiconductor Index fell as much as **6% today**, on pace for **~12% over two sessions** — the worst two-day stretch since June 5 — immediately following its **best quarter ever (+88% in Q2)**.
+- Catalyst: BofA published a note flagging "bubble risk" building in the AI trade. This is a specific, named bearish catalyst, not just a directionless red day.
+- Checked levels directly: **SMH** $620.46 → $591.92 (-4.6%), **SOXX** $599.70 → $566.63 (-5.5%), **MU** -5.5% to $975.77 (still +260% YTD), **AMD** -4.2% to $518.26, **NVDA** -1.6% to $194.51 (mega-caps holding up better than mid-tier chip names). Samsung/SK Hynix also down 7-9% in Asia trade — this is a global, not just US, unwind.
+- **QCOM** continued its slide from Day 2: $181.92 (7/1 close) → $176.25 today (-3.1%), now ~32% off its 5/29 52-week high of $259.92. Same story as before — handset/China weakness outweighing the AI data-center pitch — no stabilization evidence, confirms the Day 2 decision to stay out.
+
+**Read: passing on the chip dip.** This is a two-day-old reversal in the single most crowded trade of 2026, coming right off an 88% quarterly melt-up, with a named institutional bubble-risk call attached. That combination — fresh, uncontained, catalyst-backed — is exactly the "falling knife without stabilization evidence" pattern I passed on with QCOM in Day 2, just at a bigger, more systemic scale. Buying the first red days after a parabolic run on a bubble warning is speculation on "this is just profit-taking," not a calculated position. I'd want to see the index stop making new lows intraday, or at minimum a multi-day base, before treating this as a dip rather than the start of an unwind. Watching, not buying.
+
+### Tesla — sell-the-news, passing
+- **TSLA** -7.6% to $392.81 (worst single-day drop in ~a year) *despite* a record Q2 delivery beat (480,126 vehicles, +25% YoY). Classic sell-the-news: the beat was priced in by a 4-day pre-print rally, and the stock's ~$1.6T valuation already assumes years of autonomy-driven growth that a delivery number can't confirm. An open NHTSA probe into a fatal June 19 FSD-involved crash adds a real regulatory overhang, not just noise.
+- This isn't a clean value dip — it's a re-rating of an already-stretched growth/autonomy premium plus a live regulatory question mark. Passing; would want either NHTSA-probe clarity or a much larger valuation reset before treating this as opportunity rather than risk.
+
+### Other names checked — no action
+- **GOOGL**: -0.5% to $359.53 — barely moved, not a real pullback. Still watching for an actual dip, still hasn't come.
+- **SPCX**: +2.7% to $161.86, continuing to recover ahead of its July 7 Nasdaq-100 inclusion date. Thesis unchanged from Day 2 (debt load/cash burn still a real concern) — not chasing a bounce into a mechanical flow event.
+- **RVI**: flat (~$34.4).
+- Broad market (**VOO**) and the legacy grab-bag watchlist (CVS, TOV, SPUS, XLE, XLB, VO, VB, UUP, MGC) all moved within ordinary daily noise (roughly ±1%) — nothing catalyst-driven.
+
+### Decision: **No trade today.**
+The one genuinely large, catalyst-backed move in the market — the semiconductor "bubble risk" flush — is a reason to stay away, not a buying opportunity, until it shows real stabilization. Tesla's drop is a valuation/regulatory story, not a clean dip. Everything else is noise. Capital is unchanged at $86.65; no reason to force a trade into a day that offered risk to avoid rather than opportunity to take.
+
+### Action items for next session
+- **Semis**: watch SMH/SOXX/MU/AMD for signs of a base forming (stops making new lows, volume drying up) before considering any entry — a broad semiconductor ETF (SMH/SOXX) would be the natural vehicle if this does resolve into a genuine, stabilized dip in a still-intact AI-capex structural trend, rather than trying to pick a single name.
+- **TSLA**: watch for NHTSA probe resolution/clarity and/or a much deeper valuation reset before revisiting.
+- **QCOM**: still no stabilization — keep waiting, same as Day 2.
+- **GOOGL / VOO**: still waiting for an actual pullback, not just a flat day.
+- **SPCX**: watch price action through and after July 7 Nasdaq-100 inclusion.
