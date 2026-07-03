@@ -128,3 +128,37 @@ The one genuinely large, catalyst-backed move in the market — the semiconducto
 - **QCOM**: still no stabilization — keep waiting, same as Day 2.
 - **GOOGL / VOO**: still waiting for an actual pullback, not just a flat day.
 - **SPCX**: watch price action through and after July 7 Nasdaq-100 inclusion.
+
+---
+
+## 2026-07-03 (Friday) — Day 4: Market closed, no trading day
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+- Total account value: **$86.65**, all cash, buying power **$86.65** — unchanged since Day 2. No deposits, no orders since the Day 2 QCOM round trip.
+
+### Note: today is not a trading day
+US equity markets (NYSE/Nasdaq) are **closed today** for the observed Independence Day holiday (July 4 falls on Saturday, so the holiday is observed Friday 7/3). Confirmed via Robinhood quotes — every symbol checked shows its last regular-session trade timestamped 2026-07-02 19:59:59 UTC (Thursday's close), with no new session on top of it. Markets reopen Monday, July 6, 9:30am ET.
+
+Since there is no live session, there is nothing to react to and no order could execute even if I wanted one — this entry exists purely to keep the paper trail unbroken and to carry the watch list forward cleanly into Monday.
+
+### Carried forward from Day 3 (unchanged — no new session to update them)
+- **Semis (SMH/SOXX/MU/AMD)**: still no stabilization evidence — SOXX closed Thursday at $566.63, down from $599.70 the prior session (-5.5%), continuing the BofA "bubble risk" flush with no sign yet of the index stopping at a base. Confirmed via broader search: chipmakers fell for a second straight day into the holiday on AI-valuation-vs-reasonableness questions. Not buying the dip until it actually stops falling.
+- **TSLA**: closed Thursday at $392.81 (-7.6%), the sell-the-news/NHTSA-overhang read from Day 3 stands. No new regular-session data since.
+- **QCOM**: closed Thursday at $176.25, still sliding, no stabilization.
+- **GOOGL**: closed Thursday at $359.53 — still no real pullback, still just watching.
+- **SPCX**: closed Thursday at $161.86. Its Nasdaq-100 inclusion is effective **Monday, July 7** (not this Friday) — J.P. Morgan estimates ~$4.3B in mechanical passive-fund buying around that date. That's a flow event, not a fundamental one, and the underlying debt/cash-burn concerns from Day 2 are unchanged — still not chasing it into the inclusion print.
+- Broad market (VOO): $685.46 close, no new data.
+
+### Weekend context worth flagging for Monday, not acted on
+- Fed Chair Warsh's post-meeting communication style has shifted to pure data-dependence with no forward guidance — means Monday's open could be more news-reactive than usual around any weekend headlines.
+- Upcoming week: **July 7** trade balance data, **July 8** FOMC minutes — both could move the tape once trading resumes.
+- CME FedWatch: ~81% odds of a hold at the July 29 FOMC, but still roughly 2/3 odds of at least one hike by December priced in — the hawkish-Fed-vs-softening-labor-data tension from earlier in the week is unresolved.
+
+### Decision: **No trade — market closed, not a discretionary pass.**
+Distinct from Days 1–3, where I had a live tape and chose not to act — today there was simply no session to act in. Nothing in the account changed and nothing on the watch list crossed into "actionable" territory that would carry over as an urgent Monday-morning action; all prior theses (avoid the semis flush and TSLA until stabilization, keep waiting on QCOM/GOOGL, don't chase SPCX into its mechanical inclusion flow) remain intact into next week.
+
+### Action items for next session (Monday, July 6)
+- This is the first live session since Thursday — re-pull fresh quotes for the whole watch list rather than assuming Thursday's closes still hold.
+- Semis: check whether SOXX/SMH made a new low Monday or started basing — that's the actual trigger condition from Day 3, still unmet.
+- SPCX: Monday is the day before its Nasdaq-100 inclusion (effective Tuesday 7/7) — watch for pre-positioning flow, not a reason to chase.
+- Otherwise, same watch items as Day 3: TSLA (NHTSA clarity), QCOM (stabilization), GOOGL/VOO (an actual dip).
