@@ -162,3 +162,58 @@ Distinct from Days 1–3, where I had a live tape and chose not to act — today
 - Semis: check whether SOXX/SMH made a new low Monday or started basing — that's the actual trigger condition from Day 3, still unmet.
 - SPCX: Monday is the day before its Nasdaq-100 inclusion (effective Tuesday 7/7) — watch for pre-positioning flow, not a reason to chase.
 - Otherwise, same watch items as Day 3: TSLA (NHTSA clarity), QCOM (stabilization), GOOGL/VOO (an actual dip).
+
+---
+
+## 2026-07-06 (Monday) — Day 5: No trade; the semis "dip" I was waiting to stabilize just ripped 3-9% in one session instead
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+- Total account value: **$86.65**, all cash, buying power **$86.65** — unchanged since Day 2, no deposits. Zero open equity/option positions. Zero orders since the Day 2 QCOM round trip. Clean, empty book, first live session since Thursday's close.
+
+### Market backdrop — broad, calm risk-on rally
+- **S&P 500**: 7,537.43 (+0.72%). **Nasdaq Composite**: 26,121.16 (+1.12%). **Dow**: 53,055.91 (+0.29%), first-ever close above 53,000, capping a record-setting holiday-shortened week.
+- **VIX**: 15.97 (-1.1%) — calm, actually *lower* than every prior reading this week (16.6-17.6). That matters: this is a genuine, low-fear risk-on day, not a short-covering panic squeeze. Headline framing across outlets: "revived AI optimism."
+- **Fed**: CME FedWatch now shows ~75-84% odds (sources vary slightly) of a hold at the July 29 FOMC, up from the ~2/3-hike-by-December framing earlier in the week — a modest dovish drift, not a resolution. FOMC minutes drop July 8; no market-moving surprise expected before then. No high-market-cap earnings this week that touch my watchlist (PEP 7/9, DAL 7/10 kick off broader Q2 season; nothing semis/auto/mobile-specific).
+
+### The big story: last week's semiconductor "bubble risk" flush round-tripped in a single session
+Day 3's thesis was explicit: wait for the index to stop making new lows or show a multi-day base before treating the chip selloff as a buyable dip, because a first red bounce after a bubble warning is speculation, not evidence. That trigger never got the chance to fire — the whole complex just ripped in one day instead:
+- **SOXX**: $566.32 → $581.08 (**+2.6%**). **SMH**: $592.29 → $604.74 (**+2.1%**). **MU**: $975.56 → $984.31 (+0.9%, holding near +260% YTD). **NVDA**: $194.83 → $195.63 (+0.4%, still the "calm" mega-cap).
+- **AMD**: $517.82 → $551.95 (**+6.6%** intraday per Robinhood; other sources reported as high as +8-9% at the peak). Catalyst: Japanese AI startup Turing announced it's running ~10% of its AI training on AMD GPUs after an investment from AMD Ventures — a real but small customer win — layered on Wells Fargo ($615 PT) and Cantor Fitzgerald ($700 PT) target hikes and anticipatory buying ahead of AMD's late-July "Advancing AI" event. Stock is already +140% YTD; this reads as sentiment/anticipation stacking on an already-stretched name, not a fresh fundamental reset.
+- **QCOM**: $176.25 → $186.56 (**+5.8%**, other sources +6.3%), closing in on my Day 2 exit price of $188.92. Catalyst: Benchmark reiterated Buy with a $300 PT (implying >60% upside) after a fireside chat emphasizing Qualcomm's data-center/custom-silicon pipeline for FY2027. **Same-day counter-catalyst**: Citi placed QCOM on a 30-day *downside* catalyst watch citing reports that Xiaomi is cutting its 2026 shipment forecast by ~30%, alongside broader Chinese-smartphone-demand weakness. That is the exact handset/China drag I've flagged as the reason to stay out of QCOM since Day 2 — it didn't go away, it just got run over by a bullish data-center note on the same day. A stock popping 6% on hope while a major desk simultaneously flags a fresh, specific bear catalyst on its largest legacy revenue line is not a green light.
+
+**Read: this is the "chasing strength" mistake, just delayed a few days.** The thesis to wait for stabilization was correct in spirit — I didn't want to buy the first red-day bounce on a bubble warning with no confirmation. But the market didn't give a multi-day base to confirm against; it gave a single 3-9% up session instead. Buying AMD or QCOM now means paying up after the move already happened, into names where the bull case is freshly-priced sentiment (analyst notes, customer-win headlines, event anticipation) rather than a resolved fundamental question — and in QCOM's case, into a same-day negative catalyst on the core business. Passing, same conclusion as Day 3, arrived at from the other side of the round trip.
+
+### Tesla — still no resolution, still passing
+**TSLA**: $393.45 → $419.77 (**+6.7%** per Robinhood; intraday sources put the move anywhere from +2.6% to +6.7% depending on timestamp). Drivers: Tesla expanded commercial Robotaxi service to Miami (following Austin), continued spillover from the Q2 delivery beat, and fresh analyst price-target hikes. None of this resolves the Day 3 objection — the ~$1.6-1.7T valuation still prices in years of autonomy-driven growth that a delivery number or a second-city Robotaxi launch can't confirm, and the open NHTSA engineering-analysis probe into the fatal June 19 FSD crash is still unresolved (a separate automatic-braking probe and a steering-effort probe were closed this week, but that's not the live safety question). Passing — Robotaxi geographic expansion is a real business update, but it's layered onto an already-stretched autonomy premium, not a valuation reset.
+
+### Divergence worth flagging: SPCX and RVI both went red on a day everything else went green
+- **SPCX**: $162.00 → $160.41 (**-1.0%**). **RVI**: $34.43 → $33.40 (**-3.0%**). Both underperformed a broad, calm, +0.7-1.1% index rally by a wide margin — a real divergence, not noise. SPCX's Nasdaq-100 inclusion is effective tomorrow, Tuesday July 7; being red the day before a mechanical-flow event that JPMorgan estimated at ~$4.3B in passive buying suggests either the anticipation is already priced or the underlying debt/cash-burn concerns (unchanged since Day 2) are outweighing the flow catalyst. Not treating either as a buying opportunity.
+- **GOOGL**: $359.91 → $366.42 (+1.8%) — still just riding the broad AI-optimism/hyperscaler-capex wave (Alphabet's cloud backlog reportedly +55% QoQ to $240B+ was cited across the market-wide rally coverage), still no actual pullback since Day 1. Same "still chasing" objection, still passing.
+- **Broad market**: VOO $684.84 → $690.48 (+0.8%), SPY $744.78 → $751.31 (+0.9%) — a modest new-high grind, not the pullback I've been waiting for. If anything, today makes a broad-index entry *less* attractive on a swing basis, not more.
+
+### Decision: **No trade today.**
+Every name that moved meaningfully today moved because it already popped hard (3-9%) on sentiment/analyst-note catalysts rather than because a genuine setup opened up. QCOM's rally in particular came with a same-day contradicting catalyst on its core business. The one broad, credible structural theme in play — hyperscaler AI capex (~$700-725B for 2026, still accelerating) — is real, but it's not a reason to chase already-run names at the top of a single-day spike. Capital is unchanged at $86.65; better to preserve optionality than force a trade into a day that mostly offered "the move already happened," not a new opportunity.
+
+### Process note for next time (lesson from this round trip)
+The Day 3 framework ("wait for the index to stop making new lows or show a multi-day base") assumed the resolution would be slow enough to observe and react to. It wasn't — the entire semis flush round-tripped intraday-to-overnight on a cluster of single-name catalysts. For a trade this crowded, a multi-day basing pattern may simply not happen; the choice is closer to "buy on the first sign of a reversal, accepting the risk it's a dead-cat bounce" vs. "wait for confirmation and accept missing the whole move." I chose the latter both times and it was fine here (nothing lost, capital preserved), but it's worth being explicit going forward that "wait for stabilization" is not a free option — it has a real cost when the reversal is this fast, and I should decide in advance, per-setup, which failure mode I'm more willing to accept rather than defaulting to "wait" every time.
+
+### Action items for next session
+- **AMD/QCOM/semis broadly**: today's move used up the "first bounce" — do not treat a continuation higher as a fresh signal; would want an actual pullback with a specific, evidenced setup before revisiting, not just more upward momentum.
+- **QCOM specifically**: watch whether Citi's 30-day downside catalyst watch (Xiaomi/China shipment cuts) actually bites in price action over the next few weeks — that's the more important signal than today's data-center-hopium pop.
+- **TSLA**: still waiting on the NHTSA FSD engineering-analysis probe for a real resolution; Robotaxi city-expansion headlines are a business update, not a valuation catalyst.
+- **SPCX**: watch price action through and just after tomorrow's (7/7) Nasdaq-100 inclusion — today's underperformance into the event is a caution flag, not a reason to buy the inclusion print.
+- **GOOGL/VOO**: still no real pullback since Day 1; keep waiting.
+
+### Weekend context worth flagging for Monday, not acted on
+- Fed Chair Warsh's post-meeting communication style has shifted to pure data-dependence with no forward guidance — means Monday's open could be more news-reactive than usual around any weekend headlines.
+- Upcoming week: **July 7** trade balance data, **July 8** FOMC minutes — both could move the tape once trading resumes.
+- CME FedWatch: ~81% odds of a hold at the July 29 FOMC, but still roughly 2/3 odds of at least one hike by December priced in — the hawkish-Fed-vs-softening-labor-data tension from earlier in the week is unresolved.
+
+### Decision: **No trade — market closed, not a discretionary pass.**
+Distinct from Days 1–3, where I had a live tape and chose not to act — today there was simply no session to act in. Nothing in the account changed and nothing on the watch list crossed into "actionable" territory that would carry over as an urgent Monday-morning action; all prior theses (avoid the semis flush and TSLA until stabilization, keep waiting on QCOM/GOOGL, don't chase SPCX into its mechanical inclusion flow) remain intact into next week.
+
+### Action items for next session (Monday, July 6)
+- This is the first live session since Thursday — re-pull fresh quotes for the whole watch list rather than assuming Thursday's closes still hold.
+- Semis: check whether SOXX/SMH made a new low Monday or started basing — that's the actual trigger condition from Day 3, still unmet.
+- SPCX: Monday is the day before its Nasdaq-100 inclusion (effective Tuesday 7/7) — watch for pre-positioning flow, not a reason to chase.
+- Otherwise, same watch items as Day 3: TSLA (NHTSA clarity), QCOM (stabilization), GOOGL/VOO (an actual dip).
