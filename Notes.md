@@ -2,6 +2,12 @@
 
 Memory bank for the daily 5PM portfolio review. Each entry is dated and should record: account state, market read, decision, and reasoning — so future-me can see why a call was made, not just what it was.
 
+## Standing directive from the user (added 2026-07-06, Day 5 — read this every session)
+- **Do not let cash sit idle by default.** Five straight days of "no trade" while the S&P ground higher (7,440 → 7,537, +1.3%) is itself an unacknowledged bearish bet, not neutrality. Being un-invested during a grind-up structurally guarantees underperformance vs. the benchmark.
+- **Be more aggressive.** The user's explicit goal is to *beat* the S&P 500, not just avoid losses. "Wait for the perfect setup" has a real opportunity cost, and the standard has been too conservative — e.g., GOOGL got waved off as "still chasing" for 5 consecutive days without ever actually checking its distance from its 52-week high.
+- **Check longer-term price history before dismissing a name as "chasing strength."** A single green day is not enough to judge — pull 52-week high/low and recent trend context (via get_equity_fundamentals / get_equity_historicals) before passing on a mover. A name up on the day but still meaningfully below its 52-week high (like GOOGL: ~$366 vs. $408.61 high) is a very different setup than a name making fresh highs.
+- This doesn't mean abandoning risk discipline (still size positions sensibly, still avoid same-day sentiment spikes with no fundamental backing, still watch for contradicting catalysts) — it means the bar for "good enough to act on" should be lower than it's been Days 1-5, and idle cash needs an affirmative reason (a specific near-term catalyst worth waiting for), not just the absence of a perfect setup.
+
 ---
 
 ## 2026-06-30 (Tuesday) — Day 1: Baseline established
@@ -203,6 +209,14 @@ The Day 3 framework ("wait for the index to stop making new lows or show a multi
 - **TSLA**: still waiting on the NHTSA FSD engineering-analysis probe for a real resolution; Robotaxi city-expansion headlines are a business update, not a valuation catalyst.
 - **SPCX**: watch price action through and just after tomorrow's (7/7) Nasdaq-100 inclusion — today's underperformance into the event is a caution flag, not a reason to buy the inclusion print.
 - **GOOGL/VOO**: still no real pullback since Day 1; keep waiting.
+
+### Addendum — user pushback, reconsidered, attempted trade blocked (same day)
+After the initial "no trade" writeup above, the user pushed back hard on cash sitting idle for 5 straight sessions while the S&P ground higher, and asked me to re-examine whether that was genuine discipline or excessive conservatism. On honest reconsideration:
+- **GOOGL re-examined properly**: pulled fundamentals I should have checked days ago — PE 27.45, P/B 9.1, and critically, **~10% below its 52-week high** ($408.61 on 5/18 vs. ~$366 now, off a $172.77 low from 7/9/2025). This is a materially different setup than "chasing a fresh high" — it's a steady grind in a name with a real, accelerating fundamental catalyst (cloud backlog reportedly +55% QoQ), not a same-day sentiment spike like AMD/QCOM/TSLA. Five days of waving this off as "still chasing" without ever checking distance-from-high was a process gap, not a considered judgment.
+- **Cash sweep/interest**: checked — there is no tool in this Robinhood integration that exposes or lets me verify a brokerage cash-sweep/interest program on this account. Flagged to the user to check directly in the app; if it's off, that's free, zero-risk yield being left on the table independent of any trading decision.
+- **Decision reversed to: BUY.** Reviewed a $40.00 market buy of GOOGL (regular hours, ~0.109 fractional shares @ ~$366.20 ask, only a generic `EQUITY_SUITABILITY` disclosure, no blocking alert), presented it to the user, got explicit confirmation, and submitted it.
+- **Order blocked by Robinhood**: API error — *"We're required to have you answer some questions about your investing goals before we can allow you to continue using Robinhood."* This account's investor profile questionnaire has not been completed, and Robinhood requires it before a second trade (the QCOM round trip on Day 1/2 was the first). **No shares were purchased. Account remains $86.65 cash, no positions.** User was given the completion link: `https://applink.robinhood.com/investment_profile?account_number=479068710&context=second_trade`.
+- **Carry-forward action item**: once the user completes the investor profile, place the $40.00 GOOGL market buy at the next opportunity (re-check the quote fresh — don't assume today's ~$366.20 still holds) rather than treating this as a stale/cancelled idea. This is now the standing highest-conviction pick per the user's new "don't let cash sit idle" directive above.
 
 ### Weekend context worth flagging for Monday, not acted on
 - Fed Chair Warsh's post-meeting communication style has shifted to pure data-dependence with no forward guidance — means Monday's open could be more news-reactive than usual around any weekend headlines.
