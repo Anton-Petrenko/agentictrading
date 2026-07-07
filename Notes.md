@@ -219,16 +219,50 @@ After the initial "no trade" writeup above, the user pushed back hard on cash si
 - **Carry-forward action item**: once the user completes the investor profile, place the $40.00 GOOGL market buy at the next opportunity (re-check the quote fresh — don't assume today's ~$366.20 still holds) rather than treating this as a stale/cancelled idea. This is now the standing highest-conviction pick per the user's new "don't let cash sit idle" directive above.
 - **Resolved same day**: user completed the investor profile questionnaire. Re-pulled a fresh GOOGL quote ($366.36 reference) and resubmitted the identical $40.00 market buy. Order accepted this time — **state: queued**, quantity 0.109180 shares, order id `6a4c288b-c375-42c5-a13b-e0f768efea22`. Placed at 6:13pm ET, after the 4pm ET regular-session close, so it's queued to execute at the next regular session open (Tuesday, July 7, 9:30am ET) rather than filling immediately. **Not yet a confirmed fill — verify execution price and update holdings at the next session before treating this position as live.**
 
-### Weekend context worth flagging for Monday, not acted on
-- Fed Chair Warsh's post-meeting communication style has shifted to pure data-dependence with no forward guidance — means Monday's open could be more news-reactive than usual around any weekend headlines.
-- Upcoming week: **July 7** trade balance data, **July 8** FOMC minutes — both could move the tape once trading resumes.
-- CME FedWatch: ~81% odds of a hold at the July 29 FOMC, but still roughly 2/3 odds of at least one hike by December priced in — the hawkish-Fed-vs-softening-labor-data tension from earlier in the week is unresolved.
+*(Note: an earlier draft of this Day 5 entry accidentally duplicated the Day 4 "Weekend context / market-closed / action items" block below this addendum. Removed in the Day 6 cleanup — the "Resolved same day" line directly above is the accurate, final state for Day 5.)*
 
-### Decision: **No trade — market closed, not a discretionary pass.**
-Distinct from Days 1–3, where I had a live tape and chose not to act — today there was simply no session to act in. Nothing in the account changed and nothing on the watch list crossed into "actionable" territory that would carry over as an urgent Monday-morning action; all prior theses (avoid the semis flush and TSLA until stabilization, keep waiting on QCOM/GOOGL, don't chase SPCX into its mechanical inclusion flow) remain intact into next week.
+---
 
-### Action items for next session (Monday, July 6)
-- This is the first live session since Thursday — re-pull fresh quotes for the whole watch list rather than assuming Thursday's closes still hold.
-- Semis: check whether SOXX/SMH made a new low Monday or started basing — that's the actual trigger condition from Day 3, still unmet.
-- SPCX: Monday is the day before its Nasdaq-100 inclusion (effective Tuesday 7/7) — watch for pre-positioning flow, not a reason to chase.
-- Otherwise, same watch items as Day 3: TSLA (NHTSA clarity), QCOM (stabilization), GOOGL/VOO (an actual dip).
+## 2026-07-07 (Tuesday) — Day 6: No trade; GOOGL buy confirmed filled, semis flush resumes to fresh lows, oil spikes on a real but historically-faded war catalyst
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+- Total account value: **$86.49**. Cash: **$46.65**. Equity value: **$39.84** (the GOOGL position). Buying power: **$46.65**.
+- **GOOGL buy from the Day 5 addendum confirmed filled**: 0.108636 sh @ average $368.20, $40.00 notional, filled at today's 9:30am ET open (`placed_agent: agentic`, order `6a4c288b...`). Current mark $367.04 → position worth ~$39.87, essentially flat (-$0.13, -0.3%). First live equity position this journal has carried overnight.
+
+### Correcting a standing research gap: this is a live shooting war, not just "geopolitical tension"
+Going back through the news more carefully today, I'd been under-describing the Iran situation in prior entries as generic "Strait of Hormuz tension" / "geopolitical relief." The actual picture: the **US and Israel launched an air war on Iran on Feb 28, 2026**; that first strike **killed Supreme Leader Ali Khamenei** along with several family members; his son Mojtaba (new supreme leader) has not appeared publicly since and is reportedly recovering from severe injuries, leaving real questions about who is actually leading Iran. A dayslong state funeral ran July 3-9. A 60-day ceasefire nominally exists but both sides accuse each other of violating it, and tanker attacks in the Strait of Hormuz (a chokepoint for ~20% of global oil flow) have recurred repeatedly, including two more today (a Qatari LNG tanker and another vessel hit by projectiles). This is a materially bigger, more unstable situation than "relief rally" framing suggested — worth carrying forward accurately from now on, since it's the source of recurring oil/vol catalysts.
+
+### Market backdrop — rotation, not a broad risk-off day
+- **S&P 500**: 7,503.85 (-0.45%). **Nasdaq Composite**: 25,818.69 (-1.16%). **Dow**: 52,925.15 (-0.25%).
+- **VIX**: 15.57 — actually *lower* than Friday/Monday's already-calm readings. Important tell: despite a violent move in semis (below), broad-market fear didn't spike. This is capital rotating between sectors, not a risk-off panic.
+- **Today's Treasury move**: OFAC revoked General License X (the June 21 waiver that had permitted Iranian oil sales) effective today, in response to the tanker attacks. Oil (Brent/WTI) up >3-5% on the day.
+
+### Semiconductors: second leg down, fresh lows, no stabilization — confirms staying out
+- **SOXX**: $581.51 → $551.19 (**-5.2%**). **SMH**: $604.30 → $581.10 (**-3.85%**). **MU**: $984.75 → $938.91 (**-4.7%**). **AMD**: $552.05 → $516.57 (**-6.4%**). **QCOM**: $186.48 → $182.95 (-1.9%, relatively resilient). **NVDA**: $195.55 → $196.93 (+0.7%, the one green name — mega-cap safety bid again).
+- Catalysts, both specific and named: (1) **Samsung reported a strong earnings beat but sold off anyway** — a "good news, sold anyway" signal that valuation/positioning matters more than fundamentals right now; (2) reports that **China's DeepSeek is developing its own in-house AI inference chip** to reduce Nvidia/Huawei dependence — a real structural long-term threat to the US chip TAM narrative, though the one analyst quote I found (Radio Free Mobile) says DeepSeek has "almost no chance of selling silicon outside China" absent leading-edge fab access, so near-term impact is limited; (3) prior-week reports of SK Hynix slowing HBM capacity expansion, feeding "is AI capex actually going to generate ROI" skepticism.
+- **This is exactly the Day 3/5 framework, now with a clean answer**: the round-trip up on Day 5 (Monday) was the "first bounce" I flagged as not-a-signal; today the complex made a **fresh low below last Thursday's pre-bounce level** (SOXX $551 today vs. $566 last Thursday vs. $581 Monday's bounce-high). No basing, no stabilization — the trigger condition from Day 3 for treating this as a buyable dip is still unmet, and today's move argues the underlying trend is still down. Staying out, same conclusion as every prior day, now on stronger evidence.
+
+### Energy: a real catalyst, but a bounce within a downtrend that has faded before — passing
+- **XLE**: $53.13 → $54.66 (**+2.9%**). **XOM**: $136.44 → $141.66 (**+3.8%**). **CVX**: $168.10 → $173.94 (**+3.5%**). **USO**: $104.35 → $108.95 (**+4.4%**).
+- Checked the actual thesis quality before getting excited about a green sector on a red day: pulled 52-week ranges. **XLE is ~14% off its 52-week high of $63.46 (set 3/30/2026)** — i.e., the *entire active war* (started 2/28) has coincided with energy stocks **grinding down**, not up. XOM is ~20% off its 3/30 high, CVX ~19% off. This is the fourth-plus escalation cycle since February (Day 1's entry even referenced a "relief rally" from a prior halt-of-hostilities agreement that has since broken down again), and energy equities have failed to sustainably re-rate on any of the prior scares — the market has consistently treated Hormuz flare-ups as transient rather than a durable supply-shock trade, and been right so far.
+- **Read**: a real, named, escalating catalyst (revoked oil-sanctions waiver, recurring tanker strikes, an unresolved Iranian succession crisis) — but chasing a one-day 3-4% sector pop, in a sector that has failed to hold gains through several prior legs of the same war, is the identical mistake I'd be making by buying AMD/QCOM on Day 5. Passing today; would reconsider energy only if the move holds for several sessions *and* Brent stays elevated (i.e., the market starts pricing this as durable rather than another fadeable spike), not on the first green day.
+
+### GOOGL — holding, no add
+- $366.46 → $367.04 (**+0.16%**), actually traded up to $373.16 intraday before fading back with the broader tape — relative strength on a day Nasdaq fell 1.16%, consistent with the Day 5 thesis (defensive quality within the AI-capex trade, cloud backlog growth, still ~10% off its $408.61 52-week high). No new company-specific catalyst since yesterday's buy, so adding more today would be doubling down without new evidence rather than acting on a fresh opportunity — holding the existing $40 position, not adding.
+
+### SPCX — sell-the-news on its own Nasdaq-100 inclusion day
+$160.42 → $149.585 (**-6.75%**), down again despite officially joining the Nasdaq-100 today (the mechanical-flow catalyst I've been tracking since Day 2). Confirms the Day 2/5 framework: don't chase inclusion-driven flow, and the underlying debt/cash-burn concerns are clearly still outweighing any passive-buying tailwind. Passing, unchanged thesis.
+
+### RVI, TSLA — no new information
+- **RVI**: $33.49 → $31.00 (-7.4%), continuing Monday's divergence-lower with no specific catalyst found. **TSLA**: $419.77 → $402.88 (-4.0%), giving back Monday's Robotaxi-expansion pop with no new NHTSA news; still just a valuation/regulatory overhang, not a dip worth buying.
+
+### Decision: **No trade today.**
+Nothing today clears the bar the user set (a specific, evidenced, asymmetric setup) over just "a sector moved." Semis gave a clean, negative answer to the question Day 3 opened (still no stabilization — passing is now well-evidenced, not just cautious). Energy has a real catalyst but a track record of fading every prior leg of this same war, and the account's ~$46.65 cash is too thin to spend on a first-day chase with a history of not sticking. GOOGL's existing position is intact and outperforming today; adding without a new catalyst isn't discipline, it's impatience. Preserving the $46.65 cash rather than forcing a second trade in two days.
+
+### Action items for next session
+- **Semis**: keep watching for an actual multi-day base (not just "stopped going down for one session") before treating as a dip-buy candidate. NVDA's persistent relative strength vs. the rest of the complex is worth tracking as a potential "flight to quality within the AI trade" signal if the broader group keeps deteriorating.
+- **Energy/oil**: track whether Brent/USO holds this week's gains for 3+ sessions and whether XLE/XOM actually reclaim March levels — that would be the signal this is a durable supply-shock repricing rather than another fadeable spike. Also watch for any ceasefire/de-escalation headline, which has reversed sentiment fast every time so far.
+- **Iran/Hormuz**: treat this as a live, unresolved war with a leadership-succession question mark, not background noise — re-check news explicitly each session rather than assuming yesterday's "relief" framing still holds.
+- **GOOGL**: hold; watch for an actual pullback (not a flat/up day) before considering adding to the position, or a clear negative catalyst before considering trimming.
+- **SPCX**: post-inclusion selloff continues to argue the debt/cash-burn story is the dominant driver, not passive flows. Not revisiting until that changes.
+- **TSLA**: still no NHTSA resolution; nothing new to act on.
