@@ -902,3 +902,75 @@ Holding ~half the book in cash for 48-72 hours, with the XLE proceeds settling i
 - **Do NOT re-enter energy or semis reflexively.** Energy needs confirmed re-escalation; semis now carry a structural China-equipment threat on top of the capex fear.
 - **Cash-sweep/interest**: still unresolved — no tool visibility; user should check the Robinhood app directly.
 - **Branch hygiene: still blocked, and now worth escalating.** The user's standing instruction is that no branches should exist after a run except `main`. That is currently impossible with the access this session has: `git push origin --delete` fails at the transport layer ("the remote end hung up unexpectedly"), and the GitHub MCP server exposes `create_branch` but **no** delete-branch / `delete_ref` tool. **20 orphaned `claude/*` branches** have now accumulated (all merged into main, so no work is at risk — this is cosmetic, not data loss). Resolving it needs one of: the user deleting them in the GitHub UI, enabling "Automatically delete head branches" in repo Settings → General (which would prevent all future accumulation), or a token with `delete_ref` scope. **Recommend the auto-delete repo setting** — it is a one-time fix that solves this permanently without further intervention.
+
+---
+
+## 2026-07-28 (Tuesday) — Day 21: No trade — holding the pre-committed FOMC line while the JETS thesis compounds on its own. Both Day-20 fills confirmed; the XLE→JETS rotation paid ~1.9% in its first session. Semis fell another -4.93% on a *structural* China lithography story, vindicating the Day-19 exit a third time.
+
+### Account state (Robinhood "Agentic" account #479068710, cash account) — as of ~5:10pm ET
+- Total account value: **$81.93**. Cash: **$41.77**. Equity value: **$40.16**. Buying power: **$23.39** (XLE proceeds settle T+1, usable tomorrow).
+- **Positions**:
+  - **VOO** 0.028931 sh — avg $691.30, last **$680.96**, value $19.70, **-$0.30 / -1.50%** (24% of book)
+  - **JETS** 0.642056 sh — avg $31.1499, last **$31.86**, value $20.46, **+$0.46 / +2.28%** (25% of book)
+  - Cash: 51% of book
+- **Benchmark check**: S&P 500 closed **7,428.78, +0.21%**; Dow **52,747.32, +1.03%** (third straight win); Nasdaq **24,876.91, -0.22%**. Since the Day-1 baseline (~7,440) the index is **-0.15%**. This account is **-5.45%** (vs. -6.02% yesterday) — the gap narrowed to **~5.30 points** from 5.66. First session in a while where the book gained on the benchmark.
+
+### Day-20 fills: both confirmed, and the rotation paid immediately
+- **XLE sell**: filled 9:30am @ **$58.40** (0.314698 sh, $18.38). Cost basis $57.20 → realized **+$0.38, +2.12%**. **The first closed winner in this journal's history.** XLE then fell to **$57.55 (-1.39%)** today, so the exit also avoided another ~1.5% of downside.
+- **JETS buy**: filled 9:30am @ **$31.1499** (0.642056 sh, $20.00). Closed **$31.86, +2.87%** on the day — the position is up **+2.28%** in its first session.
+- **Combined one-day scorecard on the rotation**: holding XLE would have been worth $18.11 vs. the $18.38 booked in cash (+$0.27 avoided), and the JETS leg added +$0.46. Roughly **+$0.73 on ~$38 of rotated capital, ~+1.9% in one session.** Both sides of the trade worked, which is the point — this was a paired macro expression, not a directional bet plus a random buy.
+
+### The JETS thesis got three independent confirmations in a single session
+1. **Oil kept collapsing.** Brent **-4.8% to $84.09**; USO **-3.43% to $120.48**. Iran's FM Araqchi held separate calls with his Saudi and Omani counterparts on the Strait of Hormuz; the fighting pause held.
+2. **JBLU beat and reinstated guidance** — +9% to $5.94 on a Q2 adjusted-EPS beat, a reinstated full-year outlook, and a new **2028 profit target**, and it dragged DAL/UAL/LUV up with it. This is the earnings-revision asymmetry from the Day-20 thesis showing up in real numbers, from the *first* carrier to report after the oil break. JBLU's own average fuel cost was **+81% to $4.23/gal** — and jet fuel is now **-35% from the early-April high above $4.88**.
+3. **BofA published a "rare airline sweet spot" note on DAL and UAL** — a sell-side framing catalyst arriving one session after I put the position on.
+
+### The COT read — this is the piece that matters most, and it says the oil unwind is *not* finished
+Pulled the CFTC Commitments of Traders (released Friday 7/24, positions as of **7/21**): crude-complex non-commercial **net long 224,416 contracts, +23,239 on the week.**
+- Read it against the price tape: the week ending 7/21 is exactly when crude was making its run at the highs (USO $125.51 → $128.85). **Managed money was still adding 23k contracts of net length into the top.**
+- That length was established at war prices and is now deeply underwater — USO peaked **$139.49 on 7/23** and closed **$120.48** today, **-13.6% in three sessions**. What we are watching is a crowded-long liquidation, and the COT snapshot predates the entire collapse, so the flush is still in progress.
+- This is precisely the use the standing resource list prescribes for COT: *know when trades are crowded*. Crude longs were crowded at the high. That is a tailwind for the short-oil-by-proxy side of this book.
+
+### Sizing the remaining move honestly — including the part that argues *against* adding
+The clean way to frame it is percent-of-round-trip retraced, using this account's own pre-war anchors (USO $104.35 / JETS $33.34, both on 7/6):
+- **Oil** has retraced **54%** of its war premium ($139.49 → $120.48 of a $139.49 → $104.35 round trip). Still **+15.5%** above the pre-war base; a full round trip is another **-13.4%** from here.
+- **JETS** has retraced **63%** of its war drawdown ($29.32 → $31.86 of a $29.32 → $33.34 round trip). Still **-4.4%** below its pre-war level.
+- **So JETS is currently running slightly ahead of its own driver** — 63% vs. 54%. That is a real, honest mark against adding here. It is not the configuration of a laggard about to catch up; it is a position that has already priced a bit more good news than the commodity has delivered.
+- The upside case is still intact and worth stating: if oil fully round-trips, JETS at minimum revisits **$33.34 (+4.6%)**, and the pre-war *trend* was strong — JETS ran **+26% from $26.44 (5/20) to $33.34 (7/6)** before the war interrupted it. Full unwind plausibly puts it **$33.50–34.50, +5% to +8%**. Good, but not a reason to force size today.
+
+### Decision: **No trade.** This is the pre-committed plan executing, not drift.
+Four reasons, and the first is the one that actually governs:
+1. **I wrote the rule down 24 hours ago and the event has not happened yet.** Day 20's action items say verbatim: *"FOMC Wednesday: hold the cash through it."* The FOMC decision is **~21 hours away** (Wed 7/29, 2pm ET), with **MSFT, META, QCOM, LRCX and ARM after that same bell** and **AAPL/AMZN Thursday**. Nothing about that risk changed today; only the JETS thesis got better. Breaking a written, dated, still-unexpired rule to chase a position that is already +2.28% intraday is the exact behavior this journal correctly refused on Days 12 and 15 (chasing the GOOGL pop, chasing the Iran headline). Pre-commitment discipline is the single practice with the best track record in this book — it produced the GOOGL exit, the SOXX exit, and yesterday's XLE exit. I do not get to keep it only when it is convenient.
+2. **The position is ahead of its driver** (63% vs. 54% retraced, above). Adding on that math means paying up for beta I already own.
+3. **Airlines are the worst thing in the book to over-own into a live central-bank meeting.** Hike odds have come down — the oil collapse is disinflationary and cut them from ~38% to roughly **one-in-three**, with the market pushing the hike expectation toward September — but one-in-three is not nothing, and JETS is a levered, consumer-cyclical, high-beta expression that gets hit harder than the index on a hawkish surprise. The upside to front-running by one day is maybe 1–2%; the downside on a surprise, on an enlarged position, is 4–6%. That is a bad trade for the sake of looking busy.
+4. **Practically, I couldn't size it meaningfully anyway.** Buying power is **$23.39** — the XLE proceeds are still unsettled in a cash account. A token add would be cosmetic.
+
+**Where this is NOT "no trade because nothing looked good":** I traded yesterday, the thesis I put on is working, and the cash has a specific dated catalyst resolving tomorrow afternoon. That is materially different from the Days 1–5 pattern the user's standing directive criticized, which was idle cash with no affirmative reason. I want the FOMC print and the MSFT/META capex read *before* I commit the settled cash — and then I intend to commit it.
+
+### Broad tape and cross-sector read — the rotation is the story
+- **Dow +1.03% while Nasdaq -0.22%** is the cleanest split tape of the last month. Sector closes: **XLV +2.38%**, **XLP +1.97%**, **XLC +1.86%**, **XLB +1.83%**, **XLY +1.50%**, **XLF +1.25%**, XLRE +0.52%; losers **XLK -1.88%**, **XLE -1.39%**, XLU -0.36%, XLI -0.37%.
+- **Semis had a fourth consecutive down day, and the reason is structural.** SOXX **-4.93% to $490.81**; the Philadelphia Semiconductor Index -4.5% (down as much as -6.5% intraday); MU and AMD both **-8%+**. Driver: a report in *The Information* that **China is developing deep-ultraviolet (DUV) lithography machines**. That is a direct assault on the ASML monopoly and it compounds Monday's Chinese chipmaking-equipment mass-production story.
+  - **This is the third independent vindication of the Day-19 SOXX exit.** Sold at $532.28; SOXX is now **$490.81, -7.79% since the exit**, in two sessions. The exit was made on a *capex-sentiment* thesis; what has actually shown up since is a far more serious *structural competitive* threat. Getting a good outcome for a partly different reason is worth flagging honestly — I was right to leave, but not entirely for the reason I gave.
+- **Strong earnings drove the Dow, not multiple expansion**: UPS beat on both lines and **raised** its full-year outlook on turnaround momentum; **KO +5%** on a double beat plus a guidance hike; **SHW +8%** on a beat. Boeing was the blemish — a wider-than-expected Q2 loss including a **$280M charge on the delayed Air Force One program**.
+- **Read-through worth keeping**: the market is *not* risk-off. It is rotating — out of the AI/semis complex, into cyclicals, defensives and anything that benefits from cheaper energy. Falling oil was cited alongside earnings as a driver of the Dow's move. My book (JETS + cash, no semis, no direct mega-cap AI) is positioned with that rotation rather than against it, which is the first time in about two weeks that has been true.
+- **XLE -1.39% on the day**, confirming yesterday's exit thesis rather than contradicting it. **XOM and CVX still report Friday 7/31** into materially lower crude — no temptation to re-enter.
+
+### The honest bear case on my own position — what would make me wrong
+- **The ceasefire is not formalized.** Tehran **publicly rejected** reports that it had agreed to a 10-day ceasefire with the U.S., and disagreements over the Strait of Hormuz "could see hostilities reignite." The July 8 re-escalation is proof these pauses break. This is the single biggest risk to JETS and I am carrying it knowingly.
+- **A hawkish FOMC** tomorrow hits levered cyclicals hardest.
+- **Demand-side softness**: ADP at 98K (Day 2) and moderating payroll growth are a genuine risk to discretionary travel that has nothing to do with fuel. Cheap fuel does not save an airline in a consumer slowdown.
+- **Sector-relative**: JETS at 63% retraced vs. oil at 54% means I am no longer early.
+
+### Pre-committed triggers for tomorrow (Wednesday, July 29) — written in advance, as always
+- **JETS exit trigger, unchanged from Day 20**: if **Brent closes back above ~$97–100 on confirmed re-escalation** (not a one-day headline spike), the thesis is broken and I cut. Reaffirming it rather than loosening it now that the position is green.
+- **If FOMC holds rates (base case, ~2/3)** and the ceasefire is intact: **deploy settled cash.** Priority order — (a) **add to JETS** toward ~35% of book, since the remaining 13.4% of oil round-trip is the highest-conviction identified edge in this book; (b) **VOO**, but only *after* seeing the MSFT/META capex reaction, not before.
+- **If FOMC hikes**: do **not** panic-sell JETS on a one-day move — the fuel thesis is a multi-week earnings-revision story, not a rates story. Reassess *sizing*, hold the position, and expect to be able to add lower.
+- **The capex pattern is on its fourth test.** GOOGL -7.15%, TSLA -14.5%, INTC -8% on a beat-and-raise — all punished for raising capex. **MSFT and META report Wednesday PM.** If they raise capex and *still* rally, that pattern has broken and the defensive posture of the last two weeks needs re-examining — grade it honestly either way, in writing, on Day 22.
+- **KLAC, Visa and MDLZ report tonight.** KLAC is the semis read-through — if a semi-cap company with China exposure guides down on the DUV story, that confirms the structural thesis and semis stay uninvestable for this book.
+- **Do NOT re-enter energy or semis reflexively.** Energy needs confirmed re-escalation; semis now carry a structural China-lithography threat stacked on the capex fear.
+- **Watch the retracement spread**: if JETS retraces *further* ahead of oil (say 75%+ vs. oil's 55%), the add case weakens materially even if the macro story is intact. Track both anchors (USO $104.35 / JETS $33.34) every session.
+
+### Housekeeping
+- **Cash sweep/interest**: still no tool visibility. Standing item for the user to check in the Robinhood app.
+- **Gamma-exposure resource**: `insiderfinance.io/gamma-exposure/{ticker}` returns **HTTP 403** to this session's fetcher — it appears to require authentication. Logging it as unavailable rather than silently skipping it; if the user wants it in the process, it needs either credentials or a manual paste.
+- **Branch hygiene**: see the Day-20 addendum. Remote branch deletion still fails at the transport layer and the GitHub MCP server exposes `create_branch` but no delete/`delete_ref` tool. **Recommended permanent fix: enable "Automatically delete head branches" in repo Settings → General.** All orphaned branches are merged into main; nothing is at risk.
