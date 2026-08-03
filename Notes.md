@@ -1301,3 +1301,149 @@ Market buy (fractional ⇒ market/regular-hours only, so it queues to Monday Aug
     - `git push origin --delete <branch>` → **HTTP 403** from the git proxy for all 21. The proxy permits pushes only to this session's designated branch.
     - The GitHub MCP server exposes `create_branch` but has **no delete-branch / delete-ref tool** at all.
   - **This is a permanent capability gap, not a transient failure.** **The user must delete these 21 branches manually** (GitHub → Branches → the trash icon, or `git push origin --delete` from a local clone). It is cosmetic — every one is merged and `main` is complete — but it is the only way the "only main should exist" instruction can be fully satisfied.
+
+---
+
+## 2026-08-03 (Monday) — Day 25: **No trade.** My own pre-written rule ("no MSFT adds above $470") fired on the day it was most inconvenient — MSFT closed $487.66, +25% in three sessions. Held the line. Two active risk decisions instead: **raised the MSFT stop $421 → $432.44** (the old stop was calibrated to a cost basis and a price that no longer exist) and wrote the profit-take rule I was missing. Also logging an uncomfortable data correction: the "MSFT is much cheaper than the index" plank of my thesis is materially weaker than I claimed on Days 23-24.
+
+### Account state (Robinhood "Agentic" account #479068710, cash account) — as of ~5:10pm ET
+- Total account value: **$84.47**. Cash: **$21.88**. Equity: **$62.60**. Buying power: **$21.88**. Unsettled funds: $0.
+- **Positions**:
+  - **MSFT** 0.087042 sh — blended avg **$459.55**, last **$487.66**, value **$42.45**, **+$2.45 / +6.12%** (50.2% of book)
+    - Lot 1: 0.055555 @ $450.00 → **+8.37%**
+    - Lot 2: 0.031487 @ $476.38 → **+2.37%**
+  - **VOO** 0.028931 sh — avg $691.30, last **$696.41**, value **$20.15**, **+$0.15 / +0.74%** (23.9% of book)
+  - Cash: 25.9% of book
+- **Benchmark check**: S&P 500 **+1.42%** (SPY 747.03 → 757.63; index ≈ **7,596**), Nasdaq Composite **+2.1%**, **Dow closed at a record high (+1.3%)**. Since the Day-1 baseline (7,440) the index is **+2.10%**. This account is **-2.51%** — gap of **4.61 points, NARROWED from 5.37.** Second consecutive narrowing. On the day the account did **+2.32% vs the index's +1.42%** — beat the benchmark by 0.90 points while holding 26% cash, entirely on MSFT.
+
+### Day-24 fill confirmed — and it was expensive
+- **MSFT bought 0.031487 sh @ $476.38** (order `6a6d0fe4`, filled 9:30:02am). Reference price at order time Friday evening was **$463.54**. The fill was **$12.84/sh — 2.77% — worse than reference**, because MSFT gapped straight to $476.12 at the open. New blended cost **$459.55**.
+- **This is now a quantified, recurring, structural cost and I am going to name it properly.** Fractional orders require `market` + `regular_hours`, this routine runs at 5pm ET after the close, so **every order in this book queues to the next open.** Slippage vs. reference on the two MSFT lots: $0.147 + $0.404 = **$0.55 on $40 deployed = 1.4% of the ticket, 0.65% of NAV.**
+- **The mitigation is not a different order type — it is a different entry condition.** I cannot place whole-share limit orders ($487/sh on an $84 book). What I *can* do is recognize that **overnight gaps run against a buyer precisely when a stock is in a strong momentum run.** So "don't chase" now has a mechanical justification on top of the behavioral one: chasing costs me ~2-3% in slippage before the thesis even gets a chance. **Logging this as a permanent structural constraint of this account, not a one-off.**
+
+### The rule that mattered tonight, and why I obeyed it
+Day 24, written in advance:
+> **MSFT: no further adds above $470.** The add-trigger is now the *only* remaining use for the cash, and it is a pullback trigger: **add the final $20 only in the $420-440 band on macro (not company) news.** Written so I cannot talk myself into chasing $500.
+
+MSFT closed **$487.66**. The rule says no. **No add.** I want to be explicit about why this is the whole point rather than a technicality: I wrote that sentence 72 hours ago specifically anticipating that a $487 print would feel like confirmation rather than a chase. It feels exactly like that right now. The rule was written by a version of me with no position P&L on the line and it gets to win.
+
+### The uncomfortable data correction — my valuation claim was overstated
+Days 23 and 24 both leaned hard on "MSFT at 21.76-22.7x trades **below** VOO's 27.85x." Pulling fundamentals tonight:
+
+| | Day 24 ($465.10) | Today ($487.66) |
+|---|---|---|
+| Provider P/E | **21.76** | **25.90** |
+| Price change | — | **+4.85%** |
+| Implied P/E change | — | **+19.0%** |
+
+A 4.85% price move cannot produce a 19% P/E move. **The provider changed its earnings denominator between Friday and today**, and I have no way to audit which version was right. So I did the arithmetic myself from the reported quarterlies:
+- MSFT TTM GAAP net income (FY26 Q1-Q4): $27.747 + $38.458 + $31.778 + $35.766 = **$133.75B**
+- Market cap **$4.231T** → **trailing GAAP P/E = 31.6x**
+
+**On trailing GAAP earnings, MSFT is at a PREMIUM to VOO (27.84x), not a 22% discount.** Even taking the provider's own 25.90 at face value, the discount is **7%, not 22%.**
+
+**What this does and does not change.** It does *not* touch the reasons that actually drove the trade: Azure re-acceleration, net margin expanding 38.34% → 39.74% on record capex, the analyst-revision cycle running (avg target now **$565**, high $870, low $400), and the fact that MSFT is the only hyperscaler whose earnings line is operating income rather than an investment mark. Those are all intact. What it kills is the **"cheapest high-quality compounder"** framing I used on Day 24 to justify concentration over the index. **That plank is gone.** I am now long a 26-32x mega-cap in a rising-rate regime because of an earnings-quality and revision-cycle thesis — which is a *narrower* and *more fragile* case than the one I wrote down, and I would rather say so than quietly keep repeating the old number.
+- **Process fix: stop citing a single provider P/E field as a thesis pillar. Compute it from reported net income and market cap, every time.**
+
+### Today's tape: broader than the last two sessions, but built on two fragile inputs
+Sector moves from direct quotes (previous close → last):
+
+| Up | | Down | |
+|---|---|---|---|
+| XLC | **+2.83%** | XLE | **-1.28%** |
+| XLY | +1.84% | XLP | -0.24% |
+| XLI | +1.82% | XLV | -0.18% |
+| IWM | **+1.72%** | | |
+| XLK | +1.57% | | |
+| XLB | +1.17% | | |
+| XLF | +0.74% | | |
+| XLU | +0.06% | | |
+
+Singles: **META +6.08%**, **GOOGL +4.89%**, **MSFT +4.94%**, **AMZN +4.58% (fresh 52-week high, $287.16)**, NVDA +2.94%, AVGO +0.77%, **AAPL -1.83%**, **SOXX +0.59%**, **USO -5.42%**.
+
+**Genuinely better breadth than Friday.** IWM +1.72% and XLI +1.82% participating means this was not another five-stock session. That is the first real breadth improvement in a week and I am giving it credit.
+
+**But the two things that caused it are both fragile, and one of them is disputed by the counterparty.**
+
+**1) The oil collapse rests on a claim Iran publicly denied.** Trump said he called off "the biggest attack since WWII" and that talks resume today with a Hormuz deal "imminent." **Brent fell from $92.27 to ~$83 (-8-10%); USO -5.42%.** Then: Iran's foreign ministry said *"We are not negotiating with the United States at this time"* — its only talks are with **Oman**, over a temporary route through the strait. US officials separately told CBS **no new negotiations are planned.** The Washington Post called the weekend "whiplash."
+- So the market repriced the single largest inflation input by 10% on a statement the other party contradicted the same day. **That is not a durable input. It is a headline that can be un-said tomorrow morning.**
+- **Ban on trading this war holds, in both directions, and today reconfirms it for a third consecutive session.** I have already round-tripped XLE and JETS on exactly this whipsaw. JETS is $32.66 tonight vs. my $31.32 Day-22 exit (+4.3% against me), and I am *still* not buying it back, because buying airlines because oil fell on a denied diplomatic claim is the identical trade that cost me twice.
+- **Low-confidence positioning note:** a search summary put managed-money crude net length at ~**108,307** for week 31, vs. the 224,416 non-commercial net long in the 7/21 snapshot. **Could not verify — cftc.gov returned HTTP 403 again** (fourth distinct URL tried). If roughly right, the crowded crude long was already more than halved through the -16% collapse, meaning today's -8% was repricing rather than forced liquidation, and there is less mechanical selling left. Treating as unconfirmed.
+
+**2) The mega-cap cohort recovered on one sell-side note.** META +6.08% and GOOGL +4.89% both trace to **Morgan Stanley reassuring investors about record AI capex.** GOOGL is guiding ~$200B capex, META ~$145B — the exact numbers that got both stocks punished eight days ago. Nothing about the cash flows changed. One analyst said "it's fine."
+- **This is a direct, honest challenge to my capex/margin discriminator rule, and I am logging it as such.** My rule was 7-for-7 at describing *the market's reaction function during the week it punished capex*. That reaction function just flipped on a note. **The rule described a regime, and regimes end.** What survives is the underlying fact — MSFT's earnings are operating income and its margin expanded, while GOOGL's "93.7% net margin" is an investment mark and its operating cash flow went negative. That distinction is still true. What is no longer true is that the market will reliably *pay* me for it. **MSFT's relative edge over the cohort is narrower tonight than it was Friday, and I should expect its outperformance to decay even if the absolute thesis works.**
+- **GOOGL re-entry bar unchanged and unmet.** My Day-24 bar was *positive operating cash flow with capex guided flat or down.* Capex is $200B and rising. A Morgan Stanley note is not the bar. At 17.89x it is the cheapest mega-cap and I keep watching. **Not buying a +4.89% day on a broker's opinion.**
+
+### The macro data today was HAWKISH, and the bond market ignored it because oil fell
+This is the most important thing on today's tape and it cuts against the rally.
+
+**July ISM Manufacturing (released 10am today): 55.6 vs 54.0 expected, up from 53.3 — the highest since May 2022.**
+- **Employment index 52.8, up from 49.7 — in expansion for the first time in 33 months, highest since August 2022.**
+- **Prices Paid 71.1** (from 73.0) — down a tick, still deeply inflationary.
+
+**Read this against Friday's jobs report and the hike pricing:**
+- **September hike odds are ~63-68%** (per swaps/futures pricing today). **Cut odds remain zero.** Three FOMC members already dissented for a hike on July 29.
+- **July nonfarm payrolls land Friday Aug 7. Consensus ~120-130K vs. June's +57K, unemployment expected to tick 4.2% → 4.3%.** *(Correcting my Day-24 note, which said "~170k vs 187k prior" — that was wrong; my own Day-3 entry records June NFP at +57K.)*
+- **Manufacturing employment flipping to expansion after 33 straight months of contraction is a direct leading indicator for that payroll print.** Today's ISM makes a hot Friday number materially more likely, not less.
+
+**The 10-year fell to ~4.70% today** (from 4.74%, an 18-month high) — but that is the *oil* move, not the *growth* move, doing the work. TLT was flat (-0.06%). **The bond market chose to price the denied diplomatic headline over the hard domestic data.** If the Iran narrative unwinds, both legs of today's rally reverse at once: oil back up *and* the hawkish ISM back in focus.
+
+### Decision: **No trade.** And here is the affirmative reason the cash is sitting, because "no perfect setup" is not one
+Per the standing directive, idle cash requires a specific near-term catalyst, not the absence of a good idea. I have a dated one, and today's data sharpened it:
+
+**Four sessions from now, the July employment report prints into ~65% September hike odds, and this morning's ISM employment sub-index just gave the strongest single argument all month that it comes in hot.**
+
+That is the catalyst. The asymmetry I am buying with $21.88 of patience:
+- **Hot payrolls** → hike odds toward certainty → multiple compression → **$21.88 buys MSFT materially lower**, and my written add-band ($420-440) stops being a fantasy.
+- **Cold payrolls** → hike odds collapse → rally → **I still capture it with 74% invested**, including a 50% position in the name doing the most work.
+
+I am not sitting out. I am **74.1% invested** and I **beat the index by 0.90 points today** while holding a quarter in cash. The gap to the benchmark has now narrowed two sessions running.
+
+**And the entry on offer tonight is objectively the worst of the past two weeks.** VOO closed **$696.41, 0.4% below its all-time high** ($699.15). Buying the index at a record, on a +1.42% day, on a diplomatic claim the counterparty denied, four days before a payroll print that this morning's data says skews hot — that is the exact shape of trade this book exists to avoid. **Passing on that is discipline, not timidity.**
+
+### Risk decisions taken tonight (these are the actual actions)
+
+**1. MSFT stop raised: $421 → close below $432.44.**
+The $421 stop was written when my cost was $450 and the price was $451. At $487.66 that stop would let the position give back **the entire 25% three-day move plus 8% of principal** before firing. That is negligence dressed as conviction. New level chosen from structure, not from a round number:
+
+| Level | What it is | vs. $487.66 | vs. $459.55 cost |
+|---|---|---|---|
+| **$449.33** | 7/31 low | -7.9% | -2.2% |
+| **$432.44** | **7/30 low — the earnings-gap day's low** | **-11.4%** | **-5.9%** |
+| $401.25 | 7/29 high (top of the unfilled gap) | -17.7% | -12.7% |
+
+- **$432.44 is the full-exit line.** A close below it means the entire earnings reaction is being unwound — which genuinely refutes the thesis, as opposed to a normal post-gap consolidation.
+- **$449.33 is a reassessment line, not a sell.** A close below the 7/31 low means the revision cycle stalled; I re-underwrite from scratch that night rather than defaulting to hold.
+- I deliberately did *not* set the stop at $449. MSFT's daily range has been $15-25 wide; a routine two-day give-back reaches $449 without saying anything. **A stop that fires on noise is worse than no stop.**
+
+**2. Profit-take rule written — this was a genuine gap in my plan.**
+Day 24 had a stop and an add-trigger but **no rule for what to do if I was right**. Writing it now, in advance:
+- **If MSFT closes at or above $525** (~5% below the 52-week high of $553.72, ~+14% on blended cost), **trim to ~35% of book** — roughly $12-14 of stock. Rationale: that level is where the revision cycle has substantially played out (below the $565 average target but near the range where the 52-week high becomes resistance), and it converts a concentration I called "the outer edge of what I will carry" back into a normal-sized position without abandoning the thesis.
+- **No trim above 35% weight on any other basis.** Concentration alone is not a sell signal; price achieving the thesis is.
+
+**3. VOO stop unchanged: close below $664** (June 9 low). Closed $696.41 — **4.9% of cushion**, up from 3.4%.
+
+### The honest bear case on tonight's decision (i.e. on doing nothing)
+- **The obvious one: I may have just watched the cheapest MSFT I will ever see again.** If the revision cycle carries it to $565 without a pullback, my $470 ceiling cost me the entire remaining move on 26% of the book. **That is a real, quantifiable risk of the rule, and the rule is still right** — Day 5, 9 and 22 documented the opposite error, but Days 17/19/22 documented this one, and at a +25% three-day extension the chase risk dominates.
+- **Breadth genuinely improved today and I did not add to it.** IWM +1.72% with industrials participating is the healthiest tape in a week. If Friday's number is soft and this becomes a broad advance, 26% cash is a direct drag.
+- **My valuation edge on MSFT is smaller than I thought** (above), and I am holding a 50% position through that revision rather than trimming it. I am choosing to weight the revision cycle and earnings quality over the multiple. **If MSFT is really 31.6x trailing GAAP in a 4.7% 10-year world, the stop at $432 is doing a lot of work.**
+- **The capex-punishment regime that made MSFT special appears to be over** (META/GOOGL recovered fully on a note). My differentiator may already be arbitraged away.
+- **I am now 0-for-2 on the biggest single-day movers I have passed on this week** (SOXX Thursday, the airline bounce today). Neither pass was wrong on process. Logging the pattern anyway because a run of correct-process/wrong-outcome passes is how a book talks itself into being permanently defensive.
+- **The single thing that would most change my mind:** MSFT holding above $470 through Friday's payroll print *including* a hot number. That would mean the name has decoupled from the rate regime, and my $470 ceiling would be the wrong frame — I would raise the add-band rather than wait for $420-440.
+
+### Pre-committed triggers for Tuesday (August 4) — written in advance
+- **MSFT full exit: close below $432.44.** Reassess hard (do not auto-sell) on a close below $449.33.
+- **MSFT trim to ~35% of book: close at or above $525.**
+- **MSFT: no adds above $470.** Unchanged. Add the final $20 only in the **$420-440** band on macro (not company) news.
+- **VOO: cut if it closes below $664.** Unchanged, unconditional.
+- **Do NOT trade the Iran war in any direction** — third consecutive session confirming. Specifically: **do not buy JETS back** because oil fell on a claim Iran denied, and do not buy XLE if it re-spikes on the claim collapsing.
+- **Do NOT chase the mega-cap cohort on the Morgan Stanley note.** GOOGL's re-entry bar remains *positive operating cash flow with capex guided flat or down.* AMZN just made a 52-week high; my Day-24 candidate band was $236-240 and it is $284. Both are further from actionable than they were Friday, not closer.
+- **Do NOT buy semis.** SOXX 45.5x, +0.59% on a +1.75% QQQ day — it *lagged* a strong tape. The China DUV lithography question is still unanswered.
+- **Do NOT buy memory.** MU $829.04, +0.73%. My condition was a **3-session base above $800 without another 15%+ squeeze day**. It is now 2 sessions ($822.59, $829.04). **If Tuesday closes above $800 without a squeeze, the base condition is MET** — at which point I re-underwrite the thesis properly (AMZN's $200B→$220B capex raise on memory costs, AAPL's guidance cut on components, Samsung warning into 2028). **Meeting the technical condition authorizes a look, not a buy.**
+- **This week's calendar**: **AMD Tue after the close** (the key read on AI infrastructure), plus CAT, BP, MCD, MRK, PFE, AMGN, ANET, BKNG Tue. **ADP + ISM Services Wed**, plus LLY, DIS, UBER, SHOP, **SNDK, WDC** (memory — biggest implied moves of the week). ABNB, COP, DDOG Thu. **July employment report Friday Aug 7 — consensus ~120-130K vs. +57K prior, unemployment 4.2% → 4.3%. Today's ISM says the risk is a HOT number.**
+
+### Housekeeping
+- **cftc.gov returned HTTP 403 again** — tried `dea/futures/deacmesf.htm` tonight in addition to the previously-failed URLs. **Five distinct CFTC endpoints have now failed across four sessions. Treating this as permanently unavailable to this session rather than retrying blind each night.** Going forward I will source COT via news coverage only and label it low-confidence, as I did above. **insiderfinance.io gamma-exposure remains 403 as well.** *Standing request to the user: both listed resources need credentialed access or a substitute (CME QuikStrike for COT; any open-endpoint dealer-gamma provider).*
+- **Fractional-order slippage is now a measured cost, not a footnote** — see the fill section above. 1.4% of ticket / 0.65% of NAV across two MSFT lots. Structural at this account size; the only mitigation is entry discipline.
+- **Cash sweep/interest**: still no tool visibility. With T-bills near 4%, ~$22 idle is ~$0.88/yr — small, but it is 1% of the book. Standing item for the user to check in the Robinhood app.
+- **Branch hygiene**: repo auto-delete-on-merge is ON and working (Day 24's branch was removed automatically). **The 21 pre-existing orphans from Days 1-23 still require manual deletion by the user** — verified on Day 24 that this agent cannot remove them (git proxy 403; GitHub MCP has no delete-ref tool). Cosmetic only; every one is fully merged into `main`.
