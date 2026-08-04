@@ -1447,3 +1447,122 @@ Day 24 had a stop and an add-trigger but **no rule for what to do if I was right
 - **Fractional-order slippage is now a measured cost, not a footnote** — see the fill section above. 1.4% of ticket / 0.65% of NAV across two MSFT lots. Structural at this account size; the only mitigation is entry discipline.
 - **Cash sweep/interest**: still no tool visibility. With T-bills near 4%, ~$22 idle is ~$0.88/yr — small, but it is 1% of the book. Standing item for the user to check in the Robinhood app.
 - **Branch hygiene**: repo auto-delete-on-merge is ON and working (Day 24's branch was removed automatically). **The 21 pre-existing orphans from Days 1-23 still require manual deletion by the user** — verified on Day 24 that this agent cannot remove them (git proxy 403; GitHub MCP has no delete-ref tool). Cosmetic only; every one is fully merged into `main`.
+
+---
+
+## 2026-08-04 (Tuesday) — Day 26: **No trade.** The best tape of this journal (record S&P + Dow, 3:1 breadth) and I sat it out — then two AI bellwethers fell 8-9% after the close for exactly the reasons my framework tracks. Tonight's real work: I found the **spender-vs-supplier** axis that my Day-25 "the capex regime is over" post-mortem got wrong, and I put a **hard deadline** on my idle cash for the first time.
+
+### Account state (Robinhood "Agentic" account #479068710, cash account) — as of ~5:10pm ET
+- Total account value: **$85.29**. Cash: **$21.88**. Equity: **$63.41**. Buying power: **$21.88**. Unsettled funds: $0. No open orders.
+- **Positions**:
+  - **MSFT** 0.087042 sh — blended avg **$459.55**, last **$492.905**, value **$42.91**, **+$2.91 / +7.26%** (50.3% of book)
+  - **VOO** 0.028931 sh — avg $691.30, last **$708.75**, value **$20.51**, **+$0.51 / +2.52%** (24.0% of book)
+  - Cash: 25.6% of book
+- **Benchmark check**: S&P 500 **+1.79% to 7,736.52 — a record close**. Dow **+1.71% to 54,085.88 — also a record**. Nasdaq Composite **+2.59% to 26,584.99**. Since the Day-1 baseline (7,440) the index is **+3.99%**. This account is **-1.57%** — gap of **5.55 points, WIDENED from 4.61.** Two sessions of narrowing reversed in one day. On the day the account did **+0.97% vs the index's +1.79% — lagged by 0.82 points**, essentially all of it explained by 25.6% cash plus MSFT lagging.
+
+**I am not going to soften that. I underperformed on the single best tape this book has seen, and the reason is the cash I chose to hold.** The rest of this entry has to earn that.
+
+### Today's tape: the broadest advance in this journal's history
+
+| Up | | Down | |
+|---|---|---|---|
+| **XLK** | **+4.99%** | XLE | -0.46% |
+| XLB | +1.96% | XLU | -0.59% |
+| **IWM** | **+1.84%** | XLV | -0.09% |
+| XLI | +1.75% | XLRE | -0.06% |
+| XLF | +0.84% | | |
+| XLC | +0.62% | | |
+| XLP | +0.57% | | |
+| XLY | +0.08% | | |
+
+**Breadth was real, not narrow**: Nasdaq advancers beat decliners **3,244 to 1,099**, ~**80% of Nasdaq volume** and ~**70% of NYSE volume** was in advancing shares. That is a genuine thrust, not five stocks carrying an index — the thing I have complained about for two straight weeks finally showed up.
+
+Singles: **SNDK +10.97%**, **MU +7.55%**, **AMD +7.25%**, **SOXX +6.78%**, **AVGO +6.58%**, NVDA +2.53%, AAPL +1.96%, TSLA +1.65%, GOOGL +1.13%, **MSFT +1.08%**, **META -0.43%**, **AMZN -2.32%**. USO **-5.22%** (oil down a second day). GLD +0.64%, TLT +0.77%, 10-yr ~**4.63-4.69%** (from 4.70%). JETS +2.30% (now $33.42 vs. my $31.32 Day-22 exit — **+6.7% against me**, and I am still not chasing it).
+
+### The correction that matters: the capex regime did NOT flip. It **rotated from spenders to suppliers.**
+
+On Day 25 I wrote that my capex/margin discriminator was probably dead — that META and GOOGL recovering on a Morgan Stanley note meant "the market will no longer pay me for this." **That post-mortem was premature and today shows why. Look at who moved and in which direction:**
+
+| **Suppliers of AI capex** | | **Spenders of AI capex** | |
+|---|---|---|---|
+| SNDK | **+10.97%** | AMZN | **-2.32%** |
+| MU | **+7.55%** | META | **-0.43%** |
+| AVGO | **+6.58%** | MSFT | **+1.08%** |
+| SOXX | **+6.78%** | SpaceX | **-8% (after hours)** |
+
+The catalyst was **BofA raising expected hyperscaler capex to ~$1.2T over the next 12 months from ~$700B** (Morgan Stanley: ~$800B in 2026, ~$1.2T in 2027). The market took that number and did the only sensible thing with it: **priced it as revenue for the people receiving the money and as cost for the people spending it.** Every supplier ripped. Every spender lagged or fell, on a +1.79% day.
+
+**And the ordering *within* the spender cohort is exactly what my rule predicts: MSFT +1.08% > META -0.43% > AMZN -2.32%.** MSFT is the spender whose net margin *expanded* (38.34% → 39.74%) on record capex; META and AMZN are the ones whose cash flow went the other way. The discriminator ranked them correctly again today. It is 8-for-8 on ordering; what it briefly failed to do on Day 25 was predict the *level*, on a day driven by a broker note rather than by numbers.
+
+**Corrected statement of the rule, replacing the Day-25 version:** the axis is **supplier vs. spender first, then margin-expansion vs. margin-dilution within spenders.** I collapsed those two axes into one for three weeks and got away with it only because they happened to point the same way.
+
+**The uncomfortable implication, stated plainly: at 50.3% of book, my largest position is a *spender* in a tape that is now paying suppliers.** MSFT is the best house on that street, but it is on that street. That is a real structural headwind to my concentration and I would rather write it down than notice it in three weeks.
+
+### Then the close happened, and both legs of today's trade cracked within 90 minutes
+
+**AMD — beat, raised, and fell ~9%.** Revenue **$11.54B vs. $11.28B est.**, EPS **$1.66 vs. $1.62**, revenue **+50% YoY**, **data center $6.7B, +107% YoY** (58% of the company). Q3 guide **~$13.0B ±$300M vs. $12.51B consensus** — a guidance *beat* of ~4%. Closed **$519.79 (+7.25%)**, trading **$473.02 after hours (-8.99%)**.
+- **Why**: non-GAAP gross margin guided ~**56%**, pressured by **aggressive pricing to take share from Nvidia's Blackwell**, and the AI-accelerator number came in under buy-side "whisper" expectations. *A double beat was not enough.*
+- **Two readings, and I want both on the record.** (1) **Supplier margins are not safe either.** AMD is a supplier and it just got punished for the same margin-dilution sin I have been docking spenders for. The "suppliers win" trade has a crack in it on day one. (2) **This is bullish for NVDA specifically** — a competitor cutting price to fight Blackwell and *still* only meeting whispers is evidence Nvidia's pricing power is holding. NVDA closed +2.53% and is **+1.14% after hours while AMD is -9%**; the market made that read within minutes.
+
+**SpaceX (SPCX) — first-ever public earnings, beat big, and fell ~8%.** Revenue **$7.8B vs. ~$6.93B est. (+92% YoY)**, net loss narrowed to $541M from $1B, Starlink at **12M subscribers** (doubled), **$14.1B of new AI contracts**. And: **capex up more than sixfold to $18.37B**, including **$15.83B of AI spend vs. $13.22B expected**. Stock **-8% after hours**.
+- **That is the purest possible test of my rule and it passed cleanly.** A ~$1B revenue beat, a halved loss, and a doubled subscriber base were all overridden by one line: capex. **Spend without commensurate margin gets sold, even on a blowout.**
+
+**So within one evening the market punished a supplier for margin compression and a spender for capex.** My framework is not dead. It is more alive tonight than it was this morning — and it just told me that *both* sides of today's rally are contested.
+
+### Decision: **No trade.** Here is the affirmative reason, and this time it has an expiry date
+
+Per the standing directive, idle cash requires a specific near-term catalyst, not the absence of a good idea. Mine:
+
+1. **Every order in this book fills at the next open** (fractional ⇒ market + regular_hours only; I cannot place limits at $709/sh on an $85 book). So the entry I am pricing is **tomorrow's 9:30 print, not tonight's close** — and I go into that open with **AMD -9% and SpaceX -8% after hours**, the two largest earnings events of the week, both negative.
+2. **VOO closed $708.75 — a fresh all-time high, after +5.66% in four sessions** ($670.63 on 7/29 → $708.75). Buying the index after its best four-day run of the quarter, at a record, is the worst-shaped entry available to me.
+3. **July payrolls land Friday Aug 7** into **~55% odds of a 25bp September hike plus ~26% odds of 50bp+** (~81% chance of *some* hike; cut odds still zero). Monday's ISM — manufacturing employment expanding for the first time in 33 months — argues the risk skews to a **hot** number.
+
+**But I have to be honest about the failure mode of this reasoning, because I ran it yesterday and it cost me 0.82 points today.** My waits have had no expiry. "Wait for the catalyst" with no deadline is just permanent defensiveness wearing a thesis. So:
+
+### 🔒 HARD DEPLOYMENT DEADLINE — the actual decision tonight
+
+> **Buy $15 of VOO on the first session this week that VOO closes below $700.**
+> **If VOO never closes below $700, buy $15 of VOO on Friday Aug 7 after the close regardless of where it is and regardless of how the payroll print lands.**
+
+Either I get the pullback or I pay up, but **the cash is deployed by Friday's close either way.** No third option, no extension. This is the first time in 26 sessions I have put a deadline on idle cash and it is the single most useful thing in this entry.
+
+**Sizing note:** $15 of the $21.88, not all of it. That takes the book to ~93% invested and — importantly — drops **MSFT from 50.3% to ~42%** of book without a round trip. Buying VOO does double duty: it closes my underweight to the benchmark *and* dilutes the concentration whose valuation justification I retired on Day 25.
+
+### 🗑️ RULE RETIRED: the MSFT $420-440 add-band is dead
+Written Day 24, kept alive on Day 25 as "a fantasy unless payrolls run hot." At $492.91 it would need a **-10.7% single-session move** to trigger. That is well under a 5% probability on a payroll print, so holding cash against it is holding cash against nothing.
+
+**More importantly, I no longer *want* to add MSFT even if it gets there.** At 50.3% weight, with the "cheapest high-quality compounder" plank gone (Day 25: 31.6x trailing GAAP is a *premium* to VOO's 27.8x, not a 22% discount) and with MSFT now identified as a *spender* in a supplier-led tape, **the marginal dollar in this book should reduce concentration, not increase it.** The cash is re-earmarked to VOO. A cheaper MSFT would make me *hold* more comfortably, not *buy* more.
+
+### 🆕 NEW TRIGGER: relative-decay test on MSFT
+MSFT is showing two independent signs of losing leadership and I want that tested mechanically rather than felt:
+- It **lagged the index today** (+1.08% vs. VOO +1.77%) and lagged the Nasdaq badly (+2.59%).
+- It **faded from its intraday high**: touched **$499.44**, closed **$492.905** — near the low of the last hour ($492.31) on the day's heaviest volume hour, while VOO closed within 0.3% of its high. That is distribution character in a name that just ran 26% in four sessions.
+
+> **If MSFT underperforms VOO on 3 of the next 5 sessions, I re-underwrite the 50% concentration that night — independent of price and independent of the $525 trim rule.**
+
+One day of lag after a 26% run is noise; three of five is a trend. This converts a hunch into a test. **I am not trimming tonight** — the thesis was *reinforced* by AMD and SpaceX this evening (Azure +43%, >$100B for the first time, margin expanding while its peers get punished for the opposite), the revision cycle is running (**56 analysts, Strong Buy, average target $562.73**), and selling a +7.26% winner because a different sector rallied is a bad reason.
+
+### The honest bear case on tonight's decision (i.e. on doing nothing again)
+- **The obvious one, and it is not hypothetical: I lagged by 0.82 points today doing exactly this.** Two days of this costs more than any single entry-timing edge I am likely to capture.
+- **Today's breadth was the best signal in this journal and I gave it no weight in position terms.** 3:1 advancers with IWM and industrials participating at a record close is historically a *continuation* pattern, not exhaustion. If Friday is soft and this becomes a broad advance, 26% cash is a pure drag and my deadline will have me buying higher than tonight — which is exactly the outcome the deadline is designed to accept rather than avoid.
+- **My AMD/SpaceX "the open will be softer" read is weaker evidence than it feels.** The Day-18 Intel beat and the Day-22 META -10.6% did not produce reliable next-day follow-through in either direction. AMD is ~0.5% of the S&P and SpaceX is not seasoned into it, so the direct index arithmetic is roughly **-0.1% on VOO**. What I am actually trading is sentiment transmission, which is a coin flip. **I am sizing this correctly by not letting it delay me past Friday.**
+- **I passed on the suppliers again** — SOXX +6.78%, MU +7.55%, SNDK +10.97%. That is now three sector moves I have watched from the sidelines this week. The process reason holds (MU's "3-session base above $800 without a squeeze" condition is *technically* met at $829.50 → $892.15, but **a +7.55% day IS the squeeze character the condition was written to exclude**, and MU is -1.0% after hours already). But a run of correct-process/wrong-outcome passes is how a book talks itself into being permanently defensive, and this is the second consecutive entry where I have had to write that sentence.
+- **My biggest position is on the wrong side of the dominant flow** (spender, not supplier), at 50.3% weight, with a stop 12.3% below the current price.
+
+### Pre-committed triggers for Wednesday (August 5) — written in advance
+- **🔒 VOO: BUY $15 on the first close below $700. If no close below $700 by Friday, BUY $15 on Friday Aug 7 regardless.** Unconditional. This is a deadline, not a preference.
+- **MSFT full exit: close below $432.44** (7/30 earnings-gap low). Reassess hard, do not auto-sell, on a close below **$449.33** (7/31 low).
+- **MSFT trim to ~35% of book: close at or above $525.** Unchanged.
+- **MSFT relative-decay test: underperforms VOO on 3 of the next 5 sessions → re-underwrite the concentration that night.** New tonight. Session 1 of 5 = today, and MSFT **lagged** (1 of 3 used).
+- **MSFT adds: RETIRED.** No adds at any price. The cash goes to VOO.
+- **VOO: cut if it closes below $664** (June 9 low). Unchanged, unconditional. Cushion is now **6.3%**, up from 4.9%.
+- **Do NOT buy semis or memory on today's move.** SOXX +6.78% into an AMD print that beat, raised, and got sold 9% on margin. When printed numbers lose to whisper numbers, positioning — not fundamentals — is setting the price. **MU's base condition is void: a +7.55% session is the squeeze it was written to screen out.**
+- **Do NOT trade the Iran war in any direction.** Fourth consecutive session. USO -5.22% today; JETS is +6.7% above my exit and I am not buying it back.
+- **Do NOT open NVDA** on tonight's AMD read, however good the logic is. Buying a competitor's earnings reaction the same evening, at 25% of book, into a position already 50% concentrated in AI, is the exact same-day-sentiment trade this process bans. **Logging it as a watch item with a real bar: NVDA is interesting if AMD's margin story is confirmed as share-loss rather than sector-wide pricing pressure — which requires NVDA's own print, not an inference.**
+- **This week's calendar**: **ADP + ISM Services Wed**, plus LLY, DIS, UBER, SHOP, and **SNDK + WDC (memory — the largest implied moves of the week; a direct test of today's +11% SNDK session)**. ABNB, COP, DDOG Thu. **July employment report Friday Aug 7 — consensus ~120-130K vs. +57K prior, unemployment 4.2% → 4.3%; ISM says the risk is a HOT number.**
+
+### Housekeeping
+- **cftc.gov and insiderfinance.io remain 403** to this session — treated as permanently unavailable since Day 25, not retried tonight. *Standing request to the user: both listed resources need credentialed access or a substitute (CME QuikStrike for COT; any open-endpoint dealer-gamma provider).* COT positioning is therefore absent from this entry rather than guessed at.
+- **thestreet.com and cnbc.com article pages also returned 403** on direct fetch tonight; market-wrap details above are from search-result summaries. Index levels, sector moves, and all position/quote data are from the broker feed and are firm.
+- **Slippage watch**: the two MSFT lots cost **$0.55 on $40 deployed (1.4% of ticket)** because both filled into a rising open. Tonight's deadline order is deliberately going into a market where the overnight risk is, for once, *not* obviously against a buyer.
+- **Branch hygiene**: auto-delete-on-merge is ON and working. The **21 pre-existing orphaned branches from Days 1-23 still require manual deletion by the user** — this agent cannot remove them (git proxy 403; GitHub MCP exposes no delete-ref tool). Cosmetic only; all are fully merged into `main`.
