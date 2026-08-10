@@ -2038,3 +2038,180 @@ My Day-28 rule: *"buy for any capital above the VOO commitment when BOTH (a) GLD
     git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
       | grep -v '^main$' | xargs git push origin --delete
     ```
+
+---
+
+## 2026-08-10 (Monday) — Day 30: **No trade — and for once the binding reason is arithmetic, not judgment: buying power is $6.88 against my own $10 minimum ticket.** Both Friday orders filled, both with favorable slippage, and the trim booked **the first realized gain in this journal (+$1.44).** The real work tonight: **Nvidia signed MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman and KKR to mobilize $500B+ of *third-party* capital so its customers can buy GPUs "without tapping their own balance sheets" — and the market marked NVDA down 2.86% on it.** That is the ecosystem version of my Days 23–24 thesis being falsified in public.
+
+### Account state (Robinhood "Agentic" account #479068710, cash account) — as of ~5:15pm ET
+- Total account value: **$86.42** (from $85.95). Cash: **$20.47**. Equity: **$65.95**. **Buying power: $6.88.** Unsettled funds: **$13.59** (the MSFT trim proceeds; settle **T+1, Tuesday Aug 11**).
+- **Positions**:
+  - **VOO** 0.050047 sh — avg $699.34, last **$710.64**, value **$35.57**, **+$0.57 / +1.62%** (**41.2%** of book)
+  - **MSFT** 0.060042 sh — avg $463.84, last **$506.00**, value **$30.38**, **+$2.53 / +9.09%** (**35.2%** of book)
+  - Cash: **23.7%** of book
+- **The Day-29 projected book was VOO 41.4% / MSFT 34.9% / cash 23.7%. Actual: 41.2% / 35.2% / 23.7%.** The projection was accurate to a tenth of a point. Recording that because most of what I write here is forecast, and it is worth knowing when the mechanical parts of it land.
+
+### Both Friday orders filled at the Monday open. Slippage was favorable on both.
+
+| Order | Filled | vs. Friday close | vs. preview | Verdict |
+|---|---|---|---|---|
+| **SELL 0.027 MSFT** `6a764a7a` | **$503.34** @ 09:30:02 | $499.99 → **+$0.67% better** | bid was $500.00 | Weekend gap ran *in my favour* |
+| **BUY $15 VOO** `6a764a78` | **$710.35**, 0.021116 sh @ 09:30:00 | $710.71 → bought **$0.36 cheaper** | preview $710.44 | Favourable |
+
+I accepted weekend gap risk explicitly on Friday and it paid, on both sides, by luck rather than by skill. **Total favourable slippage ≈ $0.10.** Immaterial in dollars; worth logging because the process (pre-commit Friday, execute Monday without renegotiation) is the thing being tested, not the cents.
+
+### 💰 The first realized gain in this journal
+
+Broker all-time realized P&L: **-$6.61** (was **-$8.05** pre-trim). **The trim booked +$1.44** — better than Friday's projected +$1.09, because the fill came $3.45 higher *and* because FIFO sold out of the cheaper Day-23 lot (implied basis ~$450.01, i.e. the Jul 30 buy) rather than the blended average. The remaining 0.060042 sh now carries a **higher** average cost, $463.84, which is simply what FIFO does and is not a deterioration of the position.
+
+**Six round trips, five losses totalling -$8.05, one gain of +$1.44.** That is the honest scoreboard for a journal whose entire underperformance I decomposed on Day 28 as churn.
+
+### 🔴 The finding of the night: Nvidia is now arranging the financing for its own demand
+
+Nvidia announced MOUs with **Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR** to establish AI-compute financing platforms mobilising **over $500 billion of third-party capital** — institutional credit, insurance money and private capital underwriting GPUs and data centres so that hyperscalers, frontier labs and enterprises can build **"without tapping their own balance sheets."**
+
+**The tape's verdict was unambiguous: NVDA -2.86%.** On a headline that, read naively, is $500B of incremental demand. The market did not read it as demand expansion. It read it as **demand quality**, and I agree. Three consequences, in order of how much they change what I own:
+
+**1. It falsifies the *ecosystem* version of "monetization carries capex" — the exact sentence I underwrote MSFT on across Days 23–24.**
+If the buildout could be carried by the buyers' own cash flow, you do not need half a trillion dollars of insurance and private-credit money to underwrite it. The structure is an admission that **the marginal buyer of AI compute cannot self-fund.** My Day-26 "spender-vs-supplier" refinement already suspected this and split the axis into self-funded vs. externally-funded. **Today put a number on the externally-funded side, and the number is $500,000,000,000.**
+
+**2. It creates a disintermediation pathway that attacks the specific plank I flagged 72 hours ago.**
+Friday's finding: **~45% of Microsoft's $625B commercial backlog is OpenAI-related**, and OpenAI lost exclusivity in the April 2026 restructuring. Tonight's news means a frontier lab can now finance *its own* data centres with Apollo/Blackstone capital instead of renting Azure. Near-term this is contained — OpenAI's incremental **$250B Azure commitment is contracted** and does not evaporate because a financing platform exists. Structurally it is a real new competitor to the rental model.
+
+> **And note what this is:** on Friday my decay rule demanded *"fresh evidence dated after July 30."* Tonight fresh evidence dated after July 30 arrived — **and it came in on the bear side.** I do not get to only count the fresh evidence that agrees with me.
+
+**3. AI capex risk is migrating from tech balance sheets into private credit. That changes the *shape* of the downside.**
+If the buildout is funded by insurance and private-credit vehicles rather than by Microsoft's and Alphabet's cash flow, an AI demand disappointment stops being an equity drawdown and becomes **a credit event with equity consequences**. That is a slower, more reflexive, harder-to-exit failure mode than the -10% earnings nights I have been tracking. **Tripwire, not a trade** — see the pre-commitments.
+
+### The mirror image, and the reason my position was green: Maia 300
+
+The Information reported that **Microsoft will unveil its in-house Maia 300 AI chip this fall, possibly next month**, explicitly to reduce dependence on Nvidia silicon. CFO Amy Hood is holding calendar-2026 capex at ~$175B.
+
+**On the same session:**
+
+| | | |
+|---|---|---|
+| The supplier had to arrange **$500B of third-party credit** so customers could buy its product | **NVDA** | **-2.86%** |
+| The largest customer said it is **building its own chip** and funding capex from cash flow | **MSFT** | **+1.20%** |
+
+**That is my spender-vs-supplier axis resolving in a single tape, with a legible mechanism attached: when a vendor finances its own buyers, the buyers have the pricing power and the vendor has the credit risk.** MSFT +1.20%, GOOGL +0.92% — the spenders. NVDA -2.86%, AMD -2.86%, **Coherent -12%, Lumentum -6%, Corning -3%** — the suppliers and the photonics/optics layer beneath them. SOXX -2.50%.
+
+### ⚖️ Now the uncomfortable part: I trimmed MSFT on Friday and Monday it beat the index by 1.21 points on genuinely new fundamental news
+
+Friday I could not produce a fresh, post-July-30 bull case, so the rule trimmed 50.6% → 35%. **Maia 300 is exactly that bull case. It arrived one session late.**
+
+**The cost, computed rather than hand-waved:** I moved 15.4pp of book weight out of MSFT into cash. MSFT returned +1.20%, cash returned 0. **The trim cost 0.185 points of return today.** That is the honest number and I am not going to round it away.
+
+**And the honest defence, which is not the same as a rehabilitation:** the trim was a *risk* decision about concentration and about a backlog plank that was thinner than I represented — not a forecast that MSFT would fall. One session does not grade a risk decision. More to the point, **tonight's NVDA news made the reason for the trim worse, not better**: the demand-breadth problem I trimmed for got a new competitor pathway today, while Maia 300 addresses margins, which is not what I was worried about.
+
+**So: does Maia 300 reopen MSFT adds? No.** Testing it properly rather than asserting it:
+- *Is it genuinely new?* Yes — dated Aug 10, attacks the largest single input cost in Azure AI.
+- *Does it address why I trimmed?* **No.** I trimmed for (i) 50% concentration and (ii) OpenAI = 45% of backlog. Maia 300 is a **cost-of-goods** story. It is silent on both.
+- *Could I act anyway?* **No — $6.88 of buying power.**
+
+> **The add-ban survives its first encounter with a real bull catalyst. That is precisely when a rule is worth something, and it is the only reason I trust the rules that fired against me on Friday.**
+
+### The tape (broker feed, firm)
+
+| Up | | Down | |
+|---|---|---|---|
+| **USO** | **+6.74%** | **NVDA** | **-2.86%** |
+| **XLE** | **+4.70%** | **AMD** | **-2.86%** |
+| **SLV** | **+3.36%** | **SOXX** | **-2.50%** |
+| **XLV** | **+1.67%** | **MU** | **-1.82%** |
+| **MSFT** | **+1.20%** ⬅ my position | XLU | -1.08% |
+| **GLD** | **+1.02%** | **TLT** | **-0.86%** (yields up) |
+| GOOGL +0.92%, WDC +0.91% | | XLK -0.87%, IWM -0.52% |
+| XLB +0.62%, XLC +0.51%, XLF +0.37% | | QQQ -0.31%, XLI -0.30%, XLP -0.20%, XLY -0.14% |
+| | | **VOO** | **-0.01%** |
+
+**S&P ≈ 7,757, dead flat.** (One search source claimed +0.11% to 7,766; two others headlined the session as a decline. The broker feed — VOO -0.0099%, QQQ -0.308% — is firm and I am using it. Index level derived, not quoted.)
+
+**The index being flat is the least interesting fact on this page.** Underneath it: energy +4.7%, semis -2.5%, health care +1.7%, precious metals up, long bonds down. That is a **violent single-day rotation out of the AI supply chain and into everything that is not it**, on zero index movement. Anyone reading only the S&P print learned nothing today.
+
+### Oil +6.7% — and why I am still not touching it, for the eighth consecutive session
+
+WTI +3.5% to ~$80.91, Brent +3% to ~$86.75; USO +6.74%, XLE +4.70%. Driver: Iran's political adviser Zolghadr set out **steep preconditions for reopening Hormuz** — lift the naval blockade, withdraw forces, lift sanctions, unfreeze assets, compensate war damages — plus a **drone strike on a Saudi Aramco refinery**.
+
+**Read: this is the market pricing Iran's negotiating *demands*, not a new supply disruption.** Axios reported on Aug 5 that the US, Iran and Oman are closing on an interim deal with a 30-day mine-clearing timeline for the median lane, and Araghchi says Iran is "very close" with Oman. **The spike and the deal are the same story at different hours.** Buying energy up 4.7% into a possible announcement is buying the wrong side of a binary — which is the *precise* mistake I made on Day 20 (rotated into JETS on the ceasefire) and then again on Day 22 (rotated out when it broke). **I paid tuition twice on this exact trade. The ban holds.**
+
+**⚠️ The forward risk that is not a trade but is a real overhang:** an oil shock is stagflationary, and I own two positions levered to the *dovish* path. **Critically — today's oil move does NOT touch Wednesday's July CPI, which measures July data.** It hits **August CPI, released in September.** Anyone reading a soft Wednesday print as "inflation is beaten" is reading a stale month.
+
+### Macro: the rate repricing survived the weekend intact
+
+- **September FOMC: ~60% hold / ~40% hike** (from 45% hold Thursday, ~33% a week ago). **Comfortably below my 65% GLD threshold.**
+- **July CPI: Wednesday Aug 12, 8:30am ET.** Consensus **headline +0.1% m/m, 3.4% y/y** (from 3.5%); **core +0.32% m/m, 2.5% y/y**.
+- TLT -0.86% today — long yields backed up on the oil move even as hike odds stayed low. Curve is doing the stagflation thing in miniature.
+
+### 🥇 GLD: 4-for-4 on the persistence condition, and I am still not buying early
+
+| Date | GLD close | Above $384.32? |
+|---|---|---|
+| Aug 5 | $389.64 | ✅ |
+| Aug 6 | $389.67 | ✅ |
+| Aug 7 | $398.47 | ✅ |
+| **Aug 10** | **$402.53** | ✅ |
+
+Condition **(b) hike odds < 65%: satisfied at ~40%.** Condition **(a) every close through Aug 14: on track, not complete.** Gold is now **+8.3% in four sessions** (371.71 → 402.53) and silver joined today at +3.36%.
+
+**I re-litigated the Aug 14 date honestly tonight and am keeping it.** The tempting argument is that CPI lands Aug 12, so all the information arrives Wednesday and the extra two days are pure price risk. That argument is *not wrong* — and I am rejecting it anyway, for a reason I want on the record:
+
+> **My Day-29 rule says, by name: "Do not buy early. Do not buy on a green day before Aug 14." Today gold closed green. Advancing the date tonight would be the single action my own rule prohibits most explicitly, taken on the exact day it prohibits it.** If the date deserves revisiting, the honest time is a flat-or-down gold day *after* CPI — not the top of an 8% run.
+
+**The cost of this discipline, quantified so I cannot pretend it is free:** on a ~$15 ticket, a 1.5% higher entry costs **$0.22 — about 0.25% of book.** The integrity of a rule I have leaned on twice in four sessions is worth more than twenty-two cents. **And the design is better than I realised when I wrote it: Aug 14 is two sessions *after* the binding CPI event.** A gold position that holds $384.32 *through a CPI print* is confirmed by a far stronger test than two quiet calendar days. That was luck when I wrote it on Aug 6; it is the reason to keep it now.
+
+### 📊 Benchmark: the gap narrowed, and this was the best relative day of the journal
+
+| | Day 1 | Friday | **Today** |
+|---|---|---|---|
+| S&P 500 | 7,440 | 7,757.64 | **≈7,757 (flat)** |
+| Index since Day 1 | — | +4.27% | **+4.26%** |
+| Account | $86.65 | $85.95 (-0.81%) | **$86.42 (-0.27%)** |
+| **Gap** | — | **5.08 pts** | **4.53 pts — narrowed 0.55** |
+
+**On the day: account +0.547% vs. index -0.01%. Outperformed by ~0.56 points — the widest positive daily spread in 30 sessions.** Mechanism, decomposed: MSFT +1.20% × 35.2% weight = **+0.42pp**; VOO flat × 41.2% = **0.00pp**; cash 23.7% = **0.00pp**. On a flat index day, cash costs nothing and stock selection is the entire result.
+
+**The uncomfortable symmetry with Friday:** Friday I underperformed by 0.38 points *because* half the book sat in a stock that closed unchanged. Today I outperformed by 0.56 points *because* a third of the book sat in the only megacap that rose. **Same portfolio, same weights, opposite outcome, two sessions apart.** Neither day tells me whether the trim was right. Both are noise pretending to be evidence, and I would be doing myself a disservice to bank the good one and discount the bad one.
+
+### The magnitude test went live and is nowhere near firing
+
+The pre-registered replacement (Day 28, live from Aug 11): *trim further if cumulative MSFT-vs-VOO is worse than -5.0 points over any trailing 10 sessions.*
+
+Trailing 10 sessions (Jul 28 → Aug 10), summed daily relative: **+23.0 points in MSFT's favour.** Stripping out the Jul 30 earnings gap (+13.84) still leaves **+9.2**. The test is not close to triggering in either direction, which is what a well-specified test should look like when nothing is wrong — **unlike the count-based test it replaced, which fired while cumulative relative performance was positive.**
+
+### The honest bear case on tonight's inaction
+
+- **"No trade because I have $6.88" is not analysis, it is a cash-account settlement rule.** I want to be clear that tonight required no courage. The genuinely interesting question — whether the NVDA financing news should reduce my AI exposure further — I did not have to answer, because I could not act either way. **I will have $20.47 settled tomorrow and no excuse.**
+- **I have now watched gold go up eight percent, in writing, without owning it.** Third session in a row I have logged the right idea and no position. The rule-integrity defence above is genuine. It is also, at some point, indistinguishable from analysis that does not pay.
+- **My finding of the night is bearish for the complex, and I did not reduce exposure to it.** MSFT is 35.2% of the book and the disintermediation pathway I just described attacks it. The counter — the $250B contracted commitment, Maia 300 margins, and the fact that MSFT is the *self-funding* side of the axis the news just validated — is real. But I should name plainly that I found a bear datapoint and held.
+- **Two positions, one macro.** VOO and MSFT both want the dovish path; the pending GLD trade wants hike odds low. **A hot CPI Wednesday hurts all three at once.** That is not diversification, it is one bet in three wrappers. At $86 with a $10 minimum ticket I cannot fix it, but I should not describe it as a portfolio.
+- **NVDA is 5-for-5 as a read I refused to size, and today it finally went *down* 2.86%** — the first session where not owning it helped. One session of vindication against five of cost is not a scoreboard I get to claim.
+
+### Pre-committed triggers for Tuesday Aug 11 and CPI week — written in advance
+
+- **💵 $13.59 settles Tuesday → $20.47 buying power. It is spoken for.** No discretionary deployment before **Aug 14** except by a rule already written below. Having cash is not a reason to spend it.
+- **🔒 GLD: decision Friday Aug 14 on the close.** Conditions: **every** close Aug 5→Aug 14 above **$384.32** (4-for-4) **AND** September hike odds **below 65%** (~40%). Size: **15–20% of book, $13–17, minimum $10.** **Falsifier: any single close below $384.32 kills the idea outright** and I do not revisit until gold makes a higher high. **Do not buy early. Do not advance the date on a green gold day.**
+- **⚠️ CPI Wednesday Aug 12, 8:30am ET.** Consensus headline +0.1% / 3.4% y/y, core +0.32% / 2.5% y/y. **Pre-registered: (i) a hot core print that pushes September hike odds back above 65% kills the GLD trade on condition (b) — no "but gold is an inflation hedge" retrofit; (ii) I will place NO trade on the print itself, in either direction, on Aug 12.** Reacting same-day to a macro release is the churn that is 100% of my underperformance.
+- **📌 Do not read a soft July CPI as inflation being resolved.** Today's +6.7% oil move lands in **August** CPI (September release). The July print is a stale month with respect to the largest macro event of this week.
+- **MSFT — unchanged in every particular.** Full exit on a close below **$432.44**. Reassess hard, do not auto-sell, below **$449.33**. **Adds RETIRED at any price — Maia 300 does not reopen it** (margin datapoint; the trim was about concentration and demand breadth, and tonight's NVDA news made demand breadth *worse*). **No further trim below 35%** except by stop or by the magnitude test.
+- **Magnitude test LIVE:** trim further if trailing-10-session cumulative MSFT-vs-VOO is worse than **-5.0 points**. Current: **+23.0**. Checked nightly.
+- **$525 trim rule: still SUSPENDED.** Reactivates only if MSFT's weight returns above **45%** by appreciation. Today: 35.2%.
+- **VOO: cut if it closes below $664.** Unchanged, unconditional.
+- **🚫 Memory/storage ban — fifth consecutive session.** Today WDC +0.91% but MU -1.82% on a SOXX -2.50% tape, with no beat-and-raise anywhere in the cohort. One green name is not the condition. **Ban lifts only on a green session *following* a beat-and-raise in the cohort. AMAT (Aug 13) is the cleanest upcoming test.**
+- **🚫 Iran / oil: no trade in any direction — eighth consecutive session.** Today's spike prices Iran's negotiating demands *inside* a converging deal process (Oman interim deal, 30-day mine-clearing). Both tails are headline-driven. I have paid for this lesson twice.
+- **NVDA: no position. Bar unchanged — its own print, Aug 26 AMC.** 🆕 **New falsification test added tonight: if the Aug 26 print or filings show receivables, customer prepayments, or vendor-financing exposure growing materially faster than revenue, that confirms tonight's read and the bar moves from "wait" to "avoid."** Also carries the AppLovin rate-of-improvement test from Day 28.
+- **🆕 TRIPWIRE — AI credit migration.** If AI capex is increasingly funded by insurance and private credit rather than corporate cash flow, an AI demand disappointment becomes a **credit** event, not just an equity drawdown. **Watch: IG/HY spreads, BDC and private-credit proxies, XLF.** First sign this is being priced is a regime change for everything I own, and it is a *reason to hold less AI*, never a reason to buy the dip in it. **Not a trade tonight — a standing observation post.**
+- **No new position on a thesis whose confirmation test is shorter than 10 sessions.** Unchanged. Does not bind index allocations.
+- **Calendar**: **SMCI + CRWV Aug 11**, **July CPI Aug 12 8:30am**, **CSCO Aug 12**, COHR Aug 12 (photonics — read-through from today's -12%), **AMAT Aug 13** (the memory/storage ban's test), **GLD decision Aug 14**, **NVDA Aug 26 AMC**.
+
+### Housekeeping
+- **Orders**: none placed tonight. Friday's two both filled at the open with favourable slippage (detailed above). **No open orders.**
+- **cftc.gov and insiderfinance.io: still 403 at the proxy layer, sixth consecutive session.** *Standing request to the user: both listed resources need credentialed access or a substitute (CME QuikStrike for COT; any open-endpoint dealer-gamma provider).* Positioning reads tonight came from hedge-fund crowding commentary (AI named the most crowded factor globally; a concentrated fund forced into deep-discount liquidation on Aug 4) rather than from COT — a weaker substitute, stated as such.
+- **finance.yahoo.com and thestreet.com are now also blocked by the egress proxy**, on top of the two above. Index levels tonight are **derived from the broker feed**, not quoted from a live blog.
+- **Data provenance**: all position, order, quote, OHLC and realized-P&L data is from the broker feed and is firm. Index level, Fed-odds, CPI consensus and the NVDA/Maia headlines are from news summaries. **One conflict noted and resolved in favour of the broker feed:** a search source reported the S&P +0.11% at 7,766 while VOO closed -0.0099% and two other outlets headlined a down session.
+- **Capital constraint, fourth consecutive session — and tonight it was *binding*, not rhetorical.** Buying power of **$6.88** sat below my own $10 minimum ticket, so tonight's "no trade" was partly forced. **A useful account size remains $2,000–$5,000.**
+- **Branch hygiene**: working branch merged to `main` and auto-deleted after this run. The **21 pre-existing orphaned branches from Days 1–23 still require manual deletion by the user** — verified safe on Day 29 (20 are strict ancestors of `main`; the 21st, `claude/keen-shannon-czlx6j`, is a duplicate of content already restored into `main`). `git push origin --delete` remains 403 at the proxy and the GitHub MCP server exposes no delete-ref tool, so this cannot be fixed from here. One command clears all 21:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
