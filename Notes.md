@@ -2215,3 +2215,211 @@ Trailing 10 sessions (Jul 28 → Aug 10), summed daily relative: **+23.0 points 
   git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
     | grep -v '^main$' | xargs git push origin --delete
   ```
+
+---
+
+## 2026-08-11 (Tuesday) — Day 31: **No trade.** Cash settled and I still did not spend it — because it is contractually spoken for, not because I flinched. The night's real finding is a **number in Microsoft's own 10-K that I had not seen: $6.0B of accounts receivable from OpenAI, plus $11.9B of funded equity into the same counterparty.** That is ~$17.9B of balance-sheet exposure to the entity that is 70% of MSFT's AI revenue and ~45% of its backlog. Meanwhile Alphabet fell **-3.84%** after issuing **$25B of debt** to fund capex, and hyperscaler CDS hit **the widest since 2018** — while CoreWeave was rewarded **+16% after hours** for a debt-funded backlog. **The equity market is paying for AI backlog while the credit market is charging for AI leverage. Both cannot be right.**
+
+### Account state (Robinhood "Agentic" account #479068710, cash account) — as of the 4:00pm ET close
+
+- Total account value: **$86.16** (from $86.42). Cash: **$20.47**. Equity: **$65.69**. **Buying power: $20.47** — the $13.59 trim proceeds settled T+1 exactly as projected. Unsettled funds: **$0**.
+- **Positions**:
+  - **VOO** 0.050047 sh — avg $699.34, close **$708.245**, value **$35.45**, **+$0.45 / +1.27%** (**41.1%** of book)
+  - **MSFT** 0.060042 sh — avg $463.84, close **$503.775**, value **$30.25**, **+$2.40 / +8.61%** (**35.1%** of book)
+  - Cash: **23.8%** of book
+- No open orders. No orders placed today.
+
+**Settlement projection check: I wrote "$20.47 settled tomorrow" last night. Buying power today is $20.47.** Second consecutive session the mechanical forecast landed exactly. The mechanical parts of this journal are reliable; it is the judgment parts that need the audit.
+
+### 🔴 Finding of the night: Microsoft's OpenAI exposure now has a balance-sheet number attached, and I found it in the 10-K rather than in a headline
+
+Friday (Day 29) I found that ~70% of MSFT's AI revenue and ~45% of its $625B commercial backlog is OpenAI. That was a *revenue-concentration* fact. Tonight the FY26 10-K related-party disclosure puts **capital** behind it:
+
+| Disclosure (MSFT FY26 10-K, as of Jun 30 2026) | Amount |
+|---|---|
+| Revenue from commercial arrangements with OpenAI (incl. rev-share) | **$24.1B** |
+| **Accounts receivable from OpenAI** | **$6.0B** |
+| Total funding commitment to OpenAI | $13.0B |
+| **Of which funded** | **$11.9B** |
+| **Total balance-sheet exposure to one counterparty** | **≈$17.9B** |
+
+**Why this matters and where I must not overclaim.** $6.0B AR on $24.1B of annual revenue is ~91 days outstanding. Microsoft's company-wide DSO runs roughly 80–90 days, **so the ratio itself is not an anomaly and I am not going to pretend it is one.** What is not ordinary is the *combination*: Microsoft is simultaneously this counterparty's **largest vendor** ($6.0B owed to it), its **equity holder** ($11.9B funded), and the recipient of its **rev-share**. If OpenAI's funding environment tightens, all three exposures impair at once and the $250B contracted Azure commitment I have been leaning on becomes a claim on a stressed payer rather than a guaranteed revenue stream.
+
+**This is the *same shape* as the thing I marked NVDA down for on Day 30.** Nvidia arranging $500B of third-party credit so customers can buy GPUs, and Microsoft carrying $17.9B of exposure to the customer that is 45% of its backlog, are two instances of one pattern: **the seller is funding the buyer.** I penalised Nvidia for it in writing yesterday. Intellectual honesty requires me to apply the same lens to what I own.
+
+> **The pre-registered NVDA test I wrote last night — "if receivables, customer prepayments, or vendor-financing exposure grow materially faster than revenue, the bar moves from *wait* to *avoid*" — should apply to Microsoft too. Tonight I am extending it, symmetrically, and putting a date on it.** See pre-commitments.
+
+**What tonight does NOT do:** it does not fire a trim. My Day-30 rule reads *"no further trim below 35% except by stop or by the magnitude test,"* and the magnitude test is at **+22.1 points** in MSFT's favour. A rule that binds only when I feel like it is not a rule, and this is a *disclosure I had not read*, not a *deterioration I just observed* — the $6.0B was true on July 29 when I bought and I simply did not look. **Discovering my own blind spot is a reason to write a test, not a reason to trade at 5pm.**
+
+### 📉 Alphabet -3.84%: the Day-17 exit thesis vindicated a fourth time, now with a bond deal attached
+
+GOOGL closed **$343.79 from $357.52, -3.84%** — the single largest megacap decline on the tape. Four drivers, and they stack:
+
+1. **2026 capex guidance raised to $195–205B**, with quarterly capex doubling y/y to $44.9B.
+2. **Free cash flow negative** — the exact metric whose collapse (21% → 9.2% FCF margin) fired my pre-committed GOOGL exit on **Day 17, July 22**.
+3. **A $25B senior notes offering closed August 10**, maturities out to 2066, explicitly to fund data-centre buildout.
+4. **DeepMind leadership exodus** — Demis Hassabis stepping down as DeepMind CEO (staying chairman), Jeff Dean departing to found a new venture. Plus a French publisher antitrust complaint over AI Overviews.
+
+**I sold GOOGL at ~$300 on July 22 on the FCF/capex trigger.** It ran to $357 without me and I logged that cost honestly at the time. Today it gave back 3.84% on the *literal next chapter of the same story* — the company that could not fund capex from cash flow went to the bond market for $25B, and the equity was marked down for it. **The exit rule was right about the mechanism even during the stretch when it was wrong about the price.** That is the distinction worth keeping: a rule can be correct and unprofitable in the same window.
+
+**And it sharpens my spender-vs-supplier axis into something more useful.** Day 26 split the world into spenders and suppliers. Day 30 split the funding into self-funded and externally-funded. Tonight the axis that actually paid was **inside the spenders**:
+
+| | Funds capex from | Aug 11 |
+|---|---|---|
+| **Alphabet** | **$25B of new debt; FCF negative** | **-3.84%** |
+| **Microsoft** | operating cash flow; net margin expanding | **-0.45%** |
+| **Amazon** | debt + cash; FCF negative (Day 24 survey) | **-2.09%** |
+| **Meta** | debt + cash | +0.72% |
+
+**Three of four spenders fell; the two that fell hardest are the two whose free cash flow has gone negative.** The one I own is the one still self-funding. That is a reason to prefer MSFT *within* the complex. **It is not a reason to add — adds stay retired — and it is not a reason to hold more of the complex overall.**
+
+### ⚠️ The credit tripwire I opened yesterday has its first real data, and the picture is split
+
+Day 30 I opened a standing observation post: *"if AI capex migrates to insurance and private credit, an AI demand disappointment becomes a credit event."* Tonight:
+
+| Signal | Reading | Verdict |
+|---|---|---|
+| Hyperscaler 5y CDS **ex-Oracle** (MSFT/AMZN/GOOGL) | **~49bp — widest since at least 2018** | ⚠️ Elevated |
+| **Oracle** 5y CDS | ~75bp, 7-year high; **S&P cut ORCL to BBB-, one notch above junk** | 🔴 Stressed |
+| **NVDA** CDS | ~69bp — **now wider than Alphabet's** | ⚠️ Notable |
+| AI-related IG issuance 2026 | **$182B** from six names = ~15% of all US IG issuance; **~$489B** AI-related debt total (Goldman est.) | 🔴 Scale |
+| Moody's | "unprecedented" AI spend **threatens credit quality** at MSFT, AMZN, GOOGL, META, ORCL, **CRWV**; capex $785B in 2026 → ~$1T in 2027 | ⚠️ |
+| **HYG** (high yield) | **$79.50, +0.03%** | ✅ **Calm** |
+| **LQD** (IG) | **$106.00, +0.04%** | ✅ **Calm** |
+| **XLF** | $57.80, **-0.02%** | ✅ Calm |
+
+**Read, stated precisely so future-me can hold me to it: the credit stress is *idiosyncratic and issuer-specific*, not systemic.** Single-name CDS on AI borrowers is at multi-year wides. Broad IG and HY indices did not move a basis point today, and financials were flat. **The tripwire has NOT fired.** What has happened is that the market has started **discriminating** — pricing AI leverage per issuer while leaving the aggregate alone.
+
+**Caveat on provenance:** several of these CDS figures come from articles I could only reach through search summaries, and some are dated late July rather than today; the sources also disagree (one puts Oracle's 5y at ~75bp, another at ~215bp). **I am treating the direction as firm and the levels as approximate**, and the HYG/LQD/XLF prints — which are broker-firm — as the authoritative statement that nothing systemic has broken.
+
+### 🤔 The contradiction I have to sit with: CoreWeave +16% after hours on a debt-funded backlog
+
+CRWV closed **$90.32 (+2.4%)** and traded **$104.66 (+15.9%)** after hours on Q2 (figures as of ~5:10pm ET, early and liable to move):
+
+- Revenue **+112% y/y**; consensus ~$2.56B vs $1.21B a year ago
+- **Backlog $104B**, up from $99.4B at Mar 31 and $66.8B at end-2025; 1.5GW active power
+- **Net loss $626M**, widened from $290M
+- **2026 capex guide $31–35B**; **$35B of debt already on the balance sheet**
+
+SMCI also beat after hours (**~+8.6%**) on preliminary gross margin of 15–17% vs 8.2–8.4% guided, and **>$60B of new orders** in the quarter.
+
+**This directly contradicts the read I wrote last night.** Yesterday I said the market had begun pricing *demand quality* — that it marked NVDA down 2.86% because financing your own customers is an admission the customers cannot self-fund. Tonight the market paid **+16%** for a company whose entire backlog is financed by $35B of debt against a widening loss. **I do not get to keep only the half of the tape that agrees with me.**
+
+**The reconciliation I actually believe, rather than the one that saves my thesis:**
+
+> **Equity investors are underwriting AI *backlog*. Credit investors are underwriting AI *leverage*. They are looking at the same balance sheets and reaching opposite conclusions, and today both got paid — CRWV's equity up 16%, its lenders' CDS peers at 2018 wides.** That divergence is the single most informative thing on this page, and it tells me *where the first crack appears*: not in AI stock prices, which are still rewarding growth, but in **spreads, ratings and refinancing terms**. S&P cutting Oracle to BBB- is the loudest bell rung so far, and it rang in the credit market while the equity market was busy paying for CoreWeave's backlog.
+
+**Implication for me: keep watching HYG/LQD/XLF and single-name downgrades. Do not use "credit is worried" as a reason to short or avoid AI equity — that trade has been wrong all year. Use it as a ceiling on how much AI I am willing to own.** I own 35.1%. That is the ceiling, and today's evidence says do not raise it.
+
+### The tape (broker feed, firm — regular-session closes)
+
+| Up | | Down | |
+|---|---|---|---|
+| **USO** | **+1.33%** | **GOOGL** | **-3.84%** ⬅ my Day-17 exit |
+| **XLE** | **+1.23%** | **AMZN** | **-2.09%** |
+| **XLU** | **+1.12%** | **CSCO** | **-1.72%** (reports Aug 12) |
+| **AMD** | **+1.03%** | **AAPL** | **-1.09%** |
+| **SOXX** | **+0.94%** | **SLV** | **-1.47%** |
+| **MU** | **+0.86%** | **XLC** | **-0.51%** |
+| **META** | **+0.72%** | **MSFT** | **-0.45%** ⬅ my position |
+| **AMAT** | **+0.64%** (reports Aug 13) | **GLD** | **-0.39%** |
+| XLI +0.61%, IWM +0.34% | | **VOO** | **-0.34%** |
+| COHR +1.06%, TLT +0.16%, XLB +0.08% | | XLY -0.33%, XLP -0.29%, XLV -0.27%, QQQ -0.35%, XLK -0.10%, NVDA -0.03% |
+
+**S&P ≈ 7,731 (VOO-derived, -0.34%).** External sources reported 7,728.20 (-0.32%) and 7,734.77 (-0.24%); Dow -184pts to 53,791.85, Nasdaq -0.6%. **Broker feed governs, external prints bracket it — no material conflict tonight.**
+
+**Rotation read: this was a *quality-of-funding* session, not a risk-off session.** Semis rallied (SOXX +0.94%, AMD +1.03%, MU +0.86%) while the debt-funded spenders were sold (GOOGL -3.84%, AMZN -2.09%). Energy and utilities led. That is not "sell tech" — it is **sell the tech that has to borrow.** Exactly the axis I refined above, resolving in the tape on the same day I found it. Note the irony: the *supplier* side I have been sceptical of outperformed the *spender* side I own.
+
+### 📌 Housekeeping on a rule that just went live and a rule that just retired
+
+- **The count-based MSFT decay test is RETIRED** as of today, replaced per Day 28. It fired on Aug 7 while cumulative relative performance was **+23 points positive** — a test that triggers when nothing is wrong is a broken test, and I want the epitaph in writing.
+- **The magnitude test is LIVE and I ran it tonight.** Trailing 10 sessions (Jul 29 → Aug 11), summed daily MSFT-minus-VOO: **+22.1 points.** Stripping the Jul 30 earnings gap (+13.84): **+8.2 points.** Threshold is **-5.0**. **Not close, in either direction — which is what a well-specified test looks like when nothing is wrong.**
+- Today's relative: MSFT -0.4515% vs VOO -0.3384% = **-0.11 points.** Noise.
+
+### 🥇 GLD: 5-for-5, first down day of the run, and a flaw I found in my own condition
+
+| Date | GLD close | Above $384.32? |
+|---|---|---|
+| Aug 5 | $389.64 | ✅ |
+| Aug 6 | $389.67 | ✅ |
+| Aug 7 | $398.47 | ✅ |
+| Aug 10 | $402.53 | ✅ |
+| **Aug 11** | **$400.98 (-0.39%)** | ✅ |
+
+Condition (a) **5-for-5, three sessions to run (Aug 12, 13, 14).** Condition (b) **September hike odds ~50% — below the 65% threshold, but up from ~40% Monday and ~33% a week ago.** Sources disagree (Polymarket ~42% for a September first-hike, CME-derived reads clustering ~50%, one outlet ~55%); **~50% is my working number and the direction is adverse.**
+
+**🔍 And here is the flaw, which I would rather find myself than have the market find for me.** My condition (b) says buy gold if hike odds are *low*. But over the four sessions gold rose **8.3%**, hike odds went **33% → 50%**. **Gold rallied *into* rising hike odds.** So whatever is driving this move, **it is not dovish rate expectations** — it is more likely stagflation hedging, the Hormuz supply shock, or debasement/geopolitical demand. **My gate is measuring a variable that is not driving the asset.**
+
+Two honest consequences, and I am acting on neither tonight:
+
+1. **Condition (b) is probably the wrong filter.** But I am **not loosening it**, because loosening a gate while the trade is still pending is retrofitting, and every version of that I have done in this journal has cost me. It stays at <65%.
+2. **The flaw cuts *bullish*, and that makes it more dangerous, not less.** If gold rallies on stagflation, it is the genuine hedge against the "**one bet in three wrappers**" problem I named last night — VOO and MSFT both need the dovish path; a gold position that works when inflation runs hot is the only real diversification available to me at $86. That is an argument for the trade, arrived at from the risk side rather than the return side, and it is the strongest version of the case I have written yet.
+
+**Am I advancing the date? No.** My Day-30 test was explicit: *"if the date deserves revisiting, the honest time is a flat-or-down gold day **after** CPI."* Today is a down gold day, but it is **before** CPI. **The condition I wrote for revisiting is not met, so the date does not move.** Aug 14 stands, two sessions after the binding macro event, exactly as designed.
+
+### 🛢️ Oil — ninth consecutive no-trade session, but one fact changed category tonight
+
+Brent ~$88, WTI ~$82, holding a four-day gain. Talks are at an impasse: Trump answered Iran's Hormuz preconditions with counter-demands including compensation for war dead; Qatar says Oman–Iran talks are "at an advanced stage."
+
+**What is genuinely new is physical, not rhetorical:**
+
+| Metric | Latest | Prior |
+|---|---|---|
+| Vessels transiting Hormuz (Monday) | **6** | ~11 (10-day avg) |
+| Crude + product net exports through the Strait (wk to Aug 7) | **3.0 mbpd** | **4.4 mbpd** |
+
+**That is a ~32% week-over-week reduction in actual barrels moved, not a headline about barrels.** Every prior spike in this journal — Days 10, 13, 14, 20, 22, 30 — was a *narrative* move I twice traded and twice paid for. **A transit count is a different class of evidence.**
+
+**And I am still not buying it, for a reason that has nothing to do with the ban being a habit.** The impasse and the deal are still the same binary at different hours, XLE is already **+4.7% then +1.2%** into it, and buying a supply disruption *after* two green sessions and *into* an advanced negotiation is buying the wrong side of a coin flip at a marked-up price. **What I will do is convert a blanket ban into a specific condition** — see pre-commitments — because "I refuse to look at this sector" is not analysis either, and I have now written that sentence nine nights running.
+
+### 📊 Benchmark
+
+| | Day 1 | Yesterday | **Today** |
+|---|---|---|---|
+| S&P 500 | 7,440 | ≈7,757 | **≈7,731 (-0.34%)** |
+| Index since Day 1 | — | +4.26% | **+3.91%** |
+| Account | $86.65 | $86.42 (-0.27%) | **$86.16 (-0.56%)** |
+| **Gap** | — | **4.53 pts** | **4.47 pts — narrowed 0.06** |
+
+**On the day: account -0.298% vs index -0.338%. Outperformed by 0.04 points.** Decomposed: MSFT -0.4515% × 35.1% = **-0.159pp**; VOO -0.3384% × 41.1% = **-0.139pp**; cash 23.8% = **0.00pp**. **Total -0.298%.**
+
+**The entire outperformance came from holding cash on a down day** — stock selection was actually slightly negative (MSFT lagged VOO by 0.11 points). Two sessions ago cash cost me nothing on a flat tape; today it earned 0.08pp on a down tape; on Friday it cost me. **Three sessions, three different verdicts on the same 24% cash position. None of them is evidence.** The gap has narrowed three sessions running, from 5.08 → 4.53 → 4.47, and the honest attribution is: the index came down to me, I did not go up to it.
+
+### The honest bear case on tonight's inaction
+
+- **"The cash is spoken for" needs to survive arithmetic, so here it is.** Buying power $20.47. GLD sizing floor is 15% of an $86.16 book = **$12.92**. Deploying anything elsewhere at my **$10 minimum ticket** leaves **$10.47** for gold, which is **12.2% of book — below my own floor.** I cannot fund both. **The constraint is real and I can show the numbers, but I should be clear it is a constraint I authored three nights ago, not one the market imposed.**
+- **I found a materially bearish, previously-unread fact about my largest single-stock position and I did not reduce it.** $17.9B of MSFT exposure to one cash-burning counterparty. My defence — that the magnitude test governs and this is a discovery rather than a deterioration — is genuine, and it is also exactly the sentence someone talks themselves into. **The mitigation is that I put a dated, falsifiable test on it below rather than an intention.**
+- **I have now watched gold rise 8% over five sessions, in writing, without owning it — and tonight I found a *better* reason to own it than the one in my gate.** Fourth consecutive session of correct idea, no position. Rule integrity is worth something. It is not worth infinity, and I am tracking the tally.
+- **The one clean read I had — sell the debt-funded spenders — I could only express by not owning them.** GOOGL -3.84% and AMZN -2.09% were the day's big moves and I have no short, no put, and no cash to rotate. **At $86 with a $10 minimum ticket, most of my correct calls are unexpressible.** Third session I have written some version of this.
+- **CRWV +16% is a datapoint against my framework and I logged it as a "contradiction to sit with" rather than changing anything.** That is the standard move of someone protecting a thesis. The defence is that one after-hours print is not a regime; the honest concession is that I would have found the same print far more persuasive if it had gone the other way.
+
+### Pre-committed triggers for Wednesday Aug 12 (CPI) and the rest of the week — written in advance
+
+- **⚠️ CPI Wednesday Aug 12, 8:30am ET.** Consensus headline **+0.1% m/m / 3.4% y/y** (from 3.5%); core **+0.32% m/m / 2.5% y/y** (from 2.6%). **Pre-registered and unchanged: (i) a hot core print pushing September hike odds above 65% kills the GLD trade on condition (b), with no "gold is an inflation hedge" retrofit — even though tonight I argued that retrofit is probably *correct*; (ii) NO trade on the print itself, in either direction, on Aug 12.** Same-day macro reaction is the churn that Day 28 decomposed as 100% of my underperformance.
+- **📌 A soft July print does not resolve inflation.** July CPI measures July. The Hormuz supply shock and the +6.7%/+1.3% oil moves land in **August CPI, released September.** The market may misread Wednesday; I should not.
+- **🔒 GLD: decision Friday Aug 14 on the close. Date NOT advanced.** Conditions: **every** close Aug 5→Aug 14 above **$384.32** (5-for-5) **AND** September hike odds **below 65%** (~50%, deteriorating). Size **15–20% of book, $12.92–$17.23, minimum $10.** **Falsifier: any single close below $384.32 kills it outright**, no revisit until gold makes a higher high. **Do not advance the date except on a flat-or-down gold day AFTER Wednesday's CPI** — that window opens Thursday Aug 13.
+- **🆕 MSFT — OpenAI counterparty test, dated and falsifiable.** Standing exposure: **$6.0B AR + $11.9B funded equity ≈ $17.9B** against a counterparty that is ~70% of AI revenue and ~45% of backlog. **At MSFT's next quarterly filing (Q1 FY27, late October): if OpenAI accounts receivable grows faster than OpenAI revenue, or the funding commitment is raised above $13.0B, that is confirmation of the seller-financing pattern and moves MSFT from "hold at 35%" to "trim on the next relative-strength day."** Symmetric with the NVDA test written Day 30 — **I do not get to apply a standard to a stock I don't own and exempt the one I do.** Interim: any *news* of OpenAI raising emergency capital, missing a payment, or renegotiating the $250B Azure commitment is an immediate reassess, not a wait-for-the-10-Q.
+- **MSFT — all other terms unchanged.** Full exit below **$432.44** (today $503.78, 16.5% cushion). Reassess hard, do not auto-sell, below **$449.33** (12.1% cushion). **Adds RETIRED at any price** — Citi's $535→$700 target on Aug 10 does not reopen it; a sell-side target is not evidence. **No further trim below 35%** except by stop, the magnitude test, or the OpenAI test above.
+- **Magnitude test LIVE.** Trim further if trailing-10-session cumulative MSFT-vs-VOO is worse than **-5.0 points**. Tonight: **+22.1** (+8.2 ex-earnings-gap). Checked nightly.
+- **$525 trim rule: still SUSPENDED.** Reactivates only if MSFT weight exceeds **45%** by appreciation. Today 35.1%.
+- **VOO: cut below $664.** Unchanged, unconditional. Today $708.25, 6.7% cushion.
+- **🚫 Memory/storage ban — sixth session.** MU +0.86%, WDC -0.11%, SOXX +0.94% — a green tape with **no beat-and-raise in the cohort**, which is not the condition. **AMAT reports Thursday Aug 13 and is the cleanest test: the ban lifts only on a green session FOLLOWING a beat-and-raise.** If AMAT beats and raises and the cohort trades green on Friday, the ban lifts — but note that Friday is also the GLD decision and I can fund **one** of them, and **GLD has seniority as the earlier-written commitment.**
+- **🚫→🎯 Iran/oil: still no trade (ninth session), but the blanket ban converts to a condition.** Physical transit data (6 vessels vs 11; 3.0 vs 4.4 mbpd) is a better class of evidence than headlines. **New condition: I will consider energy only on a session where XLE closes DOWN or flat while Hormuz transit volumes remain below 4.0 mbpd — i.e. buy a real supply disruption on a red day, never a headline on a green one.** Both tails are still deal-driven and I have paid tuition on this trade twice.
+- **🔭 Credit tripwire — refined with tonight's data.** Idiosyncratic AI CDS is at 2018 wides (ex-Oracle ~49bp; ORCL cut to **BBB-**; NVDA CDS > GOOGL's) while **HYG +0.03% and LQD +0.04% say nothing systemic has broken.** **Escalation condition: the tripwire fires when the stress reaches an index — HYG down >1.5% in a session on no equity-index catalyst, or a second AI-complex issuer downgraded to BBB- or below.** On a fire: reduce AI exposure, do not buy the dip. **Standing ceiling: AI-complex exposure does not exceed today's 35.1%.**
+- **🆕 Watch the divergence itself.** Equity is paying for backlog (CRWV +16% AH on $104B backlog / $35B debt); credit is charging for leverage. **The resolution of that disagreement is the most important thing on my board, and it will show up in spreads and ratings before it shows up in stock prices.**
+- **NVDA: no position.** Bar unchanged — its own print, **Aug 26 AMC**. Day-30 vendor-financing test stands. **AppLovin update: APP -5% today, downgraded to Neutral at BofA on risk to the 30% long-term growth forecast** — the Day-28 rate-of-improvement read is trending the way I expected, still not a position.
+- **No new position on a thesis whose confirmation test is shorter than 10 sessions.** Unchanged. Does not bind index allocations.
+- **Calendar**: **July CPI Wed Aug 12 8:30am**, **CSCO Aug 12 AMC**, **AMAT Thu Aug 13** (memory-ban test), **GLD decision Fri Aug 14 on the close**, **NVDA Aug 26 AMC**, **MSFT Q1 FY27 ~late October** (OpenAI counterparty test).
+
+### Housekeeping
+
+- **Orders**: none placed, none open. Last fills were Monday's open (both Friday orders).
+- **Data provenance**: all position, order, quote and OHLC data is from the broker feed and is **firm**. Index level is **derived from VOO**, not quoted. Fed-odds, CPI consensus, CDS levels, the Alphabet/DeepMind/bond-offering items, the MSFT 10-K disclosures and the CRWV/SMCI after-hours figures are from search summaries. **After-hours prices (CRWV $104.66, SMCI $34.39) are early ~5:10pm ET prints and are liable to move materially by tomorrow's open.**
+- **Source conflicts noted:** (i) September hike odds range ~42%–55% across sources — using **~50%**; (ii) Oracle 5y CDS reported at both ~75bp and ~215bp — using the **direction**, not the level; (iii) GOOGL's decline reported as -1.5%, -3.61% and -3.84% — using the **broker's -3.84%**.
+- **Blocked domains, seventh consecutive session:** **cftc.gov** (COT — confirmed EGRESS_BLOCKED again tonight), **insiderfinance.io** (gamma exposure), **finance.yahoo.com**, **thestreet.com**, and now **neowin.net**. *Standing request to the user: the two listed resources need credentialed access or substitutes (CME QuikStrike for COT; any open-endpoint dealer-gamma provider).* **Tonight's positioning read therefore has no COT and no dealer-gamma input at all** — the credit/CDS data partially substitutes but is a different instrument, and I am stating that as a real gap rather than papering over it.
+- **Capital constraint, fifth consecutive session.** $20.47 of buying power against a $10 minimum ticket means I can fund **one** idea, and the GLD commitment has it. **A useful account size remains $2,000–$5,000.** The clearest cost tonight: I identified "sell the debt-funded spenders" as the day's correct trade and had no way to express it.
+- **Branch hygiene**: working branch merged to `main` and auto-deleted after this run. **The 21 pre-existing orphaned branches from Days 1–23 still require manual deletion by the user.** Re-tested tonight — `git push origin --delete` returns **HTTP 403** at the proxy (7th consecutive session) and the GitHub MCP server exposes no delete-ref tool, so this cannot be fixed from here. Verified safe on Day 29 (20 are strict ancestors of `main`; `claude/keen-shannon-czlx6j` duplicates content already in `main`). One command clears all 21:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
