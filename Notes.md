@@ -2650,3 +2650,199 @@ Cisco reported after the close: revenue **$17.3B**, adjusted EPS **$1.22 vs. $1.
   git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
     | grep -v '^main$' | xargs git push origin --delete
   ```
+
+---
+
+## 2026-08-13 (Thursday) — Day 33: **TRADE — the GLD advancement clause fired and I took it, one session early, into a -1.47% gold day.** $15.00 of GLD queued for Friday's open, taking cash from 23.8% to 6.4% of book. The night's real finding is that yesterday's alarm about the MSFT magnitude test was **over-dramatised by me, in writing, and today's arithmetic disproves it**: extending the flat-path projection past Tuesday shows the trough is **-2.40 on Aug 24**, not a march toward -5.0. Separately, **Applied Materials beat and raised enormously and fell 4.9% after hours** — the fourth beat-and-fade in a fortnight, and the one that breaks the explanation I invented for the first three.
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+
+| | Value | Weight |
+|---|---|---|
+| **VOO** 0.050047 sh @ $714.86 (avg cost $699.34) | **$35.78** | 41.6% |
+| **MSFT** 0.060042 sh @ $496.84 (avg cost $463.84) | **$29.83** | 34.7% |
+| Cash / buying power | **$20.47** | 23.8% |
+| **Total** | **$86.07** | |
+
+**Post-fill (Friday open), if GLD fills near $399.53:** VOO 41.6% / MSFT 34.7% / **GLD ~17.4%** / cash **~6.4%**.
+
+Unrealised: MSFT **+$1.98 (+7.1%)**, VOO **+$0.78 (+2.2%)**. Both live positions are profitable. **The -0.67% since Day 1 is almost entirely the pre-journal QCOM round trip (-$3.28) plus the JETS exit — not the current book.** Worth stating plainly because I have spent several nights writing as though the open positions were the problem. They are not. **Cash and history are.**
+
+---
+
+### 🥇 THE TRADE: $15.00 GLD, market, queued for Friday's open
+
+**Order `6a7e362e`: BUY 0.037540 sh GLD, dollar-based $15.00, market, regular hours, GFD, state `queued`.** Placed 5:25pm ET, after the close, so it executes at **Friday Aug 14's open**, not tonight. Quote at review — *Bid $399.00 × 400 P · Ask $399.59 × 200 K · Last $399.53 × 52. Updated 5:24 PM ET.*
+
+**Why tonight and not tomorrow, in the exact words I wrote in advance:** *"Advancing to Thursday is permitted **only** on a flat-or-down gold day — that window is now open."* GLD closed **$398.96, -1.47%**. That is the condition, delivered on the first session the clause existed. Waiting would have been renegotiating a rule after it fired, which is the precise failure mode I have criticised myself for on Days 25, 28 and 32.
+
+**Both gates, verified from broker OHLC:**
+
+| Gate | Requirement | Reading | |
+|---|---|---|---|
+| (a) Consecutive closes above **$384.32** | Aug 5 → Aug 14 | **7-for-7** — $389.64, $389.67, $398.47, $402.54, $400.96, $404.92, **$398.96** | ✅ |
+| (b) September hike odds | **< 65%** | **~33–40%** (sources conflict; both sides of the range pass by a wide margin) | ✅ |
+| Sizing | 15–20% of book = $12.91–$17.21 | **$15.00 = 17.4%** | ✅ |
+| Funding | ≥ $10 minimum ticket | $20.47 available | ✅ |
+
+**Falsifier, unchanged and unconditional: any single close below $384.32 kills the position outright.** From $398.96 that is a **-3.7% stop**, capping the loss on a $15 ticket at about **$0.55**.
+
+**The honest problem with my own gate, which I am not going to bury under the fact that it passed.** I documented on Day 31 that gold had rallied 8% *into rising* hike odds, and on Day 32 that odds fell and gold rose. **Tonight odds fell again — PPI flat, claims at an eight-week high, both dovish — and gold fell 1.47%.** That is now three observations in three nights, in three different combinations, and none of them shows the relationship my gate assumes. **Gate (b) is measuring a variable that is demonstrably not driving the asset.** I used it anyway because it was written down and because it is non-binding at 33–40% vs. a 65% threshold — but a non-binding gate that is also uninformative is decoration, and I should stop pretending it is risk control. **The real reason I own gold is the one that survives: VOO and MSFT are the same bet in two wrappers, and at this account size GLD is the only diversifier I can actually buy.**
+
+**The bear case on this fill, stated before I know the outcome:** I am buying an asset that ran **+8.2% in six sessions to a record** and has now had its first meaningful down day. "Buying the pullback in an uptrend" and "catching the first knife of a blow-off unwind" produce identical charts on day one. **Condition (a) was designed to filter a failing breakout; it is worthless against a top.** Silver fell harder than gold today (**SLV -1.52%** vs. GLD -1.47%), which is a mild tell that this was precious-metals de-risking rather than a rotation *into* the safe asset. My defence is the size ($15, capped downside ~$0.55) and the defined stop — not conviction that today's low holds.
+
+**What this trade actually buys me, mechanically:** cash goes **23.8% → 6.4%**. Tonight the cash position cost me **0.158pp** of relative performance — the largest single-session cash drag in this journal. That is the recurring, compounding leak, and it is now mostly closed.
+
+---
+
+### 🔴 The MSFT magnitude test: I ran it, and I owe myself a correction
+
+**Trailing 10 sessions (Jul 31 → Aug 13), summed daily MSFT-minus-VOO, computed from broker daily bars:**
+
+| Session | MSFT % | VOO % | Relative |
+|---|---|---|---|
+| Jul 31 | +3.019 | +0.713 | **+2.307** |
+| Aug 3 | +4.934 | +1.420 | **+3.514** |
+| Aug 4 | +1.058 | +1.806 | -0.748 |
+| Aug 5 | -1.086 | -0.195 | -0.891 |
+| Aug 6 | +2.543 | -0.170 | **+2.713** |
+| Aug 7 | +0.026 | +0.610 | -0.584 |
+| Aug 10 | +1.214 | -0.008 | +1.223 |
+| Aug 11 | -0.445 | -0.314 | -0.131 |
+| Aug 12 | -2.259 | +0.247 | **-2.506** |
+| **Aug 13** | **+0.896** | **+0.660** | **+0.235** |
+| | | **SUM** | **+5.13** |
+
+**Threshold -5.0. NOT FIRED. Not close.** The Jul-30 earnings gap (+13.84) has now rolled fully out of the window, so **this is the clean, gap-free number I said last night I wanted to see, and it is +5.13.**
+
+**Now the correction.** Last night I published a projection stopping at "-0.92 Tuesday" and framed the whole session around the test going *live-fire*. Tonight I extended the same flat-path arithmetic all the way out, which I should have done the first time:
+
+| Roll-off date | Sum if MSFT-vs-VOO is flat |
+|---|---|
+| Aug 14 | +2.83 |
+| Aug 17 | **-0.69** |
+| Aug 18 | +0.06 |
+| Aug 19 | +0.95 |
+| Aug 20 | -1.76 |
+| Aug 21 | -1.18 |
+| **Aug 24** | **-2.40 ← flat-path trough** |
+| Aug 25 | -2.27 |
+| Aug 26 | +0.24 |
+
+**On a perfectly flat path the test never fires. The worst it reaches is -2.40, and then it recovers.** For the trim to trigger, MSFT must genuinely underperform VOO by roughly **2.6 points beyond flat** over the next fortnight — i.e. an actual deterioration, which is exactly what the test was built to detect. **The roll-off makes the number fall; it does not make the number fire.** Yesterday's framing conflated those two things and I wrote three paragraphs of pre-emptive stoicism about a trim that the arithmetic never supported. Recording the mistake, because a journal that only catalogues the market's errors and not mine is worthless.
+
+**MSFT terms tonight, all unchanged:** full exit below **$432.44** (today $496.84, **12.9%** cushion — rebuilt from 12.2%). Reassess hard, do not auto-sell, below **$449.33** (**9.6%** cushion, from 8.7%). **Adds RETIRED at any price** — JPMorgan raising its target $550 → $625 today does not reopen it; a sell-side target is not evidence, and I said the same thing about Citi's $700 on Day 31. **No further trim below 35%** except by stop, the magnitude test, or the OpenAI counterparty test. **$525 trim rule still SUSPENDED** (reactivates only above 45% weight; today 34.7%).
+
+---
+
+### ⚡ AMAT: the biggest beat-and-raise of the cycle, sold 4.9% after hours — and it kills my Day-32 explanation
+
+| | Reported | Consensus |
+|---|---|---|
+| Q3 revenue | **$9.12B (+24.8% y/y)** | ~$9.04B |
+| Q3 non-GAAP EPS | **$3.50 (+41% y/y)**, a record | $3.38 |
+| **Q4 revenue guide** | **$10.25B** | sequential *acceleration* |
+| **Q4 EPS guide** | **$3.82–4.22** | $3.69 |
+
+**Broker feed: AMAT closed $535.54 (-2.30%) and last printed $509.24 at 5:21pm ET — a -4.91% after-hours fade on a beat and a raise that guides Q4 revenue up 12% sequentially.**
+
+**Last night I proposed that "the market is paying for AI *acceleration* and fading AI *maturity*" to reconcile CRWV +19% against CSCO's beat-and-fade. Tonight's print is unambiguously acceleration and it was faded anyway. My rule is 24 hours old and already falsified.** I am striking it rather than adding an epicycle.
+
+**What I think is actually happening, offered as a weaker and more honest claim:** AMAT is **+108% YTD** and has beaten EPS in **five consecutive quarters with an average earnings-day reaction of -2.18%**. Free cash flow has missed in **four of the last five** quarters. That is not a market rejecting the fundamentals — it is a **crowded, richly-positioned name where the good news was pre-bought and the cash conversion keeps disappointing.** Positioning, not thesis. Which is precisely the read that **COT and dealer-gamma data exist to confirm, and which I have now been unable to access for nine consecutive sessions.**
+
+**Memory/storage ban — the designed test resolved, and the binding constraint was not the one I expected.** The ban lifts only on *a green cohort session following an AMAT beat-and-raise*. The beat-and-raise arrived. Friday's cohort session would be the trigger. **But my standing rule is "AI-complex exposure does not exceed 35%," and MSFT alone is 34.7%.** Adding semis would breach the ceiling regardless of cash. On Day 32 I recorded the funding conflict and gave GLD seniority; tonight the *ceiling*, not the funding, is what actually blocks the trade. **Ban stands. It is now structural rather than tactical, and I should stop re-litigating it nightly.**
+
+---
+
+### 📊 The tape (broker feed, firm — regular-session closes)
+
+**S&P 500 closed at a record 7,798.99, +0.65%**, above 7,800 intraday for the first time. **Nasdaq-100 30,084.50. VIX 14.63.**
+
+| Up | | Down | |
+|---|---|---|---|
+| **MU** | **+4.24%** | **AMAT** | **-2.30%** (**-4.91% AH**) |
+| **META** | **+2.74%** | **USO** | **-1.77%** |
+| **QQQ** | **+1.16%** | **SLV** | **-1.52%** |
+| **MSFT** | **+0.90%** ⬅ my position | **GLD** | **-1.47%** ⬅ my buy |
+| **GOOGL** | **+0.84%** | **AMZN** | **-0.79%** |
+| **SOXX** | **+0.74%** | | |
+| **VOO +0.66%, TLT +0.57%, NVDA +0.58%, XLF +0.56%, AVGO +0.43%, LQD +0.40%, IWM +0.26%, HYG +0.21%, XLE +0.02%** | | | |
+
+**Rotation read: a broad, dovish-data melt-up into a record close, with the safe assets sold.** Bonds *and* stocks up, gold *and* silver down, VIX at **14.63** — the lowest reading in this journal. That combination is a market pricing a soft landing with conviction. **It is also complacency into an unresolved oil supply shock, and VIX at 14.6 is the cheapest that insurance has been all cycle.** I have no position that expresses this and I am not inventing one at $5.47 of residual cash; recording it as the observation that most deserves to be wrong about me.
+
+### 🧊 Macro: two soft prints, one hawkish institutional shift
+
+- **PPI final demand: unchanged m/m** vs. +0.2% expected. Final demand **goods -0.7%**; services +0.2%; construction +2.2%. **But y/y +4.7%** — the annual number is still hot, and I am not going to let a soft month erase that.
+- **Initial claims 209,000**, up 9,000, an **eight-week high**; continuing claims still climbing. Four-week average 199,000 — healthy in level, deteriorating in direction.
+- **September hike odds ~33–40%**, down from ~50% a day earlier. **Counterweight I am deliberately logging: J.P. Morgan Wealth Management moved its base case TO a 25bp September hike**, citing Iran-linked energy costs and doubt about the Fed's willingness to hold the line after July. **Market pricing got more dovish today while at least one major house got more hawkish.** FOMC is **Sept 15–16** with a fresh dot plot.
+- **August CPI remains the print that matters** (released September) — it is the one that contains the Hormuz oil shock. Unchanged from Day 32.
+
+### 🛢️ Oil: leg one met for a second straight night, and now definitively unfundable
+
+| Leg | Reading | Met? |
+|---|---|---|
+| XLE close down-or-flat | **+0.02%** — flat to four decimal places, on a +0.65% tape | ✅ |
+| Hormuz throughput < 4.0 mbpd | Attacks on shipping dented reopening hopes; naval blockade expanding | ✅ |
+| ≥ $10 free buying power | **$5.47 post-GLD** | ❌ |
+
+Brent held **~$89–90**. Mixed signals: Pakistan's defence minister says Washington and Tehran are "close to some sort of arrangement" and Iran–Oman talks are advanced, while the administration moves toward **expanded sanctions and blockade enforcement**. Still a binary at different hours. **Condition re-arms automatically; it cannot be funded until new capital arrives.** Sixth session running where I identified a trade I could not express.
+
+### 🔭 Credit tripwire: not fired, tenth consecutive session
+
+| Signal | Aug 12 | **Aug 13** | |
+|---|---|---|---|
+| HYG | $79.61 | **$79.78, +0.21%** | ✅ Calm |
+| LQD | $106.12 | **$106.55, +0.40%** | ✅ Calm |
+| XLF | $57.92 | **$58.25, +0.56%** | ✅ Calm |
+| TLT | $82.11 | **$82.58, +0.57%** | ✅ Bid on soft data |
+
+Escalation condition (**HYG -1.5% on no equity catalyst**, or **a second AI issuer cut to BBB- or below**) did not fire. The credit-leads-equity framing I found so persuasive on Day 31 is now **0-for-3** as a predictor; I hold no position depending on it and I am formally **downgrading it from "most informative thing on my board" to a background monitor.**
+
+### 📊 Benchmark
+
+| | Day 1 | Yesterday | **Today** |
+|---|---|---|---|
+| S&P 500 | 7,440 | 7,747.7 | **7,798.99 (+0.65%)** |
+| Index since Day 1 | — | +4.13% | **+4.83%** |
+| Account | $86.65 | $85.58 | **$86.07 (+0.58%)** |
+| Account since Day 1 | — | -1.24% | **-0.67%** |
+| **Gap** | — | 5.37 pts | **5.50 pts — widened 0.08** |
+
+**Decomposition of the day:** MSFT 34.6% × (+0.896 − 0.660) = **+0.081pp**; VOO tracked the index; **cash 23.9% × +0.660% = -0.158pp**. Net **-0.077pp**. **MSFT's concentration helped tonight and the cash hurt more.** Two nights ago concentration cost 0.79pp and cash cost 0.06pp. **That is the trade-off in one sentence: the cash leaks a little every single up-day, the concentration costs a lot on a few. I have now fixed the first one and left the second in place deliberately, because the rule governing it says +5.13 against a -5.0 threshold.**
+
+### The honest bear case on tonight's trade
+
+- **I bought a record-high asset on its first down day and called the down day my entry signal.** The clause was written in advance, which makes it disciplined rather than reactive — but "the rule let me" is not the same as "the price was good." **If gold is topping, I bought the first lower high, and I will know within about a week.**
+- **I used a gate I have now documented three times as measuring the wrong variable.** Passing an uninformative test is not evidence. The trade rests on diversification logic and a -3.7% stop, and I should say so rather than dressing the gate up as confirmation.
+- **I have spent $15 of $20.47 and can no longer act on an oil condition that has now met its price-and-physicals legs two nights running.** I chose the earlier-written commitment over the live signal. That is the rule, and the rule may well be wrong — **a framework that always funds the older idea will systematically fund the staler one.** Flagging it as a design flaw to revisit, not tonight.
+- **AMAT beat and raised by a mile and fell 4.9%, and my honest read is that I do not know why, beyond positioning.** Nine sessions without COT or gamma data is exactly the hole that makes "positioning" an unfalsifiable answer.
+- **VIX at 14.63 into a record high with the Strait of Hormuz still disrupted is the cheapest tail insurance of this cycle, and I just spent my last dollars on gold instead.** Gold is a *correlated* hedge for that scenario, so this is not incoherent — but it is a weaker version of the trade, chosen because it was the one I had pre-committed to.
+
+### Pre-committed triggers for Friday Aug 14 — written in advance
+
+- **🟡 GLD order `6a7e362e` fills at Friday's open.** Verify the fill and the average price first thing. **If it fills, the falsifier is live immediately: any single close below $384.32 = sell the whole position, no discretion.** From $398.96 that is -3.7%. **No adds at any price** — 17.4% is the size, and a second gold ticket would need new capital and a new thesis, not enthusiasm.
+- **🔴 MSFT magnitude test.** Starting sum for Aug 14 is **+2.83** (rolls off Jul 31's +2.31). Threshold **-5.0**. **Flat-path trough is -2.40 on Aug 24 — the test cannot fire without genuine underperformance, and I have now published that arithmetic so I cannot dramatise the roll-off again.** On a fire: trim to 25% of book on the next session's close, no override.
+- **MSFT — all other terms unchanged.** Exit below **$432.44** (12.9% cushion). Reassess below **$449.33** (9.6%). **Adds RETIRED.** No trim below 35% except by stop, the magnitude test, or the OpenAI counterparty test (formal check Q1 FY27, ~late October; interim trigger = emergency raise, missed payment, or renegotiation of the $250B Azure commitment).
+- **Maia 300 remains a two-way tracked catalyst.** September unveil with credible TSMC capacity and per-token economics re-underwrites the position; a delay, capacity shortfall, or capex guide above ~$190B with no margin offset is an independent trim case.
+- **🚫 Memory/storage ban — now STRUCTURAL, not tactical.** AMAT's beat-and-raise satisfied the earnings leg, but **the 35% AI-complex ceiling blocks the trade regardless of cash** (MSFT alone 34.7%). **Stop re-testing this nightly.** It reopens only if the AI-complex weight falls materially below 35%, which today means only via an MSFT trim.
+- **🎯 Oil/energy: legs one and two met, leg three fails at $5.47.** Re-arms automatically. **Unfundable until new capital.**
+- **VOO: cut below $664.** Unchanged, unconditional. Today **$714.86**, **7.1%** cushion.
+- **🔭 Credit tripwire unchanged** (HYG -1.5% on no equity catalyst, or a second AI issuer to BBB- or below). **Downgraded to background monitor** after going 0-for-3 as a leading indicator. **Standing ceiling: AI-complex exposure ≤ 35%. Today 34.7%.**
+- **📌 The soft-print trap.** PPI flat and CPI core at 2.5% describe **July**. The oil shock lands in **August CPI, released September**. Two dovish months do not lower the bar for the third, and **J.P. Morgan moved TO a September hike today while the market moved away from one.**
+- **🆕 VIX 14.63 is a tracked extreme.** Lowest of this journal, into a record index and an unresolved supply shock. **No position, no trade — but if VIX prints below 13 while Hormuz is still disrupted, that is a specific, dated observation I want on the board.**
+- **NVDA: no position.** Bar unchanged — its own print, **Aug 26 AMC**. Day-30 vendor-financing test stands.
+- **No new position on a thesis whose confirmation test is shorter than 10 sessions.** Unchanged. Does not bind index allocations.
+- **Calendar**: **GLD fill Fri Aug 14 open**, **COT release Fri Aug 14 3:30pm** (inaccessible), **NVDA Aug 26 AMC**, **FOMC Sept 15–16 with dot plot**, **August CPI in September**, **MSFT Q1 FY27 ~late October**.
+
+### Housekeeping
+
+- **Orders**: **one placed** — GLD `6a7e362e`, $15.00 dollar-based market buy, **state `queued`** for Friday's open. Broker order query for Aug 10 onward returns this order and nothing else. No other open or pending orders.
+- **Data provenance**: all position, order, quote and OHLC data is from the broker feed and is **firm**; the magnitude-test table and the flat-path projection are computed from broker daily bars. **SPX 7,798.99, NDX 30,084.50 and VIX 14.63 are from the broker's index feed** — this is the first session I have used it rather than deriving the index from VOO, and it resolves a discrepancy that would otherwise have looked like a data error. AMAT's P&L lines, the PPI and claims figures, hike odds, the JPMorgan MSFT target and the Hormuz reporting are from search summaries.
+- **Source conflicts noted:** (i) a search summary dated the 7,798.99 close to **Aug 12**; the broker index feed timestamps it **Aug 13 16:35 ET** and is consistent with VOO's +0.66% — **using the broker.** (ii) September hike odds quoted at **~33%** (Day 32) and **~40%** (today); both pass gate (b) by a wide margin, so the conflict is immaterial and I did not resolve it. (iii) AMAT after-hours: broker shows **-4.91%**; search returned no live AH data — **using the broker.**
+- **Blocked domains, ninth consecutive session:** **cftc.gov** (COT) and **insiderfinance.io** (gamma exposure) remain unreachable at the proxy. **Tonight this cost something concrete for the first time: my best explanation for AMAT's -4.9% on a large beat-and-raise is "positioning," and positioning is exactly what those two feeds measure.** Standing request to the user: credentialed access, or an accepted substitute (CME QuikStrike for COT; any open-endpoint dealer-gamma provider).
+- **Capital constraint.** Post-fill buying power is **~$5.47**, below the $10 minimum ticket. **The account is now effectively fully invested and cannot act on any new signal until it is funded.** A useful size remains **$2,000–$5,000**.
+- **Branch hygiene**: working branch merged to `main` and auto-deleted after this run. The **21 pre-existing orphaned branches from Days 1–23 still require manual deletion by the user** — `git push origin --delete` returns HTTP 403 at the proxy and the GitHub MCP server exposes no delete-ref tool. Verified safe on Day 29. One command clears all 21:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
