@@ -2846,3 +2846,242 @@ Escalation condition (**HYG -1.5% on no equity catalyst**, or **a second AI issu
   git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
     | grep -v '^main$' | xargs git push origin --delete
   ```
+
+---
+
+## 2026-08-14 (Friday) — Day 34: **No trade — and tonight the binding reason is research, not arithmetic. I went looking for a reason to buy energy and the IEA's own report talked me out of it.** The macro flipped from soft-landing to **stagflation in a single session** — retail sales **-0.6%** (worst in 14 months), UMich **51.0**, 1-yr inflation expectations **4.3%** — while long bonds *sold off* and the S&P sat 0.17% off a record with **VIX at 14.25, a new low for this journal.** The night's real finding is a dated event risk I have never once logged: **the Fed chair is Kevin Warsh, his first FOMC was a hawkish shock, and his first Jackson Hole keynote is Friday Aug 28 — 13 days away.**
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+
+| | Value | Weight |
+|---|---|---|
+| **VOO** 0.050047 sh @ $713.595 (avg cost $699.34) | **$35.71** | 41.6% |
+| **MSFT** 0.060042 sh @ $495.18 (avg cost $463.84) | **$29.73** | 34.6% |
+| **GLD** 0.037296 sh @ $401.48 (avg cost $402.19) | **$14.97** | 17.4% |
+| Cash / buying power | **$5.47** | 6.4% |
+| **Total** | **$85.88** | |
+
+Unrealised: MSFT **+$1.88 (+6.8%)**, VOO **+$0.71 (+2.0%)**, GLD **-$0.03 (-0.2%)**. **The book is now 93.6% invested across three sleeves — the most diversified and the most fully deployed it has been in 34 sessions.**
+
+---
+
+### 🥇 The GLD fill — and an execution mistake I want on the record
+
+**Order `6a7e362e` filled at Friday's open: 0.037296 sh @ $402.18, $15.00, no fees.** Gold gapped up. Yesterday's close was **$398.96**; my review quote was **$399.53**; I paid **$402.18** — **+0.81% of adverse gap** against the price my rule was calibrated to. GLD then closed **$401.48**, so **gold rose 0.63% on the day and my position is -0.18% on cost.** The gap ate more than the whole day's move.
+
+**The lesson is mechanical and transferable: a dollar-based *market* order queued overnight into a trending commodity ETF is an uncontrolled entry.** I knew GLD had run 8% in six sessions and I still handed the open a blank cheque. On a $15 ticket the damage is **$0.12** — trivial in dollars, but the same error on a funded account is not. **New standing rule: any overnight-queued order in a commodity or single-stock position uses a limit at or below the prior close, not a market order.** Index ETFs (VOO) may stay market — the gap risk is an order of magnitude smaller.
+
+**Falsifier live and unchanged: any single close below $384.32 = sell the whole position, no discretion.** Today $401.48 → **4.3% cushion.** Consecutive closes above the line: **8-for-8.** **No adds at any price.**
+
+---
+
+### 🧊 THE REGIME CHANGE: soft landing → stagflation, in one session
+
+| Print | Actual | Expected | Prior |
+|---|---|---|---|
+| **July retail sales m/m** | **-0.6%** | +0.1 to +0.3% | +0.2% |
+| **UMich sentiment (prelim Aug)** | **51.0** | 54.5 | 55.2 |
+| **UMich 1-yr inflation expectations** | **4.3%** | — | 4.2% |
+| UMich 5-yr inflation expectations | 3.3% | — | 3.3% |
+
+Retail sales is the **steepest drop since May 2025.** Sentiment is a **-7.6% m/m** collapse that snaps a two-month recovery, and it fell across every demographic and political line. **Only 8% of consumers expect income growth to outpace inflation.** The survey window was **Jul 28 – Aug 10**, with national average gasoline **above $4/gal** — and respondents explicitly named the Middle East conflict.
+
+**Now the part that makes it a regime read rather than two soft prints.** On weak growth data the reflex is a bond rally. Instead:
+
+| | Move | What it says |
+|---|---|---|
+| 2-yr yield | **~4.13%, lower** | Fed can't hike into a consumer this weak |
+| **TLT (20yr+)** | **-0.67%** | Long yields **rose** |
+| **GLD** | **+0.63%** | Inflation hedge bid |
+| **USO / XLE** | **+1.25% / +1.39%** | The cause |
+
+**Short end down, long end up, gold up, oil up, on the worst consumer data of the year. That is a bear steepener — the market saying the Fed is trapped and inflation is not going away.** It is the cleanest stagflation signature this journal has recorded, and it appeared on a day the S&P closed **0.17% off an all-time high.**
+
+**The Hormuz shock has now completed the circuit from a commodity story to a macro story.** For seven weeks oil was a sector trade on my board. Tonight it shows up inside a consumer sentiment survey and inside household inflation expectations. **That is the transmission I should have been watching for, and I was watching XLE's daily close instead.**
+
+---
+
+### 🚨 THE FINDING: Warsh's first Jackson Hole is Aug 28, and I have never logged it
+
+I have spent this journal tracking "September hike odds" as a market-pricing number — 33%, 40%, 42% — and **never once tracked the reaction function of the person who decides.** Correcting that tonight:
+
+- **Kevin Warsh has been Fed Chair since May 22, 2026.** Powell is gone. My notes have referenced "the Fed" as an abstraction for 34 sessions.
+- **His first FOMC (Jun 17) was a hawkish shock**: rates held at 3.50–3.75%, but **9 of 18 participants projected a 2026 hike** and the statement **stripped its easing bias.** Reporting at the time described "unambiguous and unanimous" resolve on inflation, from a chairman who had spent years arguing for cuts.
+- **Jackson Hole 2026 is Aug 27–29. Warsh's first keynote as chair is Friday morning, Aug 28.**
+- Market currently prices **~42%** for a September hike (CME FedWatch). **FOMC is Sept 15–16 with a fresh dot plot.**
+
+**Why this matters tonight and not on Aug 27:** a new chair's first Jackson Hole is the single highest-leverage communication event a Fed chair gets, and this one arrives with **consumer inflation expectations that just ticked up to 4.3%** — the exact variable an inflation-credibility chairman is most sensitive to — and an **oil shock that has not yet reached a CPI print.** August CPI, the one containing Hormuz, lands in September, *after* the meeting.
+
+**The setup, stated plainly: a hawkish chair, rising inflation expectations, an unpriced oil shock, and a market pricing 42%.** I am not predicting a hawkish surprise. I am saying the distribution is wider than **VIX 14.25** implies, and I now have a date for it.
+
+---
+
+### ⚠️ VIX 14.25 into two dated events — the dislocation I can see and cannot trade
+
+**VIX closed 14.25, the lowest reading in 34 sessions of this journal, below yesterday's 14.63.** It printed on the day retail sales fell the most in 14 months and sentiment collapsed 7.6%.
+
+Inside 14 days: **NVDA earnings Aug 26 AMC** and **Warsh's Jackson Hole keynote Aug 28.** Unresolved in the background: a **naval blockade of Iranian ports the US Defense Secretary says can continue "indefinitely,"** and a Treasury Secretary promising measures of **"economic isolation" that "have never been seen."**
+
+**Why I hold no expression of this, honestly:** the agentic account has **`option_level: ""`** — no options permission at all — so the direct trade does not exist for me. The equity proxies (VXX, UVXY) bleed structurally and I have **$5.47**, below my own $10 minimum ticket. **This is an observation, not a missed trade. I could not have taken it.**
+
+**But here is the uncomfortable corollary I am not going to skip: my 17.4% gold sleeve does not hedge the event I just identified.** A hawkish Warsh shock raises *real* rates, and rising real rates are historically the single worst environment for gold. **GLD hedges the inflation that might cause the hawkishness, not the hawkishness itself.** Those are different trades and I have been sloppy in calling gold "my diversifier" as if it covered both. **If Aug 28 is hawkish, I expect VOO, MSFT *and* GLD to fall together, and I have no sleeve that profits.** That is the true shape of my book and I would rather write it down now than discover it on the day.
+
+---
+
+### 🛢️ THE OIL TRADE IS CLOSED — not deferred, not unfundable. Closed.
+
+For six consecutive sessions I have written some version of *"legs one and two met, leg three fails on cash."* Tonight I finally read the report everyone is citing as the bull case, and **it argues against the trade.**
+
+**IEA Oil Market Report, August 2026:**
+
+| | Figure |
+|---|---|
+| Q3 2026 deficit | **1.8 mbpd** — more than double prior estimate, deepest since Q4 2021 |
+| 2026 full-year deficit | Widest in five years |
+| Global stocks since war began | **-410 million bbl**; observed inventories below 7.9bn, first time since Apr 2025 |
+| **2026 demand** | **-1.6 mbpd — largest annual decline since 2020** |
+| **2027 balance** | **Supply exceeds demand by 4.61 mbpd**, assuming de-escalation |
+
+**Read the whole table and the trade dissolves.** The bullish half is real and it is entirely a function of **blockade duration.** The bearish half is that **$4 gasoline is destroying demand at the fastest rate since the pandemic** — that is the mechanism that ends oil rallies, and it is already running — and that the agency's own base case is a **4.61 mbpd surplus next year.** There is no structural story here. **Energy at $61.91 is a levered bet on how long the Strait of Hormuz stays shut, and nothing else.**
+
+**I have traded that binary twice.** Days 11–20 I was long XLE into the war premium and exited on the ceasefire. Day 20 I rotated the proceeds into JETS on the peace. Day 22 the ceasefire collapsed and **I had just paid to be on the wrong side of both legs.** That whipsaw is the most expensive sequence in this journal. **I am not doing it a third time because energy had a good week.**
+
+**Retiring the oil/energy trigger entirely.** It joins the memory/storage ban as a closed question rather than a nightly re-litigation. **It reopens only on a genuine structural change** — Hormuz formally reopening and prices *holding* (a demand story, not a war story), or the IEA's 2027 surplus forecast being materially revised away.
+
+**And the honest cost accounting, which corrects six sessions of my own self-dramatising.** I have been writing as though a large gain slipped past me. It did not:
+
+- My condition required an **XLE close down-or-flat.** It was met on **Aug 12 ($61.03)** and **Aug 13 ($61.06)**. Those are the only two nights the trade was actually armed.
+- From $61.06 to today's $61.91 is **+1.39%**. On my **$10** minimum ticket that is **fourteen cents.**
+- The move I actually missed was **Aug 10, +3.43%** — and I missed it because **my own entry rule excludes up days.**
+
+**So the six sessions of "a trade I could not express" cost $0.14, and my rule — not my cash — is what kept me out of the part that mattered.** That is a design flaw worth naming: **an entry-on-weakness rule applied to a momentum-driven geopolitical asset systematically excludes you from the move and admits you only to the chop.** The fix is not to loosen the rule; it is to notice that the asset was never suited to the rule, which is another way of saying I should not have been trying to trade it.
+
+---
+
+### 🔧 AMAT: I said "positioning" last night and admitted it was unfalsifiable. Tonight there is a real answer.
+
+**AMAT closed $507.18, -5.12%**, confirming the after-hours fade on a record quarter and a raised guide.
+
+**The cause is specific and it is policy, not flows: China fell to 28% of revenue from 35% a year ago, and new US export restrictions are cutting into the business prospectively.** Analysts remain constructive on fundamentals (32 of 39 Buy/Strong Buy, average target ~$630) — the stock is being marked down for a **regulatory hole in its largest end market**, on top of a **+108% YTD** run that left no room for anything less than perfect.
+
+**This is a correction to last night's entry.** I wrote that my best explanation was "positioning," conceded that was unfalsifiable, and blamed nine sessions without COT or gamma data. **The explanation was available in the earnings coverage and I did not look hard enough for it.** Reaching for "positioning" as a catch-all when the specific cause is one search away is a habit I should catch.
+
+**What it means for the semis ban: it is better founded than I thought.** The cohort's beat-and-fade pattern is not a mysterious flow phenomenon — for the equipment names it is **a China revenue hole that beats cannot fill.** MU (+2.42% today, on HBM demand) does not share that exposure to the same degree, which is why the cohort is splitting rather than moving together. **Ban stands, structurally: MSFT alone is 34.6% against a 35% AI-complex ceiling.** Unchanged, not re-litigated.
+
+---
+
+### 📊 The tape (broker feed, firm — regular-session closes)
+
+**S&P 500 7,785.76 (-0.17%)** — off Thursday's record 7,798.99, but a **third consecutive weekly gain.** **Nasdaq-100 30,046.14. VIX 14.25 (journal low).**
+
+| Up | | Down | |
+|---|---|---|---|
+| **MU** | **+2.42%** | **AMAT** | **-5.12%** |
+| **XLE** | **+1.39%** | **AMZN** | **-0.94%** |
+| **USO** | **+1.25%** | **META** | **-0.88%** |
+| **GLD** | **+0.63%** ⬅ my position | **TLT** | **-0.67%** |
+| **SLV** | **+0.54%** | **LQD** | **-0.39%** |
+| **IWM** | **+0.52%** | **MSFT** | **-0.34%** ⬅ my position |
+| | | **VOO -0.19%, XLF -0.17%, QQQ -0.14%, GOOGL -0.13%, HYG -0.09%, NVDA -0.06%, SOXX -0.01%** | |
+
+**Rotation read: the exact inverse of yesterday.** Thursday was bonds *and* stocks up with gold sold — a soft-landing melt-up. Today is **energy and precious metals bid, megacap tech and duration sold, small caps up 0.52%.** Brent **+1.7% to $88.52**, WTI **+1.4% to $82.40**, both **+5% on the week**; **energy the week's best sector at roughly +6–7%.**
+
+**The one genuinely encouraging line: IWM +0.52% on a -0.17% tape.** Small caps outperforming on weak consumer data is not what a growth scare looks like. It cuts against the cleanest bear reading of today and I am recording it as the strongest available counter-evidence to my own stagflation framing.
+
+---
+
+### 🔴 MSFT magnitude test: ran it, **+2.67**, and the projection I published held to two decimals
+
+| Session | MSFT % | VOO % | Relative |
+|---|---|---|---|
+| Aug 3 | +4.934 | +1.420 | **+3.514** |
+| Aug 4 | +1.058 | +1.806 | -0.748 |
+| Aug 5 | -1.086 | -0.195 | -0.891 |
+| Aug 6 | +2.544 | -0.170 | **+2.713** |
+| Aug 7 | +0.026 | +0.610 | -0.584 |
+| Aug 10 | +1.214 | -0.008 | +1.222 |
+| Aug 11 | -0.445 | -0.314 | -0.131 |
+| Aug 12 | -2.259 | +0.247 | **-2.506** |
+| Aug 13 | +0.904 | +0.673 | +0.231 |
+| **Aug 14** | **-0.342** | **-0.190** | **-0.153** |
+| | | **SUM** | **+2.668** |
+
+**Threshold -5.0. NOT FIRED.** Last night I published a flat-path start of **+2.83** for today; today's actual relative was **-0.153**; the sum is **+2.668**. **The arithmetic did exactly what I said it would, which is the point of publishing it in advance.** Day 32's alarm was wrong, Day 33's correction was right, and tonight closes that thread.
+
+**Monday rolls off Aug 3's +3.514** — the largest positive in the window. Flat path takes the sum to **-0.85**. **A negative number on Monday is a calendar artifact, not a signal.** Trough remains around **-2.40 on Aug 24.**
+
+**MSFT terms, all unchanged:** full exit below **$432.44** (today $495.18, **12.7%** cushion). Reassess, do not auto-sell, below **$449.33** (**9.2%**). **Adds RETIRED at any price.** No trim below 35% except by stop, the magnitude test, or the OpenAI counterparty test. **$525 trim rule SUSPENDED** (reactivates above 45% weight; today 34.6%). No MSFT-specific news today; the -0.34% is drift, not a catalyst.
+
+---
+
+### 🔭 Credit tripwire: not fired, eleventh consecutive session
+
+| Signal | Aug 13 | **Aug 14** | |
+|---|---|---|---|
+| HYG | $79.79 | **$79.72, -0.09%** | ✅ Calm |
+| LQD | $106.55 | **$106.13, -0.39%** | ✅ Calm (duration, not credit) |
+| XLF | $58.26 | **$58.16, -0.17%** | ✅ Calm |
+| TLT | $82.59 | **$82.04, -0.67%** | ⚠️ Long yields up |
+
+**LQD -0.39% vs HYG -0.09% is a duration move, not a credit move** — investment grade has more rate sensitivity, junk has more spread sensitivity, and the one that fell is the rate-sensitive one. **Spreads did not widen today.** Remains a background monitor after going 0-for-3 as a leading indicator.
+
+### 📊 Benchmark
+
+| | Day 1 | Yesterday | **Today** |
+|---|---|---|---|
+| S&P 500 | 7,440 | 7,798.99 | **7,785.76 (-0.17%)** |
+| Index since Day 1 | — | +4.83% | **+4.65%** |
+| Account | $86.65 | $86.07 | **$85.88 (-0.22%)** |
+| Account since Day 1 | — | -0.67% | **-0.89%** |
+| **Gap** | — | 5.50 pts | **5.54 pts — widened 0.04** |
+
+**Decomposition — and the first genuinely good structural news in a while.** A 100%-VOO book would have taken $86.07 to **$85.907**; I finished at **$85.88**. **Underperformance: 0.031pp**, the smallest daily tracking error of this journal.
+
+- **MSFT** 34.6% × (-0.342 + 0.190) = **-0.053pp** — still the only meaningful drag.
+- **GLD + cash** together = **+0.022pp** — on a down day, the non-equity sleeve did its job.
+
+**For the first time in 34 sessions the diversifying part of the book was a positive contributor.** That is what I bought it for, on the first day it was tested. One session proves nothing, but the sign is right and the mechanism is the one I intended.
+
+---
+
+### The honest bear case on tonight's inaction
+
+- **Energy is up 6–7% on the week and I have just written 400 words explaining why I am not buying it, citing a 2027 forecast.** If Hormuz stays shut another month, that reasoning will look like an elaborate rationalisation of an empty wallet. **I accept that. I would rather miss a war-premium trade than take my third round trip in it.**
+- **I identified a specific dated risk (Aug 28) and a specific mispricing (VIX 14.25) and did nothing about either.** The reason is real — no options permission, $5.47 of cash — but "I found the trade and structurally cannot take it" has now happened on volatility, on oil, and on semis. **Three separate times the constraint, not the analysis, has been the binding factor. That is an account-size problem, not a research problem, and no amount of better analysis fixes it.**
+- **My stagflation read rests on two prints and one day of bond tape.** IWM +0.52% actively contradicts it. Two soft consumer prints in a row is a pattern; a regime is more than that, and I should not let the elegance of "bear steepener" harden into conviction by Monday.
+- **I corrected myself twice tonight** — on AMAT's cause and on the true $0.14 cost of the unfunded oil trade. Both corrections went the same direction: **I had told myself a more dramatic story than the facts supported.** That is a bias with a sign, and I should watch for it rather than congratulate myself for catching it.
+- **Nothing fired, nothing was affordable, and I am 93.6% invested. "No trade" was very nearly forced.** I should not present a constrained outcome as a disciplined choice — the discipline tonight was in the two rules I *retired* and the one I *added*, not in the absence of an order.
+
+### Pre-committed triggers for Monday Aug 17 — written in advance
+
+- **🔴 MSFT magnitude test.** Aug 3's **+3.514** rolls off Monday morning; flat-path start is **-0.85**. **Threshold -5.0. A negative print Monday is a calendar artifact and I have now published that in advance for the second time.** On a genuine fire: trim to 25% of book on the next session's close, no override.
+- **MSFT — all other terms unchanged.** Exit below **$432.44**. Reassess below **$449.33**. **Adds RETIRED.** OpenAI counterparty test formal check Q1 FY27 (~late October); interim trigger = emergency raise, missed payment, or renegotiation of the $250B Azure commitment.
+- **🥇 GLD falsifier live: any single close below $384.32 = sell the whole position, no discretion.** Today $401.48, 4.3% cushion. **No adds at any price.**
+- **VOO: cut below $664.** Unconditional. Today $713.60, **6.9%** cushion.
+- **🆕 EVENT-WINDOW PROTOCOL — written now, while I have no position pressure, so I am not inventing it on Aug 27.** Two dated risks: **NVDA Aug 26 AMC** and **Warsh's first Jackson Hole keynote Aug 28.**
+  - **No new position may be opened between Aug 24 and Aug 28** unless it is a hedge or a stop-triggered exit. Entering a fresh directional bet days before two binaries is gambling, not positioning.
+  - **All three existing stops stay live and unmodified through the window.** I will not widen a stop "because of the event" — that is the single most common way a defined loss becomes an undefined one.
+  - **If Warsh is hawkish and VOO, MSFT and GLD fall together, that is the correlated outcome I predicted tonight, not new information.** I act on stops only, and I do not liquidate into the hole.
+- **🆕 EXECUTION RULE: overnight-queued orders in commodity or single-stock positions use a LIMIT at or below the prior close.** Index ETFs may remain market orders. Written after paying **+0.81%** of adverse gap on the GLD open.
+- **🚫 OIL/ENERGY TRIGGER RETIRED.** Not deferred. Reopens only on Hormuz formally reopening with prices *holding*, or a material revision to the IEA's 2027 surplus. **Stop re-arming this nightly.**
+- **🚫 Memory/storage ban — STRUCTURAL.** 35% AI-complex ceiling; MSFT alone 34.6%. **Reopens only via an MSFT trim.** Tonight's AMAT finding (China 35%→28% of revenue, export curbs) strengthens the case rather than weakening it.
+- **🔭 Credit tripwire** (HYG -1.5% on no equity catalyst, or a second AI issuer to BBB- or below): background monitor.
+- **📌 The soft-print trap, now with a date.** July CPI (3.4% headline / 2.5% core) and flat PPI describe a pre-shock month. **August CPI contains Hormuz and lands in September — after the Sept 15–16 FOMC.** UMich 1-yr expectations at **4.3%** is the first household-level evidence the shock is already in the data.
+- **🆕 GOLD DRIVER HYPOTHESIS — one observation, logged with its test.** Hike odds have now failed 4-for-4 to explain gold (Day 31 odds↑/gold↑, Day 32 odds↓/gold↑, Day 33 odds↓/gold↓, Day 34 odds↓/gold↑). **Today gold rose on the day inflation expectations rose and long yields rose — consistent with a real-rates/inflation-expectations driver, not a policy-rate driver.** That is **one** datapoint. **Test: over the next five sessions, does GLD track the direction of long-end yields and inflation breakevens better than it tracks hike odds?** I am not adopting the model until it has a record.
+- **🆕 VIX 14.25 is the new tracked extreme** (prior 14.63). **Sub-13 while Hormuz is disrupted remains the dated observation I want on the board.** No expression available — no options permission, $5.47 cash.
+- **NVDA: no position.** Bar unchanged — its own print, **Aug 26 AMC**. Day-30 vendor-financing test stands.
+- **No new position on a thesis whose confirmation test is shorter than 10 sessions.** Unchanged. Does not bind index allocations.
+- **Calendar**: **NVDA Aug 26 AMC**, **Jackson Hole Aug 27–29 — Warsh keynote Fri Aug 28 AM**, **FOMC Sept 15–16 with dot plot**, **August CPI in September**, **MSFT Q1 FY27 ~late October**.
+
+### Housekeeping
+
+- **Orders**: **none placed.** GLD `6a7e362e` moved `queued` → `filled` at 09:30:00 ET, 0.037296 sh @ **$402.18**, $0 fees. No open or pending orders.
+- **Data provenance**: all position, order, quote, index and OHLC data is from the broker feed and is **firm** — including **SPX 7,785.76, NDX 30,046.14 and VIX 14.25**. The magnitude-test table is computed from broker daily bars. Macro prints, IEA figures, Warsh/Jackson Hole details, AMAT's China revenue split and Brent/WTI levels are from search summaries.
+- **Source conflicts noted:** (i) one aggregated summary reported UMich at **55.1 vs 52.5 expected** — contradicted by six independent sources (Bloomberg, Epoch Times, investinglive, Investing.com, Yahoo, cryptobriefing) all reporting **51.0 vs 54.5**. **Using 51.0.** The outlier appears to have been assembled from a stale evergreen page. (ii) Retail sales consensus quoted as both **+0.1%** and **+0.3%**; the actual **-0.6%** misses either. (iii) September hike odds quoted at **~42%** (CME FedWatch, post-CPI) vs **~33–40%** on Days 32–33; the direction is what matters and it is well below any threshold I use. (iv) A UMich snippet claiming "short-term expectations fell 11%, long-term dropped 17%" conflicts with inflation expectations *rising* — it refers to the outlook sub-indices, not the price expectations, and I did not rely on it.
+- **Blocked domains, tenth consecutive session:** **cftc.gov** (COT) and **insiderfinance.io** (gamma exposure) both return `EGRESS_BLOCKED` at the proxy. **Today's COT release (3:30pm ET) would have been directly useful** — managed-money positioning in crude and gold is exactly the question tonight's energy decision turned on. Standing request to the user: credentialed access, or an accepted substitute (CME QuikStrike for COT; any open-endpoint dealer-gamma provider).
+- **Capital constraint, and it has now bound three separate ideas.** Buying power **$5.47** against a $10 minimum ticket. Volatility (also blocked by `option_level: ""`), oil, and semis have each been identified and each been unexecutable. **A useful funding size remains $2,000–$5,000.** At $86 the account cannot hold four sleeves and still act on anything.
+- **Branch hygiene**: working branch merged to `main` and deleted after this run. The **21 pre-existing orphaned branches from Days 1–23 still require manual deletion by the user** — `git push origin --delete` returns HTTP 403 at the proxy and the GitHub MCP server exposes no delete-ref tool. Verified safe on Day 29. One command clears all 21:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
