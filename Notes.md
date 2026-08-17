@@ -3085,3 +3085,246 @@ For six consecutive sessions I have written some version of *"legs one and two m
   git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
     | grep -v '^main$' | xargs git push origin --delete
   ```
+
+---
+
+## 2026-08-17 (Monday) — Day 35: **No trade — but tonight I computed a date on which my own rule will force one.** MSFT fell **-3.00%** on a **-0.475%** tape, its worst relative session in this journal, taking the magnitude test from +2.67 to **-3.33**. The night's real finding is that **on a perfectly flat path the test fires on Monday Aug 24 at -5.043 — 0.043 through my threshold — and un-fires two days later.** Separately, the **30-year Treasury hit 5.29%, the highest since 2007**, and the WSJ put a number on the thing I have been circling for four sessions: **$3.1 trillion of Big Tech AI obligations that are not on any balance sheet.**
+
+### Account state (Robinhood "Agentic" account #479068710, cash account) — as of the 4:00pm ET close
+
+| | Value | Weight |
+|---|---|---|
+| **VOO** 0.050047 sh @ $710.22 (avg cost $699.34) | **$35.54** | 41.8% |
+| **MSFT** 0.060042 sh @ $480.53 (avg cost $463.84) | **$28.85** | 34.0% |
+| **GLD** 0.037296 sh @ $405.47 (avg cost $402.19) | **$15.12** | 17.8% |
+| Cash / buying power | **$5.47** | 6.4% |
+| **Total** | **$84.96** | |
+
+Unrealised: MSFT **+$1.00 (+3.60%)**, VOO **+$0.54 (+1.56%)**, GLD **+$0.12 (+0.82%)**. **GLD turned profitable for the first time since the Friday fill.** MSFT gave back roughly half its unrealised gain in one session.
+
+---
+
+### 🔴 THE FINDING: my magnitude test now has a firing date, and it is Monday Aug 24
+
+Recomputed from broker daily bars, not from last night's table:
+
+| Session | MSFT % | VOO % | Relative |
+|---|---|---|---|
+| Aug 4 | +1.0581 | +1.8064 | -0.7483 |
+| Aug 5 | -1.0856 | -0.1946 | -0.8910 |
+| Aug 6 | +2.5438 | -0.1696 | **+2.7134** |
+| Aug 7 | +0.0260 | +0.6101 | -0.5841 |
+| Aug 10 | +1.2140 | -0.0084 | **+1.2225** |
+| Aug 11 | -0.4446 | -0.3138 | -0.1308 |
+| Aug 12 | -2.2588 | +0.2470 | **-2.5058** |
+| Aug 13 | +0.9037 | +0.6731 | +0.2306 |
+| Aug 14 | -0.2979 | -0.1874 | -0.1104 |
+| **Aug 17** | **-3.0016** | **-0.4750** | **-2.5266** |
+| | | **SUM** | **-3.3306** |
+
+**Threshold -5.0. NOT FIRED.** But it is the deepest reading this test has ever produced, and it moved 6.0 points in a single session.
+
+**Now the flat-path projection — MSFT tracking VOO exactly, no new information whatsoever:**
+
+| Date | Rolls off | Sum |
+|---|---|---|
+| Aug 18 | Aug 4 (-0.748) | -2.582 |
+| Aug 19 | Aug 5 (-0.891) | -1.691 |
+| Aug 20 | Aug 6 (**+2.713**) | -4.405 |
+| Aug 21 | Aug 7 (-0.584) | -3.821 |
+| **Aug 24** | Aug 10 (**+1.223**) | **-5.043 ⚠️ FIRES** |
+| Aug 25 | Aug 11 (-0.131) | -4.912 |
+| Aug 26 | Aug 12 (-2.506) | -2.406 |
+
+**It fires by 0.043 on exactly one day and reverses two sessions later.** That is a knife-edge, and I want to reason about it tonight rather than on the morning it happens.
+
+**Is this a legitimate fire or a calendar artifact? It is legitimate, and I am not going to let myself off with the artifact excuse a second time.** On Day 32 I called an identical roll-off pattern an alarm; Day 33 corrected me; that correction was right *because the underlying moves were small*. This is different. If the sum reads -5.043 on Aug 24, the window is Aug 11–Aug 24 and it means MSFT genuinely lagged VOO by 5.04 points over ten sessions. The reason it surfaces on Aug 24 rather than today is that the window still holds Aug 6's **+2.71** and Aug 10's **+1.22** — real outperformance that is real *offsetting* evidence. When those age out, what remains is the honest recent picture. **The rule is not malfunctioning; it is waiting for stale good news to clear.**
+
+**So do I front-run it and trim tonight? No. And the reason matters more than the answer.**
+
+If I trim at **-3.33** because I have projected **-5.04**, I have silently moved my threshold to -3.33 while still telling myself I run a -5.0 rule. That is precisely the erosion the rule exists to prevent, and it is more dangerous than being late, because it is invisible. The projection also assumes ten straight sessions of MSFT matching VOO to the basis point — MSFT need only recover **+1.7 points** of relative ground over five sessions for the test never to fire at all. That is an utterly ordinary outcome.
+
+**Pre-committed, written now, no override available later:** if the test closes at or below **-5.0** on any session, I trim MSFT to **25% of book** on the *next* session's close. If Aug 24 is the day, the trim executes **Aug 25** — inside the event window, which explicitly permits stop-triggered exits. I will not widen, pause, or "wait for the NVDA print." I will also not trim early to feel clever.
+
+---
+
+### 💣 THE OTHER FINDING: the WSJ put $3.1 trillion on the off-balance-sheet AI bill — and the long bond repriced the same day
+
+Two things happened today that I am confident are the same event.
+
+**One.** The WSJ published *"Why Big Tech's AI Spending Is $3 Trillion Higher Than It Seems."* The four hyperscalers report **$248B of lease liabilities and $356B of long-term debt** — about **$604B** on the face of the balance sheets. Beneath them sit **$1.2T of leases that have not yet commenced** and **$1.9T of purchase commitments.** Purchase commitments by name:
+
+| | Off-B/S purchase commitments |
+|---|---|
+| **Alphabet** | **$811.0B** |
+| **Meta** | **$349.3B** |
+| **Microsoft** | **$228.6B** |
+| **Amazon** | **$130.1B** |
+
+Corroborated independently: Goldman estimates ~**$1.5T** of hyperscaler lease commitments, ~$1T of it not yet recognised. Meta's Hyperion JV with Blue Owl is the clean illustration — a 20% stake plus a 20-year lease guarantee let the vehicle issue **$27B of bonds** that never appear as Meta debt. As FT Alphaville's Robin Wigglesworth put it, these obligations *"walk, talk and quack a bit like debt, but they don't actually appear as debt."*
+
+**Two.** The **30-year Treasury yield rose 3bp to 5.29%, the highest since 2007**, closing on that year's 5.44% crisis peak. Last week Treasury sold **$25B of new 30s at 5.216%** — the highest auction yield since **2001**. The drivers named: surging national debt, heavy long-dated issuance, inflation stuck above target for five years — **and increased fundraising by AI companies.**
+
+**That is the circuit closing, and it is the same shape as Friday's.** On Friday I wrote that the Hormuz oil shock had completed its journey from a sector story to a macro story by turning up inside a consumer sentiment survey. Tonight the AI capex story completes the same journey: it has stopped being an earnings-multiple debate and turned up **inside the long end of the Treasury curve.** On Day 31 I wrote that *"the equity market is paying for AI backlog while the credit market is charging for AI leverage — both cannot be right."* Tonight the credit market's charge has a number attached and it is being levied on everyone, through the discount rate.
+
+**The uncomfortable part, which I have to state because it cuts against my own book:** on this specific axis **Microsoft is the most conservative of the four.** $228.6B of purchase commitments is second-lowest, less than a third of Alphabet's. If today's selling were a clean repricing of hidden AI leverage, MSFT is close to the *wrong* name to sell and Alphabet the right one — yet GOOGL fell **-0.52%** and MSFT fell **-3.00%**. **My best honest explanation is positioning and extension, not exposure**: MSFT is **+28.7% over one month**, the best of the four, carrying the Jul-30 earnings gap. The most-extended name in a narrative takes the hardest markdown when that narrative gets a front-page number. **I flag that I reached for "positioning" on Day 33 for AMAT, admitted it was unfalsifiable, and found a specific cause on Day 34. I searched hard for a same-day MSFT catalyst tonight and did not find one.** See the source note below — the one I found was recycled.
+
+---
+
+### 🔎 Source discipline: I nearly credited a stale lawsuit as today's catalyst
+
+An aggregator attributed MSFT's fall to "shareholder lawsuits alleging overstated demand and hidden Azure constraints" plus "actively exploited zero-day kernel flaws." **I checked it and it does not hold as a same-day cause.** The securities class action was filed **June 12, 2026** in Seattle by a Michigan pension fund over the Jan 28 selloff; its only August date is a **lead-plaintiff deadline of Aug 11** — six days before today. The piece was assembling background into the shape of a catalyst. **Recording this because the auto-generated "why did X move" pages are becoming a systematic hazard, and I have now caught one dressing two-month-old litigation as breaking news.** Not used.
+
+---
+
+### 🧠 Eisman corroborates my Day-31 finding, and hands me a better counterparty trigger
+
+Steve Eisman, on the AI complex's dependence on two private labs — which he calls its **"Achilles' heel"**:
+
+- OpenAI and Anthropic are **~70% of AI revenue** across MSFT/AMZN/GOOGL and **25–35% of their cloud revenue.** My Day-31 number was 70% of *Microsoft's* AI revenue; his is the same figure across three hyperscalers.
+- Roughly **half of Oracle's ~$600B backlog** is OpenAI. Mine for MSFT was ~45% of a $627B backlog. **Two of the largest backlogs in enterprise software lean on one private counterparty by roughly the same fraction.**
+- His bear case is **no moat → price war**: users switch models freely and Chinese open-weight rivals are far cheaper. If lab economics break, hyperscalers cut capex and *"the entire AI chain goes into reverse."*
+- **He is not short. He is "quite long."** His stated reason is the one I respect most: before shorting subprime he had Moody's delinquency data, and *"there is no such data set with respect to AI."* Both labs are private.
+
+**That last point converts directly into a rule improvement.** My OpenAI counterparty test currently waits for **Q1 FY27 (~late October)** with interim triggers of an emergency raise, a missed payment, or renegotiation of the $250B Azure commitment. All three are *distress* signals — I only learn something when something breaks.
+
+**🆕 New interim trigger, added tonight: the publication of Anthropic's S-1.** Anthropic and OpenAI have both filed confidentially; Polymarket puts **90%** on Anthropic going public first, **70%** before Nov 1 and **85%** before Dec 31. An S-1 is the first audited financials any frontier lab will ever produce — gross margins, compute cost structure, customer concentration — and it read-throughs to OpenAI's economics and to the mark on **Microsoft's own $5B Anthropic stake** (booked as a **$3.2B gain** in Q4 FY26, a fact I had not logged). **This is the missing dataset Eisman says does not exist, and it arrives on a ~70% probability before November.** It is an information event, not a distress event — which makes it strictly better than the three triggers I had.
+
+**Also logged, because it cuts *for* MSFT:** Microsoft holds ~27% of OpenAI (Ackman marks it near **$200B**) *and* $5B of Anthropic. **It is the only hyperscaler with equity in both leading labs.** My Day-31 framing treated the OpenAI stake purely as concentration risk. It is also a claim on the winner of exactly the price war Eisman fears — whoever wins, MSFT owns part of it. **That is a genuine hole in four sessions of my own bear framing and I am recording it as such.**
+
+---
+
+### 📊 The tape (broker feed, firm — regular-session closes)
+
+**S&P 500 7,745.06 (-0.52%). Nasdaq-100 29,995.38 (-0.17%). VIX 15.19, up from Friday's journal-low 14.25 (+6.6%).**
+
+| Up | | Down | |
+|---|---|---|---|
+| **AMAT** | **+5.56%** | **META** | **-3.54%** |
+| **MU** | **+4.16%** | **MSFT** | **-3.00%** ⬅ my position |
+| **USO** | **+2.91%** | **XLF** | **-0.98%** |
+| **SLV** | **+1.85%** | **TLT** | **-0.82%** |
+| **SOXX** | **+1.58%** | **GOOGL** | **-0.52%** |
+| **XLE** | **+1.08%** | **AMZN** | **-0.50%** |
+| **GLD** | **+0.99%** ⬅ my position | **VOO -0.48%, LQD -0.41%, IWM -0.33%, QQQ -0.17%, HYG -0.13%, NVDA -0.05%** | |
+
+**The rotation read is the cleanest single-day statement of the AI-capex split I have recorded.** The **payers** were sold — MSFT -3.00%, META -3.54%, GOOGL -0.52%, AMZN -0.50%. The **receivers** were bought — AMAT +5.56%, MU +4.16%, SOXX +1.58%. Same complex, opposite signs, on the day the WSJ priced the payers' hidden bill at $3.1 trillion and the long bond went to a nineteen-year high.
+
+**AMAT +5.56% deserves a note against my own record.** Friday it fell -5.12% and I explained it with a China revenue hole (35%→28%) and export curbs. Today it recovered most of that in one session with no new China news. **My Friday explanation may have been correct about the *fact* and wrong about the *weight* — a structural China problem does not un-happen over a weekend.** The honest reading is that the selloff was substantially positioning after a +108% YTD run, which is what I said on Day 33 and then talked myself out of. **The semis ban stands regardless — it rests on the 35% AI-complex ceiling, not on my AMAT diagnosis — but I have now been on both sides of this explanation in three sessions and should hold it loosely.**
+
+---
+
+### 🥇 GLD: session 1 of the driver test, and it went my way
+
+**GLD closed $405.47, +0.99% — a new high for the position and the first close above cost.**
+
+Friday I opened a five-session test: **does GLD track long-end yields and inflation breakevens better than it tracks September hike odds?** Today's evidence:
+
+| | Move | Prediction under "policy-rate driver" | Prediction under "fiscal/debasement driver" |
+|---|---|---|---|
+| Hike odds | **rose** (Warsh FT report) | gold **down** | — |
+| 30-yr yield | **5.29%, +3bp, 2007 high** | gold **down** | gold **up** |
+| **GLD** | **+0.99%** | ❌ wrong | ✅ right |
+
+**Session 1 of 5 favours the fiscal/debasement model.** Corroborating: central bank gold buying is at record levels on dollar-reserve diversification. Hike-odds explanatory record now **0-for-5**.
+
+**This also partly repairs the hole I opened on Friday.** I wrote that my gold sleeve does not hedge a hawkish Warsh, because rising *real* rates are historically gold's worst environment. That remains true of a pure real-rate shock. But if the actual driver is fiscal — debt, issuance, debasement — then **gold rises with long yields rather than falling against them**, which is exactly what happened today. **I am not upgrading this to a model on two datapoints.** Three sessions to run.
+
+**Falsifier live and unchanged: any single close below $384.32 = sell the whole position, no discretion.** Today $405.47 → **5.2% cushion.** Consecutive closes above the line: **9-for-9.** **No adds at any price.**
+
+---
+
+### 🛒 The consumer thesis gets a falsification test in 72 hours — and I am pre-committing to what would refute me
+
+Friday I called a regime change to stagflation off **retail sales -0.6%** and **UMich 51.0**, and immediately noted that **IWM +0.52%** contradicted it. This week resolves it with company data rather than survey data:
+
+| Date | Reports |
+|---|---|
+| **Tue Aug 18 am** | **HD** (est $4.73) |
+| **Wed Aug 19 am** | **TGT** ($2.24), **LOW** ($4.38), **TJX** ($1.19) |
+| **Thu Aug 20 am** | **WMT** ($0.74) |
+
+**Written in advance so I cannot grade my own homework afterwards:**
+- **Confirms stagflation:** two or more of these cut full-year guidance, or explicitly cite gasoline prices / trade-down behaviour in the guide. Discretionary (HD/LOW/TGT) weak while defensive (WMT) holds is the classic signature.
+- **Refutes it:** WMT *and* TGT both guide up, or HD/LOW beat on comps. That would say the -0.6% print was a one-month distortion and I over-read a single data point into a regime.
+- **Neither:** in-line and no guide change → I keep the stagflation read as a hypothesis, not a conclusion, and stop calling it a regime.
+
+**IWM -0.33% today is mild counter-evidence to Friday's counter-evidence** — small caps gave back some of the outperformance that made me doubt myself. That is one session and I am not leaning on it.
+
+---
+
+### 🔭 Credit tripwire: not fired, twelfth consecutive session
+
+| Signal | Aug 14 | **Aug 17** | |
+|---|---|---|---|
+| HYG | $79.71 | **$79.61, -0.13%** | ✅ Calm |
+| LQD | $106.12 | **$105.69, -0.41%** | ✅ Duration, not credit |
+| XLF | $58.16 | **$57.59, -0.98%** | ⚠️ Worth watching |
+| TLT | $82.04 | **$81.37, -0.82%** | ⚠️ Long yields up again |
+
+**Same signature as Friday and I read it the same way: LQD (rate-sensitive) fell three times as much as HYG (spread-sensitive). Spreads did not widen.** With the 30-year at a 2007 high, an investment-grade ETF falling is arithmetic, not a warning.
+
+**XLF -0.98% is the one line I would not have predicted.** Banks usually like a steeper curve. Falling on a bear-steepening day suggests the market read it as a *funding-cost* problem rather than a *net-interest-margin* opportunity. **One session, no thesis, logged for pattern.** Tripwire remains a background monitor after going 0-for-3 as a leading indicator.
+
+### 📊 Benchmark
+
+| | Day 1 | Friday | **Today** |
+|---|---|---|---|
+| S&P 500 | 7,440 | 7,785.76 | **7,745.06 (-0.52%)** |
+| Index since Day 1 | — | +4.65% | **+4.10%** |
+| Account | $86.65 | $85.88 | **$84.96 (-1.07%)** |
+| Account since Day 1 | — | -0.89% | **-1.95%** |
+| **Gap** | — | 5.54 pts | **6.05 pts — widened 0.51** |
+
+**The worst single-day widening since the Day-22 whipsaw, and the cause is one position.** A 100%-VOO book would have taken $85.88 to **$85.472**; I finished at **$84.96**. **Underperformance: 0.596pp.**
+
+- **MSFT** 34.6% × (-3.0016 + 0.4750) = **-0.874pp**
+- **GLD** 17.4% × (+0.9938 + 0.4750) = **+0.256pp**
+- **Cash** 6.4% × (+0.4750) = **+0.030pp**
+
+**The diversifier worked for a second consecutive test, and it is not a coincidence this time.** Gold and cash returned **+0.286pp** on a day the equity sleeve cost 0.874pp — they clawed back **33%** of the damage. Friday was the first session the non-equity sleeve was tested; today was the second and larger one. **Two for two, on the mechanism I intended.** That is the entire case for having built the GLD sleeve, and it is now supported rather than asserted.
+
+**But the honest headline is the other number: a single 34% position produced a 0.87pp drag in one session.** No amount of gold sleeve fixes concentration that size. **That is the argument for the Aug 24 trim, and it is a better argument than the magnitude test itself.**
+
+---
+
+### The honest bear case on tonight's inaction
+
+- **I have $5.47 against my own $10 minimum. "No trade" was not a decision, it was an inventory.** The only action available to me tonight was a sell, and no sell triggered. I should stop presenting arithmetic outcomes as discipline — the discipline tonight was the *refusal to front-run* the Aug 24 trim, which is the one genuine choice I made.
+- **I found MSFT is the least off-balance-sheet-levered hyperscaler and it is the one I own — then spent the entry building the case to trim it.** Both can be true (relative quality, absolute concentration) but I notice the tension and I am not going to smooth it over. If the Aug 24 trim fires, I will be selling the best-positioned name in the complex for position-sizing reasons, not thesis reasons, and I should say that plainly when I do it.
+- **My AMAT explanation has now flipped twice in three sessions.** Positioning → China revenue hole → mostly positioning after a +5.56% recovery. Each version was written with conviction. **The lesson is not which was right; it is that I generate confident single-cause explanations for two-day price moves and should discount my own next one.**
+- **The Aug 24 projection assumes ten sessions of perfectly flat relative performance, which will not happen.** I have published a precise number to two decimals and there is a real risk I anchor on it. **The projection is a warning about rule mechanics, not a forecast.** If MSFT recovers 1.7 relative points this week, none of this occurs and that is an ordinary Tuesday.
+- **VIX rose only to 15.19 on a day the long bond hit a 2007 high, MSFT fell 3% and META fell 3.5%.** Friday I flagged VIX 14.25 as a dislocation into two dated events. It has barely moved. **Either the market is right that Aug 26 and Aug 28 are non-events, or Friday's observation stands and I still have no way to express it.** I lean to the latter and it remains unexpressable — no options permission, $5.47 cash. Third consecutive session logging a view I cannot trade.
+
+### Pre-committed triggers for Tuesday Aug 18 and the week — written in advance
+
+- **🔴 MSFT MAGNITUDE TEST — the live one.** Today **-3.331**. **Threshold -5.0.** Flat-path: Aug 18 **-2.582**, Aug 19 **-1.691**, Aug 20 **-4.405**, Aug 21 **-3.821**, **Aug 24 -5.043 (FIRES)**, Aug 25 -4.912, Aug 26 -2.406. **On any close at or below -5.0: trim MSFT to 25% of book on the next session's close. No override, no early execution, no deferral for NVDA or Jackson Hole.**
+- **MSFT — all other terms unchanged.** Full exit below **$432.44** (today $480.53, **10.0%** cushion). Reassess, do not auto-sell, below **$449.33** (**6.5%**). **Adds RETIRED at any price.** $525 trim rule **SUSPENDED** (reactivates above 45% weight; today 34.0%).
+- **🆕 OpenAI counterparty test — interim trigger EXPANDED.** Prior triggers (emergency raise, missed payment, renegotiation of the $250B Azure commitment) all stand. **Added: publication of Anthropic's or OpenAI's S-1.** ~85% probability of an Anthropic S-1 before Dec 31. On publication: read gross margin, compute cost structure and customer concentration, and re-underwrite the MSFT AI-revenue concentration thesis against real numbers instead of inference. Formal check still Q1 FY27 (~late October).
+- **🥇 GLD falsifier live: any single close below $384.32 = sell the whole position, no discretion.** Today $405.47, **5.2%** cushion, 9-for-9. **No adds at any price.** Driver test **session 1 of 5 → fiscal/debasement model leads, hike-odds model 0-for-5.**
+- **VOO: cut below $664.** Unconditional. Today $710.22, **6.5%** cushion.
+- **🛒 RETAIL GAUNTLET — falsification test of my own stagflation call.** HD Tue am; TGT/LOW/TJX Wed am; WMT Thu am. **Confirm** = ≥2 guidance cuts or explicit gasoline/trade-down language. **Refute** = WMT and TGT both guide up, or HD/LOW beat on comps. **Neither** = demote "regime" to "hypothesis." Graded Thursday night, criteria fixed tonight.
+- **🆕 LONG-END TRIPWIRE.** 30-yr at **5.29%**, 2007 high; 2007 peak was **5.44%**. **A 30-yr close above 5.44% is a nineteen-year high and I want it on the board as a discrete event, not a slow drift.** No pre-committed action — I hold no duration — but it would be the strongest single signal that the AI-capex-to-discount-rate circuit is tightening, and it bears directly on VOO's multiple.
+- **🆕 EVENT-WINDOW PROTOCOL — active Aug 24–28, unchanged from Friday.** No new position may be opened in the window except a hedge or a stop-triggered exit. **A magnitude-test trim is a stop-triggered exit and IS permitted** — confirmed tonight so the ambiguity cannot be exploited later. All three stops stay live and unmodified. If Warsh is hawkish and VOO, MSFT and GLD fall together, that is the correlated outcome I predicted on Day 34, not new information; act on stops only, do not liquidate into the hole.
+- **⚠️ Warsh risk has escalated since Friday.** Reports that he **privately signalled September readiness to the FT**; one tracker has hike odds at **56.7%** vs CME FedWatch ~**39%** (source conflict, see below). Three dissents at the July 29 FOMC. He described his own keynote as **"a blank piece of paper"** and this Fed does not telegraph. **Jackson Hole Aug 27–29, Warsh keynote Fri Aug 28 AM.**
+- **🚫 OIL/ENERGY TRIGGER RETIRED.** XLE +1.08%, USO +2.91% today; **this is the noise I retired the rule to stop trading.** Reopens only on Hormuz formally reopening with prices holding, or a material revision to the IEA's 2027 surplus. **Not re-litigated tonight.**
+- **🚫 Memory/storage ban — STRUCTURAL.** 35% AI-complex ceiling; MSFT alone 34.0%. MU +4.16% and SOXX +1.58% today do not change it. **Reopens only via an MSFT trim** — which, if Aug 24 fires, would take the complex to 25% and create ~10 points of headroom for the first time. **Noted, not promised.**
+- **🔭 Credit tripwire** (HYG -1.5% on no equity catalyst, or a second AI issuer to BBB- or below): background monitor, 0-for-3 as a leading indicator.
+- **📌 The soft-print trap.** August CPI contains Hormuz and lands in September, **after** the Sept 15–16 FOMC. UMich 1-yr expectations **4.3%**.
+- **NVDA: no position.** Bar unchanged — its own print, **Aug 26 PM** (broker-verified, est EPS $2.07, Q2 FY2027). Day-30 vendor-financing test stands. **Note NVDA is mobilising >$500B for AI infrastructure with Apollo/BlackRock/Blackstone/Brookfield/Goldman/KKR — the vendor-financing structure my Day-30 test was written for.**
+- **No new position on a thesis whose confirmation test is shorter than 10 sessions.** Unchanged. Does not bind index allocations.
+- **Calendar**: **HD Aug 18**, **TGT/LOW/TJX Aug 19**, **WMT Aug 20**, **PDD Aug 24**, **NVDA Aug 26 PM**, **CRM/CRWD/SNPS Aug 26 PM**, **MRVL Aug 27 PM**, **Jackson Hole Aug 27–29 — Warsh keynote Fri Aug 28 AM**, **FOMC Sept 15–16 with dot plot**, **August CPI in September**, **MSFT Q1 FY27 ~late October**, **Anthropic S-1 ~85% before Dec 31**.
+
+### Housekeeping
+
+- **Orders**: **none placed, none pending, none open.** No trade today.
+- **Data provenance**: all position, order, quote, index and OHLC data is from the broker feed and is **firm** — including **SPX 7,745.06, NDX 29,995.38, VIX 15.19**, the earnings calendar, and every figure in the magnitude-test table (recomputed tonight from broker daily bars, not carried forward). The WSJ $3T figures, Goldman's $1.5T lease estimate, the 30-yr yield, Eisman's remarks, Polymarket odds, Warsh reporting and 13F contents are from search summaries.
+- **Correction to Friday's table**: I logged MSFT's Aug 14 close as **$495.18** and the relative as **-0.153**. The broker's official settled close is **$495.40**, giving **-0.110**. Tonight's window uses the settled figure. Immaterial to the result (0.04) but the table is now internally consistent and rebuilt from bars.
+- **Source conflicts noted:** (i) **September hike odds quoted at 56.7% and at ~39% on the same day** — the first from a tracker citing an FT report of Warsh's private signalling, the second from CME FedWatch. Wide enough that I use neither as a level; the *direction* since Friday's ~42% is ambiguous and I am recording that honestly rather than picking the scarier number. (ii) An aggregator attributed today's MSFT decline to a securities class action that was **filed June 12** with an **Aug 11** lead-plaintiff deadline — stale, not used, discussed above. (iii) A gold page claimed spot "hit record highs above $5,000 earlier in 2026"; GLD's own bar history implies gold near **$4,000** in late July and ~**$4,400** today. The $5,000 claim is inconsistent with the broker data and is not used. (iv) MSFT's move was reported as **-3.17%** by one aggregator vs **-3.00%** from broker closes ($495.40 → $480.53); **using the broker.**
+- **Blocked domains, twelfth consecutive session:** **cftc.gov** (COT) and **insiderfinance.io** (gamma exposure) both return `EGRESS_BLOCKED` at the proxy. Friday's COT release remains unread. **Standing request to the user: credentialed access, or an accepted substitute (CME QuikStrike for COT; any open-endpoint dealer-gamma provider).**
+- **Capital constraint — now materially binding on a *scheduled* action.** Buying power **$5.47** against a $10 minimum ticket. Volatility, oil and semis have each been identified and each been unexecutable. **New wrinkle: if the Aug 24 trim fires, it frees roughly $7.60 and takes cash to ~$13 — above my minimum for the first time in weeks.** I am recording that this makes the trim *convenient*, which is exactly why I must not let it influence whether I judge the trigger to have fired. **The trim happens if and only if the sum closes ≤ -5.0.** A useful funding size remains **$2,000–$5,000**.
+- **Branch hygiene**: working branch merged to `main` and deleted after this run. The **21 pre-existing orphaned branches from Days 1–23 still require manual deletion by the user** — `git push origin --delete` returns HTTP 403 at the proxy and the GitHub MCP server exposes no delete-ref tool. Verified safe on Day 29. One command clears all 21:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
