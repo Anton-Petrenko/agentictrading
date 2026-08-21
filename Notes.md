@@ -4077,3 +4077,222 @@ A 100%-VOO book would have taken $85.36 to **$84.65**; I finished at **$84.94. O
   ```
 
 ---
+## 2026-08-21 (Friday) — Day 39: No trade — I was wrong last night about *how* the buyback failed. It didn't. It moved the price of the dollar instead of the price of the bond, and that is the fiscal-dominance thesis working, not failing.
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+
+| | Shares | Avg cost | Close | Value | Weight | P&L |
+|---|---|---|---|---|---|---|
+| VOO | 0.050047 | $699.34 | **$703.72** | **$35.22** | 41.2% | +$0.22 (+0.63%) |
+| MSFT | 0.060042 | $463.84 | **$483.34** | **$29.02** | 33.9% | +$1.17 (+4.20%) |
+| GLD | 0.037296 | $402.19 | **$423.41** | **$15.79** | 18.5% | **+$0.79 (+5.28%)** |
+| Cash | — | — | — | **$5.47** | 6.4% | — |
+| **Total** | | | | **$85.50** | | |
+
+Buying power **$5.47**, eighth session in nine. Unsettled funds $0.
+
+---
+
+### 🏛️ THE NIGHT'S FINDING — the buyback's price was paid in the currency, not the yield. I said "the program failed." That was wrong.
+
+Last night I wrote that the doubled Treasury buyback "bought exactly one session of lower yields" and called that a failed intervention — "a circuit breaker and not a floor." I made intervention *efficacy* the primary variable of the fiscal-dominance watch on the strength of it.
+
+**I was measuring efficacy in the wrong asset.** Here is the four-session record around the Aug 19 announcement, all broker-firm:
+
+| | Aug 18 (pre) | Aug 19 (announce) | Aug 20 | **Aug 21** | **Net** |
+|---|---|---|---|---|---|
+| **UUP** (dollar) | 28.14 | **27.88 (-0.92%)** | 27.91 | **27.905** | **-0.835% — never bounced** |
+| **GLD** | 398.55 | 413.84 (+3.84%) | 415.26 | **423.41** | **+6.24%** |
+| **IBIT** (bitcoin) | 36.60 | 38.78 (+5.96%) | 41.20 | **43.64** | **+19.24%** |
+| **30-yr yield** | 5.33% | ~5.19% | 5.251% | ~5.27% (est.) | **round-tripped** |
+
+**Three of the four repriced permanently. Only the bond round-tripped — and the bond is the one the government is buying.** That is not a failed intervention. That is precisely what fiscal dominance predicts: **when the sovereign commits to capping the yield, the yield stops being the adjustment variable and the currency becomes the adjustment variable.** The market did not ignore Bessent. It took him at his word, concluded the long end will be monetised, and sold the money rather than the bonds.
+
+**I derived this from broker prices before I found any source saying it.** Bloomberg published *"Bessent's Bond Moves Revive Dollar Debasement Trade as Gold, Bitcoin Rally"* under an Aug 21 dateline. The corroboration is welcome, but the point is that the mechanism was visible in four price series I already had, and I missed it for two sessions because I was only looking at the yield.
+
+#### 🔬 And here is the test that discriminates it from the alternative — the first clean one I have been able to run on this
+
+**The competing explanation is policy rates.** Soft CPI on Aug 12 pared September hike odds; lower expected policy rates weaken a currency and lift gold. That story is real, correctly signed, and I have been too quick to dismiss it.
+
+**So I ran it against the tape. The two explanations make opposite predictions about which day the dollar fell.**
+
+- **Soft-CPI day (Aug 12):** policy-rate story says the dollar falls. **UUP +0.213%. The dollar ROSE.**
+- **Buyback day (Aug 19):** fiscal story says the dollar falls. **UUP -0.924% — the largest single-session move, in either direction, in all 18 sessions I pulled (Jul 28–Aug 21), 1.2× the next largest.**
+
+**The dollar rose on the dovish inflation print and had its biggest down-day of the month on the fiscal announcement.** That is as clean a discrimination as this journal has produced, it runs on firm broker data rather than on search-sourced hike odds that conflict 25–50%, and it goes the way of my position. I ran it because I expected it to be ambiguous.
+
+**Where it is weak, stated plainly:**
+1. **Today's dollar move was zero (-0.018%).** So **today's** +1.96% in gold is *not* explained by **today's** dollar. The repricing happened Aug 19 and has *held* for three sessions. My claim is about the level, not about today's change, and I am not going to blur those.
+2. **UUP is not DXY** — it is futures-based and carries roll cost. Cross-check: UUP Jul 28→Aug 21 = **-2.36%**; the search-reported DXY monthly decline is **-2.43%**. Direction and magnitude agree, so I will use UUP as the proxy and say so.
+3. **Bitcoin's +19% is contaminated.** Reporting attributes part of it to CLARITY Act optimism — crypto-specific, not debasement. **IBIT therefore overstates the signal, and gold (+6.24%) plus the dollar (-0.84%) are the cleaner reads.** I am not counting the bitcoin move as three independent confirmations.
+
+> **🔄 FISCAL-DOMINANCE WATCH — primary variable corrected, one night after I set it.** Last night's "does each successive action buy fewer sessions of relief?" measured the wrong asset. **The primary variable is now: does each successive intervention transfer more of the adjustment from the bond market to the currency?** Aug 19 transferred **-0.84% of dollar for ~0 net basis points of yield.** Next test is the **Sept 9** program launch. Changing this variable twice in two nights is not something I like doing — but the first version was wrong on the evidence, and keeping a wrong measure to avoid looking inconsistent is worse than replacing it.
+
+> **🆕 DOLLAR TRIPWIRE — new tonight, symmetric, and it can hurt me.** **UUP close below $27.50** (-1.45%) = the currency adjustment is accelerating past the buyback shock → escalation confirmed, gold sleeve is the most important thing I own. **UUP close above $28.14** (the Aug 18 pre-announcement level) = the buyback's currency cost has been fully unwound → **the mechanism I just discovered is refuted and the newest support under my gold position is gone.** I am writing the falsifier at the same moment as the thesis, at a level I have not chosen to be comfortably far away.
+
+---
+
+### 🥇 GLD DRIVER TEST — final session graded for the record. 4 of 5.
+
+**Aug 21: GLD +1.963%. TLT -0.364%** (long-end yields modestly up). **SLV +1.711%, GDX +2.975%.**
+
+Both halves of the Day-34 wording agree — yields up, gold up — so **✅**, and unlike Aug 20's +0.34% this is a real-magnitude session that would have qualified as a vote under the new minimum-magnitude rule.
+
+> **FINAL TALLY: ✅ Aug 17 · ❌ Aug 18 · ✅ Aug 19 · ✅ Aug 20 · ✅ Aug 21 — 4 of 5. TEST CONFIRMED.** Outcome was already locked at 3-of-5; today changes nothing and I would have logged it identically had it gone the other way. **GLD miners (+2.98%) outrunning bullion (+1.96%) is a healthy internal — leveraged expressions leading is what a trend that is being *bought* looks like, as opposed to one that is being *hedged into*.**
+
+**GLD stops, unchanged:** tightened stop **any close below $397.87** → today $423.41, **6.42% cushion** (was 4.19%). Original falsifier **$384.32**, **9.23% cushion, 13-for-13**. **Adds RETIRED at any price.**
+
+---
+
+### 🔴 MAGNITUDE TEST — and I found the *cause* of three nights of drift, not just another instance of it
+
+**Correction, third consecutive night: last night's Aug 20 MSFT close ($481.379) was wrong. Official settled close is $481.15.** VOO's was $700.99; official is **$701.01**.
+
+**This time I diagnosed it instead of logging it.** I have been reading `quote.last_trade_price` — which picks up late and non-regular prints — where I should be reading `close.price` (`sip-list-exchange-close`). **That is a systematic error with a known sign, not random drift**, and it explains all three nights.
+
+> **🆕 METHODOLOGY FIX, binding: the magnitude table is rebuilt each night from `get_equity_historicals(adjustment_type=none)` and `close.price` only. `last_trade_price` is never a source for a settled close.** The sole exception is the current session's own close, which is provisional until the following morning and marked as such.
+
+Last night's sum should have read **-2.869**, not -2.921.
+
+| Session | MSFT | % | VOO | % | Relative |
+|---|---|---|---|---|---|
+| Aug 10 | 506.06 | +1.214 | 710.65 | -0.008 | **+1.222** |
+| Aug 11 | 503.81 | -0.445 | 708.42 | -0.314 | -0.131 |
+| Aug 12 | 492.43 | -2.259 | 710.17 | +0.247 | **-2.506** |
+| Aug 13 | 496.88 | +0.904 | 714.95 | +0.673 | +0.231 |
+| Aug 14 | 495.40 | -0.298 | 713.61 | -0.187 | -0.110 |
+| Aug 17 | 480.35 | -3.038 | 710.27 | -0.468 | **-2.570** |
+| Aug 18 | 481.63 | +0.266 | 705.40 | -0.686 | **+0.952** |
+| Aug 19 | 484.31 | +0.556 | 706.91 | +0.214 | +0.342 |
+| Aug 20 | **481.15** | -0.652 | **701.01** | -0.835 | **+0.182** ⬅ corrected |
+| **Aug 21** | **483.34** | **+0.455** | **703.72** | **+0.387** | **+0.069** |
+| | | | | **SUM** | **-2.319** |
+
+**Threshold -5.0. NOT FIRED, 2.68 points away** — the widest margin in eight sessions. Aug 7's -0.584 rolled off.
+
+**Flat path:** Aug 24 **-3.541 (trough, does not fire)** · Aug 25 -3.410 · Aug 26 -0.904 · Aug 27 -1.135 · Aug 28 -1.025 · **Aug 31 +1.545.**
+
+**To fire on Aug 24, MSFT must underperform VOO by 1.459 points in one session.** Its worst session in this journal is -2.570, so it is possible — but it needs an event, and there is none scheduled for Monday. **After Aug 31 both large negatives are gone and the test is structurally dormant.**
+
+**MSFT has now outperformed VOO in three of the last four sessions.** Full exit below **$432.44** (**10.5%** cushion). Reassess below **$449.33** (**7.0%**). **Adds RETIRED. $525 trim SUSPENDED** (reactivates above 45% weight; today 33.9%).
+
+#### The internal inconsistency in this book that I am choosing not to act on, and why
+
+**I am long the fiscal-dominance trade through gold, and simultaneously long 33.9% of a company whose sector's debt issuance is one of the named causes of the long-end stress that trade is built on.** Those two positions argue with each other. The WSJ's $3.1T of off-balance-sheet Big Tech AI obligations and the $25B Alphabet raise are the same phenomenon that is steepening the curve I own gold against.
+
+**I notice it, and I am still not trimming MSFT tonight, because the magnitude test is the pre-registered mechanism for exactly this decision and it reads -2.319 against a -5.0 threshold.** Overriding a live test because I have developed a narrative is the precise failure mode I retired the stagflation input for yesterday. **The tension is logged so future-me can see I saw it and chose the rule rather than the story.** If the test fires, it fires on arithmetic and I will not need a thesis to act.
+
+---
+
+### 📊 The tape — a broad risk-on session led by real assets, with semis conspicuously absent
+
+**S&P 500 7,674.37 (+0.43%). Nasdaq-100 29,308.86 (+0.33%). VIX 15.13 (-5.5%).**
+
+| Up | | Down | |
+|---|---|---|---|
+| **IBIT** | **+5.92%** | **XLU** | **-2.31%** |
+| **GDX** | **+2.98%** | **NVDA** | **-0.96%** |
+| **XLB** | **+2.10%** | **MU** | **-0.78%** |
+| **GLD** | **+1.96%** ⬅ position | **AMAT** | **-0.74%** |
+| **SLV** | **+1.71%** | **SOXX** | **-0.46%** |
+| **XLV +1.29%, GOOGL +1.24%, XLY +1.13%** | | **SMH -0.41%, TIP -0.37%, TLT -0.36%, TLH -0.34%** | |
+| **XLF +0.93%, XLP +0.79%, IWM +0.76%, META +0.75%** | | **XLE -0.20%, LQD -0.11%, SHY -0.03%, UUP -0.02%** | |
+| **MSFT +0.46%** ⬅ position, **SPY +0.41%, VOO +0.39%** ⬅ position, **QQQ +0.35%, XLI +0.26%, WMT +0.11%, USO +0.10%, HYG +0.08%** | | | |
+
+**🔺 PROMOTED TO A READ — the market is de-risking semis into Wednesday's NVDA print.** This clears the Day-36 rule on multi-session evidence rather than a one-day story: **NVDA has closed lower four consecutive sessions, 225.01 → 214.76, -4.56%, against VOO -0.92% over the same span — 3.64 points of underperformance into its own earnings.** SOXX is down in four of the last five (Aug 18 -4.96%, Aug 19 -2.21%, Aug 20 +0.52%, Aug 21 -0.46%). Today it lagged a +0.43% tape. **I own no semis and, for once, that is the position I want rather than an accident of a ban.** No action — the bar for NVDA remains its own print.
+
+**🔻 RETIRED as noise — the XLF observation.** Four sessions of unexplained weakness (-0.98 / +0.47 / -0.60 / -0.92) ended with **+0.93% today**, the strongest financials session of the month. It never produced an explanation and it has now reversed. **Carrying an unexplained pattern for five sessions and then dropping it quietly is how a watch list turns into clutter; killing it in writing is the point of the one-session rule.**
+
+**🔻 Yesterday's duration-ordered selloff INVERTED.** Yesterday IWM was worst (-1.34%) and semis rallied; today **IWM was best of the majors (+0.76%)** and semis lagged. **Under the Day-36 rule it never got promoted, and this is the fourth time this month a confident one-day pattern reversed within twenty-four hours.** The rule is 4-for-4 at saving me from a wrong read.
+
+**⚠️ Logged without a story: XLU -2.31%** on a +0.43% tape — **the largest single-session drop in the 18-session series I pulled**, on a day the long end barely moved (TLT -0.36%), so it is not a duration move. **I could not source a firm, dated Aug 21 driver** — searches returned only technical commentary and undated AI-power-demand pieces. **Broker print is firm; the explanation is not, so I am not inventing one.** Utilities are down 4.1% on the month and sit at the intersection of the bond-proxy and AI-power trades; that is context, not a cause. **On the watch list for a repeat.**
+
+---
+
+### 🔭 Tripwires
+
+| Signal | Aug 20 | **Aug 21** | |
+|---|---|---|---|
+| HYG | $79.56 | **$79.63, +0.08%** | ✅ Calm |
+| LQD | $106.06 | **$105.94, -0.11%** | ✅ |
+| XLF | $56.95 | **$57.48, +0.93%** | ✅ Recovered |
+| TLT | $82.349 | **$82.04, -0.36%** | ⚠️ Long end soft |
+| **🆕 UUP** | $27.91 | **$27.905, -0.02%** | ⚠️ Holding the Aug 19 break |
+
+**Credit tripwire: NOT FIRED, sixteenth consecutive session, 0-for-4 as a leading indicator.** HYG positive, LQD's -0.11% is mechanical duration, XLF recovered strongly.
+
+**🚨 LONG-END TRIPWIRE.** No firm Aug 21 30-year print sourced. **Derived from TLT -0.364% at ~17yr duration: roughly +2bp, ~5.27%.** Tripwire is a close above **5.44%** (2007 peak) — **not fired, ~17bp of room. This level is an estimate, not a print, and is marked soft.**
+
+---
+
+### 📊 Benchmark
+
+| | Day 1 | Yesterday (restated) | **Today** |
+|---|---|---|---|
+| S&P 500 | 7,440 | 7,641.16 | **7,674.37 (+0.43%)** |
+| Index since Day 1 | — | +2.70% | **+3.15%** |
+| Account | $86.65 | $84.93 | **$85.50 (+0.67%)** |
+| Account since Day 1 | — | -1.98% | **-1.33%** |
+| **Gap** | — | 4.69 pts | **4.48 pts — narrowed 0.21** |
+
+*(Yesterday restated $84.94 → **$84.93** under tonight's methodology fix.)*
+
+A 100%-VOO book would have taken $84.93 to **$85.26**; I finished **$85.50. Outperformance +0.28pp.**
+
+- **GLD** 18.2% × (+1.963 − 0.387) = **+0.288pp**
+- **MSFT** 34.0% × (+0.455 − 0.387) = **+0.023pp**
+- **Cash** 6.4% × (−0.387) = **−0.025pp**
+- Sums to **+0.286pp**, matching the measured +0.28.
+
+**Three consecutive sessions of outperformance: +0.86, +0.35, +0.28. The gap has closed 1.45 points in three days — from 5.93 to 4.48.** All three came from the same 18% sleeve. **The concentration of the attribution is the honest caveat: I do not have three sources of edge, I have one position that is working. If gold turns, all three sessions reverse.**
+
+---
+
+### The honest bear case on tonight's inaction
+
+- **The strongest argument against me tonight is that I found my best evidence yet and did nothing with it.** I discovered a new confirming channel, ran a discriminating test that my thesis passed, and closed the day with the same book. **That is a real criticism and the only honest answer is arithmetic: $5.47 of buying power is 6.4% of the book, and the one instrument I am permitted to buy with it is VOO — the benchmark, which by construction adds zero alpha.**
+- **The thesis-consistent buy is banned by my own rule, and the ban is right.** $5.47 into GLD would take gold from 18.5% to **24.9% in a single session** — a 6.4-point concentration jump in an $85 account, three sessions into a +6.2% run. **The adds-retired rule exists for exactly this moment, when the position is working and I feel clever. Honoring it costs me nothing I can measure and protects me from the thing that actually kills small books.**
+- **I looked hard at IBIT and I am not buying it.** It is up **19.2% in three sessions and 22% in five**, it has a second non-debasement catalyst (CLARITY Act) contaminating the signal, and it has roughly 3× gold's beta to a trade I already own at 18.5%. **Buying a parabolic move with my last dollar on the Friday before NVDA and Jackson Hole is chasing, and I would flag it as chasing in anyone else's journal.**
+- **The cash finally has an affirmative, dated reason — and I am putting an expiry on it so it cannot become an excuse.** The **event-window protocol opens Monday**: NVDA Wednesday after the close, Warsh's first Jackson Hole keynote Friday morning. Holding 6.4% cash across five sessions containing two binary catalysts is a deliberate posture, not a capital constraint. **Pre-committed: if no stop fires and no test triggers, the residual cash is deployed on Monday Aug 31, and "I am waiting for the event" is not available to me again after that date.**
+- **I was wrong in print last night and it took a day to find.** I declared a policy intervention failed on the strength of one asset's response, and made that judgment the *primary variable* of a standing monitor. **The error was not the reading — it was scoping the measurement to the one market the government was actively manipulating.** The lesson is narrower and more useful than "be careful": **when you evaluate an intervention, never measure it only in the asset being intervened in.**
+- **The gold sleeve is now carrying the entire relative performance of this book,** and I am aware that "the position that is working is the one I keep finding new reasons to like" is a description of confirmation bias as much as of a good trade. **The defense is that both stops are mechanical, the tighter one has only 6.4% of cushion, and tonight I wrote a dollar tripwire that refutes my own newest argument at a level 0.84% away.**
+
+---
+
+### Pre-committed triggers for Monday Aug 24 and the week — written in advance
+
+- **⚠️ EVENT-WINDOW PROTOCOL — ACTIVE Aug 24–28.** No new position may be opened except a hedge or a rule-triggered exit. **A magnitude-test trim and a GLD stop exit both qualify and ARE permitted.** All stops live and unmodified.
+- **🥇 GLD — TEST CONFIRMED 4-of-5, POSITION HELD.** Stop: **any single CLOSE below $397.87 = sell the entire position, no discretion** (6.42% cushion). Original falsifier **$384.32** (9.23%, 13-for-13). **Adds RETIRED at any price — reaffirmed tonight against a live temptation.**
+- **🔴 MSFT MAGNITUDE TEST.** Today **-2.319** (official closes, new methodology). **Threshold -5.0, unmodified.** Flat path: Aug 24 **-3.541 (trough)**, Aug 25 -3.410, Aug 26 -0.904, Aug 31 **+1.545**. **No flat-path firing date; needs 1.459 points of fresh underperformance on Monday alone. On any close at or below -5.0: trim MSFT to 25% of book on the next session's close. No override, no early execution, no deferral for NVDA or Jackson Hole.**
+- **MSFT — other terms.** Full exit below **$432.44** (10.5%). Reassess below **$449.33** (7.0%). **Adds RETIRED. $525 trim SUSPENDED** (reactivates above 45% weight; today 33.9%). **Book inconsistency logged, deliberately not acted on — the test decides.**
+- **VOO: cut below $664.** Unconditional. Today $703.72, **5.6%** cushion.
+- **💵 NEW — DOLLAR TRIPWIRE.** **UUP close below $27.50** = debasement accelerating, escalation confirmed. **UUP close above $28.14** = the Aug 19 currency break is unwound and **tonight's mechanism is refuted.** Today $27.905.
+- **🏛️ FISCAL-DOMINANCE WATCH — primary variable corrected.** **Does each successive intervention transfer more of the adjustment from the bond market to the currency?** Aug 19: **-0.84% of dollar for ~0 net bp of yield.** Next test **Sept 9** program launch. De-escalation: program lapses Nov 4 with the 30-yr below 5%.
+- **🚨 LONG-END TRIPWIRE.** ~**5.27% estimated** (derived from TLT, **soft**). Close above **5.44%** fires. ~17bp of room.
+- **₿ IBIT — WATCH ONLY, pre-registered so I act mechanically rather than after another 20%.** Reopen requires **all three**: (a) a pullback of **≥10% from today's $43.64 (≤$39.28)** that **holds above the $36.60 pre-announcement level** — i.e. the debasement move consolidates without round-tripping; (b) the CLARITY Act catalyst resolved or discounted, so the signal is clean; (c) **funding of $2,000+**, because a third real-asset leg is not sizeable in an $85 book without breaching concentration. **No position at any price until all three.**
+- **🔺 SEMIS — PROMOTED READ, no action.** Market de-risking into NVDA (Wed Aug 26 PM, cons. rev ~$92B, EPS ~$2.06 vs company guide ~$91B ±2%). NVDA -4.56% over four sessions vs VOO -0.92%. **No position; the bar is its own print.**
+- **⚠️ XLU — unexplained.** -2.31% on a +0.43% tape, largest in 18 sessions, **no firm dated driver.** Watching for a repeat. No story invented.
+- **🚫 Memory/storage ban — STRUCTURAL.** 35% AI-complex ceiling; MSFT alone 33.9%. Reopens only via an MSFT trim.
+- **🚫 OIL/ENERGY TRIGGER — RETIRED.** USO +0.10%, XLE -0.20% today. Reopen condition (a) unchanged: Hormuz **formally** reopening **AND** crude holding above pre-war levels.
+- **🔭 Credit tripwire** (HYG -1.5% on no equity catalyst, or a second AI issuer to BBB- or below): **0-for-4, sixteen consecutive quiet sessions.**
+- **OpenAI counterparty test.** Interim triggers: emergency raise, missed payment, renegotiation of the $250B Azure commitment, or publication of Anthropic's or OpenAI's S-1. Formal check Q1 FY27 (~late October).
+- **PROCESS RULES in force.** One-session patterns require non-consecutive confirmation (**4-for-4 tonight**). Driver tests specify a minimum daily magnitude. **🆕 Settled closes come only from `close.price` / `get_equity_historicals`, never `last_trade_price`. 🆕 Never evaluate an intervention solely in the asset being intervened in.** No new position on a thesis whose confirmation test is shorter than 10 sessions (does not bind index allocations).
+- **💵 CASH EXPIRY — pre-committed.** $5.47 held for the Aug 24–28 event window. **If no stop fires and no test triggers, it is deployed Monday Aug 31.**
+- **Calendar**: **PDD Aug 24** · **NVDA Aug 26 PM** · **CRM/CRWD/SNPS Aug 26 PM** · **MRVL Aug 27 PM** · **Jackson Hole Aug 27–29, Warsh keynote Fri Aug 28 AM** · **COT Fri Aug 28 3:30pm ET** · **Treasury buyback program effective Sept 9** · **August CPI Sept 11** · **FOMC Sept 15–16 with dot plot** · **MSFT Q1 FY27 ~late October** · **buyback expiry Nov 4** · **Anthropic S-1 ~85% before Dec 31**.
+
+### Housekeeping
+
+- **Orders**: **none placed, none pending, none open.** No trade today. No rule loosened; **two rules added** (dollar tripwire, cash expiry) and **one corrected** (fiscal-dominance primary variable).
+- **Data provenance**: all position, order, quote, index and OHLC data is broker-sourced and **firm** — including **SPX 7,674.37, NDX 29,308.86, VIX 15.13**, every close in the tape table, the UUP/IBIT/GLD series, and the magnitude table. **Soft:** the 30-year yield level (derived from TLT, not a print), September hike odds, DXY, and the Bloomberg/Daily Caller debasement reporting.
+- **🆕 Two corrections logged.** (1) Aug 20 MSFT close $481.379 → **$481.15**; VOO $700.99 → **$701.01**; last night's sum -2.921 → **-2.869**; yesterday's account $84.94 → **$84.93**. **Root cause diagnosed and fixed, not just logged.** (2) **Last night's conclusion that the buyback "failed" is corrected** — it succeeded in the currency, and the fiscal-dominance monitor's primary variable is replaced accordingly.
+- **Source-quality note — fifth consecutive night.** Aggregators again served stale sessions under fresh datelines: one Aug 21 article reported gold at **$4,060** and another at **$4,587**; a third described Thursday's close under an Aug 21 headline. **Two search figures did check out against broker data tonight** — DXY -2.43% MTD vs UUP -2.36%, and bitcoin's "+22% five-day" vs IBIT's +22.5% — which is the first clean corroboration in a week and worth recording alongside the failures.
+- **COT**: **still unsourced, sixteenth session.** `cftc.gov` and `tradingster.com` both return `EGRESS_BLOCKED`. Search returns the same stale **130,766 gold managed-money net long as of Aug 4** that conflicts with this journal's 217.9K as of Aug 14. **Today's 3:30pm release (covering Aug 18) is inaccessible.** I am holding an 18.5% position in a trade whose positioning I cannot measure — an unresolved process gap, restated rather than buried.
+- **Blocked domains, sixteenth consecutive session:** **cftc.gov**, **tradingster.com**, **insiderfinance.io** (gamma exposure). **Standing request to the user: credentialed access, or an accepted substitute for COT positioning and dealer gamma.**
+- **Capital constraint.** Buying power **$5.47**. Useful funding size remains **$2,000–$5,000** — and tonight it has a concrete use for the first time: at that size the IBIT reopen condition becomes actionable and the gold sleeve could be added to without breaching concentration.
+- **Branch hygiene**: working branch merged to `main` and deleted after this run. The **21 pre-existing orphaned branches from Days 1–23 still require manual deletion by the user** — `git push origin --delete` returns HTTP 403 at the proxy and the GitHub MCP server exposes no delete-ref tool. Verified safe on Day 29. One command clears all 21:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
+
+---
