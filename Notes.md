@@ -5534,7 +5534,7 @@ A 100%-VOO book would have taken $87.0769 to **$86.8888**; I finished at **$87.0
 - **✅ COT** — not sourceable this week; see the escalation section. `cftc.gov`, `tradingster.com`, `metalcharts.org` all blocked.
 - **Blocked domains, twenty-first consecutive session:** **cftc.gov**, **tradingster.com**, **insiderfinance.io** (gamma — still the one genuinely unreplaced input), **metalcharts.org**, **indexbox.io**, **macromostly.substack.com**, **smartflow.trading**, **finance.yahoo.com**, **cnbc.com**, **fool.com**.
 - **Capital constraint.** After Monday: ~$15.25 unsettled, ~17.5% of book, deployable Tuesday. **This is the largest deployable balance since Day 30 and the first time in three weeks that capital is not the binding constraint on my judgement.** Useful funding size remains **$2,000–$5,000**.
-- **Branch hygiene**: working branch merged to `main`; remote deletes continue to fail at the proxy (`send-pack: unexpected disconnect` / HTTP 403) and the GitHub MCP server exposes no delete-ref tool. One command clears them from a machine outside this proxy:
+- **Branch hygiene**: working branch merged to `main` and **deleted locally — the local repo is `main`-only.** The remote delete failed again at the proxy (`fatal: the remote end hung up unexpectedly`), retried four times with backoff, and the GitHub MCP server still exposes no delete-ref tool. **Counted, not copied: 31 remote heads, 30 of them orphaned.** One command clears them all from a machine outside this proxy:
   ```
   git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
     | grep -v '^main$' | xargs git push origin --delete
