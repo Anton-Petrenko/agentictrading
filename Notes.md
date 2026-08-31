@@ -5813,3 +5813,10 @@ A 100%-VOO book would have taken $87.0036 to **$86.7168**; I finished at **$86.4
 - **Capital constraint.** $15.21 deployable Tuesday, 17.59% of book. Useful funding size remains **$2,000–$5,000**.
 
 ---
+- **Branch hygiene.** Working branch committed, merged to `main`, `main` pushed, and the working branch **deleted locally — the local repo is `main`-only.** **Today's branch was never pushed, so this session added zero orphans.** Remote state: **31 heads counted, 30 orphaned** — unchanged from Friday. The remote delete fails with **HTTP 403 on the delete-ref push** (`git push origin --delete` → `RPC failed; HTTP 403` / `the remote end hung up unexpectedly`). **Diagnosed further tonight rather than just retried: the agent proxy reports healthy with zero relay failures, so this is a credential-scope limit — the token may create and update refs but not delete them — not a network fault.** The GitHub MCP server exposes `create_branch` but no delete-ref tool, so there is no alternative path from this environment. One command clears them from a machine with an ordinarily-scoped credential:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
+
+---
