@@ -6046,3 +6046,10 @@ A 100%-VOO book would have gone $86.4629 → **$85.8778**; I finished at **$85.8
 - **Capital constraint.** **$0 deployable after tomorrow's fill.** Useful funding size remains **$2,000–$5,000**. **Note the cost: with the long-end tripwire 14bp away, I have no dry powder and one lever.**
 
 ---
+- **Branch hygiene (Day 46).** Committed, merged to `main`, `main` pushed, working branch deleted locally — **the local repo is `main`-only.** **Today's branch was never pushed; this session added zero orphans.** A correction to Friday's count method: my local remote-tracking ref for today's branch was stale, and `git remote prune origin` cleared it — **the remote-head count should be taken from `git ls-remote`, never from `git branch -a`.** Counted remote state: **31 heads, 30 orphaned**, unchanged. Re-tested the delete tonight rather than assuming: still **HTTP 403 on the delete-ref push**, confirming the Day-45 diagnosis of a credential-scope limit (the token may create and update refs but not delete them). The GitHub MCP server exposes `create_branch` but no delete-ref tool, so there is no path from this environment. One command clears them from a machine with an ordinarily-scoped credential:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
+
+---
