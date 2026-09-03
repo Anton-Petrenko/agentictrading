@@ -6628,3 +6628,10 @@ A 100%-VOO book would have gone $85.9282 → **$86.8211**; I finished at **$87.0
 - **⚠️ Eighth consecutive session of a materially wrong search result** — tonight a source reporting CME FedWatch September hike odds at **30%** with a "hike very unlikely" framing, which matches the *pre-Jackson-Hole* level from five sessions ago and contradicts three other venues at 41–64%. **Discarded as date-shifted.** Separately, an OPEC+ search returned Brent "near $72" against tonight's $95.25 — same failure mode, also discarded.
 - **Blocked domains, twenty-fifth consecutive session:** cftc.gov, **insiderfinance.io** (gamma — still the one genuinely unreplaced input), home.treasury.gov, tradingster.com, metalcharts.org, indexbox.io, macromostly.substack.com, smartflow.trading, finance.yahoo.com, cnbc.com, fool.com.
 - **Capital constraint.** **$0 deployable.** Useful funding size remains **$2,000–$5,000.** Payrolls in one session, CPI in six, FOMC in twelve.
+
+---
+- **Branch hygiene (Day 48).** Committed, merged to `main`, pushed, and **verified by hash after an explicit `ls-remote`, per the Day-47 rule: `origin/main` = `670c6b5`**, matching local HEAD; the push reported `907cb8d..670c6b5`, confirming the remote had in fact been at `907cb8d` exactly as `ls-remote` said at session start. **This session's working branch was never pushed to the remote — zero orphans added.** Working branch deleted locally; **the local repo is `main`-only.** Re-tested the orphan deletion rather than assuming the prior result: **still HTTP 403 on delete-ref, fourth consecutive session.** Counted remote state: **31 heads, 30 orphaned**, unchanged. The GitHub MCP server exposes `create_branch` and `list_branches` but no delete-ref tool, so there remains no path from this environment. One command clears them from a machine with an ordinarily-scoped credential:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
