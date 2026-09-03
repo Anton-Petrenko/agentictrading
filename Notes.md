@@ -5541,3 +5541,1090 @@ A 100%-VOO book would have taken $87.0769 to **$86.8888**; I finished at **$87.0
   ```
 
 ---
+
+## 2026-08-31 (Monday) — Day 45: **No trade possible — and I used the forced pause to underwrite the replacement, retire my broken risk rule a day early, and catch a benchmark error I had been making in my own favour.**
+
+**Both queued orders filled at the open. Buying power is $0.00 — the $15.21 of GLD proceeds does not settle until tomorrow — so today was mechanically a no-trade day regardless of what I found.** Three things came out of the research: **the COT finally sourced on the first attempt after nineteen failed sessions, and it retroactively vindicates Friday's sale**; **XLE is the first instrument I have measured in this journal that reduces portfolio volatility below the cash position it would replace**; and **the S&P level I have been carrying is right, but the level a search handed me tonight was Friday's close republished as today's — the fifth consecutive session of a date-shifted source, caught by my own rule.**
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+
+| | Shares | Avg cost | Close | Value | Weight | P&L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $700.15 | **$704.91** (−0.330%) | **$40.79** | 47.18% | +$0.27 (+0.68%) |
+| MSFT | 0.060042 | $463.84 | **$507.32** (−1.209%) | **$30.46** | 35.23% | **+$2.61 (+9.37%)** |
+| Cash (unsettled) | — | — | — | **$15.21** | 17.59% | — |
+| **Total** | | | | **$86.46** | | |
+
+Buying power **$0.00**. Unsettled funds **$15.21**, settling **Tuesday Sept 1**. Invested cost basis $68.37 → $71.25, **unrealized +$2.89 (+4.22%)**. Account **−0.22% since Day 1**.
+
+Book value stated on regular-session closes ($86.46); the broker's live figure ($86.49) uses a post-close print. Convention unchanged.
+
+---
+
+### ✅ BOTH ORDERS FILLED — scored, with the slippage logged
+
+| Order | Written expectation | Fill | Slippage |
+|---|---|---|---|
+| SELL 0.037296 GLD (`6a91f9f1`) | ~$15.25 @ ~$408.8 | **$407.83, proceeds $15.2104** | **−$0.04 (−0.26%)** adverse |
+| BUY $5.52 VOO (`6a91fa0a`) | 0.0078 sh @ $707.31 | **$705.33, 0.007826 sh** | **+$0.0155 (+0.28%)** favourable |
+
+**Net slippage across both: −$0.024. Call it neutral.** Realized gain on the GLD sale: **+$0.2104 (+1.40%)** against a $402.19 basis — slightly below the +$0.25 I projected, because I scored the projection off Friday's close rather than an opening print. VOO's average cost rises $699.34 → **$700.15**.
+
+**🥇 And the honest scoring of Friday's stated fear.** I wrote: *"I may be selling the low of a two-day scare, and if gold is $425 in a fortnight this entry will look like panic dressed in arithmetic."* **GLD closed today at $408.44 — 0.15% above my $407.83 fill.** I did not sell the low and I did not capture anything either; the sale was, in its first session, a non-event. **One session is not the fortnight I named as the test, and I am not scoring this as vindication. The test date stands.**
+
+---
+
+### 🔒 COT — SOURCED, first attempt, after nineteen sessions of failure — and it says Friday's sale was right for the reason I gave
+
+**Managed money COMEX gold net long: 144,747 contracts as of Aug 25, up from 141,648 as of Aug 18 — reported as the highest since September 2025.**
+
+This is the input that was mandatory on Friday, that I could not obtain, and that I recorded as *missing rather than satisfied*. Now I have it, and it matters in a specific way:
+
+- **The crowd got MORE crowded into Aug 25** — a fresh multi-month high in speculative length — **and then gold fell 3.263% on Aug 28.** That is the sequence I described from the tape alone on Friday ("gold traded at an implied −5.90 beta to the dollar against a −3.20 sample beta; that is what a crowded long looks like when it starts unwinding"). **The positioning data now confirms the mechanism I inferred from price.**
+- **Had the escalation clause been evaluable on Friday, it would have fired.** Its trigger was a further increase in managed-money length; length increased. **The clause's maximum demand was a trim to 12% of book. I went to 0%.** So Friday's note stands exactly as written: an unsourced input could not have changed an outcome it could only have made smaller — and now I know it would have pointed the same way.
+- **What I will not claim:** that I knew this on Friday. I did not. I acted on price and mechanism without the confirming data, and the data happened to agree. **That is a good outcome from an incomplete process, not a good process, and the distinction is the whole point of keeping this journal.**
+
+`cftc.gov`, `insiderfinance.io` both still `EGRESS_BLOCKED`. The COT came from a secondary aggregator, so it grades **medium**, not firm.
+
+---
+
+### 🛢️ THE TAPE — a military escalation at the world's most important chokepoint, and a VIX of 14.92
+
+**On Aug 30 US forces struck two Iranian rocket launchers on Larak Island after the IRGC was observed preparing to fire rockets carrying sea mines into the Strait of Hormuz. It is the first direct US strike on Iranian positions in over a month. Iran acknowledged casualties, vowed to respond, and overnight attacked US bases in Jordan and the UAE.**
+
+| | Close | Δ |
+|---|---|---|
+| **SPX (firm)** | **7,686.14** | **−0.32%** |
+| VOO | $704.91 | −0.330% |
+| SPY | $766.95 | −0.312% |
+| RSP (equal weight) | $219.33 | **−0.616%** |
+| **XLE** | **$63.935** | **+2.002%** |
+| **USO** | **$133.74** | **+3.115%** |
+| XLK | $186.44 | +0.404% |
+| SOXX | $511.02 | +0.472% |
+| NVDA | $220.88 | +1.531% |
+| **MSFT** | **$507.32** | **−1.209%** |
+| XLI | $175.12 | **−1.140%** |
+| XLF | $57.700 | −0.689% |
+| XLP | $84.98 | −0.550% |
+| XLY | $116.60 | −0.520% |
+| XLV | $170.54 | −0.362% |
+| IBIT | $44.675 | +1.765% |
+| **VIX** | **14.92** | — |
+
+Brent **$90.69 (+2.93%)**, WTI **$85.54 (+2.57%)** — medium confidence, search-sourced.
+
+**Two features of this tape are worth more than the headline.**
+
+**1. Breadth was terrible and the index barely moved.** RSP −0.616% against SPX −0.32% — the equal-weight index fell nearly twice as hard as the cap-weighted one. Four of the eight sectors I track fell more than 0.5%; XLI −1.14%. **The index was held up by XLK +0.40% and NVDA +1.53% while everything underneath it sold off.** That is the same narrow-leadership structure I have logged repeatedly, and it is the structure my 38.30% effective MSFT position is maximally exposed to.
+
+**2. VIX closed at 14.92 on the day the US and Iran resumed shooting at each other.** For scale: my journal's previous VIX low was 14.25 on Aug 14, logged then as a new low for this record. **The market has priced a fresh military exchange at the chokepoint for 20% of seaborne oil as a non-event for equity volatility.** I do not have a confident read on whether that is correct or complacent. **I am recording it because it is the cheapest possible statement of how much protection costs relative to the risk on the tape, and because this account cannot buy that protection — it has no options approval, so noting it is all I can do.**
+
+**🔴 MSFT −1.209% on a −0.330% tape, against XLK +0.404%.** My largest position fell 1.6 points relative to its own sector on a day the sector rose. **The only MSFT-specific items on the tape were mild-to-positive**: an AWS/Azure multicloud interconnect partnership, OpenAI's ChatGPT Ads reaching a **$1B annualized run rate**, and an EU DSA designation for ChatGPT. AMZN fell 2.73% on the same partnership. **I have no explanation for the move, and per my own rule I am not inventing one** — this is the third time in six sessions I have had to write that about MSFT, in both directions.
+
+**⚠️ A search-sourced article tonight reported MSFT's 50-day SMA at $430.98 and its 200-day at $431.47, framing an imminent "Golden Cross."** MSFT closed at **$507.32** and has not traded below $460 since July. **A 50-day average of $431 is arithmetically impossible on this price history.** Flagging it as another bad third-party level, not acting on it, and not treating "Golden Cross" as information.
+
+---
+
+### 📊 THE REPLACEMENT CANDIDATE — I measured it instead of arguing about it
+
+Friday's binding clause: the GLD proceeds are deployed **by Wednesday Sept 2's close**, into a position chosen on Tuesday's evidence, **VOO by default**. I cannot trade today, so tonight's job is to have the candidate fully underwritten before the deadline rather than deliberating into it.
+
+**The question I asked was not "what will go up." It was "what does this book actually lack," and then I measured the answers.** Correlations over 70 daily returns, May 20 – Aug 31, interpolated bars excluded, firm broker closes:
+
+| Sector | corr to VOO | corr to MSFT | daily σ | cum % |
+|---|---|---|---|---|
+| **XLE** | **−0.320** | **−0.038** | 1.434% | **+6.91** |
+| XLP | −0.290 | −0.048 | 1.102% | −0.63 |
+| XLV | −0.138 | −0.020 | 1.210% | **+15.91** |
+| XLU | −0.105 | −0.183 | 1.004% | −5.63 |
+| XLF | +0.269 | +0.272 | 0.809% | +11.69 |
+| XLI | +0.638 | −0.060 | 1.136% | +2.57 |
+| XLY | +0.638 | +0.309 | 1.331% | −1.14 |
+| RSP | +0.686 | +0.120 | 0.676% | +7.60 |
+| **GLD (sold Friday)** | **+0.466** | +0.161 | 1.631% | −2.15 |
+| USO | −0.317 | −0.170 | **3.225%** | −7.30 |
+
+**GLD reproduces at +0.466 to VOO and +0.161 to MSFT — identical to what I measured on Day 42 on a 69-return sample. The sample is internally consistent and I trust the rest of the table because of it.**
+
+**Then the test that actually decides it — portfolio volatility under each deployment, not the candidate's volatility in isolation:**
+
+| Deployment of the $15.21 | portfolio daily σ | annualised | effective MSFT |
+|---|---|---|---|
+| Leave it in cash (today) | 1.1776% | 18.7% | 38.30% |
+| **DEFAULT → VOO** | **1.2728%** | **20.2%** | **39.44%** |
+| **→ XLE** | **1.1700%** | **18.6%** | **38.30%** |
+| → XLP | 1.1673% | 18.5% | 38.30% |
+| → XLV | 1.1836% | 18.8% | 38.30% |
+| → GLD (the sleeve I sold) | **1.2899%** | 20.5% | 38.30% |
+
+**Three results, and each one is a fact I did not have before tonight.**
+
+**1. Deploying the cash into XLE produces a portfolio that is *less volatile than holding the cash idle* (1.1700% vs 1.1776%).** That is only arithmetically possible when a position's negative covariance with the existing book removes more variance than its own variance adds. **It means "stay in cash to be safe" is, for this specific candidate, factually wrong — I would be going from 82.4% invested to 100% invested and lowering risk.** I have spent forty-four sessions treating cash as the low-risk default. For this trade it is not.
+
+**2. The default is the worst live option on the board.** VOO takes portfolio σ up **8.1%** (1.1776 → 1.2728) *and* pushes effective MSFT from 38.30% to **39.44%** — into the ceiling I am writing tonight. **My own default deployment makes my largest named risk worse on both axes simultaneously.**
+
+**3. GLD would have been the single worst thing to own — 1.2899%, higher than the index itself.** I held it for six sessions after measuring its +0.466 correlation. **This is the number that should have ended that position on Day 42, and I did not compute it until eight days later.**
+
+**Why XLE over XLP, which scores a hair lower (1.1673%).** The difference is 0.0027 percentage points — noise, not a signal, and I will not pretend to distinguish two portfolios on the fourth decimal. The tiebreakers are elsewhere: **XLE trades at 16.40x earnings and yields 2.45%; XLP at 22.18x and 2.49%; VOO at 27.37x and 1.04%.** XLE has returned **+6.91%** over the sample against XLP's **−0.63%**. And **my own notes have the consumer cluster downgraded pending hard data** — buying staples would be overriding a live judgement of mine with a fourth-decimal statistic. XLV is the best performer in the table (+15.91%) but at **26.62x** it is barely cheaper than the index and its correlation benefit is less than half XLE's.
+
+**⛏️ And the bear case I went looking for — the one that nearly killed this — did not survive the price history.** My objection was: *XLE is 1.18% off a 52-week high, it has risen 50% off its October 2025 low, and this is a war-premium sector at the top of a war-premium cycle.* So I pulled two years of weekly bars and decomposed it:
+
+| | XLE |
+|---|---|
+| Pre-crisis, late Jan 2026 | ~$51.05 |
+| **March 2026 war-crisis peak** | **$62.56** |
+| De-escalation trough, mid-June 2026 | **$53.77** |
+| **Today** | **$63.935** |
+
+**XLE rose 18.9% from mid-June to today — and that entire advance happened while the conflict was de-escalating.** Day 1 of this journal was a market-wide relief rally on the US–Iran halt to hostilities; July brought Iran-deal optimism; on Day 41 I logged Iran de-escalating with Brent −6.33%. **The war premium was coming out of the price across exactly the window in which energy equities rose 19%.** XLE is now 2.2% *above* its March war peak, reached by a route that had nothing to do with war.
+
+**So my main objection is refuted: the recent move is not primarily a war premium. But I am not allowed to convert that into a bull case, because I cannot say what it *is*.** A 16.4x P/E at a 52-week high tells me earnings rose with the price rather than the multiple, which is the shape of an earnings-driven advance — but that is an inference from two numbers, not a sourced explanation. **Candidate drivers I can name but have not verified: refining margins, natural-gas and power demand from data-centre buildout, capital discipline. I am logging the unexplained 18.9% as an open question, not as a reason.**
+
+---
+
+### 🆕 💵 PRE-COMMITTED DEPLOYMENT — written tonight so tomorrow is execution, not fresh deliberation
+
+**At Tuesday Sept 1's review: BUY $15.21 of XLE, market, queued for Wednesday Sept 2's open — IF XLE's Tuesday close is ≤ $65.50.**
+
+**If XLE closes above $65.50 on Tuesday** (a >1.2% new 52-week high, i.e. the escalation premium has run away from my entry), **the balance goes to VOO instead, per the standing default, on the same schedule.** Either way the cash is fully deployed by the Wednesday Sept 2 deadline. **There is no third branch and no extension.**
+
+**The stated reason, so that a future me can hold me to the right thing.** I am buying XLE as an **allocation**, not as a trade on the Strait of Hormuz. The reasons are: a measured −0.320 correlation to my index exposure and −0.038 to my largest position over 70 sessions; a portfolio-volatility reduction that survives full deployment; a 16.4x multiple against a 27.4x index; a 2.45% yield against 1.04%; and a book that currently holds zero real-asset, zero cyclical, zero non-AI-levered exposure. **The Hormuz escalation is not the reason — it is the reason I am capping the entry price.** Today's +2.00% is a cost I am paying, not an edge I am capturing.
+
+**This is why the 10-session rule does not bar it.** That rule forbids a new position on a thesis whose confirmation test is shorter than ten sessions. **If I were buying XLE for yesterday's airstrike, it would bar this outright and I would not be writing the order.** The case rests on a 70-session measurement, a valuation gap and a structural hole in the book — none of which is one day old.
+
+**Terms, written before the position exists:**
+- **Cut below $57.50.** The level from which the entire August advance began. If it fails, that advance is fully retraced and the thing I am buying is gone. **−10.1% from today, 7.05σ on XLE's 1.434% daily σ** — in family with MSFT's 6.20σ and VOO's 7.50σ.
+- **🆕 Thesis falsifier, not a price stop: if XLE's trailing 30-day correlation to VOO rises above +0.10, the diversification reason has stopped being true and I re-underwrite in writing that night or cut.** This is the rule I failed to write for gold, whose stated reason was a hedge it was never measured to provide. **The reason I am buying it is a number; the falsifier has to be the same number.**
+- **Formal review Sept 30.** No adds before then.
+- **Not USO, and here is the measured reason:** USO's daily σ is **3.225%**, 2.25× XLE's, and it returned **−7.30%** over a 70-session sample in which XLE returned **+6.91%** and crude rose. **A futures-roll product is not an oil view; it is an oil view minus the roll.** I have been quoting USO's daily percentage as a proxy for crude in this journal for forty-five sessions. **That was sloppy and it stops tonight — XLE and sourced Brent/WTI only.**
+
+---
+
+### 🚨 MANDATORY DESIGN REVIEW — done tonight, one day early, and my risk rule is retired
+
+Friday escalated this to mandatory for Sept 1 after two deferrals. **I have the data tonight and no ability to trade, which is the ideal condition for rule-writing, so I am not deferring it a third time.**
+
+**☠️ RETIRED: the 10-session rolling relative-magnitude test.**
+
+Final reading, for the record: window Aug 18 – Aug 31, **sum +6.294** against a −5.0 threshold. Today contributed **−0.880** (MSFT −1.209 vs VOO −0.330); the Aug 17 outlier (−2.570) rolled off, which *raised* the sum by 1.69 points on a day my position lost 1.6 points to its sector. **A risk control that gets safer on a bad day because of what left its window is not measuring risk.**
+
+**Post-mortem.** The test fired exactly once (Aug 7) and fired correctly — it produced the trim to 35% and the first realized gain in this journal. But it has three defects I can now name precisely:
+1. **It goes structurally dormant.** For a fortnight it has been arithmetically incapable of firing; on Friday MSFT would have had to underperform by 12.17 points in one session, over four times its worst on record.
+2. **It measures the wrong thing.** Relative momentum is not concentration. Across the fortnight the test grew *safer* while effective MSFT grew from ~37.5% to 38.30% and its only other trimming mechanism (the $525 rule) sat suspended.
+3. **It was written against direct weight (35.23%), ignoring the ~3.07pp of MSFT I own through VOO.**
+
+**In short: it was a momentum indicator wearing a risk control's clothes.** Replaced by two level-based rules that cannot go dormant:
+
+**🆕 RULE M-1 — EFFECTIVE CONCENTRATION CEILING.**
+> Effective MSFT = direct MSFT weight + (VOO weight × MSFT's S&P 500 weight, currently ~6.5%). **On any close where effective MSFT ≥ 40.0%, trim MSFT the next session to bring effective back to 36.0%.** Evaluated every session, no window, no rolling sum.
+>
+> **Today: 38.30%.** Post-XLE deployment: **38.30%** (unchanged — the whole point). Holding VOO and XLE constant, the ceiling is reached at **MSFT ≈ $548.24, +8.1% from here**. Under the VOO default it would instead sit at **39.44%, 0.56pp from firing on day one.**
+>
+> The 6.5% index-weight input is refreshed monthly from a sourced figure; if it cannot be sourced, the last sourced value carries and the failure is logged rather than assumed.
+
+**🆕 RULE M-2 — DRAWDOWN TRIM.**
+> **If MSFT closes ≥12% below its highest close since Jul 1 2026, trim MSFT to 25% of book the next session.** Running high: **$513.53** (Aug 28) → trigger **$451.91**. The high ratchets up and never down.
+>
+> This sits above the existing full-exit at **$432.44**, giving an ordered sequence — **trim $451.91 → exit $432.44** — where previously there was a single cliff and a dormant momentum test.
+
+**No rule was loosened tonight.** M-1 binds at a level the old test could not reach; M-2 creates a trim trigger 4.4% above the old exit where none existed. **The replacement is strictly tighter than what it replaces, which is the only honest direction to move a rule you are rewriting after a period of gains.**
+
+---
+
+### 🔭 Tripwires
+
+| Signal | Aug 28 | **Aug 31** | |
+|---|---|---|---|
+| HYG | $79.740 | **$79.800, +0.075%** | ✅ |
+| LQD | $106.350 | **$106.235, −0.108%** | ✅ |
+| XLF | $58.100 | **$57.700, −0.689%** | ✅ |
+| TLT | $82.880 | **$82.530, −0.423%** | ✅ |
+| UUP | $28.180 | **$28.120, −0.213%** | ✅ retired w/ position |
+
+**Credit tripwire: NOT FIRED, twenty-second consecutive session. 0-for-7.** HYG *rose* 6 cents on a day the US and Iran exchanged fire and equal-weight equities fell 0.62%. **Credit has now declined to confirm every equity scare in seven weeks, and it just declined to confirm a military one.**
+
+**🚨 LONG-END TRIPWIRE — TLT −0.423% implies the 30-year up ~3bp to roughly 5.24%** (low confidence, inferred from TLT, not sourced). Fires on a close above **5.44%** — ~20bp of room, narrowed from 23bp. **An oil shock is the cleanest possible route to this tripwire and it is the one I should watch this week.**
+
+**💵 UUP $28.12.** The dollar gave back 0.213% of Friday's tripwire move but remains well above the **$27.88** required as leg (a) of any GLD re-entry. **Re-entry also requires managed-money net long below the 75th percentile of one year — tonight's COT puts it at the highest since September 2025, i.e. the opposite. Two of three legs are further away than they were on Friday. Gold stays closed.**
+
+---
+
+### 📊 Benchmark — and a measurement error I was making in my own favour
+
+| | Day 1 | Friday | **Today** |
+|---|---|---|---|
+| S&P 500 | 7,440 | ~7,710.2 | **7,686.14 (firm)** |
+| Index since Day 1 | — | +3.632% | **+3.308%** |
+| Account | $86.65 | $87.0036 | **$86.4629 (−0.622%)** |
+| Account since Day 1 | — | +0.408% | **−0.216%** |
+| **Gap** | — | 3.224 pts | **3.524 pts — widened 0.300** |
+
+A 100%-VOO book would have taken $87.0036 to **$86.7168**; I finished at **$86.4629. Underperformance −0.292pp.**
+
+**That ends eight consecutive sessions of outperformance.** The driver is almost entirely one line: **MSFT at a 35.44% opening weight × (−1.209 − (−0.330)) = −0.312pp.** Partly offset by **+0.058pp** from the GLD proceeds sitting in cash while the index fell — *idle cash was accretive today, for the first time in weeks, and only because the market fell.* I will not draw a lesson from that; it is one session and the reverse has been true far more often.
+
+**⚠️ And the correction, which matters more than the day.** Tonight a search returned "S&P 500 down 0.3% to finish at **7,711.76**." My broker's firm index feed says **7,686.14**. Rather than pick one, I applied my own rule and divided out the quoted percentage: **7,711.76 is within 0.05% of the 7,713.8 I had inferred for *Friday*.** It is Friday's close, republished as today's — **exactly the date-shifted-republication failure mode my process rule was written to catch, and the fifth consecutive session a search-sourced level has been wrong.**
+
+**The genuinely uncomfortable part: had I taken it, I would have recorded the index at 7,711.76 (+3.65% since Day 1) and a gap of 3.87 points, then "narrowed" it tomorrow for free when the number corrected. I have been inferring index levels from SPY for several sessions precisely because I could not source the index directly. Tonight I discovered the broker exposes SPX as firm data through `get_indexes`/`get_index_quotes`.** That is a tool I had available for forty-five sessions and never used. **New standing rule: the benchmark level comes from the firm index feed, never from SPY inference and never from a search snippet.** My inferred chain happened to be accurate to 0.05% — but I was lucky, not rigorous, and the difference is the point.
+
+---
+
+### The honest bear case on tomorrow's pre-committed trade
+
+- **The single strongest number in tonight's work — full deployment at lower portfolio volatility than cash — is a backward-looking covariance estimate on 70 daily returns.** Correlations are not stable, they are least stable in the regimes that matter, and −0.320 is not a structural constant. **I am acting on the best measurement I have, not on a law.** The 30-day correlation falsifier exists because of exactly this.
+- **Much of that −0.320 is probably conflict-driven.** The sample spans the entire Hormuz crisis. **That means the hedge would decay if the conflict genuinely resolves — and it would decay at precisely the moment I stop needing it, which is tolerable — but it also means I may be buying the diversification at its most expensive.**
+- **I am entering the day after a +2.00% geopolitical pop, into a sector 1.18% from a 52-week high.** The price cap limits how much worse this gets; it does not make today's entry cheap. **My record on oil in this journal is 0-for-1, and the one attempt was a headline-reasoning error I had to withdraw in writing three weeks ago.**
+- **I cannot explain XLE's 18.9% advance since mid-June.** I refuted my own war-premium objection and put nothing verified in its place. **Buying something whose recent strength you cannot attribute is a smaller version of the criticism I made of my own MSFT position on Friday, and I am making it twice in four days.**
+- **M-1 and M-2 are new and untested, and I wrote them on an evening when my largest position had just fallen 1.2%.** Rules written in mild discomfort tend to be better than rules written in comfort, but neither has ever fired. **The real test of M-1 is whether I honour it at 40.0% when MSFT is at $548 and I do not want to sell.**
+- **Nothing tonight addresses the actual concentration.** Effective MSFT is 38.30% and my plan holds it at 38.30%. **I built a ceiling above where I already sit rather than reducing the position** — that is a legitimate choice for a position up 9.37% with a 6.20σ cushion, but it is a decision to keep the risk, and it should be read as one.
+- **No dealer-gamma read, twenty-second consecutive session.** insiderfinance.io still blocked. On a day with an oil shock, a 14.92 VIX and terrible breadth, positioning is exactly the input that separates mechanical flow from repricing.
+
+---
+
+### Pre-committed triggers for Tuesday Sept 1 and the week
+
+- **💵 DEPLOYMENT — BINDING, terms above.** $15.21 settles Tuesday. **BUY $15.21 XLE (market, Wed Sept 2 open) if XLE's Tuesday close ≤ $65.50; otherwise VOO on the same schedule.** Fully deployed by Wednesday's close either way.
+- **🆕 XLE terms (on establishment):** cut below **$57.50**; **re-underwrite or cut if 30-day XLE↔VOO correlation > +0.10**; review Sept 30; no adds.
+- **🆕 RULE M-1 — effective MSFT ceiling 40.0%**, trim to 36.0% next session. Today **38.30%**. Trigger ≈ MSFT **$548.24**.
+- **🆕 RULE M-2 — MSFT drawdown trim.** ≥12% below the running high since Jul 1 ($513.53) → **$451.91** → trim to 25% of book.
+- **🔴 MSFT — other terms.** Full exit below **$432.44** (17.32%, **6.20σ**). Reassess below **$449.33**. Adds RETIRED. $525 trim SUSPENDED. **☠️ Magnitude test RETIRED (post-mortem above).**
+- **VOO: cut below $664.** Unconditional. Today $704.91, **6.16%** cushion (**7.50σ**).
+- **☠️ GLD — CLOSED. Re-entry requires ALL of:** (a) UUP < $27.88 — today **$28.12**; (b) managed-money net long below the 75th percentile of one year — tonight **144,747, highest since Sep 2025**; (c) a stated driver that is not "it went up." **Two of three moved further away today. None before Sept 15.**
+- **☠️ SILVER — retired on measurement.** Reopen needs 30-day SLV↔GLD corr < +0.60 AND GLD/SLV > 7.10.
+- **⚠️ GUIDE-VS-BEAT — 3 for, 2 against, not converging.** 4 of 6, ≥±2%, through Sept 30. No position. Working expectation is failure.
+- **🆕 🛢️ HORMUZ RE-ESCALATION — LOGGED, and explicitly NOT the reason for the XLE order.** First direct US strike in over a month; Iranian retaliation on US bases in Jordan and the UAE. **Watch: a Hormuz *closure* (not a strike) is the event that would revalue everything in this book at once, and VIX 14.92 says it is not priced.**
+- **🚫 MEMORY/STORAGE BAN — structural.** 35% AI-complex ceiling vs 38.30% effective MSFT. Breached on look-through; reopens only via an MSFT trim.
+- **🏛️ FISCAL-DOMINANCE WATCH — DOWNGRADED**, currency leg refuted. Programme leg next tests **Sept 9**. Lapses Nov 4 below 5%.
+- **🚨 LONG-END TRIPWIRE.** 30-yr **~5.24%** (inferred), fires above **5.44%** — ~20bp. **Oil is the live route to it.**
+- **🔭 Credit tripwire: 0-for-7, twenty-two quiet sessions.**
+- **₿ IBIT — WATCH ONLY.** $44.675 (+1.77%). Needs a ≥10% pullback holding above $36.60, CLARITY Act resolved, funding of $2,000+.
+- **OpenAI counterparty test.** Triggers: emergency raise, missed payment, renegotiation of the $250B Azure commitment, or an S-1. **Tonight, both directions: ChatGPT Ads hit a $1B annualized run rate (counterparty revenue diversifying, mildly positive) while reports say the IPO may slip to 2027 as OpenAI weighs whether markets support a $1T valuation (mildly negative).** Neither is a trigger. Formal check Q1 FY27 (~late October).
+- **PROCESS RULES in force.** One-session patterns need non-consecutive confirmation or 3-of-5. Driver tests specify a minimum daily magnitude. Settled closes only from `close.price`/`get_equity_historicals`. Never evaluate an intervention solely in the asset intervened in. No new position on a thesis whose confirmation test is under 10 sessions. Verify a sample contains the event type before reasoning from it. An after-hours quote is not an outcome. Compute correlation and beta before calling anything a hedge. Divide out a quoted percentage to identify date-shifted republication. Broker beats search on any level; cross-check against a second instrument. A tripwire is evaluated only against the level as written. **🆕 The benchmark index level comes from the firm index feed (`get_indexes`/`get_index_quotes`), never from SPY inference or a search snippet.** **🆕 Never quote a futures-roll ETF (USO) as a proxy for its underlying commodity.** **🆕 A position's falsifier must be written in the same units as its stated reason — if the reason is a measured number, the falsifier is that number moving.**
+- **Calendar**: **cash settles Tue Sept 1** · **deployment deadline Wed Sept 2 close** · **Canada tariffs Sept 8** · **Treasury buyback programme Sept 9** · **August CPI Sept 11 — now the highest-stakes print on the board given the oil move** · **FOMC Sept 15–16 with dot plot** · **XLE review Sept 30** · **guide-vs-beat expiry Sept 30** · **MSFT Q1 FY27 ~late Oct** · **buyback expiry Nov 4**.
+
+### Housekeeping
+
+- **Orders**: two filled at the open, both scored above with slippage. **One order pre-committed in writing for tomorrow, with a price cap and a named alternative branch.**
+- **Rules**: **one risk rule retired with a written post-mortem and replaced by two strictly tighter level-based rules** (M-1, M-2); **three process rules added**; **one binding input finally sourced after 19 failed sessions, and it confirmed a decision already taken**; **one bear case investigated and refuted on price history**; **one search-sourced level caught as date-shifted republication**; **no rule loosened.**
+- **Data provenance.** **Firm (broker):** all positions, both fills and their slippage, every close and percentage in the tape table, **the SPX and VIX levels**, all correlations/betas/σ (70 daily returns, May 20 – Aug 31, interpolated bars excluded), the portfolio-volatility table, the XLE weekly decomposition, all P/E, yield and 52-week figures, the σ-cushions. **Medium (multi-source search):** the Larak Island strike and Iranian retaliation, the COT figure of 144,747 (secondary aggregator; cftc.gov still blocked), Brent/WTI levels, the OpenAI ads and IPO-timing reports. **Soft (inferred):** the 30-year at ~5.24% (from TLT), MSFT's ~6.5% index weight, XLE's driver since mid-June (**explicitly unexplained**).
+- **⚠️ Fifth consecutive session of a bad search-sourced level** — tonight the S&P close itself, identified as Friday's figure republished. **Also caught: a moving-average pair for MSFT that is arithmetically impossible on its own price history.** Both discarded; neither acted on.
+- **Blocked domains, twenty-second consecutive session:** **cftc.gov**, **insiderfinance.io** (gamma — still the one genuinely unreplaced input), tradingster.com, metalcharts.org, indexbox.io, macromostly.substack.com, smartflow.trading, finance.yahoo.com, cnbc.com, fool.com. **COT was obtained via a secondary aggregator tonight — the first successful sourcing in 19 sessions.**
+- **Capital constraint.** $15.21 deployable Tuesday, 17.59% of book. Useful funding size remains **$2,000–$5,000**.
+
+---
+- **Branch hygiene.** Working branch committed, merged to `main`, `main` pushed, and the working branch **deleted locally — the local repo is `main`-only.** **Today's branch was never pushed, so this session added zero orphans.** Remote state: **31 heads counted, 30 orphaned** — unchanged from Friday. The remote delete fails with **HTTP 403 on the delete-ref push** (`git push origin --delete` → `RPC failed; HTTP 403` / `the remote end hung up unexpectedly`). **Diagnosed further tonight rather than just retried: the agent proxy reports healthy with zero relay failures, so this is a credential-scope limit — the token may create and update refs but not delete them — not a network fault.** The GitHub MCP server exposes `create_branch` but no delete-ref tool, so there is no alternative path from this environment. One command clears them from a machine with an ordinarily-scoped credential:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
+
+---
+## 2026-09-01 (Tuesday) — Day 46: **TRADE — the pre-committed XLE order executed on its price condition, I finally attributed the advance I could not explain, and a global bond rout repriced everything I own.**
+
+**The cash settled, XLE closed at $64.78 against my $65.50 cap, and the order went in as written — 0.234830 shares, $15.21, market, queued for Wednesday's open.** Three things came out of the research, and the second is the one that matters most: **energy's unexplained 18.9% advance is a refining-margin event, sourced and quantified**; **the 30-year Treasury pushed past 5.3% in a global sovereign rout that explains every price on my board today**; and **I caught my own σ-cushions being carried forward rather than recomputed, drifting in the direction that flattered me — for the second consecutive session.**
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+
+| | Shares | Avg cost | Close | Value | Weight | P&L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $700.15 | **$700.12** (−0.677%) | **$40.52** | 47.21% | −$0.00 (−0.004%) |
+| MSFT | 0.060042 | $463.84 | **$501.15** (−1.210%) | **$30.09** | 35.06% | **+$2.24 (+8.04%)** |
+| Cash (settled) | — | — | — | **$15.21** | 17.72% | — |
+| **Total** | | | | **$85.82** | | |
+
+Buying power **$15.21**, settled, and committed to a queued order. Invested cost basis $68.37 → $70.61, **unrealized +$2.24 (+3.27%)**. Account **−0.960% since Day 1**.
+
+---
+
+### ✅ THE TRADE — executed on the condition, not on the day's news
+
+| | |
+|---|---|
+| Written Aug 31 | BUY $15.21 XLE, market, Wed Sept 2 open — **IF XLE's Tuesday close ≤ $65.50** |
+| **XLE Tuesday close** | **$64.78** — condition met with $0.72 (1.1%) to spare |
+| Order | `6a973f6e` — BUY **0.234830 XLE**, $15.21, market, gfd, **queued** |
+| Quote at entry | Bid $64.72 × 1600 · Ask $64.80 × 500 · Last $64.77 |
+
+**The alternative branch (VOO) is dead and the book is fully deployed on fill.** No deliberation happened tonight about *whether* to do this — that is the entire purpose of writing the order the night before, and I want the record to show the condition did the work rather than my mood on the day.
+
+**Note the discipline actually bit.** XLE printed a **new 52-week high of $64.95 intraday** and closed 0.26% off it. Had it closed 1.2% higher I would be buying VOO tonight and liking it less. The cap was not decorative.
+
+**Re-verified before placing, on 71 returns (one more session than the underwrite):**
+
+| | Day 45 (70 rets) | **Today (71 rets)** |
+|---|---|---|
+| corr XLE↔VOO | −0.320 | **−0.3273** |
+| corr XLE↔MSFT | −0.038 | **−0.0446** |
+| XLE daily σ | 1.434% | **1.4318%** |
+| Portfolio σ — cash idle | 1.1776% | **1.1696%** |
+| **Portfolio σ — → XLE** | **1.1700%** | **1.1602%** |
+| Portfolio σ — → VOO | 1.2728% | **1.2661%** |
+
+**The result that decided this holds: full deployment into XLE leaves the portfolio *less* volatile than leaving the cash idle (1.1602% vs 1.1696%).** And the falsifier is nowhere near firing — **trailing 30-day XLE↔VOO is −0.3482, *more* negative than the full sample**, against a cut level of +0.10.
+
+**Effective MSFT: 38.13% before, 38.13% after.** The VOO default would have put it at **39.28%**, 0.72pp from M-1. The deployment I chose is the one that does not move my largest named risk at all.
+
+---
+
+### 🔬 THE FINDING — I closed last night's open question, and the answer changes what I think I own
+
+Last night I wrote: *"I am logging the unexplained 18.9% as an open question, not as a reason."* I named three candidate drivers and verified none. **Tonight I decomposed the sector by sub-industry, mid-June trough to last week:**
+
+| | Jun 15 wk | Aug 24 wk | **Move** |
+|---|---|---|---|
+| **MPC** — refiner | $242.91 | $368.83 | **+51.8%** |
+| **VLO** — refiner | $236.30 | $352.36 | **+49.1%** |
+| **PSX** — refiner | $166.14 | $244.01 | **+46.9%** |
+| COP — E&P | $107.74 | $130.35 | +21.0% |
+| SLB — services | $48.09 | $57.33 | +19.2% |
+| CVX — integrated | $173.63 | $201.86 | +16.3% |
+| XOM — integrated | $137.81 | $156.71 | +13.7% |
+| EOG — E&P | $129.98 | $143.35 | +10.3% |
+| **XLE** | **$53.77** | **$62.68** | **+16.6%** |
+
+**The refiners tripled the return of everything else in the sector, and the mechanism is sourced, not inferred:** the NYMEX 3-2-1 crack spread hit an **all-time high of $72/bbl**; the US diesel crack hit an **all-time high of $102.20/bbl**. The cause is a *product* dislocation, not a crude one — **Persian Gulf diesel exports are down 80% year-over-year against a 48% decline in crude exports**, with Middle East refineries damaged in the Iran conflict and Russian refining repeatedly hit by Ukrainian drones.
+
+**That asymmetry — 80% vs 48% — is the whole story, and it is why crude alone never explained the move.**
+
+**Now the part that decides whether I keep the position I just bought.** XLE's weights: **XOM 20.5%, CVX 15.0%, COP 6.1%, MPC 5.4%, PSX 5.3%**, VLO ~4% — **refiners are roughly 15% of the fund.**
+
+**So XLE captured +16.6% while the actual driver captured +50%.** The cap-weighting toward integrateds, which I might have called a defect, is the reason XLE is the *diluted* expression of a record-extreme spread rather than the concentrated one.
+
+**And I am explicitly refusing the obvious trade.** Buying MPC or VLO would be: chasing a +52% eleven-week run; on an all-time-high spread that is by construction mean-reverting (a CNBC piece on Aug 17 was already headlined *"Refiner stocks are on a nearly unprecedented run. History says it could end soon"*); in an instrument whose correlation to my book **I have never measured**; at single-stock idiosyncratic risk on a $15 position. **Every one of my own process rules forbids it.** The finding is a reason to understand XLE better, not a reason to buy something else.
+
+**⚠️ The one genuinely uncomfortable implication, stated plainly.** XLE's **16.37x P/E is flattered by peak refining earnings** in the trailing denominator. Stress it: if refiner earnings are ~25% of XLE's trailing E and halve on normalisation, the multiple goes to **~18.7x** — still far below VOO's **27.37x**. **The valuation leg of my thesis survives the peak-earnings adjustment, and I would rather have tested it and found that than assumed it.**
+
+**Second implication: my −0.327 hedge is more conflict-contingent than I modelled.** Last night I called that a suspicion. Tonight I have the mechanism — a war-driven product dislocation — so it is now a known property. The diversification decays on peace. **The 30-day correlation falsifier is the correct instrument for that and it is already written.**
+
+---
+
+### 🌍 THE REAL STORY TODAY — a global sovereign bond rout, and it explains every price I hold
+
+| | Sept 1 |
+|---|---|
+| **US 30-year** | **past 5.30%** — highest since 2007 (sourced, ends 22 sessions of TLT inference) |
+| **JGB 10-year** | **3.00%** — highest since 1996 |
+| UK 10-yr gilt | >5.2% — 2008 high |
+| Bund / OAT | highest since 2011 / 2008 |
+| Bloomberg global govt yield gauge | **3.72%** — highest since mid-2008 |
+
+**Named causes:** Eurozone inflation to **3.3%**; Japan's next budget reported as its largest ever; Bessent pressuring Japan to strengthen the yen (which routes through BOJ hikes); and **rising oil feeding straight into inflation expectations.**
+
+**This is a discount-rate event, and today's tape is its signature — not a growth scare:**
+
+| | | |
+|---|---|---|
+| SPX | **7,631.47** | **−0.711%** (firm index feed) |
+| RSP equal-weight | $217.62 | −0.807% |
+| **VIX** | **16.34** | **+9.52%** |
+| **GLD** | $396.84 | **−2.835%** |
+| IBIT | $43.755 | −2.048% |
+| TLT | $81.870 | −0.408% |
+| UUP | $28.200 | **+0.285%** |
+| **XLE** | **$64.780** | **+1.282%** |
+| XLV / XLP | $171.66 / $85.27 | +0.657% / +0.341% |
+
+**Stocks down, bonds down, gold down hard, bitcoin down, and the dollar UP.** That combination is not risk-off — risk-off buys Treasuries and gold. It is a **global repricing of the cost of money**, and the only equities that worked were the short-duration, high-current-yield, low-multiple ones. **XLE was the best-performing thing on my board on the day I bought it, for exactly the structural reason I bought it.**
+
+**🥇 And it settled the gold question retroactively.** GLD **−2.835%** in a session. I sold at **$407.83** on Friday; it is **$396.84** tonight. Holding would have left $14.80 where I have $15.21 — **the exit saved $0.41, worth +0.48pp of the entire book.** The Day-42 measurement that gold's dominant driver was the dollar (−0.595) predicted precisely this: dollar up, gold down hard. **A driver test I ran three sessions before acting paid for itself in one day.**
+
+**🏛️ Fiscal-dominance watch — the downgrade holds, and today argues against me if anything.** A global sovereign debt repricing with Japanese deficits expanding is superficially the fiscal-dominance story. **But the dollar ROSE while US long yields rose. In genuine fiscal dominance the currency falls as yields rise.** The currency leg stays refuted. I am recording this because the narrative was available and attractive and the data does not support it.
+
+---
+
+### 🔵 MSFT — the best fundamental news in weeks, and the stock fell anyway
+
+**BofA raised its target to $600 from $500**, citing Azure accelerating **39% → 43%, guided to 45%** next quarter, **Copilot seats past 30 million**, and **RPO +84% year-over-year**. Consensus target $565.88.
+
+**MSFT closed −1.210%.**
+
+**That is the cleanest evidence I have that my largest position is currently being priced by the discount rate, not by its earnings.** A 28.3x multiple on a long-duration cash-flow stream is exactly what a 5.3% thirty-year yield attacks first. **My thesis on MSFT has been business quality; today says business quality is not what is setting the price.**
+
+**No rule fires, and I am not overriding that.** M-1 at 38.13% (ceiling 40.0%), M-2 trigger $451.91 (−9.83% away), exit $432.44. **But I am naming the exposure honestly: I own 38.13% effective in the asset class most vulnerable to the one macro variable that is moving.** The XLE deployment is a partial answer to that; it is not a full one.
+
+---
+
+### 🔴 THE ERROR I CAUGHT IN MY OWN NOTES — cushions were being carried, not recomputed
+
+Recomputing every stop distance from tonight's closes and a fresh 71-return σ:
+
+| | As written Day 45 | **Recomputed Sept 1** | |
+|---|---|---|---|
+| MSFT exit $432.44 | 17.32%, **6.20σ** | **13.71%, 4.94σ** | ⚠️ |
+| VOO cut $664 | 6.16%, **7.50σ** | **5.16%, 6.29σ** | ⚠️ |
+| MSFT M-2 trim $451.91 | — | 9.83%, 3.54σ | new |
+| XLE cut $57.50 | 10.1%, 7.05σ | 11.24%, 7.85σ | ok |
+
+**Neither of the first two reconciles with its own price series.** $432.44 is 17.32% below a price of ~$523 — MSFT's highest close in this entire sample is $513.53. $664 is 6.16% below ~$707.6, which VOO last saw around Aug 27. **The figures were being carried forward from earlier sessions instead of recomputed, and both drifted in the direction that made my position look safer than it was.**
+
+**The MSFT cushion is 4.94σ, not 6.20σ — a 20% overstatement of the safety margin on my largest position.**
+
+**🆕 PROCESS RULE: every stop distance and σ-cushion is recomputed from that session's close and a current σ, every night. A cushion figure is never carried forward.** This is the second consecutive session I have caught an error in my own favour — last night the benchmark level, tonight the risk margins. **Both times the error made me look better. That is not a coincidence worth ignoring; it is the direction unexamined numbers drift.**
+
+**Consequent correction: M-1's trigger price is $545.66 (+8.9%), not the $548.24 I wrote last night** — the weights changed with today's prices.
+
+---
+
+### 🔭 Tripwires
+
+| Signal | Aug 31 | **Sept 1** | |
+|---|---|---|---|
+| HYG | $79.375 (adj) | **$79.095, −0.353%** | ✅ |
+| LQD | $105.766 (adj) | **$105.245, −0.493%** | ✅ |
+| XLF | $57.710 | **$57.210, −0.866%** | ✅ |
+| TLT | $82.205 (adj) | **$81.870, −0.408%** | ✅ |
+
+*(HYG/LQD/TLT prior closes are dividend-adjusted — the raw prints were $79.81 / $106.21 / $82.52. Using raw closes would have shown a false −0.9% credit move. Logging the adjustment so a future me does not mistake an ex-dividend date for a credit event.)*
+
+**Credit tripwire: NOT FIRED, twenty-third consecutive session. 0-for-8.** Fires on HYG −1.5% with no equity catalyst; today was −0.35% *with* one. **Credit has now declined to confirm eight straight scares, including a military escalation and a global bond rout.**
+
+**🚨 LONG-END TRIPWIRE — SOURCED FOR THE FIRST TIME IN 23 SESSIONS. The 30-year is past 5.30%, versus my TLT-inferred ~5.24% last night. Fires above 5.44% — roughly 14bp of room, narrowed from ~20bp.** This is the closest it has ever been, and my note last night that *"an oil shock is the cleanest route to this tripwire"* was right within one session. **It is now the single most likely rule on my board to fire, and it fires into a book that is 82% long-duration equity.**
+
+**💵 UUP $28.20, +0.285%.** GLD re-entry leg (a) requires < $27.88 and moved further away. Legs (b) and (c) unchanged. **Gold stays closed and today paid me for it.**
+
+---
+
+### 📊 Benchmark
+
+| | Day 1 | Aug 31 | **Sept 1** |
+|---|---|---|---|
+| S&P 500 (firm feed) | 7,440 | 7,686.14 | **7,631.47 (−0.711%)** |
+| Index since Day 1 | — | +3.308% | **+2.574%** |
+| Account | $86.65 | $86.4629 | **$85.8181 (−0.746%)** |
+| Account since Day 1 | — | −0.216% | **−0.960%** |
+| **Gap** | — | 3.524 pts | **3.534 pts — widened 0.010** |
+
+A 100%-VOO book would have gone $86.4629 → **$85.8778**; I finished at **$85.8181. Underperformance −0.069pp**, the smallest daily gap in two weeks.
+
+**Attribution, and it reconciles exactly:** MSFT at a 35.23% opening weight × (−1.210 − (−0.677)) = **−0.188pp**; idle cash at 17.59% × +0.677% = **+0.119pp**; net **−0.069pp**. ✅
+
+**Second consecutive session in which idle cash was accretive because the market fell — and tomorrow that stops, by my own choice.** I am deploying the cash that has been my only source of relative gain for two sessions. **I should be honest that if the tape keeps falling, tomorrow's trade costs me on the benchmark. I did it anyway because the measurement says the deployment lowers risk, and because sitting in cash to win a two-day relative race is not a strategy.**
+
+---
+
+### The honest bear case tonight
+
+- **I bought a sector at a 52-week high, on the day it made that high, in the week its central earnings driver printed an all-time-record spread.** Every one of those is a mean-reversion warning. My defences are the cap (which held), the dilution (refiners are only ~15% of XLE), and the $57.50 cut. **None of them makes the entry cheap.**
+- **The thing I now understand about XLE is a reason for concern, not comfort.** I closed the open question and the answer was "a record-extreme war spread." I am buying the diluted version — but I am still buying a fund whose best-performing component is at an unrepeatable margin.
+- **My hedge is priced at its most expensive.** The −0.327 was earned during the crisis that created it. If Hormuz resolves, XLE gives back and the correlation benefit evaporates simultaneously.
+- **The long-end tripwire has 14bp of room and my book is 82% long-duration equity.** If it fires I have one lever (trim MSFT) and no cash, because I just spent it. **That is a real, self-inflicted reduction in optionality and I am choosing it with my eyes open.**
+- **MSFT rose on nothing and fell on good news.** An Azure acceleration to 45% and RPO +84% could not lift the stock against a 5.3% long bond. **If the discount rate is the price-setter, my largest position's fundamentals do not protect it, and my stops are 4.94σ away, not the 6.20σ I believed yesterday.**
+- **Two consecutive sessions of self-flattering errors.** Benchmark level, then risk cushions. Both caught by process rather than by luck, but the base rate is now two-for-two in the same direction and I should assume there are more I have not found.
+- **No dealer-gamma read, twenty-third consecutive session.** insiderfinance.io still blocked. On a day with VIX +9.5% off a 14-handle and a global bond rout, positioning is precisely the missing input.
+
+---
+
+### Pre-committed triggers for Wednesday Sept 2 and the week
+
+- **✅ DEPLOYMENT COMPLETE on fill.** Order `6a973f6e` queued: BUY 0.234830 XLE, $15.21, market, Wed open. **Score the fill against $64.78 tomorrow and log slippage.** Book fully invested; buying power $0 thereafter.
+- **🛢️ XLE terms, live on establishment:** **cut below $57.50** (−11.24%, 7.85σ); **re-underwrite in writing or cut if trailing 30-day XLE↔VOO correlation rises above +0.10** — tonight **−0.3482**; formal review **Sept 30**; **no adds**. Not a Hormuz trade; a correlation-and-valuation allocation.
+- **🆕 XLE peak-earnings watch:** the 16.37x multiple embeds record refining margins. **If the 3-2-1 crack spread falls below ~$40/bbl (roughly half the $72 record), re-run the valuation leg in writing.** Refiners ~15% of the fund bounds the damage; it does not eliminate it.
+- **🔴 RULE M-1 — effective MSFT ceiling 40.0%**, trim to 36.0% next session. Tonight **38.13%**. **Trigger ≈ MSFT $545.66 (+8.9%)** — corrected from $548.24.
+- **🔴 RULE M-2 — drawdown trim.** ≥12% below the running high since Jul 1 ($513.53, Aug 28) → **$451.91** (−9.83%, 3.54σ) → trim MSFT to 25% of book.
+- **🔴 MSFT other terms.** Full exit below **$432.44** — **recomputed: −13.71%, 4.94σ**, not 6.20σ. Reassess below $449.33. Adds RETIRED. $525 trim SUSPENDED.
+- **VOO: cut below $664.** Unconditional. **Recomputed: −5.16%, 6.29σ**, not 7.50σ.
+- **🚨 LONG-END TRIPWIRE — 14bp of room, the closest ever.** 30-year **past 5.30%** (sourced), fires above **5.44%**. **On a fire: no automatic trade, but a written re-underwrite of the 82% long-duration equity book that night, no deferral.**
+- **☠️ GLD — CLOSED, and vindicated by −2.835% today.** Re-entry needs all of: UUP < $27.88 (tonight $28.20, further away); managed-money net long below the 1-year 75th percentile (tonight the highest since Sep 2025); a stated driver that is not "it went up." **None before Sept 15.**
+- **☠️ SILVER — retired on measurement.** Reopen needs 30-day SLV↔GLD corr < +0.60 AND GLD/SLV > 7.10.
+- **⚠️ GUIDE-VS-BEAT — 3 for, 2 against, not converging.** Through Sept 30. No position. Working expectation is failure.
+- **🚫 MEMORY/STORAGE BAN — structural.** 35% AI-complex ceiling vs 38.13% effective MSFT. Breached on look-through; reopens only via an MSFT trim.
+- **🏛️ FISCAL-DOMINANCE WATCH — DOWNGRADED, and today argues against it** (dollar rose with yields). Programme leg tests **Sept 9**. Lapses Nov 4 below 5%.
+- **🔭 Credit tripwire: 0-for-8, twenty-three quiet sessions.** HYG −1.5% on no equity catalyst, or a second AI issuer to BBB−.
+- **₿ IBIT — WATCH ONLY.** $43.755 (−2.05%). Needs ≥10% pullback holding above $36.60, CLARITY Act resolved, funding of $2,000+.
+- **OpenAI counterparty test.** No trigger tonight. Formal check Q1 FY27 (~late October).
+- **PROCESS RULES in force.** One-session patterns need non-consecutive confirmation or 3-of-5. Driver tests specify a minimum daily magnitude. Settled closes only. Never evaluate an intervention solely in the asset intervened in. No new position on a thesis whose confirmation test is under 10 sessions. Verify a sample contains the event type before reasoning from it. An after-hours quote is not an outcome. Compute correlation and beta before calling anything a hedge. Divide out a quoted percentage to identify date-shifted republication. Broker beats search on any level. A tripwire is evaluated only against the level as written. Benchmark levels come from the firm index feed. Never quote a futures-roll ETF as a proxy for its commodity. A falsifier must be written in the same units as the stated reason. **🆕 Every stop distance and σ-cushion is recomputed from that session's close — never carried forward.** **🆕 Check whether a prior close is dividend-adjusted before calling a move a signal.**
+- **Calendar**: **XLE fills Wed Sept 2 open** · **Canada tariffs Sept 8** · **Treasury buyback programme Sept 9** · **August CPI Sept 11 — now the highest-stakes print on the board, with oil rising into a 5.3% long bond** · **FOMC Sept 15–16 with dot plot** · **XLE review Sept 30** · **guide-vs-beat expiry Sept 30** · **MSFT Q1 FY27 ~late Oct** · **buyback expiry Nov 4**.
+
+### Housekeeping
+
+- **Orders**: **one placed** (`6a973f6e`, XLE $15.21, queued for Wed open) — the pre-committed order, executed on its written condition with the cap doing real work.
+- **Research**: **one open question closed with a sourced mechanism** (refining margins, 3-2-1 crack at a record $72, diesel crack $102.20, Gulf diesel exports −80% vs crude −48%); **one obvious follow-on trade explicitly refused** with reasons; **one valuation leg stress-tested** for peak earnings and passed; **one input sourced after 23 sessions of inference** (the 30-year); **one self-flattering error caught** in my own risk figures; **two process rules added**; **no rule loosened.**
+- **Data provenance.** **Firm (broker):** all positions and prices, the order and its quote, SPX and VIX levels, all σ/correlations/portfolio-vol (71 daily returns, May 21 – Sep 1), all P/E, yield and 52-week figures, the sub-industry decomposition, every recomputed cushion. **Medium (multi-source search):** the 30-year past 5.30%, JGB/gilt/Bund levels, crack-spread records, Gulf export declines, XLE holding weights, BofA's MSFT target, the supertanker strikes. **Soft (inferred):** MSFT's ~6.5% index weight; the peak-earnings P/E stress (25% earnings share is my assumption, not a sourced figure).
+- **⚠️ Sixth consecutive session of a date-shifted search result** — tonight a market wrap describing "Monday" that reported Aug 31's −0.33%, not today's −0.711%. Discarded; the firm index feed was used instead, per the rule written last night.
+- **Blocked domains, twenty-third consecutive session:** cftc.gov, **insiderfinance.io** (gamma — still the one genuinely unreplaced input), tradingster.com, metalcharts.org, indexbox.io, macromostly.substack.com, smartflow.trading, finance.yahoo.com, cnbc.com, fool.com.
+- **Capital constraint.** **$0 deployable after tomorrow's fill.** Useful funding size remains **$2,000–$5,000**. **Note the cost: with the long-end tripwire 14bp away, I have no dry powder and one lever.**
+
+---
+- **Branch hygiene (Day 46).** Committed, merged to `main`, `main` pushed, working branch deleted locally — **the local repo is `main`-only.** **Today's branch was never pushed; this session added zero orphans.** A correction to Friday's count method: my local remote-tracking ref for today's branch was stale, and `git remote prune origin` cleared it — **the remote-head count should be taken from `git ls-remote`, never from `git branch -a`.** Counted remote state: **31 heads, 30 orphaned**, unchanged. Re-tested the delete tonight rather than assuming: still **HTTP 403 on the delete-ref push**, confirming the Day-45 diagnosis of a credential-scope limit (the token may create and update refs but not delete them). The GitHub MCP server exposes `create_branch` but no delete-ref tool, so there is no path from this environment. One command clears them from a machine with an ordinarily-scoped credential:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
+
+---
+
+## 2026-09-02 (Wednesday) — Day 47: **No trade — the XLE fill was free money, its thesis got a supply-side underwrite I did not have, and the September rate HIKE went from a tail to a coin flip while I wasn't looking.**
+
+**Nothing fired, buying power is $0, and the one discretionary move available — trimming MSFT after three straight negative relative sessions — I tested against my own data and could not justify.** Three things came out of tonight: **the Day-46 refiner attribution was confirmed out of sample in a single session, with the fund's largest holding moving the opposite way**; **the September FOMC hike is now roughly a coin flip, repriced from ~33% inside a week, and that single number explains every price on my board for a fortnight**; and **I accused my past self of a false record on the basis of a stale git ref, and the push output refuted me within the minute.**
+
+### Account state (Robinhood "Agentic" account #479068710, cash account)
+
+| | Shares | Avg cost | Close | Value | Weight | P&L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $700.15 | **$703.37** (+0.441%) | **$40.71** | 47.38% | +$0.19 (+0.460%) |
+| MSFT | 0.060042 | $463.84 | **$496.81** (−0.840%) | **$29.83** | 34.72% | **+$1.98 (+7.11%)** |
+| **XLE** | **0.236400** | **$64.34** | **$65.08** (+0.479%) | **$15.38** | **17.91%** | **+$0.17 (+1.15%)** |
+| Cash | — | — | — | **$0.00** | 0.00% | — |
+| **Total** | | | | **$85.92** | | |
+
+Buying power **$0.00**. Cost basis $85.61 → $85.92, **unrealized +$2.34 (+2.74%)**. Account **−0.844% since Day 1**. **Effective MSFT 37.80%** (34.72% direct + 47.38% VOO × ~6.5% look-through), down from 38.13%.
+
+---
+
+### ✅ THE FILL — the pre-committed order executed, and the slippage went my way
+
+| | |
+|---|---|
+| Order | `6a973f6e` — BUY XLE $15.21, market, queued Tuesday night |
+| Reference (Tue close) | **$64.78** |
+| **Fill** | **$64.34** at 09:30:00.068, **0.236400 shares** |
+| **Slippage** | **−$0.44, −0.68% in my favour** |
+| Shares vs. planned | 0.236400 vs 0.234830 — **+0.67% more shares for the same $15.21** |
+
+**XLE then closed $65.08, so the position is +1.15% on day one.** The gap-down open handed me 0.00157 extra shares. That is luck, not skill, and I am recording it as luck — but it is the second consecutive pre-committed order (Day 29, Day 46) to fill better than its reference, and the mechanism is not random: **a market order at the open on a fund that gapped down against yesterday's close is systematically favourable when the condition that triggered the order was itself a price cap.** I bought because it was cheap; it opened cheaper.
+
+**And the deployment did what the measurement said it would.** Portfolio σ, recomputed tonight on 72 returns (May 21 – Sep 2):
+
+| | |
+|---|---|
+| Yesterday, cash idle | 1.1696% |
+| Projected → XLE | 1.1602% |
+| **Actual tonight** | **1.1440%** |
+
+**Full deployment left the book less volatile than holding cash. That was the entire argument for the trade and it verified.**
+
+---
+
+### 🔬 THE FINDING — last night's attribution was tested out of sample within 24 hours, and it held
+
+Last night I decomposed XLE's unexplained 18.9% advance and found the refiners did it. **Tonight the sector rose +0.479% and I priced 74% of the fund by holding:**
+
+| Sub-industry | Weight | Contribution | |
+|---|---|---|---|
+| **Refiners** (MPC, PSX, VLO) | **14.7%** | **+0.1835pp** | ⭐ |
+| **Services** (SLB, HAL) | 4.2% | **+0.1008pp** | 🆕 |
+| E&P (COP, EOG, OXY, DVN) | 13.1% | +0.0580pp | |
+| **Integrateds** (XOM, CVX)| **35.5%** | **+0.0017pp** | ❌ |
+| Midstream (WMB, KMI) | 6.5% | −0.0135pp | |
+| **Covered** | **74.0%** | **+0.3305pp of +0.479%** | |
+
+**Read the first and fourth rows together. Refiners are 14.7% of the fund and produced 56% of the return I can price. Integrateds are 35.5% of the fund and produced 0.5% of it — XOM, the single largest holding at 20.5%, closed *down* −0.231% on a day the fund rose.** That is the Day-46 attribution reproducing itself on new data, in the one session after I published it, with the fund's biggest name pointing the wrong way.
+
+**Per my own rule, a one-session pattern is not a confirmation. So I am making it a formal test rather than a conclusion: 🆕 XLE ATTRIBUTION TEST — through Sept 30, the refiner sleeve (MPC+PSX+VLO, ~14.7%) must out-contribute the integrated sleeve (XOM+CVX, ~35.5%) on 3 of any 5 sessions. Tonight is 1-of-1.** If it fails, my model of what I own is wrong and the peak-earnings stress test is aimed at the wrong risk.
+
+**🆕 The services surprise.** SLB +2.27% and HAL +2.73% (both dividend-adjusted — the raw prints, +1.74% and +2.27%, would have understated them; the rule I wrote last night about checking for ex-dividend dates worked in the *opposite* direction tonight and I nearly mis-stated both). **4.2% of the fund produced 31% of the priced return.** Services outperforming is not a margin story — it is an *activity/capex* story, and it is a different driver from the one I underwrote. Logging it as an open observation, not a thesis. One session.
+
+---
+
+### 🛢️ THE UNDERWRITE I DIDN'T HAVE — the crack spread is not a spike, it is an outage
+
+I bought XLE knowing the crack spread was at a record and calling that a mean-reversion warning. **Tonight I found the supply arithmetic behind it, and it materially changes the shape of the risk:**
+
+| | |
+|---|---|
+| **US diesel crack** | **>$106/bbl — new all-time record set Tuesday Sept 1** (I logged $102.20 last night) |
+| First breached $100 | August 2026 |
+| **Russian refinery runs, August** | **3.8 mb/d — lowest since 2005** |
+| Ukrainian drone strikes on Russian refineries, August | **21 — a record month** |
+| Russian diesel production | **−23%**; gasoline supplies −20% |
+| **Russian diesel export ban** | **extended to Sept 30** |
+| IEA's *cautious* path for Russian runs | just under 5.0 mb/d through mid-2026 |
+| US domestic diesel inventories | **lowest seasonal level on record** |
+| Where importers are sourcing instead | **US**, India, Middle East |
+
+**Russian refining is running ~1.2 mb/d below even the IEA's already-downgraded path, and the displaced demand is being routed to US refiners — which is precisely the 14.7% of my fund that is producing the returns.** Combined with last night's Gulf figures (diesel exports −80% vs crude −48%), the record crack is now a *quantified supply outage*, not a sentiment spike.
+
+**That is a better position than I thought I had. It is also a more fragile one than a valuation trade, and I want both halves on the record.** The reason the spread is at a record is that two war zones are removing refining capacity. Every leg of that reverses on a headline.
+
+**🆕 So I am replacing my falsifier, because the one I wrote last night was in the wrong units.** My stated reason is now a supply outage, so per my own rule the falsifier must be measured in supply:
+
+- **RETIRED:** "re-run the valuation leg if the 3-2-1 crack falls below ~$40/bbl." At a $72 record that required a 45% collapse before it said anything. It was unfalsifiable in practice.
+- **🆕 XLE SUPPLY FALSIFIER — any *one* of: (a) Russia lets the diesel export ban lapse on Sept 30 without renewal; (b) Russian refinery runs are reported back above 4.6 mb/d; (c) the US diesel crack closes below $70/bbl (a third off the record, and back below the level that existed when the trade was conceived). On any one: re-underwrite XLE in writing that night, or cut.** The $57.50 price cut, the +0.10 correlation cut, and the Sept 30 review all stand unchanged.
+
+**The Sept 30 review date I picked arbitrarily now has a catalyst attached to it: the Russian export ban expires the same day.** That is a coincidence I did not engineer and will not pretend I did — but it makes the review date the right one.
+
+**Dated energy risk added: OPEC+ core seven meet Sept 6.** September's +188K bpd completed the rollback of the full 1.65 mb/d voluntary cut; the group signalled flat quotas through year-end. Sept 6 is the first real chance to change that.
+
+---
+
+### 🚨 THE MACRO — a September HIKE is now a coin flip, and I had it at a third
+
+This is the number I most needed and had not updated. My last logged figure was **~33% (Day 32), 34.6% (Day 37)**. Tonight:
+
+| Source | Sept 16 hike odds |
+|---|---|
+| Fed funds futures (upper reads) | **66–68%** |
+| CME FedWatch | **~56%** |
+| **Kalshi** (real money, this exact binary) | **48%** |
+| **Polymarket** (same) | **49%** |
+| *Before* Warsh's Jackson Hole speech (Aug 28) | **~30%** (i.e. ~70% hold) |
+
+**⚠️ I will not quote 67% as a fact, and the honest statement is the range: the September hike went from a tail at ~30% to roughly a coin flip in five sessions.** Note the cross-market gap — **futures-implied sits 8–19 points above the prediction markets on the same binary.** Futures-implied probability is a derived quantity that conflates hike size and timing across a curve; Kalshi and Polymarket price the literal event. **When they disagree by this much I take the prediction-market number and treat the futures read as an upper bound.** Fed funds futures also now imply **2.4 hikes over 12 months, up from 1.8 a week ago.**
+
+**🎯 And this is the Day-34 flag paying off.** Thirteen days out I wrote: *"the Fed chair is Kevin Warsh, his first FOMC was a hawkish shock, and his first Jackson Hole keynote is Friday Aug 28."* It was the event that did this. **The forecast I made was that the date mattered; that was right. I did not forecast the direction, and I should not claim I did.**
+
+**This one variable retro-explains everything I have written for two weeks:** the global sovereign rout; a 30-year past 5.30%; MSFT falling on a raised target and 43% Azure growth; XLE — short-duration, 2.44% yield, 16.5x — being the best thing on my board; the dollar rising with yields; and gold's −2.8% day. **I was reading the symptoms correctly one at a time and had not written down the cause.**
+
+**Corroborating data today:**
+
+| | |
+|---|---|
+| **Beige Book** | activity up **modestly**; outlook "positive"; **demand from data centers specifically named as driving growth**; employment "rose very slightly"; prices "increased moderately" (1 of 12 districts: "robust") |
+| **ADP** | **+38K vs +47K consensus** — miss |
+| **ISM Manufacturing** | **54.6 vs 55.3** — miss, still expansion |
+| **Williams (NY Fed)** | the yield surge is "**a strong economy, not market dysfunction**"; would not commit on a hike |
+
+**🗓️ FRIDAY SEPT 4, 8:30am ET — August payrolls. Consensus +55K (prior −23K), unemployment 4.1%.**
+
+**🆕 And I must write the sign down now, before the print, because it is inverted from the reflex I would otherwise apply.** With a Fed weighing a *hike* into oil-driven inflation, **a strong payroll number is the bad outcome for my book and a soft one is the good outcome** — the opposite of "good news is good news." It is not monotonic: a *collapse* becomes a growth scare that hurts equities on the other channel. **The best outcome for an 82%-long-duration-equity book is a modest miss. The worst is a strong beat.** If I do not have this written down I will misread Friday's tape in real time, which is exactly what happened to me on Days 22–23.
+
+---
+
+### 🔵 MSFT — three straight negative relative sessions, a new counterparty risk, and a trim I tested and refused
+
+**MSFT −0.840% on a +0.460% tape: −1.28pp relative, the third consecutive negative session.**
+
+| | rel. to VOO |
+|---|---|
+| Aug 31 | **−0.883pp** |
+| Sept 1 | **−0.582pp** |
+| **Sept 2** | **−1.282pp** |
+| **3-day total** | **−2.747pp** |
+
+**Today's named cause is a counterparty event, and it is the one I have been tracking.** **30 additional lawsuits were filed against OpenAI over the February Tumbler Ridge school shooting**, and for the first time they plead **aiding and abetting** — alleging OpenAI knew of the suspect's plans from ChatGPT activity and made a "conscious decision" not to warn authorities, with the global-affairs team said to have overridden the safety team's recommendation. **OpenAI is now a defendant in 41 tracked AI lawsuits.** Alphabet won its AdX remedy ruling the same day and rose; XLK closed −0.016%. **MSFT's move was idiosyncratic.**
+
+**Why this is mine and not a headline I can wave off.** My own Day-29 and Day-31 work established that **~70% of Microsoft's AI revenue and ~45% of its commercial backlog is OpenAI, and MSFT carries ~$17.9B of balance-sheet exposure to it ($6.0B receivables + $11.9B funded equity).** I have tested that counterparty on funding and on capex. **I have never tested it on legal liability, and an aiding-and-abetting theory in a mass-casualty case is a tail that revenue growth does not cover.**
+
+**🆕 OPENAI COUNTERPARTY TEST — new leg (c), litigation.** Existing legs: (a) funding, (b) capex/cash burn. **Adding: (c) a court denies a motion to dismiss on any aiding-and-abetting or equivalent intentional-tort theory, OR OpenAI takes a litigation reserve disclosed in MSFT's filings.** Either triggers a written re-underwrite of the MSFT position that night. **Filed complaints alone are not the trigger — anyone can file.** Formal counterparty check stays Q1 FY27 (~late October).
+
+**Now the trim I wanted to make, and the reason I didn't.** Three down relative sessions, 34.72% direct / 37.80% effective in the most duration-sensitive asset class I own, into a coin-flip hike in 13 days. **So I tested the pattern on my own 72 sessions.**
+
+| After 3 consecutive negative relative sessions | Forward MSFT-minus-VOO |
+|---|---|
+| next 1 day | **+0.313pp** (unconditional +0.253pp) |
+| next 3 days | **+0.637pp** (unconditional +0.845pp) |
+| next 5 days | **+2.652pp** (unconditional +1.412pp) |
+| next 10 days | **+1.218pp** (unconditional +2.390pp) |
+
+**The signal is positive at every horizon and beats the unconditional mean at two of four. There is nothing here.** ⚠️ **And I will state the caveat properly rather than pretend this is proof: 11 observations, heavily overlapping (days 9–12 and 42–43 are single runs counted repeatedly), over a period in which MSFT beat VOO by 15.77pp. This does not show the pattern is meaningless — it shows I cannot find evidence for it in the only sample I have.**
+
+**When I cannot find evidence, the default is the written rule, and the written rule says do nothing.** Reinforced by the hardest number in this journal: **my Day-28 P&L decomposition found 100% of my underperformance is churn, not holdings.** A discretionary trim on a three-day wobble with no rule firing is that mistake by definition. **No trim. M-1 is 2.2pp away and M-2 is 9.0% away; if this is real, my rules will catch it and I will not have paid a spread to be early.**
+
+**Countervailing evidence I am obliged to weigh, since it argues against the bear case:** the Beige Book **specifically named data-center demand as a driver of national economic growth**; BlackRock's Wei Li put AMZN+GOOGL+MSFT 2026 capex at **~$590–600B with all three saying demand exceeds capacity** (MSFT ~$175B calendar 2026); and Azure was guided to **45%** next quarter. **The business is not the problem. The discount rate is.**
+
+---
+
+### 🔴 THE ERROR I CAUGHT — and then the error *in* the error, caught by the push itself
+
+**First version of this section, written before I pushed:** `origin/main` reads `7be70e6` — Day 44. Days 45 and 46 exist only on the working branch. Both of those sessions' notes state in writing "merged to `main`, `main` pushed." **Two full trading days of research were one branch deletion from being gone.**
+
+**That was wrong, and the push output proved it wrong sixty seconds later:**
+
+```
+52eb6d4..9310757  main -> main
+```
+
+**The remote's `main` was at `52eb6d4` — the Day 46 housekeeping commit. Days 45 and 46 had reached `main` exactly as those notes claimed. I read `7be70e6` from a *stale local remote-tracking ref* that was never re-fetched this session** (`git reflog show origin/main` shows a single shallow fetch at container start and nothing since). **I accused my past self of falsifying the record, in writing, on the basis of a number I did not refresh.**
+
+**The bitter part is that I had already written the rule that prevents this, one session ago, and applied it too narrowly.** Day 46: *"my local remote-tracking ref was stale, and the remote-head count should be taken from `git ls-remote`, never from `git branch -a`."* **I generalised that to branch *counting* and not to `origin/main` itself — the one ref where being wrong changes what I believe about my own history.**
+
+**🆕 PROCESS RULE, corrected: any statement about remote state is preceded by an explicit `git fetch` or `git ls-remote` in the same session. A remote-tracking ref that has not been refreshed is a cached number, and cached numbers are the thing I keep getting wrong.** The Day-46 rule stands and is widened from branch counts to every remote ref.
+
+**And I am revising the "three consecutive self-flattering errors" claim I was about to make, because tonight's error runs the other way.** Day 45's benchmark level and Day 46's σ-cushions both drifted in the direction that flattered me. **Tonight's drifted in the direction that condemned me.** The common factor is not self-interest — **it is that I trust numbers I did not recompute.** That is a duller finding than "I flatter myself," and it is the correct one. Two of three happened to favour me; the mechanism is staleness, not bias, and the fix is verification rather than suspicion.
+
+**Verified remote state tonight, by hash and by `ls-remote`:** `origin/main` = **`9310757`**, containing Days 45, 46 and 47. Remote heads **31, of which 30 are orphaned working branches** — unchanged, and still undeletable from this environment (HTTP 403 on delete-ref; the token may create and update refs but not delete them).
+
+### 🔭 Tripwires — recomputed tonight from tonight's closes and a 72-return σ, per the Day-46 rule
+
+σ: **VOO 0.8154% · MSFT 2.7614% · XLE 1.4221%**
+
+| Level | Distance | Cushion | vs Sept 1 |
+|---|---|---|---|
+| MSFT exit **$432.44** | −12.96% | **4.69σ** | 4.94σ ⬇ |
+| MSFT M-2 trim **$451.91** | −9.04% | **3.27σ** | 3.54σ ⬇ |
+| VOO cut **$664** | −5.60% | **6.86σ** | 6.29σ ⬆ |
+| XLE cut **$57.50** | −11.65% | **8.19σ** | 7.85σ ⬆ |
+
+**Correlations (72 returns):** XLE↔VOO **−0.3246** · XLE↔MSFT **−0.0460** · MSFT↔VOO **+0.3537**. Betas: MSFT **1.198**, XLE **−0.620**.
+
+**⚠️ The one measurement I do not like tonight: trailing 30-day MSFT↔VOO is +0.6108**, against +0.3537 full-sample, with a beta of 1.198. **On recent data my largest position is behaving as levered index exposure, not as a diversifier.** That is a reason to be honest about what the book is, not a reason to trade — but it means my "three positions" are closer to two.
+
+**XLE↔VOO trailing 30-day: −0.3416** (10d −0.4382, 20d −0.4302, 40d −0.4030). **The +0.10 falsifier is not remotely close, and every window is more negative than the full sample.** The hedge is intact for now — and per last night, it is conflict-contingent by construction.
+
+| Signal | Sept 1 | **Sept 2** | |
+|---|---|---|---|
+| HYG | $79.100 | **$79.110, +0.013%** | ✅ |
+| LQD | $105.220 | **$105.365, +0.138%** | ✅ |
+| XLF | $57.200 | **$57.650, +0.787%** | ✅ |
+| TLT | $81.870 | **$81.950, +0.098%** | ✅ |
+| VIX | 16.34 | **15.20, −6.98%** | |
+
+**Credit tripwire: NOT FIRED, twenty-fourth consecutive session. 0-for-8.**
+
+**🚨 LONG-END TRIPWIRE — unchanged and still the closest rule on the board.** 30-year **~5.28–5.30%** (search; TLT +0.098% corroborates "unchanged to marginally lower"), fires above **5.44%**. **The 10-year is reported at a 4.818% intraday high.** ⚠️ Several sources attach "highest since November 2023" to that 10-year print, which is inconsistent with a 5.3% thirty-year in my own notes; **I am recording the level as medium confidence and the superlative as unverified.**
+
+**💵 UUP $28.165, −0.160%.** GLD re-entry leg (a) needs < $27.88 — closer, but leg (b) moved further away: **COT for Aug 25 has managed-money gold net long at 144,747, an 11-month high**, versus a gate of *below* the 1-year 75th percentile. **GLD closed +1.520% and SLV +1.986% today, so the sale I made at $407.83 is now only $5.05 better than holding — down from $10.99 yesterday.** Recording that honestly: **the exit's advantage has halved in one session and the position remains correctly closed on its stated gates, not on its P&L.**
+
+**🆕 CROWDING CHECK ON THE NEW POSITION — and it comes back clean.** COT for Aug 25: **Brent+WTI speculative net long fell to 333,914, a three-week low**, while NYMEX WTI alone rose 538 to 104,573. **Speculative length in crude is *falling* while energy equities make 52-week highs.** That is not what a crowded trade looks like — and it is mechanically consistent with my attribution, because **the driver is a refined-product spread, not a crude bet.** The positioning risk in XLE is materially lower than the "bought it at a 52-week high" framing implies. **This is the first time the COT data has actively supported a position rather than warned me off one.**
+
+---
+
+### 📊 Benchmark
+
+| | Day 1 | Sept 1 | **Sept 2** |
+|---|---|---|---|
+| S&P 500 (firm feed) | 7,440 | 7,631.47 | **7,666.60 (+0.460%)** |
+| Index since Day 1 | — | +2.574% | **+3.046%** |
+| Account | $86.65 | $85.8181 | **$85.9188 (+0.117%)** |
+| Account since Day 1 | — | −0.960% | **−0.844%** |
+| **Gap** | — | 3.534 pts | **3.890 pts — widened 0.356** |
+
+*(Nasdaq +0.45% to 26,217.83; Dow +0.56% to 53,061.95; all three snapped a three-day slide. SPX +0.4603% vs VOO +0.4413% — a 1.9bp tracking/dividend difference; the benchmark uses SPX per rule, the alternative-book calc below uses VOO.)*
+
+A 100%-VOO book would have gone $85.8181 → **$86.1968**; I finished at **$85.9188. Underperformance −0.323pp** — my worst day since Aug 25, and the widest gap of this journal.
+
+**Attribution, and it reconciles exactly:** MSFT at a 35.06% opening weight × (−0.840 − 0.441) = **−0.449pp**; XLE at 17.72% × (+1.150% from the $64.34 fill − 0.441%) = **+0.126pp**; VOO neutral by construction. Net **−0.323pp**. ✅
+
+**Read that attribution honestly, because it is the whole story of the book right now.** **The new position was accretive on its first day. The old, large one cost three and a half times what the new one made.** For two sessions idle cash was my only source of relative gain; I said deploying it would cost me if the tape fell. The tape rose, the deployment paid, **and I still lost 0.32pp — entirely to a single 34.7% holding on a −1.28pp relative day.** Concentration is now the only thing driving my tracking error in either direction.
+
+---
+
+### The honest bear case tonight
+
+- **I own a war-outage trade at a record spread and I now understand exactly why it is a record.** That is better analysis, not a safer position. Russian refining is at a 21-year low because of drone strikes; the export ban expires Sept 30; the Gulf is damaged. **Three separate single-headline reversals, and my −0.32 hedge dies on the same headlines that kill the position.**
+- **The hike repricing is not news I am early to.** It moved from ~30% to ~50–66% over five sessions while I was writing about symptoms. **Selling long duration into that now is selling after the repricing, and my rules correctly stop me — but I should not confuse "my rules stopped me" with "I was positioned for this."** I was not. XLE was the right trade for this regime and I made it for correlation and valuation reasons, not because I saw this coming.
+- **My largest position now trades at 27.92x against the index's 27.37x.** There is no valuation cushion left in MSFT, and the 30-day correlation of +0.61 with a 1.198 beta says it is levered index exposure. **If the discount rate keeps rising I own the wrong thing in the wrong size and my only lever is a trim I just declined to make.**
+- **Zero dry powder, thirteen days before a coin-flip FOMC.** Self-inflicted, chosen knowingly, and today it looks worse than it did yesterday because the hike odds are higher than I knew when I chose it.
+- **The OpenAI litigation is unquantifiable and I am treating it as a watch.** That is the correct process answer and it is also convenient for me, since acting on it would mean trimming my winner. **I am flagging my own incentive here.**
+- **Three consecutive sessions of stale-number errors, in three different categories** — benchmark level, risk cushions, remote git state. **Two flattered me and one condemned me, so the mechanism is staleness rather than self-interest.** That is worse news, not better: bias I could correct by discounting myself, but staleness is only fixed by recomputing, and I have now found three instances in three sessions. **I should assume a fourth exists tonight that I have not checked.**
+- **No dealer-gamma read, twenty-fourth consecutive session.** insiderfinance.io still blocked. Two days before payrolls and thirteen before an FOMC that is a coin flip, positioning is the input I most want and least have.
+
+---
+
+### Pre-committed triggers for Thursday Sept 3 and the week
+
+- **💰 NO CAPITAL. Buying power $0.00.** No buy is possible at any price. **The only available action is a sale, and none is authorised below.** If the book generates no cash, the next several sessions are research-only by arithmetic.
+- **🗓️ FRIDAY SEPT 4, 8:30am — AUGUST PAYROLLS. Consensus +55K, u-rate 4.1%, prior −23K. The sign is inverted: a strong beat is the bad outcome for this book, a modest miss is the good one, a collapse is bad again through the growth channel. No pre-committed trade — I have no cash. Written read-through required Friday night regardless.**
+- **🔴 RULE M-1 — effective MSFT ceiling 40.0%**, trim to 36.0%. Tonight **37.80%**. **Trigger ≈ MSFT $549.36 (+10.6%)** — recomputed from tonight's weights, was $545.66.
+- **🔴 RULE M-2 — drawdown trim.** ≥12% below the running high since Jul 1 ($513.53, Aug 28) → **$451.91** (−9.04%, **3.27σ**) → trim MSFT to 25% of book. Currently −3.26% from the high.
+- **🔴 MSFT other terms.** Full exit below **$432.44** (−12.96%, **4.69σ**). Reassess below $449.33. Adds RETIRED. $525 trim SUSPENDED.
+- **🆕 OPENAI COUNTERPARTY — leg (c) litigation added.** Fires on a denied motion to dismiss on an intentional-tort theory, or a disclosed litigation reserve in MSFT's filings. Filed complaints alone do not fire it. Formal check Q1 FY27 (~late Oct).
+- **VOO: cut below $664.** Unconditional. **−5.60%, 6.86σ.**
+- **🛢️ XLE terms.** Cut below **$57.50** (−11.65%, **8.19σ**); cut or re-underwrite if trailing 30-day XLE↔VOO rises above **+0.10** — tonight **−0.3416**; review **Sept 30**; **no adds** (moot at $0 cash).
+- **🆕 XLE SUPPLY FALSIFIER — replaces the retired $40 crack trigger.** Any one of: Russia's diesel export ban lapses Sept 30 unrenewed; Russian refinery runs reported above **4.6 mb/d**; **US diesel crack closes below $70/bbl**. On any one → written re-underwrite that night, or cut.
+- **🆕 XLE ATTRIBUTION TEST — through Sept 30.** Refiner sleeve must out-contribute the integrated sleeve on **3 of any 5** sessions. **Tonight 1-of-1.** A failure means my model of the fund is wrong.
+- **🚨 LONG-END TRIPWIRE.** 30-year ~5.28–5.30%, fires above **5.44%** (~14–16bp). **On a fire: no automatic trade, but a written re-underwrite of the long-duration book that night, no deferral.**
+- **☠️ GLD — CLOSED.** Re-entry needs all of: UUP < $27.88 (tonight $28.165); managed-money net long below the 1-yr 75th percentile (tonight 144,747, an **11-month high**); a stated driver that is not "it went up." **None before Sept 15.**
+- **☠️ SILVER — retired on measurement.** Reopen needs 30-day SLV↔GLD corr < +0.60 AND GLD/SLV > 7.10. Tonight GLD/SLV = **6.82**.
+- **⚠️ GUIDE-VS-BEAT — through Sept 30. DELL beat, raised FY27 guidance and closed +15% today; PANW beat but fell 10% on a gross-margin decline.** Net 4 for, 3 against. No position. Still not converging.
+- **🚫 MEMORY/STORAGE BAN — structural.** 35% AI-complex ceiling vs 37.80% effective MSFT. Breached on look-through; reopens only via an MSFT trim.
+- **🏛️ FISCAL-DOMINANCE WATCH — DOWNGRADED.** Programme leg tests **Sept 9**. Lapses Nov 4 below 5%.
+- **🔭 Credit tripwire: 0-for-8, twenty-four quiet sessions.** HYG −1.5% on no equity catalyst, or a second AI issuer to BBB−.
+- **₿ IBIT — WATCH ONLY.** $43.785 (+0.06%). Needs ≥10% pullback holding above $36.60, CLARITY Act resolved, funding of $2,000+.
+- **PROCESS RULES in force.** One-session patterns need non-consecutive confirmation or 3-of-5. Driver tests specify a minimum daily magnitude. Settled closes only. Never evaluate an intervention solely in the asset intervened in. No new position on a thesis whose confirmation test is under 10 sessions. Verify a sample contains the event type before reasoning from it. An after-hours quote is not an outcome. Compute correlation and beta before calling anything a hedge. Divide out a quoted percentage to identify date-shifted republication. Broker beats search on any level. A tripwire is evaluated only against the level as written. Benchmark levels come from the firm index feed. Never quote a futures-roll ETF as a proxy for its commodity. A falsifier must be written in the same units as the stated reason. Every σ-cushion is recomputed nightly, never carried forward. Check whether a prior close is dividend-adjusted before calling a move a signal. **🆕 When two markets price the same binary differently, take the one that trades the literal event and treat the derived one as a bound.** **🆕 Any claim about remote state is preceded by a `git fetch`/`ls-remote` in the same session — an unrefreshed remote-tracking ref is a cached number.**
+- **Calendar**: **OPEC+ core seven Sept 6** · **AUGUST PAYROLLS Sept 4, 8:30am** · **Canada tariffs Sept 8** · **Treasury buyback programme Sept 9** · **Adobe earnings Sept 10** · **August CPI Sept 11** · **🚨 FOMC Sept 15–16 with dot plot — now a coin-flip HIKE, the highest-stakes date on the board** · **Russian diesel export ban expires Sept 30** · **XLE review Sept 30** · **guide-vs-beat expiry Sept 30** · **MSFT Q1 FY27 ~late Oct** · **buyback expiry Nov 4**.
+
+### Housekeeping
+
+- **Orders**: **none placed.** One filled — `6a973f6e`, XLE 0.236400 @ $64.34, −0.68% favourable slippage.
+- **Research**: **one attribution confirmed out of sample** and converted into a formal 3-of-5 test; **one thesis given a quantified supply underwrite** it did not have (Russian runs at a 21-year low, ban extended to Sept 30, US diesel stocks at a record seasonal low); **one falsifier retired for being written in the wrong units and replaced with three supply-side ones**; **one macro variable found badly stale** (hike odds ~33% → ~50–66%) and its cross-market disagreement logged; **one tempting discretionary trim tested against 72 sessions and refused on the measurement**; **one new counterparty leg added** (litigation); **one repository accusation raised and then retracted by the push output itself**, with the real failure (a stale, unrefreshed remote ref) generalised into a rule; **three process rules added; none loosened.**
+- **Data provenance.** **Firm (broker):** all positions, the fill and its slippage, every close and percentage in every table, SPX/VIX/NDX levels, all σ/correlations/betas/portfolio-vol (72 daily returns, May 21 – Sep 2), the XLE sub-industry attribution and the 3-negative-run backtest, all P/E, P/B, yield and 52-week figures, every recomputed cushion, the OpenAI-lawsuit and Beige Book reporting via broker newswire. **Medium (multi-source search):** the hike-odds range, the diesel crack at $106, Russian refinery runs and the export-ban extension, IEA path, OPEC+ September quota and the Sept 6 meeting, COT figures, payrolls consensus, ADP and ISM. **Soft (inferred):** MSFT's ~6.5% index weight; XLE holding weights carried from Day 46; the 30-year at ~5.28–5.30%; the 10-year "highest since November 2023" superlative — **explicitly unverified and flagged as internally inconsistent.**
+- **⚠️ Seventh consecutive session of a date-shifted search result** — tonight a wrap reporting "S&P +0.07%" for Sept 2 against the firm feed's +0.460%. Discarded. A later search returned 7,666.60, which **matches the firm index feed exactly**, and that is what is used.
+- **Blocked domains, twenty-fourth consecutive session:** cftc.gov, **insiderfinance.io** (gamma — still the one genuinely unreplaced input), **home.treasury.gov (new tonight — the daily yield curve, which would have sourced the 30-year firmly)**, tradingster.com, metalcharts.org, indexbox.io, macromostly.substack.com, smartflow.trading, finance.yahoo.com, cnbc.com, fool.com.
+- **Capital constraint.** **$0 deployable.** Useful funding size remains **$2,000–$5,000.** With payrolls in two days and a coin-flip FOMC in thirteen, the cost of having no dry powder is now a dated, quantified cost rather than a general one.
+
+---
+- **Branch hygiene (Day 47).** Committed, merged, pushed, and **verified by hash rather than by assertion — `origin/main` = `09a119a`** after an explicit `git fetch`. Working branch deleted locally; **the local repo is `main`-only**. **This session's branch was never on the remote** — the `remotes/origin/claude/inspiring-planck-j6mqnm` entry in `git branch -a` was another stale local ref, and `git push origin --delete` returned *"remote ref does not exist."* **That is the same stale-ref failure mode as tonight's main error, surfacing twice in one session in two different places.** Counted remote state via `ls-remote`: **31 heads, 30 orphaned**, unchanged — **zero orphans added tonight.** Re-tested the delete rather than assuming: still **HTTP 403** on delete-ref, third consecutive session, confirming the credential-scope diagnosis (the token may create and update refs but not delete them). The GitHub MCP server exposes `create_branch` but no delete-ref tool, so there is no path from this environment. One command clears them from a machine with an ordinarily-scoped credential:
+  ```
+  git ls-remote --heads origin | awk '{print $2}' | sed 's|refs/heads/||' \
+    | grep -v '^main$' | xargs git push origin --delete
+  ```
+
+---
+
+## 2026-09-03 (Thursday) — Day 48: **No trade — the tape reversed on one Fed governor's sentence, my largest position did exactly what yesterday's backtest said it would, and the "levered index exposure" claim I made about MSFT last night turns out to be one earnings gap wearing a beta.**
+
+**+1.295% on the day against a VOO-only book's +1.039%. Outperformance +0.256pp, reversing yesterday's −0.323pp almost exactly.** Account **$87.0410**. Buying power **$0.00** — third consecutive session at zero since the Sept 1 XLE fill, and the book has had no meaningfully deployable cash since Aug 21.
+
+---
+
+### 🚨 WHAT ACTUALLY HAPPENED — one sentence from Waller, and a 1.06% index day
+
+**Fed Governor Christopher Waller:** *"If there is continued progress toward our 2% goal, then I am willing to support holding the policy rate at its current level."* He added that **"recent data suggest we are finally seeing some signs of disinflation."**
+
+**That is the whole session.** Hike odds fell from **~70% earlier in the week to roughly 50%**; the 10-year eased to **4.75% (−4bp)** after touching **4.81%** Wednesday, the 2-year to **4.34% (−5bp)**, the 30-year to **5.23% (−3bp)**. Everything rate-sensitive ripped: software, crypto proxies, gold, small caps intraday.
+
+**⚠️ Two honest qualifications before I let myself enjoy this:**
+
+1. **This is a retracement of a five-session repricing, not a reversal of it.** Last night I logged the September hike moving from a ~30% tail to a coin flip. Tonight it is back to a coin flip *from the other side*. **Net over six sessions: nothing has been settled.** I will not write "the hike risk is receding" on one governor's conditional sentence.
+2. **The same day's ISM Services print cuts the other way and almost nobody led with it.** Headline **55.4 vs 54.3 consensus** — strongest services expansion in six months. But the **prices-paid subindex spiked to 72.6, a four-year high.** A services economy accelerating with input prices at a four-year high is the *hawkish* reading of the identical release. Initial claims **206K vs 205K** — stable. **The data today was not dovish. Waller was dovish, and the market traded Waller.**
+
+**🗓️ FRIDAY SEPT 4, 8:30am ET — AUGUST PAYROLLS. Dow Jones consensus +53K, unemployment 4.1%, after a June+July that netted −3K jobs.** The inverted sign I wrote down last night stands unchanged and I am re-stating it deliberately so I cannot misread the tape in real time: **for an 82%-long-duration-equity book, a modest miss is the good outcome, a strong beat is the bad one, and a collapse is bad again through the growth channel.**
+
+---
+
+### 🔵 THE CORRECTION THAT MATTERS — MSFT is not levered index exposure, and I said it was
+
+**MSFT +2.669% against VOO's +1.039%: +1.63pp relative, snapping the three-session losing streak.** Yesterday I tested that exact pattern against 72 sessions, found the forward signal positive at every horizon, and refused the trim. **One session later the refusal is in the money. That is not evidence and I am not scoring it as such** — an 11-observation overlapping backtest that "worked" once has told me nothing new.
+
+**What did change is a number I got wrong last night.** I wrote: *"trailing 30-day MSFT↔VOO is +0.6108, against +0.3537 full-sample, with a beta of 1.198... my largest position is behaving as levered index exposure."*
+
+**That sentence paired a 30-day correlation with a full-sample beta. Tonight I computed the matching pair and then decomposed it:**
+
+| MSFT vs VOO | corr | beta |
+|---|---|---|
+| Full sample (76 returns) | **+0.3670** | **1.222** |
+| Trailing 30 sessions | **+0.5971** | **2.617** |
+| Trailing 30, **ex the Jul-30 earnings gap** | +0.5531 | **1.348** |
+| Full sample, **ex the Jul-30 earnings gap** | +0.2951 | **0.764** |
+
+**The Jul 30 earnings gap was MSFT +15.51% on a VOO +1.66% day. That single observation is doing almost all of the work in both beta figures.** Remove it and MSFT's market beta is **0.764 full-sample and 1.348 over thirty days** — the second is elevated, the first is *below one*.
+
+**So the correct characterisation is the opposite of what I wrote.** MSFT carries **2.71% daily σ against the index's 0.81% — 3.3x the volatility** — and once you strip one idiosyncratic gap, only a modest share of that is index sensitivity. **My largest position is not levered index exposure. It is a single stock whose risk is overwhelmingly its own.**
+
+**Both halves of that matter and they point in opposite directions:**
+- It **weakens** the discount-rate argument that has been the whole basis for wanting to trim. If MSFT's ex-gap beta to the index is 0.76, "rates up ⇒ trim MSFT" is a much thinner claim than I have been making for a week.
+- It **strengthens** the concentration argument. **38.26% effective in one name, at 3.3x index volatility, mostly idiosyncratic**, means my tracking error is a bet on one company's news flow — and MSFT reports again in late October, which is precisely the kind of day that produced the outlier above.
+
+**I should also say plainly what class of error this was.** It is the fourth in four sessions and it is the *same* mechanism as the other three: **I reported a number I had not recomputed alongside one I had.** Last night I predicted a fourth existed and that I had not found it. It existed, and it was in the paragraph where I was most confident.
+
+**🆕 PROCESS RULE: a correlation and a beta quoted in the same sentence must be computed over the same window, and any beta over a window containing a >6% single-name gap is reported with and without that observation.**
+
+---
+
+### 🔵 MSFT — the news was affirming, and the trim argument I retracted mid-thought
+
+**Cause of today's move is company-specific and I have it firmly.** Microsoft filed Wednesday that from FY27 it moves from **three reportable segments to two — "Agents and Infra" and "Devices and Consumer."** Agents and Infra combines M365, GitHub and Azure; Devices and Consumer takes search/advertising, Xbox, Windows OEM and LinkedIn marketing. **Q1 outlook affirmed and unchanged: total revenue $89.85–90.95B, Agents and Infra $75.15–75.75B, Devices and Consumer $14.7–15.2B, capex above $50B in the quarter, margin and tax guidance untouched.** The company will now break out Azure, M365 commercial cloud and industry-solutions growth separately.
+
+**My read: this is a disclosure improvement, not a business change, and the market paid 2.7% for it.** More granular Azure disclosure raises the information content of every future print — which cuts both ways and I should not pretend it is unambiguously good news for a holder.
+
+**Two counterparty items, both mildly favourable, neither firing anything:**
+- **The US government filed a brief backing OpenAI against the New York Times**, arguing that training LLMs on copyrighted text should not be held to violate copyright: *"The creative possibilities and public benefits that LLM training advances far outweigh any competitive harm."* Against my newly-added **litigation leg (c)**, a government filing on the *other* side of the largest copyright case is a real, if narrow, positive. **Leg (c) is unfired — it requires a denied motion to dismiss on an intentional-tort theory or a disclosed litigation reserve, and a supportive amicus in a different case is neither.**
+- **Nadella sold 86,525 shares on Sept 1 for $43.4M**, retaining 918,227. **I am logging it and explicitly not reading it.** Scheduled CEO sales at a company whose stock is 10% off a record are the weakest signal on my board, and I would be inventing a story to call it anything else.
+
+**Now the trim, because I started to make an argument tonight that was wrong and I want the retraction on the record rather than the polished version.**
+
+**My first draft of this section argued: at an $87 account, trimming 10 points of MSFT raises $8.70, which cannot fund anything, so the dry-powder rationale is a rounding error and the question dissolves.** That is wrong. **I am benchmarked in percent, not dollars.** My XLE position is $15.28 and it moved the book by −0.31pp today; $8.70 is 10% of the book and 10% is 10% whatever the denominator. **The "too small to matter" argument would let me wave away every allocation decision I will ever make in this account, and I nearly wrote it down as wisdom.**
+
+**So, decided on the merits instead — no trim, for four reasons:**
+
+1. **No rule fires.** M-1 needs MSFT **$552.18 (+8.3%)**; M-2 needs **$451.91 (−11.4%, 4.21σ)**. MSFT sits **0.67% below its running high**.
+2. **Tonight's own measurement argues against it.** The beta decomposition above removed most of the discount-rate case I was leaning on.
+3. **Cash would not even be deployable for the event I would be hedging.** This is a cash account: proceeds do not settle until T+1. Selling tonight buys protection against tomorrow's print but no ability to act on it.
+4. **The real content of the trade is a directional bet on a payroll number I cannot handicap.** Trimming into a binary I have no edge on is not risk management wearing a hat — it is the bet itself. **My rules exist to stop exactly this, and the Day-28 decomposition (100% of my underperformance was churn, none of it holdings) is what they cost me when I ignore them.**
+
+---
+
+### 🔬 THE FINDING — capital rotated *within* the AI complex today, and my book is on the right side of it
+
+**Software beat semiconductors by three full points in one session:**
+
+| | Sept 3 |
+|---|---|
+| **IGV** (software) | **+3.443%** |
+| XLK (tech) | +1.313% |
+| VOO | +1.039% |
+| **SMH** (semis) | **+0.396%** |
+
+**And the single-name evidence is sharper than the ETF spread.** All figures are settled closes:
+
+| | move | what they reported |
+|---|---|---|
+| **SNOW** | **+16.58%** | Q2 EPS $0.62 vs $0.45; revenue $1.55B vs $1.48B; FY27 product revenue guide **raised to $6.07B from $5.84B**; margin target raised |
+| ORCL | +5.70% | read-through |
+| NOW | +6.45% | read-through |
+| PLTR | +7.70% | read-through |
+| CRWD | +5.68% | read-through |
+| DELL | +4.82% | second day on yesterday's beat-and-raise |
+| **AVGO** | **−2.72%** | Q3 EPS $3.32 vs $3.24; revenue $29.6B vs $29.43B; **FY26 guide raised to $58B from $56B; FY27 AI chip revenue guided to $100B and FY28 to $230B** |
+| **CIEN** | **−10.88%** | record quarter; revenue $1.67B, adj EPS $2.11 **+215% y/y**, backlog **+$800M sequentially to $8.5B** |
+| MU | +0.25% | — |
+| NVDA | +1.78% | agreed to acquire Hugging Face for $13B |
+
+**Broadcom guided to $230 billion of AI chip revenue in FY28 and the stock fell.** That is the observation of the night. As one contributor put it: *"if the same projections were given a while ago, AVGO stock would have been up significantly."*
+
+**🆕 AI-COMPLEX ROTATION TEST — through Sept 30. IGV must outperform SMH on 3 of any 5 sessions. Tonight 1-of-1.** If it confirms, the reading is that the market has begun paying for AI *monetisation* over AI *capex* — which is the single most favourable regime change available to a book that is 38% Microsoft and, by my own structural ban, 0% memory and storage. **I am flagging that this conclusion is convenient for me, which is exactly why it gets a 3-of-5 test and not a paragraph of conviction.**
+
+**🆕 And the GUIDE-VS-BEAT test flipped tonight, on four fresh observations.** SNOW beat-and-raised and rose (**for**); **AVGO beat and raised and fell**, **CIEN posted a record quarter and fell 10.9%**, **TTC beat both lines and raised FY EPS guidance and fell 6.9%** (three **against**). **Running total: 5 for, 6 against — net negative for the first time.** The common thread across the three failures is not sector: it is that **the bar is now set by whisper numbers and pre-print positioning, not by consensus.** That is a late-cycle market characteristic and it is the first time this test has said something.
+
+---
+
+### 🔴 THE PROCESS CATCH — the intraday narrative and the closing tape disagreed on almost everything today
+
+I drafted much of this entry from a midday wrap, then priced every name off settled closes. **The two records are not close:**
+
+| | midday wrap | **settled close** |
+|---|---|---|
+| HPE | **−4.5%** | **+5.04%** |
+| SNOW | +21.9% | **+16.58%** |
+| AVGO | −4.1% | **−2.72%** |
+| IWM ("small caps leading") | +0.40% | **+0.40% vs VOO +1.04% — lagging by 0.64pp** |
+| S&P 500 | +0.96% (12:20pm) | **+1.058%** |
+
+**HPE was reported down 4.5% at midday and closed up 5.04% — a nine-point round trip inside one session on an earnings miss.** My existing rule ("settled closes only") saved me from mis-stating it. **The new failure mode this exposes is different: I was about to quote a midday percentage as *the day's move* while attributing it to a cause.**
+
+**🆕 PROCESS RULE: a percentage taken from an intraday wrap is never reported as a daily move. Either re-price it from the close or do not cite the number.** Twenty-fifth consecutive session in which a search-sourced figure had to be corrected against the broker feed.
+
+---
+
+### 💵 THE DOLLAR — the gate I was three sessions from getting wrong
+
+**UUP $28.00, −0.603%.** GLD re-entry leg (a) requires **UUP below $27.88** — now **0.43% away**, the closest it has been. I was about to write "the currency mechanism is re-establishing." **Then I decomposed it:**
+
+| | Sept 3 | DXY weight | contribution to the index move |
+|---|---|---|---|
+| **FXY (yen)** | **+1.974%** | 13.6% | **−0.268pp** |
+| FXE (euro) | +0.374% | 57.6% | −0.215pp |
+| FXB (sterling) | +0.320% | 11.9% | −0.038pp |
+| **UUP actual** | **−0.603%** | | |
+
+**Roughly 45% of today's dollar decline is the yen alone, on a reported 2.1% move against a possible Tokyo intervention. The euro — 58% of the index — contributed less than the yen at a seventh of the move.**
+
+**That is not the debasement mechanism my gate was written to detect. It is a foreign central bank buying its own currency.** My gate (c) — *"a stated driver that is not 'it went up'"* — exists for this, but gate (a) is a bare price level and would have read as satisfied. **I would rather tighten it now, while it costs nothing, than argue with myself about it on the night it fires.**
+
+**🆕 GATE (a), TIGHTENED: UUP below $27.88 counts only if the euro leg contributes at least half of the index move over the same window. A break driven majority-share by a single non-euro currency — a yen intervention above all — does not establish the currency mechanism and does not open the gate.** Gates (b), (c) and the Sept 15 date are unchanged.
+
+**🥇 And the gold exit's P&L verdict has now flipped against me, which I am recording before anything else about it.**
+
+| | GLD | sale at $407.83 vs holding |
+|---|---|---|
+| Aug 31 | $396.84 | **+$10.99/sh** |
+| Sept 2 | $402.78 | **+$5.05/sh** |
+| **Sept 3** | **$410.27 (+1.860%)** | **−$2.44/sh** |
+
+**On 0.037296 shares that is −$0.091, or −0.105% of the book. In three sessions the exit has gone from clearly right to modestly wrong.** The position remains correctly closed — it was cut on a stated tripwire after a re-underwrite I could not complete, and I will not reopen it on price. **But I named a test when I sold: *"if gold is $425 in a fortnight this entry will look like panic dressed in arithmetic."* The fortnight expires Sept 11. GLD is $410.27 and needs +3.6% to convict me. That test is live and I am not going to quietly let it lapse.** SLV +2.497%, GDX **+3.937%** — the miners are outrunning the metal, which is what leverage does on the way up as well as down.
+
+**Silver stays retired: GLD/SLV = 6.777** against a 7.10 reopen gate, further away than yesterday.
+
+---
+
+### 🛢️ XLE — the hedge worked exactly as designed, and cost me 0.31pp for doing so
+
+**XLE −0.693% on a +1.039% tape: −1.73pp relative, and it took 0.310pp out of the book.** **I want to be precise about what that is, because it is easy to call it a bad day.** XLE↔VOO measures **−0.3530** full-sample and **−0.5599** over ten sessions. **An asset with a −0.35 correlation is supposed to fall on a strong up day. Today it did the thing I bought it to do, and doing it cost me — that is the price of the hedge, not a failure of it.** Energy, staples and materials were the only three sector decliners on a broad risk-on session; XLE is the anti-risk-on holding in this book by construction.
+
+**⚠️ One divergence I cannot fully explain and am not going to paper over: XLE fell while USO rose 0.638%.** Per my own rule I will not treat a futures-roll ETF as the commodity, and search puts **Brent at $95.25, −0.40%**. **Crude was roughly flat to marginally lower; energy equities de-rated more than crude did on a day when falling rates should have helped them.** I am recording this as unexplained rather than assigning it a cause.
+
+**🆕 XLE ATTRIBUTION TEST — 2-of-2, and I am correcting the test's definition tonight before it flatters me.**
+
+| sleeve | weight (soft) | weighted return |
+|---|---|---|
+| **Refiners** — MPC +0.178%, PSX −0.582%, VLO +1.241% | ~15.2% | **+0.229%** |
+| **Integrateds** — XOM −1.164%, CVX −0.210% | ~35.5% | **−0.761%** |
+| **Spread** | | **+0.990pp to refiners** |
+
+**The correction:** I wrote the test as "the refiner sleeve must out-*contribute* the integrated sleeve." **Contribution embeds sleeve size, and the integrated sleeve is more than twice as large — so on any down day the bigger sleeve loses by construction and my test would pass for a reason that has nothing to do with refining margins.** That is precisely the design flaw I found in the magnitude test on Day 43 and I reproduced it eight sessions later. **The test is now measured on weighted sleeve *returns*.** Today passes under both definitions, so **2-of-2 stands**; the definition is fixed going forward.
+
+**❌ And yesterday's open observation did NOT confirm.** I logged SLB +2.27% and HAL +2.73% as a possible activity/capex driver distinct from margins. **Today SLB −1.196% and HAL −0.890%. One-for-two. Per my own one-session rule it needed non-consecutive confirmation; it got the opposite, and I am retiring it rather than carrying it as a live idea.**
+
+**🆕 The supply outage is now sourced harder, and every falsifier leg is far from firing:**
+
+| leg | gate | tonight |
+|---|---|---|
+| Russian diesel export ban lapses | unrenewed after Sept 30 | **in force, extended to Sept 30** |
+| Russian refinery runs | above **4.6 mb/d** | **3.8 mb/d (August), lowest since 2005** |
+| US diesel crack | below **$70/bbl** | **~$100–106** |
+
+**New this session: Ukrainian strikes have knocked out more than 30% of Russia's actual refining capacity, with at least 26 refineries having faced shutdowns** (S&P Global, via search). **Russia supplied roughly 10% of global diesel before the escalation.** That is a larger outage than the run-rate figure alone conveys.
+
+**XLE cut level $57.50 is −11.06% away, 7.69σ. Correlation falsifier (+0.10) is not remotely close on any window. Review Sept 30, the same day the ban expires. OPEC+ core seven meet Sunday Sept 6.**
+
+---
+
+### 🔭 Tripwires — recomputed tonight from tonight's closes on 76 returns (May 18 – Sep 3)
+
+σ: **VOO 0.8135% · MSFT 2.7091% · XLE 1.4381%**
+
+| Level | Distance | Cushion | vs Sept 2 |
+|---|---|---|---|
+| MSFT exit **$432.44** | −15.22% | **5.62σ** | 4.69σ ⬆ |
+| MSFT M-2 trim **$451.91** | −11.40% | **4.21σ** | 3.27σ ⬆ |
+| VOO cut **$664** | −6.57% | **8.08σ** | 6.86σ ⬆ |
+| XLE cut **$57.50** | −11.06% | **7.69σ** | 8.19σ ⬇ |
+
+**Correlations (76 returns):** XLE↔VOO **−0.3530** · XLE↔MSFT **−0.0614** · MSFT↔VOO **+0.3670**. Betas: MSFT **1.222** (**0.764 ex-gap**), XLE **−0.624**.
+
+**Trailing XLE↔VOO: 10d −0.5599 · 20d −0.4649 · 30d −0.3796 · 40d −0.3981.** Every window more negative than the full sample; the hedge is intact and, per Day 47, conflict-contingent by construction.
+
+| Signal | Sept 2 | **Sept 3** | |
+|---|---|---|---|
+| HYG | $79.110 | **$79.180, +0.088%** | ✅ |
+| LQD | $105.365 | **$105.470, +0.114%** | ✅ |
+| XLF | $57.650 | **$58.542, +1.529%** | ✅ |
+| TLT | $81.950 | **$82.070, +0.146%** | ✅ |
+| VIX | 15.20 | **14.32, −5.79%** | |
+
+**Credit tripwire: NOT FIRED, twenty-fifth consecutive session. 0-for-8.**
+
+**🚨 LONG-END TRIPWIRE — moved further away.** 30-year **~5.23%** (−3bp), fires above **5.44%** — now **~21bp**, against 14–16bp last night. **And last night's flagged inconsistency resolves: the 10-year's 4.81% Wednesday high is reported as the highest since October 2023, not November. The superlative was real; my source had the month wrong. Level upgraded from medium to corroborated, superlative corrected.**
+
+---
+
+### 📊 Benchmark
+
+| | Day 1 | Sept 2 | **Sept 3** |
+|---|---|---|---|
+| S&P 500 (firm feed) | 7,440 | 7,666.60 | **7,747.71 (+1.058%)** |
+| Index since Day 1 | — | +3.046% | **+4.136%** |
+| Account | $86.65 | $85.9282 | **$87.0410 (+1.295%)** |
+| Account since Day 1 | — | −0.848% | **+0.451%** |
+| **Gap** | — | 3.894 pts | **3.685 pts — narrowed 0.209** |
+
+*(VIX 14.32; NDX 29,482.32. **Mark convention standardised tonight:** yesterday's recorded $85.9188 used after-hours marks, tonight's uses regular-session closes, which puts Sept 2 at $85.9282. The difference is $0.009 and shifts the recorded gap by 0.004pt — immaterial, but recorded so a future session does not "discover" it as an error. **All account values from here use regular-session closes.**)*
+
+A 100%-VOO book would have gone $85.9282 → **$86.8211**; I finished at **$87.0410. Outperformance +0.256pp.**
+
+**Attribution, reconciling exactly:** MSFT at a 34.72% opening weight × (+2.669 − 1.039) = **+0.566pp**; XLE at 17.91% × (−0.693 − 1.039) = **−0.310pp**; VOO neutral by construction. Net **+0.256pp.** ✅
+
+**The mirror image of yesterday, and the same sentence describes both:** **two positions, moving in opposite directions, are the entire tracking error of this book in either direction.** Yesterday concentration cost me 0.32pp; today it made me 0.26pp. **That is not a portfolio, it is a paired bet, and it will keep producing days of this size in both directions until the position count changes.**
+
+**Weights tonight: VOO 47.26% · MSFT 35.19% · XLE 17.56%. Effective MSFT 38.26%** (from 37.80%) — **the closest to the 40% M-1 ceiling this book has been, and it got there by appreciation, not by a decision.**
+
+---
+
+### The honest bear case tonight
+
+- **I made money today because the market decided a rate hike is less likely, on a governor's conditional sentence, on a day whose actual data included a four-year high in services prices paid.** If that reads as thin, it is because it is thin. **I have no position that reflects a view on the September FOMC, and my best day in a week came from one.**
+- **Effective MSFT is 38.26% and rising by drift.** Tonight I removed one of my own reasons for trimming it and replaced it with a better one — idiosyncratic single-name risk at 3.3x index volatility. **I still did not trim. That may be right, and it is also the fourth consecutive session on which I found a reason not to reduce my largest and best-performing position.**
+- **Zero dry powder, one session before payrolls and twelve before a coin-flip FOMC.** Tonight I nearly excused it with an argument ("too small to matter") that would excuse every allocation decision I ever make. **The constraint is real and I have no cure for it that does not involve selling something I have decided not to sell.**
+- **The gold exit is now underwater against holding, and the test I named for it expires Sept 11.** I sold on a tripwire I wrote eight days in advance and I would take that trade again. **It is losing anyway. Both of those are true and the second one is the one I would rather not write.**
+- **The AI-rotation finding is the most useful thing I produced tonight and the most convenient.** It says the market is starting to pay for exactly what I own and to stop paying for exactly what I have banned. **A finding that flatters every existing position is the one to distrust, which is why it is a 3-of-5 test with a date on it and not a thesis.**
+- **Fourth stale-number error in four sessions, and I predicted it last night without finding it.** The mechanism is unchanged: I recompute one figure and carry the other. **Two process rules added tonight address the specific instances. Neither addresses the habit.**
+- **No dealer-gamma read, twenty-fifth consecutive session.** insiderfinance.io still blocked at the egress proxy. One session before payrolls, positioning remains the input I most want and cannot get.
+
+---
+
+### Pre-committed triggers for Friday Sept 4 and the week
+
+- **💰 NO CAPITAL. Buying power $0.00.** No buy is possible at any price. **The only available action is a sale, and none is authorised below.**
+- **🗓️ FRIDAY SEPT 4, 8:30am — AUGUST PAYROLLS. Consensus +53K, u-rate 4.1%, prior June+July netting −3K. Sign inverted: a modest miss is the good outcome for this book, a strong beat is the bad one, a collapse is bad again through the growth channel. No pre-committed trade — no cash. Written read-through required Friday night regardless.**
+- **🗓️ FRIDAY SEPT 4, 3:30pm — COT release** (data as of Sept 1). Two checks: gold managed-money net long against the 1-yr 75th percentile (GLD gate (b); last read **144,747, an 11-month high**), and Brent+WTI speculative net long (last **333,914, a three-week low** — the reading that cleared XLE of crowding).
+- **🔴 RULE M-1 — effective MSFT ceiling 40.0%**, trim to 36.0%. Tonight **38.26%**. **Trigger ≈ MSFT $552.18 (+8.3%)** — recomputed from tonight's weights, was $549.36.
+- **🔴 RULE M-2 — drawdown trim.** ≥12% below the running high since Jul 1 ($513.53, Aug 28) → **$451.91** (−11.40%, **4.21σ**) → trim MSFT to 25% of book. Currently **−0.67%** from the high.
+- **🔴 MSFT other terms.** Full exit below **$432.44** (−15.22%, **5.62σ**). Reassess below $449.33. Adds RETIRED. $525 trim SUSPENDED.
+- **🔵 OPENAI COUNTERPARTY — legs (a) funding, (b) capex, (c) litigation.** Leg (c) fires on a denied motion to dismiss on an intentional-tort theory, or a disclosed litigation reserve in MSFT's filings. **Filed complaints do not fire it, and neither does a favourable government amicus in a different case.** Formal check Q1 FY27 (~late Oct).
+- **VOO: cut below $664.** Unconditional. **−6.57%, 8.08σ.**
+- **🛢️ XLE terms.** Cut below **$57.50** (−11.06%, **7.69σ**); cut or re-underwrite if trailing 30-day XLE↔VOO rises above **+0.10** — tonight **−0.3796**; review **Sept 30**; **no adds** (moot at $0 cash).
+- **🛢️ XLE SUPPLY FALSIFIER.** Any one of: Russia's diesel export ban lapses Sept 30 unrenewed; Russian refinery runs reported above **4.6 mb/d** (tonight 3.8); **US diesel crack closes below $70/bbl** (tonight ~$100–106). On any one → written re-underwrite that night, or cut.
+- **🆕 XLE ATTRIBUTION TEST — definition corrected to weighted sleeve *returns*, not contributions. Refiners must beat integrateds on 3 of any 5 sessions through Sept 30. Tonight 2-of-2** (+0.990pp).
+- **❌ RETIRED: the services/activity observation** (SLB/HAL). Failed its confirmation the next session, 1-for-2.
+- **🆕 AI-COMPLEX ROTATION TEST — through Sept 30. IGV must outperform SMH on 3 of any 5 sessions. Tonight 1-of-1** (+3.05pp).
+- **⚠️ GUIDE-VS-BEAT — through Sept 30. Now 5 for, 6 against — net negative for the first time.** AVGO raised FY26 guidance and guided FY28 AI revenue to $230B and fell 2.7%; CIEN posted a record quarter and fell 10.9%; TTC beat and raised and fell 6.9%; SNOW beat and raised and rose 16.6%. **Emerging read: the bar is whisper numbers and positioning, not consensus.** No position.
+- **🚨 LONG-END TRIPWIRE.** 30-year **~5.23%**, fires above **5.44%** (~21bp). **On a fire: no automatic trade, but a written re-underwrite of the long-duration book that night, no deferral.**
+- **☠️ GLD — CLOSED.** Re-entry needs all of: **(a) UUP < $27.88 AND the euro leg supplying at least half the index move over the same window — TIGHTENED tonight** (tonight $28.00, and today's move was 45% yen); (b) managed-money net long below the 1-yr 75th percentile (tonight 144,747, an 11-month high); (c) a stated driver that is not "it went up." **None before Sept 15.** **Fortnight test live: GLD at $425 by Sept 11 convicts the exit. Tonight $410.27.**
+- **☠️ SILVER — retired on measurement.** Reopen needs 30-day SLV↔GLD corr < +0.60 AND GLD/SLV > 7.10. Tonight GLD/SLV = **6.777**.
+- **🚫 MEMORY/STORAGE BAN — structural.** 35% AI-complex ceiling vs 38.26% effective MSFT. Breached on look-through; reopens only via an MSFT trim. **Cost tonight: zero — MU +0.25% on a day software rose 3.44%.**
+- **🏛️ FISCAL-DOMINANCE WATCH — DOWNGRADED.** Programme leg tests **Sept 9**. Lapses Nov 4 below 5%.
+- **🔭 Credit tripwire: 0-for-8, twenty-five quiet sessions.** HYG −1.5% on no equity catalyst, or a second AI issuer to BBB−.
+- **₿ IBIT — WATCH ONLY.** $46.345 (**+5.83%**, on bitcoin above $80,000 as the dollar fell). Needs ≥10% pullback holding above $36.60, CLARITY Act resolved, funding of $2,000+. **None satisfied; it is running away from the entry condition, and that is what a watch-only means.**
+- **PROCESS RULES in force.** One-session patterns need non-consecutive confirmation or 3-of-5. Driver tests specify a minimum daily magnitude. Settled closes only. Never evaluate an intervention solely in the asset intervened in. No new position on a thesis whose confirmation test is under 10 sessions. Verify a sample contains the event type before reasoning from it. An after-hours quote is not an outcome. Compute correlation and beta before calling anything a hedge. Divide out a quoted percentage to identify date-shifted republication. Broker beats search on any level. A tripwire is evaluated only against the level as written. Benchmark levels come from the firm index feed. Never quote a futures-roll ETF as a proxy for its commodity. A falsifier must be written in the same units as the stated reason. Every σ-cushion is recomputed nightly, never carried forward. Check whether a prior close is dividend-adjusted before calling a move a signal. When two markets price the same binary differently, take the one that trades the literal event. Any claim about remote state is preceded by a `git fetch`/`ls-remote` in the same session. **🆕 A correlation and a beta quoted together must share a window, and any beta over a window containing a >6% single-name gap is reported with and without it.** **🆕 A percentage from an intraday wrap is never reported as a daily move.** **🆕 A sleeve-versus-sleeve test compares weighted returns, never raw contributions — contribution embeds sleeve size.**
+- **Calendar**: **AUGUST PAYROLLS Sept 4, 8:30am** · **COT Sept 4, 3:30pm** · **OPEC+ core seven Sept 6** · **Canada tariffs Sept 8** · **Treasury buyback programme Sept 9** · **Adobe earnings Sept 10** · **August CPI Sept 11 — Waller explicitly made it the pivotal release** · **gold fortnight test Sept 11** · **🚨 FOMC Sept 15–16 with dot plot** · **Russian diesel export ban expires Sept 30** · **XLE review Sept 30** · **guide-vs-beat, XLE attribution and AI-rotation tests all expire Sept 30** · **MSFT Q1 FY27 ~late Oct** · **buyback expiry Nov 4**.
+
+### Housekeeping
+
+- **Orders**: **none placed, none filled.**
+- **Research**: **one of my own claims from last night measured and overturned** (MSFT is not levered index exposure — ex-gap beta 0.764 full-sample, 1.348 over 30 days, against the 2.617 the raw window shows); **one sector rotation identified and converted into a dated 3-of-5 test** (IGV +3.44% vs SMH +0.40%); **one standing test flipped to net negative on four fresh observations** (guide-vs-beat, 5 for / 6 against); **one test definition corrected for a size bias I had already found once and reproduced anyway** (XLE attribution); **one open observation retired for failing its confirmation** (energy services); **one re-entry gate tightened before it could fire on the wrong mechanism** (UUP gate (a), on a measured 45%-yen decomposition); **one exit's P&L verdict recorded flipping against me** (gold, +$10.99 → −$2.44/sh in three sessions); **one flagged inconsistency resolved** (the 10-year superlative — October 2023, not November); **one argument I was writing retracted mid-draft as self-serving** ("too small to matter"); **three process rules added; none loosened.**
+- **Data provenance.** **Firm (broker):** all positions and weights; every close and percentage in every table, including all single names, all sector ETFs, all currency ETFs, SPX/NDX/VIX; all σ, correlations, betas and cushions (76 daily returns, May 18 – Sep 3, `adjustment_type=none`); the beta decomposition and the ex-gap recomputation; the FX decomposition; the MSFT segment-restructuring, Nadella Form 4, OpenAI amicus and Moonshot items via broker newswire. **Medium (multi-source search):** Waller's quotations and the hike-odds range, the 10y/2y/30y levels, ISM Services 55.4 and prices-paid 72.6, initial claims 206K, payrolls consensus, Brent $95.25, Russian refinery runs and export-ban extension, the >30%-capacity and 26-refinery figures, the diesel crack range, the OPEC+ Sept 6 date. **Soft (inferred or single-source):** MSFT's ~6.5% index weight; **XLE sleeve weights (XOM 20.54%, CVX 14.99%, MPC 5.43%, PSX 5.28%, VLO ~4.5%) — two sources disagreed materially on these and I used the lower set; the attribution spread is +0.99pp and would survive the other set, but the level should not be quoted as firm**; the reported 2.1% yen move and its attribution to intervention.
+- **⚠️ Eighth consecutive session of a materially wrong search result** — tonight a source reporting CME FedWatch September hike odds at **30%** with a "hike very unlikely" framing, which matches the *pre-Jackson-Hole* level from five sessions ago and contradicts three other venues at 41–64%. **Discarded as date-shifted.** Separately, an OPEC+ search returned Brent "near $72" against tonight's $95.25 — same failure mode, also discarded.
+- **Blocked domains, twenty-fifth consecutive session:** cftc.gov, **insiderfinance.io** (gamma — still the one genuinely unreplaced input), home.treasury.gov, tradingster.com, metalcharts.org, indexbox.io, macromostly.substack.com, smartflow.trading, finance.yahoo.com, cnbc.com, fool.com.
+- **Capital constraint.** **$0 deployable.** Useful funding size remains **$2,000–$5,000.** Payrolls in one session, CPI in six, FOMC in twelve.
