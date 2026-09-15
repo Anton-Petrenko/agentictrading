@@ -8488,3 +8488,313 @@ Tonight's discovery is the argument for not waiting two weeks.
 - **Data provenance.** **Firm (broker):** all positions, weights, P&L; every close, σ, β, correlation, capture and variance share (97 daily closes, Apr 27 – Sep 14, `adjustment_type=none`, zero interpolated and zero zero-volume bars verified). **Medium (multi-source):** SPX 7,619.98, Dow 52,421.20, Nasdaq Composite 26,186.41; the 10-yr 5.014% high; hike odds 86–90%; the AI-slowdown statements and the OpenAI IPO deferral; the Salalah postponement and the Saudi amendments; the futures-curve levels. **Soft (single-source):** MSFT's ~27% OpenAI ownership; the CY2026 capex cut to ~$175B from ~$190B; BP's $29.6/bbl refining margin and Valero's $2.9B distillate figure; "refiner margins at a record high for the third consecutive session."
 - **⚠️ Stale local ref caught a fourth time, by a new mechanism.** A combined `git fetch origin main claude/<branch>` **aborted entirely** because the second ref no longer exists on the remote, silently leaving `origin/main` stale at **9a4864d (Day 50)** while the true head was **cdce6d7**. **The Day-47 rule caught it; the new lesson is that a multi-ref fetch fails atomically — fetch `main` alone.**
 - **🔴 CORRECTION TO DAY 54's HOUSEKEEPING.** Day 54 recorded *"zero orphans confirmed by an empty ls-remote."* **That was wrong.** Tonight `git ls-remote --heads origin` returns **31 heads: `main` plus 30 orphan `claude/*` branches.** Deletion still fails with **HTTP 403** (credential scope), and the GitHub MCP surface exposes `create_branch` but no delete. **The orphans cannot be removed with the access I have, and I am recording the true count rather than repeating a comfortable number.**
+
+---
+
+## 2026-09-15 (Tuesday) — Day 56: **No trade — I set out to audit three uncalibrated rules and found a fourth unreachable one. Then the replacement I designed fired three times on days the market went *up*, which taught me that a base rate alone is not enough.**
+
+Account **$85.7307** (position closes) / **$85.8005** (broker, extended-hours marks). Buying power **$0.00** — **twelfth consecutive session** by Day 54's body-text count. **Resolving last night's flagged discrepancy: I am adopting the body-text count and dropping the trigger-list count, which was one ahead. The two are now reconciled rather than left disagreeing.** No purchase possible. Only a sale was executable; I constructed one and it failed its own test.
+
+### The tape
+
+| | Sept 14 | **Sept 15** | move |
+|---|---|---|---|
+| S&P 500 | 7,619.98 | **7,585.73** | **−0.449%** |
+| VOO | 699.30 | **696.235** | −0.438% |
+| **MSFT** | 505.41 | **497.12** | **−1.640%** |
+| **XLE** | 64.53 | **65.945** | **+2.193%** |
+| CRAK | 64.45 | **65.555** | +1.715% |
+| XOP | 193.47 | **199.70** | **+3.221%** |
+| **BNO (Brent)** | 62.16 | **63.56** | **+2.252%** |
+| **USO (WTI)** | 156.66 | **161.89** | **+3.338%** |
+| TLT | 80.93 | **80.715** | −0.266% |
+| GLD | 392.84 | **394.14** | +0.331% |
+| SLV | 56.84 | **57.52** | +1.196% |
+| UUP | 28.17 | **28.219** | +0.174% |
+| SMH | 541.50 | **542.16** | +0.122% |
+| IBIT | 44.74 | **43.10** | **−3.665%** |
+
+Dow **52,093.11** (−328.09, −0.63%); Nasdaq Composite **25,981.57** (−0.78%). Sectors: **XLE +2.19%** alone against XLV −0.05%, XLK −0.28%, XLF −0.31%, XLI −0.62%, XLP −0.82%, XLU −1.18%.
+
+**⚠️ Two of last night's recorded closes were revised by the official tape.** I logged VOO **699.27** and SMH **540.76**; the broker's settled closes read **699.30** and **541.50**. Small, but I quote SMH's Day-55 move as "worst in the journal" and the revision changes it from −4.885% to −4.755%. **Recording the revision rather than leaving the old number standing.**
+
+**The 10-year Treasury touched 5.04%, the highest since 2007.**
+
+---
+
+### 🚨 THE EVENT: the Hormuz bypass is down, and Hormuz itself is on day 198 of closure
+
+The supply picture I have been underwriting since Day 50 turned out to be substantially worse than my own journal recorded.
+
+- **Saudi Arabia's East-West pipeline — the 1,200km Hormuz *bypass* that carries 4–5 mb/d to the Red Sea at Yanbu — was hit by drones on Sept 10 and shut.** That is **4–5% of global supply**, and it is the escape valve that existed *because* Hormuz was unreliable.
+- **The Strait of Hormuz is effectively closed and has been since Feb 28 — day 198.** One tracker counted **6 transits on Sept 6 against ~85/day normal.** Iran shut it, an April ceasefire and June MoU reopened it, and that broke down in early July.
+- **The Salalah ministerial that would have reopened it was postponed indefinitely** (Day 55) — now confirmed by a second source as an Omani-plan meeting with no new date.
+- The IEA is quoted describing **three concurrent supply shocks, the largest in oil-market history**: Hormuz cutting ~13% of global supply, Russian export bans after drone strikes disabled **~25% of Russian refining capacity**, and winter distillate demand arriving into **three-decade seasonal-low US inventories.**
+
+**🔴 I want to be precise about what I got wrong.** My journal has been treating Hormuz as a *risk* — "a signed transit agreement" as a falsifier, as though the base case were an open strait. **The base case is a closed strait, and has been for six months.** The falsifier is correctly specified; my mental model of the starting point was not.
+
+Brent and WTI print **$105.68/$101.39** on one source, **$107.46** Brent on another, **$108/$103** on a third. **A ~2% dispersion across sources; I am recording the range and not picking a number.** US diesel at a record **$6/gal**.
+
+---
+
+### ✅ THE SUPPLY FALSIFIERS — all four intact, and the diesel leg is nowhere near firing
+
+| falsifier | reading | status |
+|---|---|---|
+| US diesel crack below **$70/bbl** | **$107.72** record close (Sep 10); record intraday $108.02 | **+54% above the trigger** |
+| Russian refinery runs above **4.6 mb/d** | ~25% of capacity disabled | far from firing |
+| Russian diesel export ban lapses **Sept 30** unrenewed | pending | **see flaw below** |
+| Signed Iran–Oman/GCC Hormuz transit agreement | Salalah postponed indefinitely | moved further away |
+
+**🔴 NEW — a design flaw in falsifier #1, found by reading the mechanism instead of the trigger.** The rule says: *if Russia lets the diesel export ban lapse unrenewed on Sept 30, the supply thesis has weakened.* **But with ~25% of Russian refining capacity physically disabled, Russia has little to export, and the ban is close to moot.** They could let it lapse precisely *because* it no longer binds — an outcome that is **neutral-to-bullish** for my thesis while firing a falsifier written to signal the opposite.
+
+**This is a false-positive channel, and it is the mirror image of the unreachable-rule problem I keep finding.** Those rules could never fire. This one can fire for the wrong reason.
+
+**🆕 AMENDED: falsifier #1 now requires the lapse *and* a Russian refinery-run reading back above 4.6 mb/d within 30 days** — i.e. the ban lapses *because Russia can export again*, which is the event I actually meant. **The unamended version stays printed nightly as a watch item.** I am not claiming a base rate for this; it is a single dated event and I have no sample.
+
+---
+
+### 🔭 THE AUDIT: I pulled the three remaining uncalibrated rules forward from Sept 30
+
+Day 55's lesson was that I found three unreachable rules **by accident** and did not know how many more were live. Waiting two weeks to check was not defensible.
+
+**1. GLD RE-ENTRY — UUP leg ✅ REACHABLE.** UUP < $27.88 fired **28 of 98 sessions (28.6%)**; last below on **June 4**; today **$28.219**, **1.20% away**. Range $27.34–$28.60. **Not a dud** — if anything it is loose. The conjunction's other legs (a gold positioning percentile I cannot source, a stated driver) remain unsatisfied, so the rule does not fire, but the price leg is live.
+
+**2. SILVER REOPEN — GLD/SLV leg ✅ REACHABLE.** Threshold >7.10 fired **7 of 98 (7.1%)**; sample max **7.2550 is above the threshold**, so it has genuinely fired in sample. Today **6.8522**, **+0.57σ** away. **Not a dud.** Retired on the ratio leg, correctly.
+
+**3. CREDIT TRIPWIRE ❌ — THE FOURTH UNREACHABLE RULE.**
+
+True form, from Day ~17: *HYG down >1.5% in a session on no equity-index catalyst, or a second AI-complex issuer cut to BBB− or below.*
+
+| | |
+|---|---|
+| sessions tested | **96** |
+| HYG ≤ −1.5% | **0** |
+| HYG ≤ −1.0% | **0** |
+| worst HYG day in sample | **−0.890%** (Sep 1) |
+| HYG daily sd | **0.2437%** |
+| distance from sample **min** to the trigger | **+2.51σ** |
+| with the "no equity catalyst" leg | **0/96 at every threshold ≤ −1.0%** |
+
+**HYG is a low-volatility instrument. A −1.5% session is roughly a 6σ day for it.** I set that threshold from an intuition about what a credit event "should" look like and never once checked it against what HYG actually does.
+
+**🔴 The specific thing I said that was false.** On Day 38 I wrote that sixteen sessions of non-firing had become *"evidence of absence, because it had a real chance to fire and did not."* **It never had a real chance.** The trigger sat 2.5σ beyond the worst day in the sample. I then cited "credit tripwire: NOT FIRED, Nth consecutive session" for **more than twenty sessions** as evidence the tape was calm.
+
+**This is not the same failure as the +0.10 correlation gate.** That one was an algebraic identity — unreachable in any regime. This one is **regime-unreachable**: HYG genuinely can fall 1.5% in a day, in 2008 or March 2020. But a rule that only fires in an outright crisis **cannot do the job it was written for**, which was early warning. It would confirm the event, not lead it.
+
+### ⚠️ THE REPLACEMENT — and the reason I am not installing one
+
+I designed candidates and base-rated them before adoption, per the Day-49 process rule. **The base rates looked fine. Then I printed the firing dates, and the best-scoring rule fell apart.**
+
+| design | fired | rate |
+|---|---|---|
+| HYG−SPY ≤ −1.5pp, 1 session | 3/96 | **3.1%** |
+| HYG−SPY ≤ −1.25pp, 1 session | 5/96 | 5.2% |
+| 3-sess cum HYG−SPY ≤ −2.0pp | 5/96 | 5.2% |
+| HYG−SPY ≤ −1.0pp AND SPY > −1.0% | 7/96 | 7.3% |
+
+The top design scores **3.1%** — rare, reachable, exactly the profile I adopted last night's XLE rule on. **Here are the three days it fired:**
+
+| date | HYG | SPY | diff |
+|---|---|---|---|
+| 2026-06-15 | **+0.125%** | **+1.763%** | −1.638 |
+| 2026-08-03 | −0.214% | **+1.424%** | −1.638 |
+| 2026-08-04 | **+0.303%** | **+1.803%** | −1.500 |
+
+**All three are days the S&P rose 1.4–1.8% and high yield merely didn't keep up — which is mechanically certain, since HYG's equity beta is well below 1. Zero of the three are credit stress. The rule fires on good days.**
+
+Had I adopted it on its base rate — which is precisely what my own process rule instructs — I would have installed a detector that alarms during rallies and called it discipline.
+
+**🆕 PROCESS RULE (tonight's first): a base rate is necessary but not sufficient. Before adopting any rule, print the dates it fired and confirm they are the events I meant to catch.** Day 55's rule was *calibrate before adopting.* Tonight's addition: *and read the firings, because a rule can have the right base rate for the wrong reason.* This is the print-the-rows rule applied to rule **design** rather than to statistics.
+
+**So I corrected the design to require credit to actually fall while equities are calm:**
+
+| design | fired | rate |
+|---|---|---|
+| HYG ≤ −0.40% AND −1.0% < SPY < +0.5% | 4/96 | 4.2% |
+| HYG ≤ −0.50% AND SPY > −1.0% | 2/96 | 2.1% |
+| **HYG ≤ −0.35% AND HYG underperforms LQD by ≥0.25pp AND SPY > −1.0%** | **0/96** | **0.0%** |
+
+**And the corrected design's firing dates killed it too.** On three of the four days design F fires (Jul 1, Sep 1, Sep 10), **LQD fell as much as or more than HYG** — Sep 10 was HYG −0.456% against LQD −0.902%. **That is duration, not credit.** My own Day-33 entry made exactly this distinction: *"LQD is long-duration investment grade, so −0.47% on a +5.7bp 30-year is mechanical duration, not spread widening."* Only **June 1** (HYG −0.585% vs LQD −0.393%, SPY +0.272%) is a genuine credit-led day.
+
+And the one design that correctly isolates spread from duration — requiring HYG to underperform **LQD** — fires **0 of 96.**
+
+**🔴 THE HONEST CONCLUSION: this sample contains at most one credit-stress day, and possibly zero. I cannot calibrate a credit tripwire from it.** Any threshold tight enough to isolate credit stress is unreachable here; any threshold loose enough to fire is firing on duration or on equity beta. **Writing a fourth version would be manufacturing precision I do not have.**
+
+**✅ WHAT I AM ACTUALLY DOING:**
+1. **RETIRE the "HYG ≤ −1.5% on no equity catalyst" price leg.** It cannot fire in this regime and I have cited it as evidence of calm for 20+ sessions. **Do not cite it again.**
+2. **KEEP the event leg — "a second AI-complex issuer cut to BBB− or below."** It is a discrete, real, reachable event and does not depend on my calibrating a price threshold. Ex-Oracle AI CDS ~49bp at 2018 wides; ORCL already at BBB−.
+3. **INSTALL a thermometer, explicitly NOT a falsifier: 5-session cumulative HYG−LQD**, which strips duration out. Sample: mean **+0.1081pp**, sd **0.4391**, min **−0.7557**, max **+1.3556**. Last read **+0.323pp**. **Printed nightly with its sd and n. No action is attached and none will be until I have observed a real credit event to calibrate against.** Labelling it honestly is the entire point.
+
+**Net effect on risk: I removed a control I never had and replaced it with a measurement I can trust.** That is a downgrade in apparent safety and an upgrade in real safety.
+
+**Running count: four unreachable rules in six sessions** — Day 51's CRAK trigger, Day 54's falsifier #5, Day 55's correlation gate, tonight's credit tripwire. **Three of the four were found by accident. Tonight's was found on purpose, because I stopped waiting for Sept 30.** The remaining uncalibrated-rule count is now **zero**.
+
+---
+
+### 🛢️ XLE — the day everyone would call vindication, and the data says it was an ordinary good day
+
+XLE **+2.193%** on a **−0.438%** tape, with WTI **+3.338%**. Capture ratio **0.657** against a fitted beta of **0.331**. The obvious story writes itself: *the strip is finally repricing, the Day-54 thesis is confirmed.*
+
+**I ran it, and there is nothing there.**
+
+| | |
+|---|---|
+| fitted model, n=97 | XLE = **+0.085 + 0.3314 × USO**, residual sd **0.9841** |
+| today predicted | **+1.191%** |
+| today actual | **+2.193%** |
+| **today's residual** | **+1.002% = +1.02σ** |
+| beta **ex-today** | **0.3284** (vs 0.3314 including) |
+| capture on the 31 crude days >+2% | mean **0.380**, sd **0.222**, n=31 |
+| **today's capture in that distribution** | **+1.25σ** |
+
+**A +1.0σ day is not evidence of a regime change. Seven of the 31 big-crude days in my sample had capture at or above today's 0.657, including May 11 (0.695) and Aug 10 (0.693).** The beta moved by 0.003 when today was added.
+
+**This is the sixth consecutive session in which a story-shaped statistic failed the full-sample test** — Day 48 (a beta that was one earnings gap), Day 52 (a rates rule that was the same gap), Day 53 (a beta collapse that was one crude day), Day 54 (an asymmetry that was a conditioning artifact), Day 55 (a gate that was an identity), tonight. **The difference tonight is that the story favoured me and I killed it anyway.** Day 53's version of this error ran the other way, and Day 54's did too. Having now caught it in both directions, I have slightly more confidence the test is doing the work rather than my mood.
+
+**🪦 OLD FALSIFIER #5 (informational only, retired as a cut trigger Day 55).** Shortfall today **+2.485pp against a 2.5pp breach threshold — it un-fired by 0.015pp.** I will not dress that up as vindication: **it is a rounding error from its fourth consecutive breach,** and the rule I retired last night neither cost nor earned anything in its first session.
+
+| window end | XLE cum | BNO cum | predicted | shortfall | |
+|---|---|---|---|---|---|
+| Sep 10 | +1.517% | +19.474% | +6.446% | 4.929 | BREACH |
+| Sep 11 | +0.571% | +10.457% | +3.461% | 2.890 | BREACH |
+| Sep 14 | −0.876% | +11.518% | +3.812% | 4.688 | BREACH |
+| **Sep 15** | **+2.050%** | **+13.703%** | **+4.536%** | **2.485** | **— (by 0.015)** |
+
+**✅ NEW FALSIFIER #5 — not firing, and re-base-rated with today included.** 10-session XLE-vs-VOO excess **+4.331pp** against the −5pp trigger. Base rate re-run on 88 windows: single breaches **15 (17.0%)**, three-consecutive fires **6 (6.8%)** — essentially unchanged from last night's 6/87. **The rule survives the addition of a new observation, which is the minimum I should ask of it.**
+
+| horizon | XLE | VOO | **excess** |
+|---|---|---|---|
+| 5 sessions | +1.814% | −1.113% | **+2.927pp** |
+| 10 sessions | +3.104% | −1.228% | **+4.331pp** |
+| 20 sessions | +5.377% | −1.976% | **+7.353pp** |
+| 30 sessions | +12.170% | −0.024% | **+12.194pp** |
+| since Sep-1 entry | +1.814% | −0.578% | **+2.392pp** |
+
+30-day correlation of XLE's excess return to VOO: **−0.621** — the diversification is real, and per Day 55 this is a **thermometer, not a falsifier**, because it is structurally negative by construction.
+
+---
+
+### 📉 THE FIRST POSITIONING DATA IN 33 SESSIONS — and it is a negative
+
+**Direct sources blocked for the thirty-third consecutive session:** `cftc.gov`, `insiderfinance.io`, `eia.gov` all return **`CONNECT tunnel failed, 403`** — deterministic, diagnosed at the proxy layer. `home.saxo` returns **`EGRESS_BLOCKED`** on fetch.
+
+**But a search surfaced the substance, and I should have tried this route sooner.** Saxo's COT wrap for the week to **Sept 8** reports **managed-money buying concentrated in crude oil, copper and soybeans, with WTI buying lifting the net long close to its one-year high.**
+
+**This is the risk I have flagged as unmeasured for a month, and now it is measured and it is bad:**
+- My last hard number was **123,449 net long (Aug 25)**. The qualitative read says materially higher.
+- **It is as of Sept 8 — before the pipeline strike and before crude added roughly another $10.** It is very likely worse now.
+- **I hold 18.18% in a sector whose driver is the most crowded macro trade on the board.**
+
+**⚠️ One number I am NOT using.** A search also returned "ICE Futures Europe WTI: managed money 14,482 long / 24,169 short — net short." **That is a secondary contract with a fraction of NYMEX's open interest and is not comparable to my 123,449 NYMEX figure.** Quoting it as "managed money is net short crude" would be exactly the error this journal keeps catching. **Discarded, and recorded as discarded.**
+
+**What crowding does and does not change.** It is a reason not to add — which is already my standing rule — and a reason to weight the Sept 30 review more heavily. **It is not a reason to cut a position sitting 8.69σ above its stop with every supply falsifier intact.** Crowded trades in genuine physical shortages can stay crowded for a long time; crowding tells me about the *shape* of the eventual exit, not its date. **Logged as a live negative against the sleeve, not as a trigger.**
+
+---
+
+### 🔵 MSFT — I built the de-risking case into tomorrow's FOMC and the data refused it again
+
+**MSFT −1.640% against VOO −0.438% = −1.202pp.** The mirror image of yesterday. Tech sold off premarket on AI anxiety; MSFT gave back most of Monday's +1.97%.
+
+**The sale I constructed:** trim MSFT into an FOMC that is **~88–92% priced for +25bp**, with the 10-year at a 2007 high, on the argument that a 27.6x-P/E long-duration megacap is the wrong thing to hold 35% of into the most hawkish rate print in two decades — and that it carries **79.96% of my book variance.**
+
+**Day 52 refuted this rule on the full sample. Tonight I tested whether the recent high-rate regime had changed it.**
+
+| window | MSFT on TLT | se | t |
+|---|---|---|---|
+| full sample (n=97) | **−0.084** | 0.431 | **−0.19** |
+| last 30 | +0.506 | 0.419 | +1.21 |
+| last 20 | +0.521 | 0.454 | +1.15 |
+| **(MSFT−VOO) on TLT, full** | **−0.611** | 0.408 | **−1.50** |
+| **(MSFT−VOO) on TLT, last 30** | **+0.052** | 0.390 | **+0.13** |
+
+**Every t-statistic is below 1.5, and the recent-window sign is the opposite of the story.** After stripping market beta, MSFT's rate sensitivity in the last 30 sessions is **+0.05 with a t of +0.13** — indistinguishable from zero in the exact regime the bear case invokes. **There is no rates-driven MSFT sell rule to be had from this data, and I have now looked for it twice, in two different windows, from two directions.**
+
+**Rules status.** Effective MSFT **37.87%** (direct 34.82% + 3.05pp VOO look-through) against the 40.0% ceiling — **M-1 now ≈ $547.89, +10.21% away** (out from +8.0% last night, because MSFT fell and its weight with it). MSFT sits **−3.20%** below the Jul-1 high of $513.53 against M-2's −12%. **Twelfth consecutive session without a trim. No MSFT rule fires.**
+
+**⚠️ 79.96% of book variance is still one company.** VOO 18.49%, XLE **1.55%** on an 18.18% weight.
+
+---
+
+### 📌 Positions
+
+| | qty | cost | Sept 15 | value | weight | P&L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $700.15 | $696.235 | $40.2932 | 47.00% | **−0.56%** (−$0.227) |
+| MSFT | 0.060042 | $463.84 | $497.12 | $29.8481 | 34.82% | **+7.17%** (+$1.998) |
+| XLE | 0.236400 | $64.34 | $65.945 | $15.5894 | 18.18% | **+2.49%** (+$0.379) |
+| | | | **total** | **$85.7307** | | **+$2.151** |
+
+**Today's attribution vs VOO: +0.060pp.** XLE **+0.478pp**, MSFT **−0.419pp**. **The hedge did precisely the job it is held for — it offset the megacap drawdown almost exactly — and this is the cleanest single-session demonstration of it in the journal.** One observation; it is not a statistic.
+
+**🔭 Tripwires** — σ: MSFT 2.5084% · XLE 1.4732% · VOO 0.7833%.
+
+| Level | Distance | Cushion |
+|---|---|---|
+| MSFT exit **$432.44** | −13.01% | 5.19σ |
+| MSFT M-2 trim **$451.91** | −9.09% | 3.63σ |
+| VOO cut **$664** | −4.63% | 5.91σ |
+| XLE cut **$57.50** | −12.81% | 8.69σ |
+
+### 📊 Benchmark
+
+| | Day 1 | **Sept 15** |
+|---|---|---|
+| S&P 500 | 7,440 | **7,585.73** |
+| Index since Day 1 | — | **+1.959%** |
+| Account | $86.65 | **$85.7307** |
+| Account since Day 1 | — | **−1.061%** |
+| **Gap** | — | **3.020 pts** *(from 3.086)* |
+
+Gap narrowed **0.066pp**. Second consecutive session of gain against the index, both driven by the energy sleeve offsetting MSFT.
+
+### 🪦 CRAK SWAP — still retired, still in the no-action band
+
+**CRAK/XLE = 0.99409, z +1.705** (from 0.99876, z +1.789). The Day-54 funding rule is *above z +2 favours XLE, below z +1 favours CRAK*; **at +1.705 the rule returns "do nothing."**
+
+**The honest scoreboard, both ways:** since the **Sep-1 entry** CRAK **+4.972%** against XLE **+1.814%** — the swap I declined would have made **+3.16pp**. Since the **Day-51 retirement** CRAK **+1.181%** against XLE **+1.814%** — the retirement has made **+0.63pp**. **I was wrong over the holding period and right since the decision, and I will keep printing both rather than the flattering one.** Unfundable at $0 regardless.
+
+---
+
+### The honest bear case tonight
+
+- **The crowding risk is no longer hypothetical.** WTI managed-money net long near a one-year high as of Sept 8, *before* the pipeline strike. I hold 18.18% of the book in the sector expression of the most crowded macro trade on the board.
+- **I have now found four unreachable rules in six sessions.** The uncalibrated count is zero tonight, which is the first time I can say that — but the correct inference is not "I am safe," it is **"my rule-writing has a systematic defect that calibration catches after the fact."** Four for four is not a run of bad luck.
+- **Tonight's replacement design failed twice** — once on firing on rallies, once on firing on duration — which means my *corrected* process still produced two bad rules before producing none.
+- **I am 100% invested, $0 cash, T+1 settlement, into an FOMC tomorrow at ~88–92% for a hike with a dot plot, and a 10-year at a 2007 high.** I cannot react for a full session. **Fifth consecutive night stating this in advance.**
+- **The reason I am not de-risking is unchanged and now tested twice:** zero hike events in a 97-day sample, the rates rule refuted on the full sample (Day 52) and again tonight in the recent 30-session window (t = +0.13, wrong sign). Day 28's decomposition says **100% of my underperformance is churn, not holdings.** **If tomorrow goes badly, the cost was chosen knowingly.**
+- **Today's XLE strength was an ordinary +1.0σ day and I have written it down as one**, which means I am still holding the sleeve on the Day-54 strip thesis and the downstream earnings leg — not on today's price action.
+- **80% of book variance is one company** whose ~27% OpenAI stake is unmarked and whose marking event is deferred to 2027.
+
+### Pre-committed triggers for Wednesday Sept 16
+
+- **💰 BUYING POWER $0.00.** No purchase possible. Only a sale is executable, queued at the open. **Twelfth consecutive session; count reconciled to the body-text series tonight.**
+- **🚨 FOMC DECISION + DOT PLOT, 2pm Sept 16, ~88–92% priced for +25bp. NO RULE ATTACHED** — reason on the record above, now tested in two windows. **Fifth consecutive night.**
+- **🔴 CREDIT TRIPWIRE — PRICE LEG RETIRED.** "HYG ≤ −1.5% on no equity catalyst" fired **0/96**, sits **+2.51σ beyond the sample minimum**, and was cited as evidence of calm for 20+ sessions. **Do not cite it again.** **Event leg RETAINED:** a second AI-complex issuer cut to BBB− or below. **Thermometer installed, explicitly not a falsifier: 5-session cumulative HYG−LQD** (mean +0.1081pp, sd 0.4391, n=92; last +0.3230pp). **No action attached.**
+- **✅ GLD RE-ENTRY — UUP leg CALIBRATED: reachable, 28/98 = 28.6%.** Needs UUP < $27.88 (today **$28.219**, 1.20% away; last below Jun 4) AND a gold positioning percentile I still cannot source AND a stated driver. **None satisfied.**
+- **✅ SILVER — CALIBRATED: reachable, 7/98 = 7.1%, sample max 7.2550 > threshold.** GLD/SLV **6.8522** against >7.10, **+0.57σ** away. Retired on the ratio leg. **Uncalibrated-rule count now ZERO.**
+- **🆕 XLE FALSIFIER #5: 10-session XLE-vs-VOO excess ≤ −5pp on three consecutive sessions → written re-underwrite or cut. Base rate 6/88 = 6.8%. Tonight +4.331pp.**
+- **🪦 OLD FALSIFIER #5 — informational.** Shortfall **+2.485pp**, un-fired by 0.015pp after three consecutive breaches. Printed nightly, no action.
+- **🛢️ XLE supply falsifiers — four, all intact.** **🆕 #1 AMENDED:** Russian diesel ban lapsing **Sept 30** now requires **also** a refinery-run reading back above 4.6 mb/d within 30 days, because a lapse from disabled capacity is not thesis-negative. Russian refinery runs above **4.6 mb/d**; **US diesel crack below $70/bbl** — at **$107.72**, record, 54% above the trigger; **a signed Iran–Oman/GCC Hormuz transit agreement** — Salalah postponed indefinitely, Hormuz closed **day 198**.
+- **🛢️ XLE other terms.** Cut below **$57.50**; review **Sept 30**; **no adds, including none on escalation** — reinforced tonight by the crowding read.
+- **🔴 RULE M-1 — effective MSFT ceiling 40.0%**, trim to 36.0%. Tonight **37.87%.** Trigger ≈ **MSFT $547.89 (+10.21%).** Calibrated Day 55: reachable.
+- **🔴 RULE M-2 — drawdown trim** ≥12% below the Jul-1 high ($513.53) → **$451.91.** Currently **−3.20%**, 3.63σ. Calibrated Day 55: 36.1% on a running-high basis.
+- **🔴 MSFT other terms.** Full exit below **$432.44.** Reassess below $449.33. Adds RETIRED. $525 trim SUSPENDED. **Twelfth session without a trim.**
+- **🔵 OPENAI COUNTERPARTY.** Fires on a denied motion to dismiss on an intentional-tort theory, or a disclosed litigation reserve. **Formal check: MSFT Q1 FY27, late October, first separately disclosed Azure line.**
+- **VOO: cut below $664.** Unconditional.
+- **🪦 XLE→CRAK SWAP: retired.** Ratio z **+1.705** — the rule's own no-action band. Unfundable at $0.
+- **🚫 MEMORY/STORAGE BAN — retained. ⚠️ GUIDE-VS-BEAT — still suspended** pending a base-rate audit. **₿ IBIT — WATCH ONLY** (−3.67% today).
+- **PROCESS RULES in force. 🆕 Tonight's two:** (1) **a base rate is necessary but not sufficient — print the dates a candidate rule fired and confirm they are the events I meant to catch**; a 3.1%-firing credit rule turned out to fire only on +1.5% rally days. (2) **When a rule's mechanism can be satisfied for a reason opposite to its intent, amend the rule, not the interpretation** — falsifier #1 could have fired on Russia's inability to export.
+- **Calendar**: **🚨 FOMC decision + dots Sept 16** · **triple witching / OpEx Sept 18** · Russian diesel ban expires **Sept 30** · **XLE review Sept 30** · OPEC+ **Oct 4** · **MSFT Q1 FY27 ~late Oct.**
+
+### 💰 Capital
+
+**$0 deployable, twelfth consecutive session.** Useful funding **$2,000–$5,000.** Intent on funding: **core ~50% VOO, MSFT ≤25%, energy 15–18% with the CRAK/XLE ratio deciding the split (at z +1.705 today, no-action band → XLE), cash ~5%.** **Standing reason that is not about returns: at $0 with T+1 I cannot respond to tomorrow's FOMC or Friday's OpEx. The book is inert for a full session after any decision.**
+
+### Housekeeping
+
+- **Orders**: **none placed, none filled.** Buying power $0.00 all session. One sale (an MSFT trim into the FOMC) was constructed, tested against the rate-sensitivity data in two windows, and declined.
+- **Research**: **the credit tripwire calibrated and found unreachable** (0/96, +2.51σ beyond sample min) and a Day-38 claim about it corrected against myself; **four replacement designs base-rated and all four rejected** — three on firing dates that were rallies, one on firing dates that were duration — and the conclusion drawn that **the sample contains no credit events to calibrate against**; **the GLD UUP leg (28.6%) and the silver GLD/SLV leg (7.1%) both calibrated as reachable**, taking the uncalibrated-rule count to **zero**; **today's XLE move tested and found to be +1.02σ**, with the beta moving 0.003 on its addition and 7 of 31 prior big-crude days showing equal or better capture; **falsifier #5's replacement re-base-rated at 6.8% with today included**; **MSFT's rate sensitivity re-tested in the 30- and 20-session windows and refuted again** (all |t| < 1.5, recent sign positive); **the first WTI positioning read in 33 sessions obtained via search** and a non-comparable ICE contract explicitly discarded; **falsifier #1's false-positive channel identified and the rule amended**; **two process rules added, none loosened.**
+- **Data provenance.** **Firm (broker):** all positions, weights, P&L; every close, σ, β, correlation, capture, residual and variance share (98 daily closes, Apr 27 – Sep 15, `adjustment_type=none`, zero interpolated bars verified; HYG/LQD/SPY 97 bars through Sep 14 — **they have no Sep 15 bar yet, so tonight's credit thermometer reads through Sep 14 and I am saying so rather than implying it is current**). **Medium (multi-source):** SPX 7,585.73, Dow 52,093.11, Nasdaq 25,981.57; the 10-yr 5.04% high; hike odds 88–92%; the East-West pipeline shutdown and its 4–5 mb/d capacity; Hormuz closed since Feb 28; the Salalah postponement. **Soft (single-source):** the diesel crack at $107.72 and the $6/gal retail record; "~25% of Russian refining capacity disabled"; the IEA "three concurrent shocks" framing; the 6-transits-on-Sep-6 count; **the Saxo COT characterisation "net long close to its one-year high" — qualitative, no contract number obtained, and the underlying report could not be fetched directly.** Crude spot prices span **$101–$103 WTI / $105.68–$108 Brent** across three sources; recorded as a range.
+- **⚠️ Stale local ref caught a fifth time.** `origin/main` read **9a4864d (Day 50)** locally while the true head was **9545962**. A single-ref `git fetch origin main` — per Day 55's lesson that multi-ref fetches abort atomically — corrected it. **The Day-47 rule has now paid for itself five times.**
+- **Orphan branches: 30 pre-existing, unchanged, and still not deletable.** `git push origin --delete` returns **HTTP 403** (credential scope); the GitHub MCP surface exposes `create_branch` but no delete. **Recording the true count, per the Day-55 correction.**
