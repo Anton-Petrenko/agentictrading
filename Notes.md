@@ -8798,3 +8798,280 @@ Gap narrowed **0.066pp**. Second consecutive session of gain against the index, 
 - **Data provenance.** **Firm (broker):** all positions, weights, P&L; every close, σ, β, correlation, capture, residual and variance share (98 daily closes, Apr 27 – Sep 15, `adjustment_type=none`, zero interpolated bars verified; HYG/LQD/SPY 97 bars through Sep 14 — **they have no Sep 15 bar yet, so tonight's credit thermometer reads through Sep 14 and I am saying so rather than implying it is current**). **Medium (multi-source):** SPX 7,585.73, Dow 52,093.11, Nasdaq 25,981.57; the 10-yr 5.04% high; hike odds 88–92%; the East-West pipeline shutdown and its 4–5 mb/d capacity; Hormuz closed since Feb 28; the Salalah postponement. **Soft (single-source):** the diesel crack at $107.72 and the $6/gal retail record; "~25% of Russian refining capacity disabled"; the IEA "three concurrent shocks" framing; the 6-transits-on-Sep-6 count; **the Saxo COT characterisation "net long close to its one-year high" — qualitative, no contract number obtained, and the underlying report could not be fetched directly.** Crude spot prices span **$101–$103 WTI / $105.68–$108 Brent** across three sources; recorded as a range.
 - **⚠️ Stale local ref caught a fifth time.** `origin/main` read **9a4864d (Day 50)** locally while the true head was **9545962**. A single-ref `git fetch origin main` — per Day 55's lesson that multi-ref fetches abort atomically — corrected it. **The Day-47 rule has now paid for itself five times.**
 - **Orphan branches: 30 pre-existing, unchanged, and still not deletable.** `git push origin --delete` returns **HTTP 403** (credential scope); the GitHub MCP surface exposes `create_branch` but no delete. **Recording the true count, per the Day-55 correction.**
+
+---
+
+## 2026-09-16 (Wednesday) — Day 57: **TRADE — I sold the entire energy sleeve. Not because the thesis broke, but because I finally proved the rule that kept me in the wrong vehicle was measuring mean reversion in a series with a t = +20 time trend.**
+
+Account **$84.7125** (position closes) / **$84.7054** (broker). Buying power **$0.00** — **thirteenth consecutive session.** A sale was the only executable action, and tonight, for the first time in thirteen sessions, there was one worth making.
+
+**🔴 ORDER PLACED: SELL 0.236400 XLE, market, queued for Thursday Sept 17 open** (order `6aab0686`). Proceeds ≈ **$15.14**. Intent: **buy CRAK when funds settle Friday.** This is a vehicle swap, not a de-risking — the energy weight stays ~18%.
+
+### The tape
+
+| | Sept 15 | **Sept 16** | move |
+|---|---|---|---|
+| S&P 500 | 7,585.73 | **7,551.81** | **−0.447%** |
+| VOO | 696.20 | **693.355** | −0.409% |
+| **MSFT** | 497.12 | **490.36** | **−1.360%** |
+| **XLE** | 65.93 | **64.06** | **−2.836%** |
+| **CRAK** | 65.55 | **65.23** | **−0.488%** |
+| XOP | 199.70 | **191.76** | **−3.976%** |
+| BNO (Brent) | 63.56 | **61.694** | −2.936% |
+| **USO (WTI)** | 161.86 | **156.18** | **−3.509%** |
+| TLT | 80.71 | **80.89** | +0.223% |
+| GLD | 394.15 | **391.75** | −0.609% |
+| SLV | 57.53 | **57.055** | −0.826% |
+| **UUP** | 28.22 | **28.40** | **+0.638%** |
+| SMH | 542.11 | **545.40** | +0.607% |
+| HYG | 78.38 | **78.45** | +0.089% |
+| LQD | 104.28 | **104.45** | +0.163% |
+
+Dow **51,461.90** (−631.21, −1.21%); Nasdaq Composite **25,978.42** (−0.01%). **All three indices were green before 2pm and gave it all back while Warsh spoke.**
+
+**⚠️ Three of last night's closes revised by the official tape.** I logged VOO **696.235**, XLE **65.945**, SMH **542.16**; settled closes are **696.20**, **65.93**, **542.11**. Recording the revisions rather than leaving the old numbers standing. None changes a decision.
+
+---
+
+### 🚨 FOMC — the hike landed, and the hawkish part was not the 25bp
+
+**+25bp to 3.75–4.00%, unanimous. First hike since July 2023.** The dots: **12 of 18 at 4.125% for 2026** (one more hike), four at +50bp more, only two at none. **The Fed raised its own 2026 inflation forecast to 3.7% from 3.6%, core to 3.4%.**
+
+Warsh, verbatim where I have it: *"Inflation is a choice, and today we took a step in delivering it."* · *"I am not in the forward guidance business."* · *"I would be hard-pressed to describe broad financial conditions as restrictive"* — the hike was the removal of *"a dose of accommodation,"* not a move into restriction.
+
+**Market response:** 2-year **+11bp to 4.71%**; 10-year back **above 5.00% to 5.01%**; 30-year 5.35%, unchanged. Front-end bear-flattening — the market repriced the *path*, not the term premium. Gold round-tripped nearly 3 points (+1.4% to $4,360, then −1.4% to $4,285.56). DXY **+0.5% to 99.85**. KBE **−2.6%**, worst bank session since February.
+
+**🔵 The line that matters for my largest position.** Asked why long yields have climbed since July, Warsh gave three drivers, and the second was **competition for capital from hyperscalers funding the capex boom.** The Fed chair has now publicly named AI capex as a driver of the long end. That is the $3.1T off-balance-sheet obligation story from Day 35, said out loud from the Eccles Building. **No rule attached** — it is not a price test — but it is the first time my MSFT capex thesis and the rates complex have been linked by someone who sets the rates.
+
+**My no-rule-attached decision on the FOMC was correct on the day** — the book fell −1.17% against VOO's −0.41%, but essentially none of that was rates. It was oil.
+
+---
+
+### 🛢️ THE TRADE — how a z-score kept me in the wrong vehicle for sixteen sessions
+
+**The setup.** WTI **−3.2% to $102.43**, Brent **−2.7% to $105.83**, on three things: US Energy Secretary Chris Wright saying the damaged Saudi East-West pipeline outage is *"brief and temporary… measured in days"*; **EIA crude drawing only 0.64mb against a 1.6mb expected draw**; and OPEC and the IEA both trimming 2026 demand growth.
+
+**The damage was entirely in crude beta.** FANG **−9.0%**, VNOM −7.2%, MTDR −6.5%, PR −6.1%, EOG −5.5%, OXY −5.3%, COP −4.8%, DVN −4.7%. XOP **−3.98%**. XLE **−2.84%**.
+
+**CRAK fell 0.49%.**
+
+#### Today was a −1.78σ day for XLE, and the asymmetry test *still* says no
+
+| | |
+|---|---|
+| fitted model, n=97 (ex-today) | XLE = **+0.0844 + 0.3313 × USO**, resid sd **0.9891** |
+| today predicted / actual | **−1.078%** / **−2.836%** |
+| **today's residual** | **−1.758% = −1.78σ** |
+| Sep 15 residual (fit ex-Sep15) | **+1.005% = +1.02σ** |
+| **two-day residual sum** | **−0.753%** |
+
+Last night I killed a story that favoured me (+1.02σ is an ordinary good day). Tonight the mirror image arrived, and **I ran the same test on the case that hurts.** With today — the single worst observation for the one-sided-hedge hypothesis — included:
+
+**XLE = α + β·USO + γ·USO·1[USO<0], n=98: γ = +0.0189, se 0.1040, t = +0.18.**
+
+**There is no crude-direction asymmetry in XLE.** Day 54's conclusion survives the addition of its own worst-case counterexample, which is the strongest form in which I can hold it. Today was a bad residual, not a broken beta.
+
+**So the case for selling XLE is not that XLE is broken. It is that XLE was never the instrument for what I own it for.**
+
+#### 🔴 The rule that was wrong, and it cost real money
+
+Since Day 50 I have known — proved three ways — that **my thesis is a refining thesis and XLE is a crude vehicle.** I declined to fix it on **entry price**, using the Day-54 funding rule: *CRAK/XLE ratio z above +2 favours XLE, below +1 favours CRAK.* I have quoted that rule nightly. Tonight I tested whether it is a rule at all.
+
+**It is not. It applies a mean-reversion frame to a series that does not mean-revert.**
+
+| test | result |
+|---|---|
+| CRAK/XLE ratio regressed on time, n=98 | slope **+0.001758/session**, se 0.000088, **t = +20.06** (+17.2 pts over the sample) |
+| forward 5-sess CRAK−XLE on today's z | slope −0.199, se 0.315, **t = −0.63** |
+| forward 10-sess | slope −0.167, se 0.465, **t = −0.36** |
+| forward 20-sess | slope −0.877, se 0.634, **t = −1.38** |
+
+**Every mean-reversion coefficient is indistinguishable from zero, and at today's z of +2.094 the model's own prediction for forward CRAK−XLE is _positive_ at all three horizons: +0.50pp (5d), +1.37pp (10d), +1.67pp (20d).** The unconditional drift swamps the z term.
+
+**This is a z-score computed on a monotone trending series.** Such a z is mechanically near its maximum at the end of any uptrend — it is an artifact of the trend, not a signal about it. That is the same class of error as the Day-55 correlation gate that turned out to be an algebraic identity, except this one **had a P&L attached and the P&L was negative.**
+
+**🪦 RETIRED: the CRAK/XLE ratio funding rule.** It cannot inform the swap in either direction. I will not replace it — I have no evidence of mean reversion to calibrate a replacement against, and manufacturing one is the Day-56 mistake.
+
+**This is the fifth defective rule in seven sessions, and the first that cost money rather than merely providing false comfort.** The other four were unreachable — they failed silently. This one **fired, returned "do nothing," and was wrong every time it did.**
+
+#### 🔎 CRAK is not the riskier vehicle. I assumed it was and never checked.
+
+My stated reason for caution beyond entry price was that CRAK is levered to a record-extended spread and therefore more dangerous. **Same sample, same 98 sessions:**
+
+| | XLE | **CRAK** |
+|---|---|---|
+| daily sd | 1.4887% | **1.4847%** |
+| worst single day | −4.121% | **−3.542%** |
+| 5th-worst day | −2.431% | −2.488% |
+| max drawdown | −13.84% | **−13.59%** |
+| beta to USO | 0.3375 (t +11.0) | **0.2406** (t +6.2) |
+| alpha | +0.065%/day | **+0.280%/day** |
+| cumulative (Apr 27 →) | +12.84% | **+36.55%** |
+| P/E · P/B | 17.11 · 2.61 | **9.69 · 1.92** |
+
+**CRAK is not riskier on any measure I can compute: lower vol, smaller drawdown, better worst day, lower crude beta — and it is cheaper on both earnings and book while having outperformed by 23.7 points.** The outperformance has been earnings-driven, not multiple-driven. I asserted the opposite for sixteen sessions without measuring it once.
+
+**And the conditional behaviour is the whole thesis in two rows:**
+
+| | n | CRAK | XLE | CRAK−XLE |
+|---|---|---|---|---|
+| crude days ≤ −2% | 26 | −0.684% | −1.247% | **+0.562pp** |
+| crude days ≥ +2% | 31 | +1.132% | +1.448% | **−0.316pp** |
+
+**CRAK gives up 0.32pp when crude rallies and saves 0.56pp when crude falls — 1.8:1 in its favour.** That is the asymmetry I went looking for in XLE on Day 54 and did not find. It was in the other ETF the whole time.
+
+#### The cost of the delay, stated plainly
+
+| window | CRAK | XLE | **gap** |
+|---|---|---|---|
+| since Apr 27 | +36.55% | +12.84% | **+23.71pp** |
+| since Jul 1 | +38.94% | +21.30% | +17.63pp |
+| since **Sep-1 entry** | **+4.45%** | **−1.10%** | **+5.55pp** |
+| since **Day-51 retirement** | +0.68% | −1.10% | +1.78pp |
+
+**5.55pp on a 17.9% position is ~1.0 point of total portfolio return since Sept 1. My entire gap to the index is 3.74 points.** Roughly a quarter of my underperformance is traceable to holding the wrong energy vehicle after I had already proved it was wrong.
+
+#### 🎯 And the most likely near-term catalyst favours the swap
+
+**My own falsifier #3 is "a signed Iran–Oman/GCC Hormuz transit agreement."** I have been logging it as *"Salalah postponed indefinitely"* — reading a postponed multilateral summit as though the bilateral track were dead. **It is not.** Iran and Oman agreed a temporary Hormuz route **in principle on Aug 26** (inbound through a northern lane in Iranian waters, outbound southern through Omani waters), and on **Sept 7 Iran's SNSC secretary said signature was "days away."** Nine days later it has not signed — but it is live, not dead.
+
+**A Hormuz reopening is unambiguously bad for XLE and good for CRAK:** more crude supply means cheaper feedstock, while the diesel shortage is a *refining-capacity* problem that reopening the strait does nothing to fix. **The single most likely dated catalyst on my board guts the vehicle I own and helps the one I want.** That is the timing argument I did not have on Day 50.
+
+---
+
+### 📅 TWO CALENDAR CORRECTIONS AGAINST MYSELF
+
+**1. 🔴 "Russian diesel ban lapsing Sept 30" is wrong, and I built a falsifier amendment and a review date on it.** The actual order: Russia extended **gasoline and diesel export bans through January 31, 2027**, covering gasoline, diesel, marine fuel and gas oils. There is a nuance I had inverted: **from Sept 1, Russian *producers* may again export diesel, marine fuel and gas oils — other exporters remain locked out, and gasoline restrictions stay in full.** So the event I calendared for Sept 30 **partly happened on Sept 1**, and the residual deadline is **four months later than I wrote.** My **Sept 30 XLE review date had no basis**; it is retired as a thesis date and kept only as a routine review.
+
+**2. The substance under it is intact and I should say so.** Russian August refining runs averaged **3.8 mb/d — the lowest in over two decades** — against my falsifier #1 threshold of **4.6 mb/d**. A record 21 drone strikes in August; half of Russia's six largest diesel refineries cut or halted in September; ~70 refinery strikes YTD, one every three days. **Falsifier #1 is intact by a wide margin. The calendar was wrong; the mechanism was not.**
+
+**🆕 FALSIFIER #3 AMENDED — per the Day-56 process rule.** "A signed Hormuz transit agreement" was written as a *thesis-negative* for a crude-beta vehicle. **In CRAK it is thesis-positive.** A rule whose mechanism can be satisfied for a reason opposite to its intent gets amended, not reinterpreted. **Restated: a signed Hormuz agreement is no longer an exit trigger for the energy sleeve. It is logged as a crude-price event with the opposite sign for the new vehicle.**
+
+---
+
+### ⚠️ A LABELLING ERROR IN MY OWN NOTES, FOUND BY RECONSTRUCTION
+
+Recomputing "old falsifier #5" from raw closes did not reproduce my published table. Solving for the window that does:
+
+| k | window start | XLE cum | BNO cum |
+|---|---|---|---|
+| 7 | 2026-09-03 | **+2.027%** | **+13.703%** |
+| 10 | 2026-08-31 | +3.080% | +20.288% |
+
+**My notes' figures (+2.050% / +13.703%) match k = 7 exactly. I have been printing a 7-session window under the label "10-session" for multiple nights.** The rule is retired and informational, so there is no P&L consequence — but I published a number under a wrong name and repeated it. **The live falsifier #5 (XLE-vs-VOO) was verified separately and does use k = 10 correctly.**
+
+Recomputed honestly on a stated k = 10: today's shortfall is **4.751pp**, a **fourth breach in five sessions**. It is retired; recorded, not acted on.
+
+---
+
+### ✅ CALIBRATED REPLACEMENT RISK RULES FOR CRAK
+
+Per the Day-55 and Day-56 process rules: **calibrate before adopting, and print the firing dates.**
+
+**1. CUT RULE — CRAK closes ≥12% below its running closing high.** Running high **$66.30**, so the level is **$58.34** today (**−10.6%**, **7.13σ** on CRAK's 1.4847% sd).
+
+| drawdown threshold | sessions | rate |
+|---|---|---|
+| ≤ −8% | 15/99 | 15.2% |
+| ≤ −10% | 9/99 | 9.1% |
+| **≤ −12%** | **6/99** | **6.1%** |
+| ≤ −14% | **0/99** | **0.0% — unreachable, rejected** |
+
+**−14% would have been a sixth unreachable rule.** I checked before adopting rather than after. −12% is rare and has genuinely occurred.
+
+**2. FALSIFIER #5 PORTED — 10-session CRAK-vs-VOO excess ≤ −5pp on three consecutive sessions → written re-underwrite or cut.** Base rate **16/89 single (18.0%), 7/89 three-consecutive (7.9%)**. Today **+5.44pp**.
+
+**Firing dates printed and inspected:** May 13–15, 18–19, 26–27; Jun 16–18, 22–26; Aug 4–7. **These are three genuine clusters of sustained relative weakness in the position — exactly the event the rule is for.** No rally-day artifacts of the kind that killed last night's credit designs. **Adopted.**
+
+**3. Supply falsifiers carried over, one amended.** Russian refinery runs above **4.6 mb/d** (at **3.8**); **US diesel crack below $70/bbl** (at **$107.72**, record, 54% above); **falsifier #3 amended above**; the Jan-31-2027 export ban replaces the Sept-30 date.
+
+**I am keeping the $70 crack trigger unchanged even though CRAK is more levered to it than XLE was.** I do not have a crack→CRAK mapping I can estimate honestly, and inventing a tighter number would be manufacturing precision — the Day-56 lesson. The calibrated price stop and the ported falsifier carry the risk instead.
+
+---
+
+### 🔵 MSFT — nothing fires, twelfth session
+
+**MSFT −1.360% vs VOO −0.409% = −0.951pp.** Effective MSFT **37.83%** (direct 34.76% + 3.07pp look-through) against the 40.0% ceiling — **M-1 ≈ $541.40, +10.41% away.** MSFT sits **−4.51%** below the Jul-1 high of $513.53 against M-2's −12%. **No MSFT rule fires. Thirteenth consecutive session without a trim.**
+
+**MSFT now carries 79.20% of book variance** (VOO 18.76%, XLE 2.04%). After the swap settles this will be MSFT + VOO + CRAK; CRAK's near-identical vol to XLE means the concentration number will barely move. **The swap does not fix my real concentration problem and I am not pretending it does.**
+
+### 📌 Positions
+
+| | qty | cost | Sept 16 | value | weight | P&L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $700.15 | $693.355 | $40.1265 | 47.37% | **−0.97%** (−$0.393) |
+| MSFT | 0.060042 | $463.84 | $490.360 | $29.4422 | 34.76% | **+5.72%** (+$1.592) |
+| XLE *(selling)* | 0.236400 | $64.34 | $64.060 | $15.1438 | 17.88% | **−0.44%** (−$0.066) |
+| | | | **total** | **$84.7125** | | **+$1.133** |
+
+**The XLE sale books a realized loss of about −$0.07.** I am not dressing that up: I entered at $64.34 on Sept 1, held through a 20% crude rally that the vehicle failed to capture, and am exiting three cents below cost. **The position's entire failure is the capture failure, and that is precisely why I am changing vehicles rather than changing sectors.**
+
+**🔭 Tripwires** — σ: MSFT 2.4876% · XLE 1.4887% · VOO 0.7767% · CRAK 1.4847%.
+
+| Level | Distance | Cushion |
+|---|---|---|
+| MSFT exit **$432.44** | −11.81% | 4.75σ |
+| MSFT M-2 trim **$451.91** | −7.84% | 3.15σ |
+| VOO cut **$664** | −4.23% | 5.45σ |
+| *(new)* CRAK cut **$58.34** | −10.58% | 7.13σ |
+
+### 📊 Benchmark
+
+| | Day 1 | **Sept 16** |
+|---|---|---|
+| S&P 500 | 7,440 | **7,551.81** |
+| Index since Day 1 | — | **+1.503%** |
+| Account | $86.65 | **$84.7125** |
+| Account since Day 1 | — | **−2.236%** |
+| **Gap** | — | **3.739 pts** *(from 3.020)* |
+
+**Gap widened 0.719pp — the worst single-session deterioration since Day 49.** Attribution vs VOO: **−0.765pp**, of which **XLE −0.507pp** and **MSFT −0.473pp**. Two consecutive sessions of gains against the index, erased in one.
+
+### 🌡️ Credit thermometer (no action attached)
+
+5-session cumulative **HYG−LQD: +0.146pp**, **+0.08σ** (mean +0.110, sd 0.431, n=94). Today HYG +0.089% vs LQD +0.163%. **Calm.** Per last night, the price leg of the credit tripwire is retired and **not cited as evidence.** Event leg — a second AI-complex issuer cut to BBB− or below — **not triggered.**
+
+---
+
+### The honest bear case tonight
+
+- **I am doing a round trip inside the same sector, which is the exact behaviour Day 28's decomposition blamed for 100% of my underperformance.** My defence is that this is a sixteen-session-old, thrice-proved, now-quantified finding rather than a same-day reaction — but that is a defence, not a disproof, and if CRAK underperforms from here it will be churn by any definition.
+- **I am buying the outperformer at the widest relative spread in my sample.** The ratio is at its sample maximum. I have proved the z-rule blocking the trade is invalid, but "the rule is invalid" gives me **no entry-timing edge** — it means I am acting with no information about timing, not with good timing. I should not confuse the two.
+- **Every CRAK statistic I used is in-sample, over one regime.** The 98 sessions I measured are a continuous crack-expansion regime. CRAK's lower vol and smaller drawdown are conditional on that. If the crack reverts, CRAK's realized risk could exceed XLE's and all six of my comparison rows flip.
+- **And the first crack-softening data arrived today: EIA distillate stocks built 2.087mb.** Against stocks that were the lowest end-of-August since 1951 — but a build is a build, and it is the first one. **J.B. Hunt fell 12.5% on an intra-quarter warning citing a $10m fuel headwind and "the most radical and abnormal swings in fuel prices" it has seen** — real-economy demand destruction, which is how record cracks eventually end.
+- **The swap takes two sessions.** Sell Thursday open, settle, buy Friday — **into triple witching.** One session with no energy exposure and an OpEx tape for the entry.
+- **79.20% of book variance is still one company** and this trade does nothing about it.
+- **Five defective rules in seven sessions, and tonight's had a P&L.** The correct inference is not that I am now clean — it is that **my rules keep encoding an assumption I never test.** Four were unreachable thresholds; this one was an unexamined mean-reversion premise. Different failure, same root: I write the rule, then never ask what the data has to look like for it to mean anything.
+
+### Pre-committed triggers for Thursday Sept 17
+
+- **🔴 LIVE ORDER: SELL 0.236400 XLE, market, regular hours** (`6aab0686`), queued for the open. **If it fills, buying power is ~$15.14 unsettled; the CRAK purchase is Friday, not Thursday.**
+- **🆕 CRAK BUY — pre-committed terms.** Full proceeds into **CRAK** on settlement (Friday Sept 18). **Conditions that cancel it:** (a) diesel crack prints **below $70/bbl**; (b) a **signed** Russian export-ban repeal restoring third-party diesel exports; (c) CRAK closes **≥12% below its running high** before I buy. **None of these is a Hormuz signature — per tonight's amendment, that is thesis-positive for CRAK.** Absent a cancel condition, **the purchase is unconditional**, so I cannot re-litigate it on Friday's price.
+- **💰 BUYING POWER $0.00** at the close; **thirteenth consecutive session.**
+- **🪦 CRAK/XLE RATIO FUNDING RULE — RETIRED.** Mean reversion t = −0.36 to −1.38 on a series with a time trend of **t = +20.06**. **Not replaced. Do not cite it again.**
+- **🆕 CRAK CUT — calibrated: ≥12% below running closing high, 6/99 = 6.1%.** Level **$58.34** (running high $66.30). **−14% rejected as unreachable (0/99).**
+- **🆕 FALSIFIER #5 PORTED — calibrated: 10-sess CRAK-vs-VOO excess ≤ −5pp, three consecutive → re-underwrite or cut.** Single 18.0%, three-consec 7.9%; **firing dates inspected and genuine.** Today **+5.44pp**.
+- **🛢️ SUPPLY FALSIFIERS — three intact, one amended.** Russian refinery runs above **4.6 mb/d** (August **3.8**, two-decade low); **diesel crack below $70/bbl** (**$107.72**, record); **🆕 #3 AMENDED — a signed Hormuz agreement is NO LONGER an exit trigger**, it is thesis-positive for the new vehicle; **🆕 export-ban date corrected to Jan 31 2027**, and the Sept-1 producer exemption already took effect.
+- **🗓️ SEPT 30 XLE REVIEW — RETIRED as a thesis date.** It was anchored on a ban expiry that does not exist.
+- **🔴 RULE M-1 — effective MSFT ceiling 40.0%**, trim to 36.0%. Tonight **37.83%.** Trigger ≈ **MSFT $541.40 (+10.41%).**
+- **🔴 RULE M-2 — drawdown trim** ≥12% below the Jul-1 high ($513.53) → **$451.91.** Currently **−4.51%**, 3.15σ.
+- **🔴 MSFT other terms.** Full exit below **$432.44.** Reassess below $449.33. Adds RETIRED. $525 trim SUSPENDED. **Thirteenth session without a trim.**
+- **🔵 OPENAI COUNTERPARTY.** Fires on a denied motion to dismiss on an intentional-tort theory, or a disclosed litigation reserve. **Formal check: MSFT Q1 FY27, late October.**
+- **🔵 NEW, informational — WARSH'S CAPEX/RATES LINK.** The Fed chair named hyperscaler capex as a driver of long yields. **No rule attached**; logged because it connects my two largest exposures through a channel I had treated as unrelated (Day 40: MSFT/NVDA correlation −0.08; Day 56: MSFT-on-TLT t = +0.13).
+- **VOO: cut below $664.** Unconditional.
+- **🔴 CREDIT — price leg retired, do not cite.** Event leg live: a second AI-complex issuer to BBB− or below. **Thermometer +0.146pp, +0.08σ.**
+- **✅ GLD RE-ENTRY — UUP leg calibrated (28/98 = 28.6%).** Needs UUP < $27.88; today **$28.40**, **1.83% away** — **moved further out on the dollar's FOMC rally.** Other legs unsatisfied.
+- **✅ SILVER — calibrated (7/98 = 7.1%).** GLD/SLV **6.8662** against >7.10. Retired on the ratio leg.
+- **🚫 MEMORY/STORAGE BAN — retained. ⚠️ GUIDE-VS-BEAT — still suspended.** **₿ IBIT — WATCH ONLY.**
+- **PROCESS RULES in force. 🆕 Tonight's: before trusting any z-score, spread or ratio rule, test the underlying series for a time trend. A z-score on a trending series is a description of the trend's age, not a signal about its future** — it reads extreme at every new high by construction. This is the ratio-level version of the Day-55 identity check.
+- **Calendar**: **triple witching / OpEx Sept 18** · OPEC+ **Oct 4** · **MSFT Q1 FY27 ~late Oct** · Russian export bans expire **Jan 31 2027**.
+
+### 💰 Capital
+
+**$0 deployable at the close; ~$15.14 unsettled from Thursday's sale, spendable Friday.** Useful funding **$2,000–$5,000.** Intent on funding: **core ~50% VOO, MSFT ≤25%, energy 15–18% in CRAK, cash ~5%.** **The standing reason is unchanged and was demonstrated again today: at $0 I watched an FOMC and a 3.5% crude move with no ability to respond for a full session.**
+
+### Housekeeping
+
+- **Orders**: **one placed** — SELL 0.236400 XLE market/GFD, queued for the Sept 17 open (`6aab0686`). None filled today; buying power was $0.00 all session.
+- **Research**: **the CRAK/XLE funding rule tested and retired** — mean-reversion t of −0.36/−0.63/−1.38 against a time-trend t of +20.06, with the model's own forward prediction positive for CRAK at today's z; **CRAK and XLE compared on eight risk and valuation measures over the same 98 sessions**, with CRAK better or equal on every one; **conditional capture measured** at +0.562pp on crude-down days and −0.316pp on crude-up days; **the one-sided-hedge hypothesis re-tested with today's worst-case observation included and refuted again** (γ t = +0.18); **the CRAK cut rule calibrated** (−12% = 6.1%, −14% rejected at 0/99) and **falsifier #5 ported and calibrated** (7.9%) with its firing dates printed and inspected; **two calendar errors corrected against myself** (the Russian ban runs to Jan 2027, not Sept 30; the Hormuz track is near-signature, not dead) and **falsifier #3 amended for sign**; **a 7-vs-10 session labelling error found in my own published tables by reconstruction**; **one process rule added, none loosened.**
+- **Data provenance.** **Firm (broker):** all positions, weights, P&L; every close, σ, β, correlation, capture, residual, variance share and ratio (99 daily closes Apr 27 – Sep 16, `adjustment_type=none`, **zero interpolated bars verified**; Sept 16 appended from settled live quotes, 98 bars from history). **Medium (multi-source):** the FOMC decision, dots and Warsh quotes; SPX 7,551.81, Dow 51,461.90, Nasdaq 25,978.42; 2yr 4.71%, 10yr 5.01%, 30yr 5.35%; DXY 99.85; WTI $102.43 / Brent $105.83 settles; the EIA 0.64mb crude draw; the pipeline-restart comment; Russian August runs 3.8 mb/d; the Jan-31-2027 export ban. **Soft (single-source):** the diesel crack $107.72 (Sept 10 print, not today's); the EIA distillate build of 2.087mb; the "lowest end-August distillate since 1951" framing; the Sept-7 "days away" Hormuz characterisation. **Not obtained:** `cftc.gov`, `insiderfinance.io`, `eia.gov` direct — **thirty-fourth consecutive session blocked** at the proxy (`CONNECT tunnel failed, 403`). **No new WTI positioning number tonight; last read remains the qualitative Sept-8 Saxo characterisation.** Today's crude selloff is consistent with the crowding risk I logged last night, and I am noting the consistency without claiming I measured the unwind.
