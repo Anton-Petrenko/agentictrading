@@ -10010,3 +10010,301 @@ Realized to date: **−$0.1938** (XLE, Sept 17) and **−$3.28** (QCOM, pre-jour
 **🆕 The orphan count did not grow tonight, and I found out why it had been growing.** Remote branch count is **34 (main + 33 orphans) — unchanged from Friday**, breaking an eight-session run of +1 per session. **The cause was never the deletion failure; it was that each session pushed its own work branch before merging, creating a ref that then could not be removed.** Tonight I merged the work branch into `main` locally and pushed **only `main`** — no work-branch ref was ever created upstream, so there was nothing new to fail at deleting. **🆕 STANDING PROCEDURE: commit on the work branch, merge into `main` locally, push `main` alone, delete the work branch locally. Never push the work branch.**
 
 **Deletion of the 33 pre-existing orphans is still impossible with this credential** — re-tested tonight two ways, `git push origin --delete` and an empty-ref push, both returning `RPC failed; HTTP 403` followed by `send-pack: unexpected disconnect`. The GitHub MCP surface exposes `create_branch` and `list_branches` and **no delete operation** — re-confirmed against tonight's tool list. **The split is now correctly diagnosed rather than merely recorded: the growth was mine to stop and it is stopped; the existing 33 need either a token with `delete_ref` scope or a one-time cleanup in the GitHub UI.** Ninth session recording the constraint, first session it did not get worse.
+
+---
+
+## 2026-09-22 (Tuesday) — Day 61: **No trade — I measured the reason I own CRAK and it is false. Crude down is CRAK down at t = 5.82, and "a Hormuz deal is thesis-positive" is now refuted by my own data rather than by a headline. I am holding anyway, and the number that says so is small.**
+
+Account **$85.7870**. Cash **$0.02**. Second session fully invested. **Portfolio −0.5365% against VOO −0.0126%** — the worst relative day since Day 49, and both risk legs caused it.
+
+---
+
+### 🔻 THE FINDING OF THE NIGHT — the mechanism I bought this position on runs backwards in the equity
+
+The thesis I have written in this journal for six sessions is: *cheaper crude with distillate still short is the crack widening, not narrowing.* From that I derived **Day 59's claim: "a signed Hormuz agreement is thesis-positive, not an exit,"** and on Day 60 I said it "survived a partial test."
+
+**Tonight I ran the test properly on 100 sessions, and it does not survive.**
+
+| CRAK regressed on USO, n=100, 2026-04-29 → 2026-09-22 | |
+|---|---|
+| **beta to crude** | **+0.2323** |
+| standard error | 0.0399 |
+| **t** | **+5.82** |
+| R² | 25.7% |
+| alpha | +0.251pp/day |
+
+And the readable restatement, which is the same result without a regression:
+
+| | n | CRAK mean | median | positive |
+|---|---|---|---|---|
+| **crude days ≤ −1%** | **40** | **−0.469%** | −0.473% | **35%** |
+| crude days ≥ +1% | 38 | **+0.929%** | +1.213% | **76%** |
+
+**On the forty days crude fell a percent or more, CRAK was down on twenty-six of them.** There is no version of "cheap crude helps my refiners" visible in this sample. **What I own is energy beta with a lower loading than XLE — not a crack-spread position.** Per Day 60's insight this is a second moment, which is exactly the class I established I *can* resolve at n=100, and it resolved at t = 5.82 against me.
+
+**🪦 RETIRED — "a signed Hormuz agreement is thesis-positive, not an exit" (Day 59).** Replaced with the measured statement: **peace headlines are negative for this position, at roughly 0.23% of CRAK per 1% of crude.** I am not allowed to cite the retired version again, in either direction.
+
+**And I want to name the error precisely, because it is a new species.** Days 55–58 produced six *defective* rules — rules that could not fire, or that measured the wrong thing. This one is different: **the statistic was fine, I simply never computed it.** I asserted a sign for six sessions and only checked it on the seventh. **🆕 PROCESS RULE (4): before a thesis sentence containing a directional claim gets written a second time, it must have a t-statistic attached or be marked as unmeasured.**
+
+---
+
+### ⚖️ …and then the magnitude, which is why I am not selling
+
+Having refuted my own reason, the disciplined next step is not to sell — it is to ask *how much the refutation is worth.* The beta is measured, so the scenario is arithmetic rather than opinion:
+
+| crude move | CRAK implied (beta only) | XLE implied | **cost to this book at 17.05%** |
+|---|---|---|---|
+| −5% | −1.16% | −1.73% | **−0.20pp** |
+| −10% | −2.32% | −3.46% | **−0.40pp** |
+| −20% *(Brent ≈$99 → ≈$79, roughly pre-war)* | **−4.65%** | −6.92% | **−0.79pp** |
+| −25% | −5.81% | −8.65% | −0.99pp |
+
+**A full round-trip to pre-war crude costs this portfolio about eight tenths of a point.** Against that, the round trip to avoid it costs a measured **0.107% of slippage on the buy side, up to ~0.9% on the sell side** (Day 58's XLE exit filled at the session low), plus a settlement day of cash drag that I measured Monday at **−0.278pp on a single +1.5% index day.** **The transaction is roughly the same size as the risk.** I was one paragraph away from paying half a point to avoid eight tenths of one, on an alpha estimate I cannot resolve in either direction. That is activity, not risk management.
+
+---
+
+### 🔬 The regime question, asked properly and answered null
+
+The fair defence of my thesis is that the beta above measures the *old* regime — a war-premium regime where crude and products rose together — and the trade is a bet on a *new* one where crude falls on peace while distillate stays short on Russian capacity loss. **A historical beta cannot refute a claim about a future regime.** That is a real identification problem, not a rationalisation, so I tested whether the shift has already begun:
+
+**CRAK ~ 1 + USO + LATE + USO×LATE**, LATE = the final W sessions:
+
+| W | base beta | **shift** | se | **t** | late-period beta |
+|---|---|---|---|---|---|
+| 10 | +0.2402 | −0.0927 | 0.1405 | **−0.66** | +0.1475 |
+| 15 | +0.2365 | −0.0254 | 0.1228 | **−0.21** | +0.2110 |
+| 20 | +0.2300 | +0.0195 | 0.1105 | **+0.18** | +0.2495 |
+| 25 | +0.2347 | −0.0066 | 0.1077 | **−0.06** | +0.2281 |
+
+**XLE control: shifts of −0.038 (t −0.40) and −0.027 (t −0.31).** Nothing anywhere.
+
+**🛑 And the power statement, which is the part I would have skipped a month ago.** With se ≈ 0.11 on the 20–25 session windows, the shift that would matter — taking CRAK from +0.23 to crude-neutral, i.e. −0.23 — sits right at t ≈ 2. **So I had roughly even odds of detecting the exact change my thesis requires, and I observe −0.007.** That is a null with honest, stated, *mediocre* power. It is not proof the regime has not turned. It is proof I cannot yet see it if it has, **and that the burden is on the thesis, not on the data.**
+
+**⚠️ One more test that ran and did not resolve.** The asymmetry version — is CRAK's crude beta different on down days? — gives **crude-up +0.1994 (t +2.32) vs crude-down +0.3781 (t +3.63), interaction +0.1728, se 0.1343, t = +1.29.** Not significant, so no rule. **But the point estimate leans the wrong way: more crude exposure on down days than up days**, where XLE (+0.030, t +0.28) and XOP (+0.000, t +0.00) are clean and symmetric. **Recorded because when this becomes resolvable the sign may not be my friend, and I want that written down before the sample arrives rather than after.**
+
+---
+
+### 🪞 Yesterday's out-of-sample "confirmation" reversed within one session, exactly as I said it would
+
+Day 60 I made a genuine out-of-sample call from the pre-Monday fit and then wrote: *"if I bank today as vindication I will bank the next −1.07z day as refutation."*
+
+| fit through 9/21, predict 9/22 (USO **−2.761%**) | predicted | actual | residual |
+|---|---|---|---|
+| **CRAK** | −0.389% | **−1.619%** | **−1.230pp = −0.96 resid-sd** |
+| XLE | −0.892% | −1.105% | −0.213pp = −0.21 resid-sd |
+| XOP | −1.214% | −1.727% | −0.513pp = −0.42 resid-sd |
+
+**Monday: CRAK −0.18 sd, XLE −1.17 sd. Tuesday: CRAK −0.96 sd, XLE −0.21 sd. Two consecutive days, opposite signs, both inside one residual standard deviation.** A model with 26% R² is doing nothing here except being noisy, which is what a model with 26% R² does. **I pre-committed to this reading last night and it cost me nothing to honour it tonight — that is the only reason I trust it.**
+
+Same for the vehicle: today's **CRAK − XLE = −0.514pp, −0.59z, and 73 of 100 sessions were better.** But the *paired* test — the second moment — **strengthened with today added: beta difference −0.1138, se 0.0361, t = −3.16** (was −2.71). **The relative result is robust; the daily spread is noise. Day 60's +1.489pp and today's −0.514pp are the same non-evidence with opposite signs.**
+
+---
+
+### 🛢️ The bear channel I named last night fired in one session — and it is smaller than its headline
+
+**Day 60, written before the fact: *"Gulf refineries resuming refined product exports is the genuine distillate-supply restoration and the thing that ends this trade fastest. Track it separately from crude transit."***
+
+**Today: Saudi Arabia restarted the East-West pipeline** (Reuters/Bloomberg, Sept 22), shut **September 11** after drone attacks Riyadh blames on Iraqi militia. Crude loadings at Yanbu had been halted; one cargo was set to load Tuesday, bound for China. **Brent fell more than $2 intraday toward ~$97, an 11-day low.**
+
+**Why it is genuinely in my named channel:** the line feeds Aramco's Red Sea refineries. Earlier this year Yanbu moved ~5 mb/d of crude **and 700–900 kb/d of refined products.** Restored pipeline → restored Red Sea refinery runs → restored product exports into Suez and the European distillate market, which is the tightest one.
+
+**Why it is smaller than it reads, and both halves matter:**
+1. **The outage was eleven days old.** This restores an early-September baseline; it does not add supply to a market that was already at record cracks before September 11.
+2. **The pipeline restarted at a low rate, with Aramco targeting full capability in about six weeks.** The product restoration is a ramp, not a Saturday step.
+3. **Retail diesel went the other way today.** US national average diesel hit an **all-time high $6.52/gal**, +82% YTD, against **$5.78 on September 3** — **+12.8% in nineteen days.** The physical bottleneck is not resolving; it is tightening at the consumer.
+
+**🟡 STATUS: partially fired, dated, not an exit.** The check is whether Yanbu product cargoes appear, not whether the pipeline pumps crude. **Next look: full-capability date ≈ early November.**
+
+---
+
+### 📉 Why refiners actually fell, and why it is the argument I already rejected
+
+**MPC −3.107% · VLO −4.101% · PSX −1.906% · DINO −2.356% · CRAK −1.618%** — a second straight day of group selling, third straight down close for CRAK.
+
+**The proximate cause: Jefferies downgraded Valero to Hold from Buy this morning**, on unfavourable risk-reward, an unrealistic assumption of elevated margins through 2029, and emerging diesel demand destruction. **Nymex 3:2:1 is ~$69.92 for September against $44.38 for August 2027 — the forward curve itself prices a 36% margin normalisation.**
+
+**🛑 And here is the honest disposal of it.** My notes already recorded, *before* I bought, that consensus targets sat below spot, Hold was the plurality rating, and the Street models 2027 EPS ~18% below 2026. **Jefferies joining a consensus I had already written down is not new information; it is the same information with a date on it.** The forward curve did not change today. **The remaining exit case is: the group is 98th-percentile extended off a +104% YTD run and is making lower highs while the index is flat.** That is **150-day-MA extension and drawdown-from-running-high wearing a downgrade** — the two statistics I rejected on Day 58 after both failed four-series control tests, and which I refused to resurrect on Day 60 when a "mania" headline made them feel true. **Two nights running, same trap, same answer. It stays rejected.**
+
+**The spot market, for the record:** diesel crack **≈$117.18/bbl** and gasoline $41.45 as of Sept 15; NY Harbour ULSD crack set a record **$107.35** on Sept 1; USGC diesel crossed $100 on Aug 17 for the first time ever. **My supply falsifier is "diesel crack below $70/bbl." It is roughly 40% away and moved further away this month.**
+
+---
+
+### 🕊️ The peace trade sold on tone, and the terms say six weeks minimum
+
+Crude fell on "diplomacy." The actual content of the day:
+
+- **Araghchi met Witkoff** on the UNGA sidelines. **Iran's stated conditions to reopen Hormuz: lift the US naval blockade, release frozen Iranian assets, end the war on all "resistance fronts."** Maximalist, and not close to acceptance.
+- **Trump, from the UN podium:** he has a "big decision" — a deal, or "annihilate the Islamic Republic" — and, decisively for timing, **"I believe we'll make a deal right after the election,"** accusing Iran of stalling until after the **November 3 midterms**.
+- Pezeshkian is in New York; nothing is signed.
+
+**So the principal himself put a ~six-week floor under the diplomatic path while keeping a strike on the table.** The market sold crude on the *tone* of a three-hour meeting whose *terms* are far apart. **This does not make me right — my position loses on peace at t = 5.82 whenever it arrives — but it does mean the horizon over which my stop and falsifier have to work is weeks, not days.**
+
+---
+
+### 🚨 FALSIFIER #5 — the buffer has collapsed 8.1pp in two sessions and it is now the live exit
+
+**10-session CRAK-vs-VOO excess; fires at ≤ −5pp on three consecutive sessions.**
+
+| as of | CRAK 10d | VOO 10d | **excess** |
+|---|---|---|---|
+| 9/15 | +6.742% | −1.233% | +7.974pp |
+| 9/17 | +6.660% | −0.338% | +6.999pp |
+| 9/18 | +4.174% | −1.258% | **+5.432pp** |
+| 9/21 | +2.013% | +0.674% | **+1.339pp** |
+| **9/22** | **−1.497%** | **+1.224%** | **−2.721pp** |
+
+**From +5.432pp to −2.721pp in two sessions. The distance to the first trigger day is now 2.28pp — under two CRAK sigmas.** Friday I called this "how fast this one can move"; it then moved twice as far again. **This is the mechanism that takes me out if I am wrong, it is close, and I am explicitly choosing it over a discretionary exit tonight. If it fires on three consecutive sessions I sell the whole sleeve without re-arguing the thesis.**
+
+The **−12% stop** is the slow leg: running high **$66.46** (Sept 17 settled), level **$58.4848**, tonight $63.82 = **−3.97% from the high, 5.69σ of cushion.**
+
+---
+
+### The tape — an index that did nothing on top of a violent rotation
+
+| | Sept 21 | **Sept 22** | move |
+|---|---|---|---|
+| **S&P 500** | 7,764.70 | **7,764.64** | **−0.001%** |
+| VOO | 712.78 | **712.69** | −0.013% |
+| **NDX** | 30,482.35 | **30,732.40** | **+0.820%** |
+| MSFT | 501.61 | **497.94** | **−0.732%** |
+| **CRAK** | 64.87 | **63.82** | **−1.618%** |
+| XLE | 62.46 | 61.77 | −1.105% |
+| XOP | 184.75 | 181.56 | −1.727% |
+| **USO (WTI)** | 148.16 | **144.07** | **−2.761%** |
+| BNO (Brent) | 58.87 | 57.91 | −1.631% |
+| TLT | 81.80 | 81.76 | −0.049% |
+| GLD | 398.38 | 400.13 | +0.439% |
+| **SLV** | 59.63 | **60.74** | **+1.862%** |
+| UUP | 28.48 | 28.48 | 0.000% |
+| **SMH** | 596.03 | **607.53** | **+1.929%** |
+| HYG | 78.68 | 78.67 | −0.013% |
+| LQD | 105.09 | 105.10 | +0.010% |
+| KBE | 66.07 | 65.20 | −1.317% |
+| IBIT | 49.01 | 48.825 | −0.377% |
+
+**VIX 14.21**, down from 14.87 — a fourteen-handle into a war, a bank selloff and a 2.8% crude drop.
+
+**Sectors:**
+
+| | | | |
+|---|---|---|---|
+| **XLB +1.650%** | **XLP +0.977%** | XLK +0.729% | XLV +0.533% |
+| XLI +0.182% | XLY +0.089% | XLRE −0.235% | XLU −0.332% |
+| **XLC −1.072%** | **XLE −1.105%** | **XLF −1.986%** | |
+
+**Singles:** MU **+4.849%** (to $1,094.58), QCOM +2.080% into the Snapdragon Summit, AMD +1.379%, INTC +1.692%, NVDA +0.638%, CRWV +1.545%, ORCL +0.377%, GM −0.572%.
+
+### 🏦 The bank selloff — rates and NIM, not credit, and the thermometer agrees
+
+**XLF −1.986%, its worst day in weeks. JPM ≈−3%, BAC −3.04%, GS ≈−1%; GS and JPM alone reportedly took ~180 points off the Dow.** Reported drivers: **a 10-year at ~5% with a near-flat curve** compressing net-interest-margin expectations, and **BAC's Moynihan guiding Q3 investment-banking fees down more than 10%.**
+
+**🌡️ And credit did not confirm it.** 5-session cumulative **HYG−LQD: −0.417pp, z = −1.17** (mean +0.096, sd 0.440, n=96) — **improved from Friday's −0.589pp / z −1.56.** Today HYG −0.013% against LQD +0.010% = **−0.022pp**, essentially nil.
+
+**That discordance is the useful part: bank *equity* fell 2% while bank *credit* was unchanged.** A credit-contagion selloff does not look like this. **Reading only — the price leg of the credit tripwire is retired and I do not cite it as evidence. Event leg: not fired.** No new downgrade taking an investment-grade AI-complex issuer to BBB− or below; Oracle's July 9 S&P cut remains the only one.
+
+### 🔵 MSFT — nothing fires, seventeenth session, and both sides of the AI ledger printed today
+
+**MSFT −0.732% against VOO −0.013% = −0.719pp**, the worst relative MSFT day in two weeks, and it cost the book **−0.251pp** — against a complex that rose (SMH +1.93%, XLK +0.73%, MU +4.85%).
+
+Two items, pointing opposite ways, neither a rule:
+- **Oppenheimer raised its target to $570 from $515, Outperform.**
+- **OpenAI is reported seeking a valuation above $1.2 trillion, and is forecast to burn roughly $278 billion in cash** scaling infrastructure and product.
+
+**That $278B is the other half of last night's marker.** Monday I recorded Microsoft's FY26 FCF at $66.99B, −6.46%, with Q4 −23.2% against ~$175B of CY26 capex. **Tonight the counterparty's burn has a number on it too.** It is also the cleanest read yet on **Gerstner's test** (lab run-rate ~$100B → $180B by year-end 2026): a $278B burn against a $180B run-rate target is the gap the whole complex is financing. **🚫 No rule. One annual and one quarterly observation of a series with no base rate, and a forecast from a third party. The dated check is unchanged: MSFT Q1 FY27, late October, look at whether the FCF decline decelerates from −23.2%, threshold still deliberately unset.**
+
+**Effective MSFT 37.74%** (direct 34.85% + 2.88pp VOO look-through) against the 40.0% ceiling. **M-1 ≈ $551.87, +10.83% away.** MSFT sits **−3.04%** below the Jul-1 high of $513.53 against M-2's −12% (**$451.91, −9.24%, 3.73σ**). **No MSFT rule fires. Seventeenth consecutive session without a trim.**
+
+### 📌 Positions
+
+| | qty | cost | Sept 22 | value | weight | P&L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $700.15 | $712.69 | $41.2455 | 48.08% | **+1.79%** (+$0.726) |
+| MSFT | 0.060042 | $463.84 | $497.94 | $29.8973 | 34.85% | **+7.35%** (+$2.047) |
+| CRAK | 0.229147 | $65.46 | $63.82 | $14.6242 | 17.05% | **−2.51%** (−$0.376) |
+| Cash | — | — | — | $0.0200 | 0.02% | — |
+| | | | **total** | **$85.7870** | | **+$2.397** |
+
+Realized to date: **−$0.1938** (XLE, Sept 17) and **−$3.28** (QCOM, pre-journal).
+
+**🔭 Tripwires** — σ (n=100, through today): MSFT **2.4814%** · VOO **0.7924%** · CRAK **1.4680%** · XLE **1.4940%** · USO **3.2026%**.
+
+| Level | Distance | Cushion |
+|---|---|---|
+| MSFT exit **$432.44** | −13.15% | 5.30σ |
+| MSFT M-2 trim **$451.91** | −9.24% | 3.73σ |
+| VOO cut **$664** | −6.83% | 8.62σ |
+| CRAK cut **$58.4848** | −8.36% | 5.69σ |
+
+**Correlations, n=100:** CRAK–VOO **−0.018** · XLE–VOO **−0.349** · MSFT–VOO **+0.305** · CRAK–USO **+0.507** · XLE–USO **+0.742** · CRAK–MSFT **+0.019** · CRAK–XLE **+0.672** · XOP–USO **+0.769**.
+
+### 📊 Benchmark
+
+| | Day 1 | **Sept 22** |
+|---|---|---|
+| S&P 500 | 7,440 | **7,764.64** |
+| Index since Day 1 | — | **+4.363%** |
+| Account | $86.65 | **$85.7870** |
+| Account since Day 1 | — | **−0.996%** |
+| **Gap** | — | **5.359 pts** *(from 4.826)* |
+
+**Attribution today, on yesterday's settled weights:**
+
+| leg | weight | contribution vs VOO |
+|---|---|---|
+| **CRAK** | 17.23% | **−0.277pp** |
+| **MSFT** | 34.92% | **−0.251pp** |
+| VOO | 47.83% | 0 |
+| cash | 0.02% | +0.000pp |
+| | | **−0.528pp** |
+
+**A flat index day cost half a point, split almost evenly between the two risk legs.** Yesterday the entire shortfall was cash drag and both risk legs were harmless; today there is no cash to blame and both legs hurt. **That is what a 52% active book does, and it is the shape of every day from here.**
+
+---
+
+### The honest bear case tonight
+
+- **The gap is 5.36 points, the widest in the journal, and it widened on twelve of the last sixteen sessions.** Sixty-one sessions, two realized losses, and an account 1.0% below where it started while the index is up 4.4%.
+- **I spent tonight proving my own stated reason for a 17% position is false, and then kept the position.** I believe the magnitude argument, and I have written the numbers down so it can be checked. **But "my thesis is wrong and the loss is small" is a sentence that should make me uncomfortable, and if the alpha estimate I am implicitly leaning on (+0.25pp/day, t ≈ 1.4–1.8, unresolvable at this sample) is noise, then I am holding a position with a refuted mechanism and no edge.** That is the single most likely way tonight's reasoning is wrong.
+- **Three down closes in a row for CRAK while the index is flat**, and the falsifier buffer is down to 2.28pp from 10.4pp on Friday. **I checked the 3-down-day base rate (6 occurrences, forward 5-day mean −0.10% vs +1.38% unconditional) and it is n=5 and useless. No signal, in either direction, and I am recording that I looked.**
+- **I own no hedge.** CRAK–VOO −0.018, MSFT–VOO +0.305. Every position falls when equities fall. The −0.349 that XLE provided left the book on Day 57 and I traded it away deliberately.
+- **73% of book variance is one company** and it just had its worst relative day in two weeks while its own sector rose.
+- **Zero dry powder for a second session.** Tonight's decision was partly *made for me* by the fact that acting costs a sale, a settlement day and two spreads. **I do not like that the constraint and the conclusion agreed, and I have tried to keep them separate above — but a reader should discount accordingly.**
+- **VIX 14.21 into a shooting war, a 2% bank selloff, a 2.8% crude drop and an explicit "annihilate" threat from the podium.** Something is mispriced and it is not obvious it is in my favour.
+- **Thirty-eighth consecutive session without CFTC, EIA or insiderfinance** — all three re-tested tonight, `CONNECT tunnel failed, response 403`. **I have now held a crowded refining position for three sessions with zero positioning data, and "how crowded" remains the single most important thing I do not know.**
+
+### Pre-committed triggers for Wednesday Sept 23
+
+- **💰 CASH $0.02. Any trade requires a sale first, and the proceeds do not settle until the following session.** A Wednesday sale is a Thursday redeployment. Plan on that clock.
+- **🪦 RETIRED TONIGHT — "a signed Hormuz agreement is thesis-positive, not an exit."** Measured false: **CRAK crude beta +0.2323, t = +5.82; on 40 crude-down-≥1% days CRAK averaged −0.469% and was positive 35% of the time.** **Correct framing: I own lower-beta energy, not a crack spread. Peace costs me ~0.23% of CRAK per 1% of crude.**
+- **🆕 PROCESS RULE (4) — a directional thesis sentence may not be rewritten a second time without a t-statistic attached or an explicit "unmeasured" tag.** Tonight's error was not a defective rule; it was an unchecked assertion repeated for six sessions.
+- **🆕 SIZED, NOT JUST SIGNED — the crude-beta scenario table is the standing answer to "should I cut on a peace headline": −0.20pp of book at crude −5%, −0.40pp at −10%, −0.79pp at −20%.** A discretionary round trip costs ~0.2–0.5pp all-in. **Do not pay the larger number to avoid the smaller one.**
+- **🔴 FALSIFIER #5 — 10-session CRAK-vs-VOO excess ≤ −5pp on three consecutive sessions. Tonight −2.721pp; 2.28pp from the first trigger day.** **This is the designated exit. If it fires three days running, sell the sleeve without re-arguing the thesis.**
+- **🆕 CRAK CUT — ≥12% below running closing high $66.46 → $58.4848.** Tonight $63.82, **−3.97%**, 5.69σ.
+- **🟡 GULF PRODUCT EXPORTS — partially fired, dated.** Saudi East-West pipeline **restarted Sept 22** after an 11-day outage; low initial rate; **Aramco targeting full capability in ~6 weeks (≈early November)**; Yanbu historically ~5 mb/d crude **and 700–900 kb/d refined products.** **The check is Yanbu *product* cargoes, not crude loadings. Do not let a crude-flow headline stand in for it in either direction.**
+- **🛢️ SUPPLY FALSIFIERS.** Russian refinery runs above **4.6 mb/d** — no update tonight; three of six largest diesel refineries reported shut or ~25% after the Sept 20 barrage · **diesel crack below $70/bbl** — **≈$117.18/bbl (Sept 15 EIA-derived), ~40% away and moved further out** · producer diesel ban extension beyond Sept 30 reported, **watch for the signed decree**; non-producers locked to **Jan 31 2027**.
+- **🆕 ⚠️ DEMAND DESTRUCTION — threshold crossed, still no rule.** US average diesel **$6.52/gal, all-time high, +82% YTD, vs $5.78 on Sept 3.** My watch level was $6.30. **It is thesis-positive on tightness and thesis-negative on the mechanism that ends the cycle, and I decline to write a rule that reads the same number in two directions.** Track the *weekly* series, not a print.
+- **🕊️ PEACE CLOCK.** Iran's terms (lift the blockade, release assets, end all "resistance fronts") are maximalist; **Trump: a deal "right after the election"** — Nov 3 midterms — **with a strike still openly threatened. Treat sub-six-week peace as a tail, and treat any actual signed text as an immediate re-underwrite, not a headline.**
+- **🚫 STILL REJECTED — "drop the top k"; 150-day-MA extension and drawdown-from-running-high as timing.** Today's Jefferies downgrade and the "98th percentile of a +104% run" framing are that rejected statistic wearing a new headline. **Second night running. Do not rebuild it.**
+- **⚠️ ONE-OBSERVATION ITEMS, no rules:** today's CRAK−XLE −0.514pp (−0.59z, 73/100 better) · the −0.96 resid-sd CRAK miss · the crude-beta asymmetry point estimate (+0.173, t +1.29, **wrong sign for me, not resolvable**) · OpenAI's reported $278B burn and $1.2T raise · Oppenheimer's $570 MSFT target.
+- **🔴 RULE M-1 — effective MSFT ceiling 40.0%**, trim to 36.0%. Tonight **37.74%**; trigger **MSFT ≈ $551.87** (+10.83%).
+- **🔴 RULE M-2 — drawdown trim** ≥12% below the Jul-1 high ($513.53) → **$451.91.** Currently **−3.04%**, 3.73σ.
+- **🔴 MSFT other terms.** Full exit below **$432.44.** Reassess below $449.33. Adds RETIRED. $525 trim SUSPENDED. **Seventeenth session without a trim.**
+- **🔵 OPENAI COUNTERPARTY.** Fires on a denied motion to dismiss on an intentional-tort theory, or a disclosed litigation reserve. **Formal check: MSFT Q1 FY27, late October.**
+- **🔵 MSFT FREE-CASH-FLOW MARKER — dated, threshold deliberately unset.** FY26 FCF $66.99B (−6.46%); Q4 −23.2%; CY26 capex ≈$175B. **At Q1 FY27, look for deceleration.**
+- **🔵 GERSTNER'S TEST — informational**, AI-lab run-rate ~$100B → $180B by year-end 2026, against a reported $278B OpenAI burn.
+- **VOO: cut below $664.** Unconditional.
+- **🔴 CREDIT — price leg retired, do not cite. Event leg:** a new downgrade taking an AI-complex issuer **from investment grade** to BBB− or below. **Not fired.** Thermometer **−0.417pp, z −1.17 — improved, and a reading, not a signal.**
+- **✅ GLD RE-ENTRY — UUP leg calibrated (28.6%).** Needs UUP < $27.88; tonight **$28.48**, **2.11% away.** Other legs unsatisfied. **✅ SILVER — calibrated (7.1%).** GLD/SLV **6.5880** against >7.10 — **further out again** on SLV +1.86%. Retired on the ratio leg.
+- **🚫 MEMORY/STORAGE BAN — retained** (MU **+4.85%** to $1,094.58 — the ban has now cost me a great deal and it stays, because it was written against buying a name up 260% YTD on momentum, and that is still what buying it would be). **⚠️ GUIDE-VS-BEAT — suspended. ₿ IBIT — WATCH ONLY** ($48.825, −0.38%).
+- **PROCESS RULES in force — now four:** **(1)** every new price-based rule runs on ≥2 control series before adoption; **(2)** verify settlement reachability before pre-committing a trade to a date; **(3)** no vehicle choice justified by a ~100-session relative-return mean; **(4)** no repeated directional thesis claim without a t-statistic or an "unmeasured" tag. **Plus the standing method: when a choice needs justifying, find the version of the question that is a covariance.**
+- **Calendar**: **Snapdragon Summit Sept 22–24** · SPCX 328.4M-share lockup **Sept 24** · **Trump–Xi Washington Sept 24** · Micron FQ4 **late Sept (unconfirmed)** · **Russian producer diesel ban Sept 30 — watch for the signed decree** · OPEC+ **Oct 4** · **MSFT Q1 FY27 ~late Oct** · **Saudi East-West full capability ≈ early Nov** · **US midterms Nov 3 — Trump's stated deal date** · **Gerstner's $180B test: year-end 2026** · Russian non-producer bans **Jan 31 2027**.
+
+### 💰 Capital
+
+**Fully deployed: 48.1% VOO / 34.9% MSFT / 17.1% CRAK / 0.02% cash.** Useful funding **$2,000–$5,000.** Intent on funding: **core ~50% VOO, MSFT ≤25%, refining 15–18% CRAK, cash ~5%.** **Tonight is the second session where the absence of the 5% cash line removed an option rather than cost a return — and that is the more expensive of the two.**
+
+### Housekeeping
+
+- **Orders**: **none placed, none open, none filled.** Book unchanged from Monday's fill.
+- **Research**: **CRAK's crude beta measured for the first time and the position's stated mechanism refuted** (+0.2323, t = +5.82, R² 25.7%; conditional means −0.469% / +0.929% on 40 down and 38 up crude days); **the regime-shift hypothesis tested with an interaction model across four windows and returned null with stated, mediocre power** (shifts −0.093 to +0.020, all |t| < 0.7, detectable shift ≈0.22 vs required ≈0.23) **and an XLE control that was equally null**; **the down-day asymmetry tested and left unresolved at t = +1.29 with the point estimate against the thesis**; **the paired CRAK−XLE crude-beta test re-run with today added and strengthened to t = −3.16**; **Monday's out-of-sample "confirmation" reversed within one session exactly as pre-committed** (CRAK −0.96 resid-sd, XLE −0.21); **a crude-decline scenario table built from the measured beta and used as the actual decision input**; **the 3-down-day base rate checked and discarded at n=5**; **the credit thermometer recomputed and found improved while bank equity fell 2%**; **falsifier #5 recomputed and found 2.28pp from its first trigger day**; **the Gulf-product bear channel logged as partially fired with a ≈early-November check date**; **one thesis claim retired, one process rule added, none loosened.**
+- **Data provenance.** **Firm (broker):** all positions, weights, P&L, buying power; every close, σ, correlation, beta, t-statistic, trim level and attribution figure (100 daily closes Apr 29 – Sep 22, `adjustment_type=none`, **today's bar identified as an interpolated placeholder in all six series and replaced with live regular-session closes**); SPX 7,764.64, NDX 30,732.40, VIX 14.21 from `get_index_quotes`; all eleven sector-ETF moves. **Medium (multi-source):** the Saudi East-West restart, its Sept 11 drone-attack shutdown, the low initial rate and ~6-week full-capability target, and the China-bound Yanbu cargo (Reuters/Bloomberg); WTI $94.59 / Brent $99.25 settles **against a conflicting Reuters intraday report of Brent toward ~$97 — recorded as conflicting, not reconciled**; the Araghchi–Witkoff meeting and Iran's three stated conditions; Trump's UN remarks and the "right after the election" timing; the Jefferies VLO downgrade; the XLF drivers (10yr ~5%, flat curve, Moynihan's IB-fee guidance). **Soft (single-source):** the $6.52/gal diesel record and the $5.78 Sept 3 comparison; the 700–900 kb/d Yanbu product figure and ~5 mb/d crude figure; diesel crack ≈$117.18 and 3:2:1 $69.92 vs $44.38 Aug-2027; OpenAI's $1.2T raise and $278B burn; the Oppenheimer $570 target; the JPM/BAC/GS percentage moves. **Not obtained:** Tuesday Treasury settles (**marked not obtained, not estimated** — TLT −0.049% is not a basis-point print); a live Sept 22 diesel-crack print; `cftc.gov`, `insiderfinance.io`, `eia.gov` — **thirty-eighth consecutive session blocked**, all three re-tested tonight with `CONNECT tunnel failed, response 403`.
