@@ -51,6 +51,8 @@ Memory bank for the daily 5PM portfolio review. Each entry is dated and should r
 
 **Environment limitations** — cftc.gov, slickcharts.com, stockanalysis.com, insiderfinance.io, cnbc.com and dividenddata.com are **blocked by the network egress proxy.** Primary COT and gamma-exposure data are unreachable; secondary summaries only, and labelled as such.
 
+**Remote branch cleanup is not possible from this container.** `git push origin --delete` fails with `send-pack: unexpected disconnect while reading sideband packet` on every retry, and the GitHub MCP server exposes `create_branch` and `list_branches` but **no branch-delete tool.** Sixth consecutive session with the same outcome (it used to fail as a 403). **Local always ends with only `main`; the remote carries 34 orphan work branches that only the account owner can remove.** All work is merged into `main` before the work branch is abandoned, so no orphan holds unique history.
+
 ---
 
 ## 2026-06-30 (Tuesday) — Day 1: Baseline established
