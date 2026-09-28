@@ -10,6 +10,49 @@ Memory bank for the daily 5PM portfolio review. Each entry is dated and should r
 
 ---
 
+## 🧭 LIVE STATE BOARD — last updated Day 65 (2026-09-28)
+*Added Day 65. This journal is 11k+ lines; reconstructing current state by grepping backwards wastes the first half of every session. Refresh this block every session so future-me starts from a known position. Everything below is superseded only by a later entry.*
+
+**Book: $86.0509** (+$0.1136 VOO dividend accrued, payable 9/30) · **cash $0.02 — 99.98% invested**
+| | shares | weight | cost | P/L |
+|---|---|---|---|---|
+| VOO | 0.057873 | 47.32% | $700.15 | +0.50% |
+| MSFT | 0.060042 | 35.55% | $463.84 | +9.84% |
+| CRAK | 0.229147 | 17.11% | $65.46 | −1.86% |
+
+**Live rules — none firing. 21 sessions without a trim.**
+- 🔴 **M-1 — weight ceiling.** Effective MSFT (direct + VOO look-through) may not exceed **40.0%**. Now **38.262%**; trigger **$550.98 (+8.15%)**. On a fire: trim to 36.0% effective, **proceeds to CASH** (destination set Day 64). Index-weight input **5.735%** (sourced 5.70% @ Aug-31 2026, rolled forward; cross-checked against NVDA/MSFT float-mcap ratio to 0.5%). **Re-source with the ratio cross-check whenever effective MSFT is within 2.0pp of the ceiling** (set Day 65; it is inside that band now).
+- 🔴 **M-2 — drawdown trim.** MSFT closing ≥12% below its highest *close* since Jul 1 2026 → trim to 25% of book next session. High **$516.17 (Sept 25)**, trim **$454.23** (−10.85%, 4.39σ). High ratchets up, never down.
+- 🔴 **M-2 full exit — $432.44.** The 7/30 earnings-gap-day low. **Fixed price; does not ratchet.**
+- 🔴 **Falsifier #5 — CRAK exit.** 10-session CRAK−VOO excess ≤ −5pp on three consecutive sessions → sell CRAK. Tonight **−0.944pp**, 4.056pp of room, **0 consecutive**. ⚠️ Tagged **UNMEASURED AS AN EXIT** (Day 64: 3 fires in 96 windows, forward returns *above* baseline at 5/10/20 sessions, t ≈ 0.6). Not loosened.
+- RETIRED: all "add" rules. SUSPENDED: the $525 MSFT trim.
+
+**Measured properties of the book (Day 65)**
+- **BOOK − VOO ~ TLT = −0.371 (t = −2.72).** The book is **short duration vs the benchmark** and this was never chosen. Source: VOO β +0.5496 (t +4.81) × 47.3%, CRAK β −0.4883 × 17.1%, MSFT ≈ 0.
+- **MSFT β to TLT = +0.0069 (t +0.02), subsamples [−1.14, +0.67]. ⚠️ UNMEASURABLE — do not cite MSFT as rate-sensitive, rate-neutral, or a diversifier.**
+- **CRAK ~ USO β = +0.2363 (t +6.06).** CRAK behaves as a long-crude equity position. With USO controlled its TLT term is +0.049 (t +0.19) — **CRAK is NOT the rate hedge; XLE is** (−0.524, t −2.06). Known defect of the Day 57 swap, deliberately not reversed.
+- MSFT is **~36% of weight and ~74% of variance** (Day 64). MSFT trailing PE **28.76** vs VOO **26.20** (+9.8% premium).
+
+**Refuted / do not rebuild** — CRAK crack-spread mechanism (Day 61, t +5.82 wrong way) · "Hormuz deal is thesis-positive" (Day 61) · MSFT-as-rate-hedge (Day 62) · the credit thermometer (Day 63, 71% duration at t −15.44) · crude asymmetry for refiners (Day 64, placebo beat it at t +2.36) · "CRAK is a US/ex-US straddle" (Day 64 — a ~0.24× same-sign dampener) · MSFT-as-duration-asset (Day 65).
+
+**Dated tripwires & catalysts**
+- **Oct 2** — jobs report. Test of the −2.72 duration marker: TLT +≥1% should cost me ~0.37pp vs VOO, or the marker retires.
+- **Oct 22** — VLO earnings. First hard refining-margin read for CRAK.
+- **🔴 Oct 28** — FOMC (hike ~72% priced) **+ MSFT FQ1 earnings pm + PSX am.** Needs a written plan in advance.
+- **Nov 3** — midterms. **US diesel export ban** (step function vs ~23% of CRAK) fires on a signed EO/DOE directive **or** a disclosed voluntary curtailment — *not* on another anonymous report or denial. Strike resumption is reported for *after* this date.
+
+**Process rules I keep breaking and must re-read**
+1. Run the controls on the **old** rules too, not just new ones (Day 63–64).
+2. Check the **residual magnitude**, not just the beta's sign — a t-stat with the right sign can still explain 18% of the move (Day 65, gold).
+3. Run **subsamples before believing a point estimate**, especially a flattering one (Day 65, MSFT's zero).
+4. A rule with an **unsourced external input** is a guess with a decimal point (Day 65, M-1).
+5. **Churn is 100% of my underperformance** (Day 28). A measured factor loading is a description, not an edge.
+6. Never loosen a rule the first night its evidence is inconvenient; never change a binding limit while approaching it from inside.
+
+**Environment limitations** — cftc.gov, slickcharts.com, stockanalysis.com, insiderfinance.io, cnbc.com and dividenddata.com are **blocked by the network egress proxy.** Primary COT and gamma-exposure data are unreachable; secondary summaries only, and labelled as such.
+
+---
+
 ## 2026-06-30 (Tuesday) — Day 1: Baseline established
 
 ### Account state (Robinhood "Agentic" account #479068710, cash account)
@@ -11216,3 +11259,246 @@ Per-fire at 20 sessions: **May 15 → −6.58pp · Jun 22 → +21.53pp · Aug 6 
 **Day 64 housekeeping (post-merge).** `main` verified at **b3264d9** by `ls-remote`, carrying the Day 64 entry and its merge. Local branches: **`main` only.**
 
 **Fifth consecutive session with no new orphan.** Remote branch count **34 (main + 33 orphans), unchanged since Sept 18.** Tonight's work branch was merged locally and only `main` was pushed, so no upstream ref was ever created; `git push origin --delete claude/inspiring-planck-xgnws6` returned **"remote ref does not exist"** — the standing procedure works and is now confirmed five sessions running. **Note on tonight's `fetch --prune` output:** two remote-tracking refs (`keen-shannon-wjtq7e`, `keen-shannon-yn440p`) printed as `[new branch]`. **They are not new remote branches** — they are pre-existing orphans whose *local* tracking refs were recreated after last night's `update-ref -d` cleanup. The `ls-remote --heads` count is the authoritative figure and it is **unchanged at 34**. **The 33 pre-existing orphans remain undeletable** — re-tested tonight on `claude/inspiring-planck-0osar4`, which returned `RPC failed; HTTP 403` followed by `send-pack: unexpected disconnect`. **Thirteenth session recording the constraint.** They need a token with `delete_ref` scope or a one-time cleanup in the GitHub UI.
+
+---
+
+## 2026-09-28 (Monday) — Day 65: **No trade.** I finally sourced the input that failed last night, and it was **wrong by 1.25pp in the direction that made me too cautious** — M-1's trigger moves from $536.91 to **$550.98, +8.15% away.** Then I built the obvious story for the day — *rates are the dominant factor and my premium-multiple megacap is a duration asset* — and the regression **destroyed it: MSFT's beta to TLT is +0.0069 at t = +0.02.** The rate sensitivity in my book is **the benchmark itself (VOO ~ TLT = +0.55, t = +4.81)**, and the measured consequence is that **my book is significantly SHORT duration against VOO at t = −2.72 — a bet I never decided to make.**
+
+### 📈 The tape
+
+| | Sept 25 | **Sept 28** | |
+|---|---|---|---|
+| **MSFT** | $516.17 | **$509.47** | **−1.298%** |
+| VOO (price) | $710.79 | $703.625 | −1.008% |
+| *VOO (total return, ex-div today)* | *$708.9674 adj* | *$703.625* | ***−0.754%*** |
+| CRAK | $64.20 | $64.24 | +0.062% |
+| USO | $148.33 | $149.99 | **+1.119%** |
+| TLT | $79.32 | $78.625 | −0.876% |
+| **GLD** | $393.41 | **$377.94** | **−3.932%** |
+| **SLV** | $58.14 | **$54.95** | **−5.487%** |
+| **SPX** | 7,743.41 | **7,683.69** | **−0.771%** |
+| Nasdaq Comp | 27,069 | 26,820.38 | −0.92% |
+| Dow | 51,828.62 | 51,481.51 | −0.670% |
+
+**10-year 5.24% (+6bp) — highest since 2007. 30-year 5.56% — highest since 2004.** Brent hit **$108.48 intraday (+4%)** before fading; October hike odds **~72.3%** (CME, Oct 28), down from Friday's 75.8% even as yields rose.
+
+**Sectors (my own computation from closes): XLV +0.33% · XLP +0.28% · XLE +0.12%** — the only three green — then XLRE −0.49% · XLU −0.61% · XLB −0.68% · XLK −0.89% · XLI −0.99% · XLF −1.17% · XLY −1.42% · **XLC −1.57%** (worst). SMH −1.03%, IWM −0.68%, HYG −0.41%, UNG −3.06%. *(Three up / eight down and Real Estate fourth matches the secondary source; the source described the top three as "defensive and cyclical split," my numbers order them XLV > XLP > XLE.)*
+
+**Refiners: VLO +0.60%, MPC −1.01%, PSX −0.85%, XOP −0.76%, CRAK +0.06%.**
+
+---
+
+### 💼 Book
+
+| | shares | price | value | weight | cost | P/L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $703.625 | $40.7209 | **47.32%** | $700.15 | +0.50% / +$0.20 |
+| MSFT | 0.060042 | $509.47 | $30.5896 | **35.55%** | $463.84 | **+9.84% / +$2.74** |
+| CRAK | 0.229147 | $64.24 | $14.7204 | **17.11%** | $65.46 | −1.86% / −$0.28 |
+| cash | | | $0.02 | 0.02% | | |
+| **total** | | | **$86.0509** | | | |
+
+**VOO went ex-dividend today ($1.9622/share, payable Sept 30) — $0.1136 of accrual is owed to me and is not in the $86.05.** That is why the price table shows two VOO rows: on price alone VOO fell 1.008%, on total return 0.754%, and **comparing my book to the price-only number would have flattered me by 0.25pp.** I am using total return.
+
+**Book total return −0.809% vs VOO −0.754% = −0.055pp.** A rounding error of a day. Attribution: MSFT −1.298% × 35.68% start-weight = −0.463pp, VOO −0.754% × 47.36% = −0.357pp, CRAK +0.062% × 16.94% = +0.011pp.
+
+**21st consecutive session without a trim. No rule fires.**
+
+---
+
+### 🔵 FIRST — the input I could not source last night, sourced. It was wrong by 1.25pp, and it was wrong in the direction that made me *more* conservative than my own rule required.
+
+Last night I logged a sourcing failure on M-1's only external input — MSFT's S&P 500 index weight — carried **6.98%**, and wrote that *"sourcing that number is the first job of the next session."* Done.
+
+**Sourced figure: MSFT = 5.70% of the S&P 500 as of Aug 31 2026** (NVDA 8.08%, AAPL 7.03%, top-10 aggregate 37.9%), via VOO's own published holdings.
+
+**And I cross-validated it against a number nobody publishes for me, because a single scraped figure is exactly what failed last night.** From Robinhood fundamentals I built float-adjusted market caps and compared the *ratios* to the published weight ratios:
+
+| | float mcap today | ratio to MSFT | ratio implied by published weights | agreement |
+|---|---|---|---|---|
+| MSFT | $3.725T | 1.000 | 1.000 | — |
+| **NVDA** | **$5.307T** | **1.4247** | **8.08 / 5.70 = 1.4175** | **0.5%** ✅ |
+| AAPL | $4.932T | 1.3241 | 7.03 / 5.70 = 1.2333 | 7.4% |
+
+**The NVDA anchor agrees to half a percent.** The AAPL gap is explained by AAPL outperforming MSFT since Aug 31 (AAPL set its 52-week high on Sept 22), which is exactly what a four-week-stale weight should look like. **Rolling 5.70% forward by MSFT's relative performance since Aug 31 (+0.43% vs VOO −0.18%, ratio 1.0061) gives 5.735%.**
+
+**⚠️ A third source said 4.6% and I am rejecting it.** It fails the same cross-check the 5.70% passes: 4.6% against NVDA's quoted 7.0% implies a ratio of 1.522 versus my measured 1.4247, a 7% miss in the anchor that the Aug-31 set nails. **I am also recording that last night's failed attempt returned "NVDA 8.3%", which would imply MSFT ≈ 5.83% — consistent with 5.70%, not with 4.6%.** Two of three sources cluster; the outlier is discarded and named.
+
+#### 📏 What the correction does to my nearest rule
+
+| | carried **6.98%** | **sourced 5.735%** | change |
+|---|---|---|---|
+| look-through term | 3.303pp | **2.714pp** | −0.589pp |
+| **effective MSFT** | **38.851%** | **38.262%** | **−0.589pp** |
+| room to the 40.0% ceiling | 1.149pp | **1.738pp** | **+0.589pp** |
+| **M-1 trigger price** | **$536.91** | **$550.98** | **+$14.07** |
+| distance | +5.39% | **+8.15%** | **+2.76pp** |
+
+**I have been overstating my own effective MSFT exposure for weeks, which made my binding ceiling look 2.8pp of MSFT price closer than it was.** The error was conservative — it made me *more* likely to trim, not less — so it did not cost me money. But last night I declined a trim partly on the ground that *"that risk ground is precisely what M-1 encodes, and M-1 has not fired,"* while believing the rule was 1.02pp away. **It was 1.74pp away. The conclusion was right; the margin I stated was 70% too tight.**
+
+**The lesson is not "I got lucky on the direction." It is that a rule with an unsourced external input is not a rule, it is a guess with a decimal point** — and I ran M-1 that way for weeks without noticing, because the input never got close enough to matter. It got close enough on Friday. **New standing requirement: M-1's weight input is re-sourced with the ratio cross-check every time effective MSFT closes within 2.0pp of the ceiling, not monthly.** It is inside that band tonight (1.738pp).
+
+#### ⚙️ M-2 data correction (not a rule change): $454.17 → $454.23
+
+Last night I ratcheted M-2 off a $516.10 running high. **The official Sept 25 close was $516.17** — $516.10 was a last-trade print, not the settled close, and the rule says *"highest close."* Trim line corrects to **$454.23**. The $432.44 full exit is a fixed price and does not move. **A $0.06 correction changes nothing and I am logging it anyway, because the alternative is a board whose numbers drift off their own definitions.**
+
+#### Rules board
+
+| rule | level | distance | σ (MSFT daily sd = 2.471%) |
+|---|---|---|---|
+| 🔴 **M-1 — weight ceiling** 40.0% effective | **$550.98** | **+8.15%** | — |
+| 🔴 **M-2 — drawdown trim** (high $516.17 × 0.88) | **$454.23** | **−10.85%** | **4.39σ** |
+| 🔴 **M-2 full exit** (7/30 gap-day low, fixed) | $432.44 | −15.12% | 6.12σ |
+| 🔴 **Falsifier #5 — CRAK exit** (10-sess CRAK−VOO ≤ −5pp, 3 consecutive) | −5.00pp | **−0.944pp tonight, 4.056pp of room** | 35th pctile |
+
+**Falsifier #5 has retreated for a third straight session** (−4.309 → −3.694 → −3.380 → **−0.944**) — and note *why*: not because CRAK rallied (+0.06%) but because **VOO fell.** My CRAK exit is a relative rule, so a bad day for the index buys my worst position room. Worth knowing about my own tripwire. **Zero consecutive fire-days; three needed.** Adds RETIRED. $525 trim SUSPENDED.
+
+---
+
+### 🔬 SECOND — I built the obvious story for the day and the regression killed it in one line
+
+**The story, which I believed when I started typing it:** the 10-year is at a 2007 high, the 30-year at a 2004 high, the Fed is 72% to hike again, **gold fell 3.9% and silver 5.5% on a day a war escalated** — so the rate channel is dominating everything. And my book is **82.9% long-duration US equity at premium multiples** (MSFT trailing PE **28.76** vs VOO's **26.20**, a **+9.8% premium** — up from +5.9% last night), with only 17.1% in the short-duration inflation beneficiary. Conclusion: I am badly positioned and should trim MSFT into CRAK or cash.
+
+**Every clause of that is plausible. The measurement says the load-bearing clause is false.**
+
+| 100 sessions to Sept 28, daily % | β to TLT | t | R² |
+|---|---|---|---|
+| **MSFT** | **+0.0069** | **+0.02** | **0.000** |
+| VOO | **+0.5496** | **+4.81** | 0.191 |
+| GLD | **+0.7627** | **+3.15** | 0.092 |
+| CRAK | −0.4883 | −2.16 | 0.046 |
+| XLE | **−1.1941** | **−5.84** | 0.254 |
+
+**MSFT has no measurable sensitivity to long bonds. None. β = 0.007, t = 0.02, R² = 0.000 over 100 sessions.** The premium-multiple megacap I was about to call a duration asset is, empirically, not one.
+
+**And the "MSFT outperforms when yields rise" result is an artifact of the benchmark, not a property of MSFT.** The excess regression gives β(MSFT−VOO ~ TLT) = **−0.5427**, and the identity closes exactly: **−0.5427 = +0.0069 − 0.5496.** Every basis point of it comes from VOO's loading. **MSFT does not like rising yields; MSFT is indifferent to yields and the index is not.**
+
+#### 🚫 And I killed the *flattering* version too, which is the part I would have skipped a month ago
+
+The tempting next sentence is *"then MSFT diversifies my VOO rate exposure."* **No. I ran the subsamples first, and MSFT's zero is an average of estimates that wander across the whole plausible range:**
+
+| MSFT ~ TLT, 25-session quarters | β | t | R² |
+|---|---|---|---|
+| q1 May 6 – Jun 10 | −0.0399 | −0.05 | 0.000 |
+| q2 Jun 11 – Jul 17 | **−1.1405** | −1.55 | 0.095 |
+| q3 Jul 20 – Aug 21 | +0.4475 | +0.42 | 0.008 |
+| q4 Aug 24 – Sept 28 | **+0.6656** | +1.49 | 0.088 |
+
+**The sign flips twice and the range is [−1.14, +0.67].** That is not a stable zero, it is an unmeasurable parameter whose point estimate happens to land near zero. **⚠️ Tagged UNMEASURABLE: I may not cite MSFT as rate-sensitive OR as rate-neutral OR as a diversifier. I do not know its rate loading and 100 sessions cannot tell me.**
+
+**The contrast is the whole finding.** Run the identical subsample test on VOO and it holds up: **+0.9427 (t +3.95), +0.2316, +0.5066 (t +2.31), +0.5802 (t +3.53)** — same sign in all four quarters, significant in three, and **strongest in the most recent one.** One of these two is a factor. It is not the one my story needed.
+
+---
+
+### 🆕 ⚠️ THIRD — the thing I actually found: my book is short duration against the benchmark, at t = −2.72, and I never decided that
+
+Putting my real weights through the betas above:
+
+| | weight | β to TLT | contribution |
+|---|---|---|---|
+| VOO | 47.32% | +0.5496 | **+0.2601** |
+| CRAK | 17.11% | −0.4883 | **−0.0836** |
+| MSFT | 35.55% | +0.0069 | +0.0024 |
+| **BOOK** | | | **+0.1790 (t +1.02, R² 0.011)** |
+| **BOOK − VOO** | | | **−0.3706 (t −2.72, R² 0.070)** |
+
+**In absolute terms my book is rate-neutral (t = 1.02). Relative to my benchmark it is short duration at t = −2.72.** Mechanically: **CRAK's 17% is doing the work of cancelling roughly a third of VOO's rate loading**, and MSFT — 35.6% of the book — contributes essentially nothing either way.
+
+**This is a position I hold and did not choose.** I bought CRAK on Day 59 for a refining-margin thesis whose mechanism I refuted on Day 61. What I actually installed was **a partial rate hedge against my own benchmark**, and I have been running it through the steepest yield move since 2007 without knowing. **My recent relative performance is, in part, a rate bet I was unaware of making.** That is not skill and I will not book it as skill.
+
+#### 🎯 A falsifiable forward marker with a date three sessions out
+
+If the −2.72 is real and not a 100-day coincidence, it makes a prediction I can check this week. **Friday Oct 2, 8:30am: the September jobs report.** The week is stacked — **Tue** JOLTS + Consumer Confidence, **Wed** ADP + GDP third estimate + **August PCE**, **Thu** ISM Manufacturing, **Fri** the jobs report — and October hike odds sit at 72.3%.
+
+**Prediction:** on any session this week that reprices notably *dovish* — a soft PCE or a weak payroll that drops the October hike materially toward a coin flip, with TLT up ≥1% — **my book should underperform VOO**, by roughly 0.37pp per 1% of TLT gain. **If TLT rallies ≥1% and my book does NOT underperform, the −2.72 is not describing my book and I retire it.** Dated, signed, checkable Friday. *(Government funding is not a factor: the CR was signed Sept 2 and runs to Dec 11, so October 1 is not a shutdown date.)*
+
+**🚫 And I am not trading on it.** A measured factor loading is a description, not an edge. The only instrument that would cut the exposure is **VOO — my own benchmark** — and selling the benchmark to neutralise a rate beta is a naked directional bet on the S&P 500, which I have no measured edge in whatsoever. **Knowing what my book is, is worth more tonight than changing it.**
+
+---
+
+### 🛢️ FOURTH — the strongest sourced bull case on my board, and the calendar reason I am not buying it
+
+**The news is materially bullish for the oil complex and it is dated.** Iranian FM Araghchi offered at the UNGA to reopen the Strait of Hormuz within seven days and restart nuclear talks, conditional on an end to US "acts of aggression," lifting the naval blockade, and releasing Iranian assets. **Trump rejected it — "They made a proposal but I rejected it."** Brent spiked to **$108.48 (+4%)** intraday. **Hormuz is physically shut: ~2 transits in 24 hours against a normal ~60**, on a passage that carried roughly **20% of global petroleum consumption** in 2024. And per WSJ (Sept 26), **Trump told aides he expects US strikes on Iran to resume after the November midterms.**
+
+#### 📊 And the positioning data says this is NOT a crowded trade
+
+This was the question I most wanted answered, and the COT resource delivered it. **cftc.gov is blocked from this environment** *(logged as an access limitation — the primary source is unreachable, I used a secondary COT summary)*, but: **in the week to Sept 22, managed money cut Brent crude by 64,500 contracts**, explicitly attributed to *"the sharp reversal in crude prices as improving Middle East flows reduced some of the geopolitical risk premium."* For scale, WTI managed-money net long was 100,963 contracts on Sept 1.
+
+**So the sequence is: funds de-risked hard into the peace-deal narrative through Sept 22 — and then on Sept 26–28 the deal was rejected and the blockade re-hardened.** Speculative length was flushed *immediately before* the catalyst re-fired. **That is the opposite of a crowded trade: the marginal buyer exists and has room.**
+
+#### 🚫 Two bear cases I built against CRAK tonight, and both failed their own tests
+
+**Bear case A: "CRAK has been under-delivering its crude beta for six sessions — the tape disagrees with the story."** The residuals looked damning: **−0.10, −0.68, −0.73, −0.61, +0.48, −0.33σ** against a model of β = **+0.2363** on USO (t = **+6.06**, R² 0.273, resid sd 1.241). Today USO +1.12% predicted CRAK +0.47%; it did +0.06%, a **−0.404pp = −0.33σ** miss.
+
+**Measured, it is nothing.** The 6-session residual sum is **−2.437pp**, which is the **20th percentile** of 95 overlapping windows (mean +0.241, sd 3.085, range −6.09 to +6.16). **And it carries no forward information:** conditioning 10-session-ahead CRAK−VOO excess on the sign of the 6-day residual run gives **+2.399pp after negative runs (n=42) vs +3.942pp after positive runs (n=43)**, a difference of −1.543pp at a *naive* t = −1.11 **on heavily overlapping observations, so the true t is smaller still.** ❌ **Killed. A 20th-percentile wobble is not the tape telling me anything.**
+
+**Bear case B: "CRAK is the wrong vehicle — Day 62 said energy is the rate hedge, and I own the one that isn't."** This one is **true, and it is a genuine defect I am naming rather than fixing.** Day 62's finding replicates almost exactly on the rolled-forward window: **XLE−VOO ~ TLT = −1.7437, t = −6.93** (Day 62: −7.02). **But adding the USO control splits the pair apart:**
+
+| excess vs VOO ~ TLT + USO | β(TLT) | t | β(USO) | t | R² |
+|---|---|---|---|---|---|
+| **CRAK** | **+0.0488** | **+0.19** | +0.3458 | **+6.70** | 0.421 |
+| **XLE** | **−0.5239** | **−2.06** | +0.3882 | **+7.73** | 0.584 |
+| MSFT | −1.0525 | −2.27 | −0.1622 | −1.77 | 0.052 |
+
+**CRAK's apparent rate hedge is entirely crude beta wearing a rate costume — control for USO and the TLT term collapses to zero (t = +0.19). XLE's survives (t = −2.06).** So "energy is the rate hedge" is an **XLE** property, not a **CRAK** one. **The Day 57 swap traded away the rate-hedge component and kept the crude beta.** That is the third time a control has shown that swap cost me a property I wanted.
+
+**🚫 I am not reversing it.** Three reasons: the surviving XLE term is **t = −2.06 on 100 overlapping daily observations**, which is the marginal-significance zone where my own rules have killed things; reversing pays a **second** round-trip spread in a thin ETF (**CRAK traded 353k shares today against an 820k two-week average**, and its after-hours quote is $60.00 / $64.50); and Day 28's diagnosis stands — **churn is 100% of my underperformance.** **Logged as a known defect of the Day 57 swap. Not fixed. Not forgotten.**
+
+#### ⏰ So why not ADD to CRAK? Because my catalyst and my tripwire are on the same clock, pointing opposite ways
+
+This is the argument that decided the night, and it is a calendar argument, not a valuation one.
+
+**My upside catalyst is dated AFTER Nov 3.** WSJ: strikes resume *after the midterms.*
+
+**My downside tripwire is dated BEFORE Nov 3.** The 90-day US diesel export ban I found on Day 64 — a step function against **~23% of CRAK** (VLO 8.16% + MPC 8.13% + PSX 6.58%) — is driven by **$6.29/gal pump diesel ahead of the Nov 3 midterms.**
+
+**And the administration's revealed preference on energy prices before the midterms is sourced four separate ways:** the diesel export-ban drafting itself; Trump's *"keep oil prices down, I'm watching"*; the **20% Hormuz transit toll floated and then withdrawn** after shipping-industry pushback; and the WSJ report deferring strikes **until after** the vote.
+
+**Read together, those four say the same thing: suppress energy prices until Nov 3, escalate after.** Being long the oil complex into the midterms means being long precisely while the policy put is working against me, and collecting only if I survive to the far side. **I already hold 17.11% of an $86 book in that trade. Adding would mean selling MSFT or VOO to concentrate into a five-week window where my own sourced read says the political incentive is against the position.** ❌ **No add.**
+
+**❌ And no trim either.** Falsifier #5 sits at −0.944pp with 4.056pp of room and zero fire-days. Both bear cases I constructed tonight failed. **A position whose bear cases fail their tests and whose exit rule is 4pp away is a position I hold.**
+
+---
+
+### 🥇 FIFTH — the one number tonight that says *don't* over-explain the day
+
+**I was ready to write that gold's collapse is the rate channel.** GLD ~ TLT is **+0.7627 (t = +3.15)**, so gold genuinely *is* a duration asset, and the story is clean: real yields rip, the non-yielding asset gets sold, gold hits a seven-week low on the day a war escalated.
+
+**Then I checked the magnitude against the model and it does not survive.**
+
+| today, vs its own TLT model | actual | predicted | residual |
+|---|---|---|---|
+| **GLD** | **−3.932%** | **−0.695%** | **−3.237pp = −2.12 sd** |
+| VOO | −1.008% | −0.378% | −0.630pp = −0.88 sd |
+| MSFT | −1.298% | +0.238% | −1.536pp = −0.62 sd |
+| CRAK | +0.062% | +0.611% | −0.549pp = −0.39 sd |
+
+**Rates explain about 18% of gold's move. The other 82% — and the −2.12 sd residual — is something else**, and silver's **−5.49%** (a bigger move than gold's) says liquidation rather than macro repricing. **I have no measurement of what that something else is, so I am recording the gap rather than naming it.** Had I stopped at the t = +3.15, I would have written a confident and wrong sentence. **This is the same error as Day 48 and Day 52 — one move wearing a macro story — caught on the third try by checking the size of the residual and not just the sign of the beta.**
+
+---
+
+### 📅 Calendar I am now watching
+
+- **Tue Sept 29** — JOLTS, Case-Shiller, Consumer Confidence
+- **Wed Sept 30** — ADP, GDP third estimate, **August PCE / core PCE**, Chicago PMI. *(VOO dividend payable.)*
+- **Thu Oct 1** — jobless claims, S&P Global Mfg PMI, **ISM Manufacturing**
+- **🎯 Fri Oct 2, 8:30am** — **September jobs report.** The test of tonight's −2.72 duration marker.
+- **Thu Oct 22** — **VLO earnings** (est. EPS $18.19). First hard read on refining margins for CRAK.
+- **🔴 Wed Oct 28** — **triple event: FOMC decision (hike ~72% priced) + MSFT FQ1 earnings, pm (est. EPS $4.72) + PSX earnings, am.** My largest position reports on the same day the Fed decides. **That date needs a plan written before it arrives, not on the morning of.**
+- **Tue Nov 3** — **midterms.** Both the diesel-ban tripwire and the strike-resumption catalyst hang off this date.
+- **Fri, 3:30pm ET weekly** — CFTC COT. **cftc.gov is blocked from this environment; secondary summaries only.** Logged.
+
+---
+
+### ✅ Decision: NO TRADE
+
+1. **No rule fires.** M-1 **+8.15%** away (revised up from +5.39% on a properly sourced input), M-2 **−10.85% / 4.39σ**, full exit −15.12% / 6.12σ, Falsifier #5 **4.056pp** of room with zero fire-days.
+2. **The trade my own narrative implied has no factor basis.** Trimming MSFT as a duration asset requires MSFT to have duration. It has **β = +0.0069, t = +0.02**, unstable across every subsample. Refuted.
+3. **Adding to CRAK fails on the calendar, not the thesis.** The thesis is the strongest sourced case on my board — closed Hormuz, rejected proposal, 64.5k contracts of Brent length flushed just before the catalyst re-fired, PE 9.59, distillate stocks 13% below the five-year average, utilisation 98%. **But my catalyst is post-Nov 3 and my tripwire is pre-Nov 3, and four sourced data points say the policy incentive between now and the vote runs against the position.**
+4. **No sell case either** — both bear arguments I built tonight failed their own tests (20th-percentile residual run, no forward information at naive t = −1.11).
+5. **I am 99.98% invested.** Standing directive (Day 5) warns against idle cash. **Cash is $0.02. Not trading tonight is holding a fully-invested book, not sitting out.**
+
+**Score for the night: one external input sourced and corrected by 1.25pp · one rule re-derived (+$14.07 on the trigger) · one data correction logged (+$0.06) · one narrative refuted at t = +0.02 · one flattering counter-narrative refuted on subsample instability · one unchosen factor exposure discovered at t = −2.72 and given a dated falsification test · two bear cases killed by their own base rates · one bull case sourced, sized, and declined on a calendar conflict · one over-explanation caught by its residual magnitude · one vehicle defect re-confirmed and deliberately not traded.**
+
+**Rules: one input corrected. None loosened. None added.**
+
