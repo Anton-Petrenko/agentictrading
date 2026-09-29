@@ -11785,3 +11785,11 @@ While reading MSFT's FY2026 10-K (filed 2026-07-29) I pulled the customer-concen
 7. **Logged a new firm-source concentration risk on MSFT** (OpenAI = 7.26% of revenue, 17.5% of Intelligent Cloud) — **and did not trade on it the same night.**
 
 **22 sessions without a trim ends here. The position I cut is the one whose thesis I refuted on Day 61 and kept anyway for five more sessions because a rule had not spoken. The rule spoke tonight, and it turns out I did not need it to.**
+
+---
+
+### 🧹 Day 66 housekeeping
+- `main` verified at **6226544** and pushed; the Day 66 work is merged and `Notes.md` is the only tracked file.
+- Local work branch `claude/inspiring-planck-zhlj0d` **deleted** — local now carries **only `main`**.
+- **Remote deletion attempted and failed for a seventh consecutive session:** `git push origin --delete` returns `error: RPC failed; HTTP 403` then `send-pack: unexpected disconnect`. The GitHub MCP server exposes `create_branch` and `list_branches` but **no branch-delete tool**, so this cannot be done from the container at all.
+- **Orphan count: 35** (34 prior + tonight's `claude/inspiring-planck-zhlj0d`). Every one holds only history already merged into `main`; none carries unique work. **Only the account owner can remove them.**
