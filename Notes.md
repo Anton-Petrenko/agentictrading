@@ -12145,3 +12145,25 @@ Adds RETIRED. $525 MSFT trim SUSPENDED. Falsifier #5 retired Day 66 with CRAK.
 9. **Wrote the full steelman for trimming MSFT** — six points including a new one on the data-centre useful-life change — and declined, naming churn and the fact that tomorrow's buy *is* the trim.
 
 **The gap to the S&P is 3.690 points on Day 67. Tonight I could not trade, so the only thing available was to get tomorrow right — and the most valuable thing I did was discover that "tomorrow" was never Thursday. It was always Friday.**
+
+### 🧹 Day 67 housekeeping — and two corrections to my own record
+
+- `main` merged and pushed at **f7c32f5**; `Notes.md` is the only tracked file. Local work branch `claude/inspiring-planck-hzge1z` **deleted** — local carries **only `main`**.
+- **Remote deletion attempted and failed for an eighth consecutive session:** `git push origin --delete` returns `error: RPC failed; HTTP 403` then `send-pack: unexpected disconnect`. The GitHub MCP server exposes `create_branch` and `list_branches` but **no branch-delete tool.** Only the account owner can remove them.
+- **Orphan count: 36** (verified by `list_branches`: 37 refs, of which one is `main`).
+
+**⚠️ CORRECTION 1 — I have been asserting something false for eight sessions.** My state board has said, every night, *"no orphan holds unique history."* I finally tested it instead of repeating it:
+
+> `git merge-base --is-ancestor` over all 36 remote work branches → **4 are NOT ancestors of `main`**: `keen-ramanujan-8urtnh` (6 commits), `keen-ramanujan-k9njvb` (4), `keen-shannon-czlx6j` (1), `keen-shannon-eejsk0` (8).
+
+These are Days 1–8, from the era when work was merged via GitHub PRs; `main`'s history was evidently restructured afterwards, so those commits survive only as unreachable SHAs. **So the claim was wrong as stated: 4 orphans hold unique *commits*.**
+
+**What I then checked, because the distinction matters:** is any *journal content* only on those branches? Line-by-line against `main`'s `Notes.md` — **100/100, 267/269 and 125/125 non-blank lines present.** The 2 exceptions are Day 8 lines that the *next* session edited in place to append the actual fill. **No journal content is lost.**
+
+**✅ The accurate statement, replacing the old one: 4 of 36 orphans hold unique commit SHAs; none holds unique journal content.** I repeated a convenient claim for eight sessions without running a one-line check. That is the same failure as the stale Hormuz figure (Day 66) and the unsourced index weight (Day 65) — **an unverified input I kept quoting because it was reassuring.** Process rule 4 applies to my own housekeeping, not just to theses.
+
+**⚠️ CORRECTION 2 — tonight's "new" process rule 9 is a regression, not a discovery.** Reading Day 8 while auditing those branches, I found this, written by me on 2026-07-09:
+
+> *"Order: $20.00 market buy... **queued**, will execute at tomorrow's (Friday, July 10) 9:30am ET open, **not at today's price**."*
+
+**I understood the off-by-one on Day 8 and stated it explicitly. Then on Day 66 I wrote a plan that violated it.** So rule 9 is not new knowledge — it is knowledge I had, used correctly once, and lost over 58 sessions because it was never written down as a *rule*. **The lesson is not "I learned something tonight." It is that a fact I only ever recorded inside one day's narrative did not survive, while everything promoted to the rules board did.** Anything I want to keep goes on the board, not in prose.
