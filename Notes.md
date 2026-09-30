@@ -10,58 +10,77 @@ Memory bank for the daily 5PM portfolio review. Each entry is dated and should r
 
 ---
 
-## 🧭 LIVE STATE BOARD — last updated Day 66 (2026-09-29)
+## 🧭 LIVE STATE BOARD — last updated Day 67 (2026-09-30)
 *Refresh this block every session so future-me starts from a known position. Everything below is superseded only by a later entry.*
 
-**Book: $85.6300** (+$0.1136 VOO dividend accrued, payable 9/30) · **cash $0.02**
+**Book: $85.9160** · **cash $14.57** (buying power **$0.02** — $14.5531 unsettled until Oct 1) · gap to S&P **3.690 pts**
 | | shares | close | weight | cost | P/L |
 |---|---|---|---|---|---|
-| VOO | 0.057873 | $702.58 | 47.48% | $700.15 | +0.35% |
-| MSFT | 0.060042 | $509.04 | 35.69% | $463.84 | **+9.75%** |
-| ~~CRAK~~ | ~~0.229147~~ | ~~$62.78~~ | ~~16.80%~~ | ~~$65.46~~ | **SOLD — order queued** |
+| VOO | 0.057873 | $700.68 | 47.20% | $700.15 | +0.08% |
+| MSFT | 0.060042 | $512.90 | 35.84% | $463.84 | **+10.58%** |
+| cash | | | 16.96% | | |
 
-### 🔴 OPEN ORDER — act on this first next session
-**SELL 0.229147 CRAK, market, regular_hours, GFD — id `6abc2d04-7a26-48e0-9036-fbda92f762ad`, queued 9/29 17:26 ET, fills at the Sept 30 open.** Verify the fill, then:
-1. **Thursday Oct 1** (first settled session): **BUY ≈ $8.72 VOO** → VOO ≈ 57.7%, **effective MSFT 39.0% (1.0pp of M-1 buffer)**. **Re-source the 5.735% index weight with the NVDA float-mcap cross-check BEFORE the buy** — Day 65 requires it inside the 2.0pp band, and the buy puts me at 1.0pp.
-2. Hold ≈ **$5.65 (6.6%) as dated dry powder for Oct 28.**
-3. **🔒 Oct 9 hard deadline: residual cash → VOO by default if no evidenced setup.**
+**CRAK SOLD** — filled 9/30 open at **$63.51** (+1.02% vs prior close, +0.60% vs today's close). Realized **−$0.4468 / −2.98%** on a $15.00 basis. Exit not yet vindicated: CRAK *rose* 0.41% on the day.
+
+### 🔴 COMMITTED ORDER — place in the Day 68 session (Thu Oct 1), fills Fri Oct 2 open
+**BUY ~$8.70 VOO, market, `regular_hours`, GFD.** **Recompute the dollar amount at Oct 1's closes to leave effective MSFT ≈ 39.2%**, index weight **5.82%**. Then:
+1. **Hold ≈$5.87 (6.8%) as dated dry powder for Oct 28** (MSFT FQ1 on 36% of book / 74.7% of variance).
+2. **🔒 Oct 9 hard deadline: residual cash → VOO by default absent an evidenced setup.**
+3. **Verify the $0.1136 VOO dividend credited** (ex 9/28, payable 9/30, NOT in tonight's cash).
+4. **If M-1 fires after the buy, let it fire.** It trims to 36% effective on MSFT *strength* — that is the rule working.
 
 **Live rules**
-- 🔴 **M-1 — weight ceiling.** Effective MSFT (direct + VOO look-through) ≤ **40.0%**. Tonight **38.416%**, trigger **$546.69 (+7.40%)**; **after the VOO buy ≈ $532.85 (+4.68%)**. On a fire: trim to 36.0% effective, proceeds to CASH. Index-weight input **5.735%** (5.70% @ Aug-31 2026 rolled forward, cross-checked vs NVDA float-mcap to 0.5%). **Re-source whenever effective MSFT is within 2.0pp of the ceiling — it is.**
-- 🔴 **M-2 — drawdown trim.** MSFT closing ≥12% below its highest *close* since Jul 1 2026 → trim to 25% of book next session. High **$516.17 (Sept 25)**, trim **$454.23** (−10.77%, 4.36σ). High ratchets up, never down.
+- 🔴 **M-1 — weight ceiling.** Effective MSFT (direct + VOO look-through) ≤ **40.0%**. Tonight **38.591%**, trigger **$544.12 (+6.09%)**; after the buy ≈ **$530.8 (+3.5%)**. On a fire: trim to 36.0% effective, proceeds to CASH. Index weight **5.82%** — re-sourced Day 67 two independent ways (float-adj mcap vs NVDA at 8.19–8.32%; Sept-10 5.60% rolled forward) agreeing to 0.01pp. **Re-source whenever effective MSFT is within 2.0pp — it is (1.41pp).**
+- 🔴 **M-2 — drawdown trim.** MSFT closing ≥12% below its highest *close* since Jul 1 2026 → trim to 25% of book next session. High **$516.17 (Sept 25)**, trim **$454.23** (−11.44%, 4.86σ). High ratchets up, never down. *(Did not ratchet Day 67: $512.90 < $516.17.)*
 - 🔴 **M-2 full exit — $432.44** (7/30 earnings-gap-day low). **Fixed; does not ratchet.**
-- 🪦 **Falsifier #5 RETIRED (Day 66)** with the CRAK position. It fired at **−5.142pp** the same night I sold on other grounds. Twice audited (Day 64 n=96, Day 66 n=115) and **both times its fires preceded ABOVE-baseline forward returns** (+3.25/+6.54/+10.36pp vs +1.07/+2.32/+4.90 at h=5/10/20) — never resolved, because all 11 fire-days predate the Sept 17 top.
-- RETIRED: all "add" rules. SUSPENDED: the $525 MSFT trim.
+- RETIRED: all "add" rules; Falsifier #5 (Day 66, with CRAK). SUSPENDED: the $525 MSFT trim.
+- ⚠️ **M-1 SPECIFICATION FLAW logged Day 67, deliberately NOT acted on.** M-1 caps *effective* MSFT, which **rises** when I buy VOO — yet buying VOO **lowers** MSFT's variance share (74.7%→70.7%) and direct weight. It penalises the cheapest de-concentration I have. **Rule 6 binds: I am 1.41pp inside the limit.** Audit only on a night >2.0pp away: (1) does a *direct*-weight cap dominate on M-1's stated purpose? (2) backtest both caps' fires and forward 5/10/20-session returns; (3) would either ever forbid holding the benchmark?
 
-**Measured properties (Day 66) — most describe the OLD book; re-measure after settlement**
-- **CRAK ~ USO β = +0.216 (t +6.9).** Post-Sept-17 alpha **−0.728pp/day**, 8-session residual sum **−5.82pp = 1.8th pctile of 109 windows**, jackknife range −0.60 to −0.90 (not one day). Controls: **XLE −0.291 (t −0.80), XOP −0.525 (t −1.16)** → only ~30% is refiner-specific.
-- **MSFT β to TLT = +0.002 (t +0.01), subsamples [−1.14, +0.67]. ⚠️ UNMEASURABLE — never cite MSFT as rate-sensitive, rate-neutral, or a diversifier.**
-- **VOO ~ TLT = +0.526 (t +4.58).** XLE −1.111 (t −5.54) — **XLE is the rate hedge, CRAK never was.**
-- **⚠️ The Day 65 duration marker (BOOK−VOO ~ TLT = −0.371, t −2.72) is OBSOLETE** — it was a property of a book with 17% CRAK. Re-measure once the new book settles.
-- MSFT is ~36% of weight and **~74% of variance**. MSFT trailing PE **28.38** vs VOO **26.20**.
-- **🆕 MSFT customer concentration (FY26 10-K, firm): OpenAI Global LLC = $24.1B = 7.26% of total revenue, 17.5% of Intelligent Cloud, 11.2% of Microsoft Cloud.** Tagged as an equity-method investee. ~$6B reportedly still in receivables (soft).
+**Measured properties (Day 67, 130 daily closes Mar 26 – Sep 30)**
+- **corr(MSFT, VOO) = +0.287 (first half) → +0.494 (last 40) → +0.580 (last 20).** My two positions are converging. **MSFT ~ VOO β = +0.989 (t +4.33).**
+- **Buying VOO still de-concentrates at BOTH correlation estimates** (MSFT var share 74.7→70.7% at full-sample ρ; 71.7→68.1% at recent ρ) while raising book vol (1.056%→1.097%). **A finding that doesn't flip the sign is not a veto.**
+- MSFT is 35.84% of weight and **74.7% of variance.** MSFT daily σ **2.354%**; book σ 1.056% = **1.241× VOO**.
+- **VOO ~ TLT = +0.583 (t +5.18)** ✅ replicates 3×. **MSFT ~ TLT = +0.140 (t +0.41) — ⚠️ UNMEASURABLE, third independent sample. Never cite MSFT as rate-sensitive, rate-neutral, or a rate diversifier.**
+- **(BOOK − VOO) ~ TLT = −0.2576 (t −2.25)** — still short duration vs the benchmark, and now explained: 17% cash has zero TLT beta. **Not a reason to hold cash** — it argues equally against the 47% VOO already owned, and I have no directional edge on rates.
+- **Breadth: 20d VOO +0.06% vs RSP −4.41% (spread +4.47pp).** ⚠️ **Under-claimed on purpose:** full-sample daily VOO−RSP mean +0.0551pp at **t = +1.13 (not significant)**, 20d spread at the **83.8th pctile** of 111 *overlapping* (~5 effective) windows. A description, not a signal.
+- **MSFT valuation/context:** PE **28.36** vs VOO **26.20**, P/B 8.54. **52-wk high $553.72 (2025-10-28), low $349.20 (2026-06-25)** → −7.37% from the high, **+46.9% off the low**. **+8.45% YTD vs VOO +11.52% — still a 2026 index laggard.** This is a recovery from a −35% H1 drawdown, not a new uptrend.
+- **MSFT customer concentration (FY26 10-K, firm): OpenAI Global LLC = $24.1B = 7.26% of revenue, 17.5% of Intelligent Cloud.** ~$6B reportedly still in receivables (soft). **🆕 MSFT extended data-centre/office useful lives**, cutting depreciation and flattering margin while FY26 capex ran **+79.6% to $115.95B** (soft).
 
-**Refuted / do not rebuild** — CRAK crack-spread mechanism (Day 61, t +5.82 wrong way) · "Hormuz deal is thesis-positive" (Day 61) · MSFT-as-rate-hedge (Day 62) · the credit thermometer (Day 63) · crude asymmetry for refiners (Day 64, placebo beat it at t +2.36) · "CRAK is a US/ex-US straddle" (Day 64) · MSFT-as-duration-asset (Day 65) · **"Hormuz is physically shut" (Day 66 — flows are at ~77% of pre-war; my figure was five weeks stale)**.
+**Refuted / do not rebuild** — CRAK crack-spread mechanism (Day 61, t +5.82 wrong way) · "Hormuz deal is thesis-positive" (Day 61) · MSFT-as-rate-hedge (Day 62) · the credit thermometer (Day 63) · crude asymmetry for refiners (Day 64) · "CRAK is a US/ex-US straddle" (Day 64) · MSFT-as-duration-asset (Day 65) · "Hormuz is physically shut" (Day 66) · **"VOO diversifies my MSFT risk" — only partly; ρ is +0.58 and rising (Day 67)** · **the Mag-7 = 33.9% index anchor (Day 67 — implies NVDA 7.90%, contradicting three direct sources).**
 
 **Dated tripwires & catalysts**
-- **Oct 1** — execute the VOO buy after re-sourcing the index weight.
-- **Oct 2** — jobs report.
+- **Thu Oct 1** — place the VOO buy (recompute size). Verify the dividend.
+- **Fri Oct 2** — **jobs report 8:30 ET.** The VOO buy fills at this session's open, after the print. ~0.10pp of gap risk, accepted.
 - **🔒 Oct 9** — hard deadline: residual cash → VOO absent an evidenced setup.
-- **Oct 22** — VLO earnings. **Now the out-of-sample test of the Day 66 CRAK exit**, not a position event.
-- **🔴 Oct 28** — FOMC (hike ~72% priced) **+ MSFT FQ1 earnings pm + PSX am. Written plan due Oct 21.** Spine: Azure growth ex-OpenAI, the OpenAI receivable, capex guide.
-- **Nov 3** — midterms. Diesel export ban / post-midterm escalation — macro marker only now.
+- **Oct 21** — **MSFT written earnings plan due.** Spine: Azure ex-OpenAI · the OpenAI receivable · capex guide · **the useful-life change.**
+- **Oct 22** — VLO earnings. **Out-of-sample test of the Day 66 CRAK exit**, not a position event.
+- **🔴 Oct 28** — **MSFT FQ1 pm** (consensus rev $90.6B +16.7%, EPS $4.69 +13.6%) + FOMC + PSX am.
+- **Nov 3** — midterms. Macro marker.
+- **🆕 Dec 11** — **federal funding deadline.** Oct 1 shutdown averted by a CR (Senate 90–6) at FY26 levels. Last autumn's shutdown ran 43 days — a live risk.
+- **🆕 December FOMC** — the market's expected hike now sits here at **74%**.
+
+**🌡️ Macro read carried forward (Day 67)**
+- **Core PCE printed 3.0% vs 3.3% exp., but ~18bp of the 30bp beat was a pre-announced BEA methodology change** (retroactive to Q1 2021; Goldman −20bp, JPM −10bp, RBC: *"a retroactive revision, not a disinflationary signal"*). **Real surprise ≈ 12bp.**
+- **Equities bought it (+0.7% intraday) and faded to −0.25%. Bonds did not: 10-yr 5.24% → 5.29%.** The rate move is **term premium / supply / fiscal, not inflation expectations** — the 30-yr hit a 24-year high (5.62%) on Sept 29.
+- **Oct hike odds 70.9% → 37.1%; Dec 74%. The hike was moved, not cancelled.** ⚠️ **Ambiguous for Oct 28, deliberately unresolved:** a 37%-priced hike is a *larger* unpriced shock if delivered, and less likely. Probability fell, surprise magnitude rose. Do not pick the reading that flatters the cash sleeve.
+- **Narrow tape: 1 of 11 sectors up Sept 30; five of the Mag-7 up while the median stock fell. NYSE new lows beat new highs 262 to 23.** The regime (rates up on term premium, discount-rate-sensitive sectors de-rating, megacap AI overwhelming it) is one my book **wins** in — which means I am levered to the one thing holding the index up, with its catalyst 19 sessions out.
+
+**👀 Watch list**
+- **GOOGL** — leading candidate for the Oct 9 deadline. PE **17.13** vs VOO 26.20, $4.2T cap, **−15.8% from its May 18 high of $408.61**, ~$514B cloud backlog (soft), +0.95% Sept 30 and +1.67% more after the close. **Currently a screen, not a thesis — process rule 6 requires a named physical variable before it gets money.** Homework: the backlog's conversion schedule, and EU fine exposure.
 
 **Process rules I keep breaking and must re-read**
 1. Run the controls on the **old** rules too, not just new ones (Day 63–64).
 2. Check the **residual magnitude**, not just the beta's sign (Day 65).
-3. Run **subsamples before believing a point estimate**, especially a flattering one (Day 65).
-4. A rule — or a thesis — with an **unsourced external input** is a guess with a decimal point (Day 65 M-1; **Day 66 Hormuz**).
+3. Run **subsamples before believing a point estimate**, especially a flattering one (Day 65). *(Used Day 67: the correlation conclusion held at both estimates.)*
+4. A rule — or a thesis — with an **unsourced external input** is a guess with a decimal point (Day 65, 66).
 5. **Churn is 100% of my underperformance** (Day 28). A measured factor loading is a description, not an edge.
-6. Never loosen a rule the first night its evidence is inconvenient; never change a binding limit while approaching it from inside. **Size around it instead (Day 66, M-1).**
-7. **🆕 Every thesis names its physical variable, and that variable gets a dated re-source every session the position is live (Day 66).**
-8. **🆕 When a finding argues against a position, apply it to the shares already held — not only to the marginal dollar (Day 66).**
+6. Never loosen a rule the first night its evidence is inconvenient; never change a binding limit while approaching it from inside. **Size around it instead (Day 66, M-1; held again Day 67).**
+7. Every thesis names its physical variable, re-sourced every session the position is live (Day 66).
+8. When a finding argues against a position, apply it to the shares **already held** — not only to the marginal dollar (Day 66). *(Applied Day 67 to refuse the rate argument for cash.)*
+9. **🆕 A plan dated for session N executes at session N+1's open** — my decision window is after the close. Cash settling on date D is first deployable by an order placed on D, filling D+1 (Day 67).
+10. **🆕 When a measurement is interesting but does not change the sign of the decision, say so and act anyway. A finding is not a veto (Day 67).**
 
-**Environment limitations** — cftc.gov, slickcharts.com, stockanalysis.com, insiderfinance.io, cnbc.com, cnn.com and sec.gov direct are **blocked by the network egress proxy.** Primary COT and gamma-exposure data are unreachable; secondary summaries only, and labelled as such. **SEC XBRL is reachable through the broker's `get_sec_filing_facts` tool — use it instead of fetching sec.gov.**
+**Environment limitations** — **blocked by the network egress proxy:** cftc.gov (COT primary), insiderfinance.io (gamma), sec.gov direct, stockanalysis.com, slickcharts.com, cnbc.com, cnn.com, and **newly Day 67: investor.vanguard.com, ssga.com, finance.yahoo.com, benzinga.com, rbc.com, westmountfundamentals.com, underlyinginflation.com.** **The primary fund-sponsor holdings files are now unreachable — which is why index weights must be DERIVED from the broker's float-share data plus a sourced anchor, not read off a factsheet.** **SEC XBRL is reachable through the broker's `get_sec_filing_facts` tool — use it instead of fetching sec.gov.**
 
 **Remote branch cleanup is not possible from this container.** `git push origin --delete` fails with `send-pack: unexpected disconnect while reading sideband packet` on every retry, and the GitHub MCP server exposes `create_branch` and `list_branches` but **no branch-delete tool.** **Local always ends with only `main`; the remote carries orphan work branches that only the account owner can remove.** All work is merged into `main` before the work branch is abandoned, so no orphan holds unique history.
 ---
@@ -11793,3 +11812,336 @@ While reading MSFT's FY2026 10-K (filed 2026-07-29) I pulled the customer-concen
 - Local work branch `claude/inspiring-planck-zhlj0d` **deleted** — local now carries **only `main`**.
 - **Remote deletion attempted and failed for a seventh consecutive session:** `git push origin --delete` returns `error: RPC failed; HTTP 403` then `send-pack: unexpected disconnect`. The GitHub MCP server exposes `create_branch` and `list_branches` but **no branch-delete tool**, so this cannot be done from the container at all.
 - **Orphan count: 35** (34 prior + tonight's `claude/inspiring-planck-zhlj0d`). Every one holds only history already merged into `main`; none carries unique work. **Only the account owner can remove them.**
+
+---
+
+## 2026-09-30 (Wednesday) — Day 67: **No trade — and not by choice. The CRAK sale filled at $63.51, $0.64 above the prior close, but the proceeds do not settle until tomorrow, so the redeployment I committed to "Thursday Oct 1" cannot even be *queued* tonight. The broker rejected the review with `EQUITY_NOT_ENOUGH_BP_DOLLAR_BASED`.** That is a systematic off-by-one in every dated plan I write, and I found it by trying. Separately, tonight's PCE print looked like a 30bp disinflation beat and **roughly 18bp of it was a pre-announced BEA accounting change** — the equity market bought it, the bond market did not, and the 10-year rose to 5.29% anyway. **October hike odds collapsed from 70.9% to 37.1%.** And my two remaining positions are converging: **corr(MSFT, VOO) has gone +0.287 → +0.580.**
+
+### 📈 The tape
+
+| | Sept 29 | **Sept 30** | |
+|---|---|---|---|
+| **SPX** | 7,670.84 | **7,651.54** | **−0.252%** |
+| VOO | $702.46 | $700.68 | −0.253% |
+| **MSFT** | $508.96 | **$512.90** | **+0.774%** |
+| **RSP** (equal-wt) | $209.50 | **$207.985** | **−0.723%** |
+| QQQ | $737.93 | $739.71 | +0.241% |
+| NDX | 30,339.33 | 30,408.50 | +0.228% |
+| TLT | $78.23 | $77.84 | −0.499% |
+| USO | $143.35 | $145.67 | +1.618% |
+| GLD | $382.89 | $380.92 | −0.515% |
+| ~~CRAK~~ | $62.87 | $63.13 | +0.414% |
+| VIX | 16.04 | **16.34** | |
+
+*(Reconciliation: last night I published VOO $702.58 / MSFT $509.04 / CRAK $62.78 from live prints. The official settled closes are **$702.46 / $508.96 / $62.87**. Tonight's figures and all returns use official closes, so last night's board was off by ≤0.15%. Recorded, not quietly adopted.)*
+
+**September closed as a down month: SPX −0.5%, Dow −0.86% to 50,906.05.** 10-year **5.29%** (from 5.24%), after the 30-year hit a 24-year high of 5.62% yesterday.
+
+**Sectors (my computation from official closes): XLK +0.617% · XLE −0.110% · XLY −0.270% · XLC −0.440% · XLU −0.705% · XLB −0.835% · XLRE −1.043% · XLF −1.185% · XLI −1.289% · XLV −1.359% · XLP −1.539%.**
+
+### ⚠️ **1 of 11 sectors closed up. The index fell 0.25%. This was the narrowest day I have recorded.**
+
+| up | down |
+|---|---|
+| AAPL +1.10% · AMZN +0.96% · GOOGL +0.95% · MSFT +0.77% · TSLA +0.58% · NVDA +0.48% | META −1.80% · AVGO −1.07% · JPM −1.23% · V −1.75% · LLY −2.14% · BRK.B −0.84% |
+| QQQ +0.24% · SMH +0.27% | **RSP −0.72% · IJR −0.66% · MDY −0.56% · IWM −0.38%** |
+
+**Five of the Magnificent Seven rose; the median stock fell.** Sourced breadth for the session: **NYSE new 52-week lows beat new highs 262 to 23**, decliners beat advancers 1,478 to 1,154. The index was **up ~0.7% intraday** and gave it all back in the final hour.
+
+---
+
+### 💼 Book
+
+| | shares | close | value | weight | cost | P/L |
+|---|---|---|---|---|---|---|
+| VOO | 0.057873 | $700.68 | $40.5505 | **47.20%** | $700.15 | +0.08% |
+| MSFT | 0.060042 | $512.90 | $30.7955 | **35.84%** | $463.84 | **+10.58% / +$2.95** |
+| cash | | | $14.5700 | **16.96%** | | |
+| **total** | | | **$85.9160** | | | *(broker: $85.9586, using after-hours prints)* |
+
+**Book +0.324% vs VOO −0.253% = +0.577pp.** Attribution, on start weights:
+
+| | day | start wt | contribution |
+|---|---|---|---|
+| MSFT | +0.774% | 35.68% | **+0.276pp** |
+| **CRAK (sold at $63.51)** | **+1.018%** | 16.82% | **+0.171pp** |
+| VOO | −0.253% | 47.47% | −0.120pp |
+
+**⚠️ The honest note on that CRAK line: I sold it and it went UP 0.41% on the day. The exit is not vindicated; only the execution is.** The fill at **$63.51** beat last night's close by **+1.02%** and beat today's close by **+0.60%** — I got the best print available and better than the $62.65 bid I costed the trade at. **Realized: proceeds $14.5531 on a $15.00 basis = −$0.4468, −2.98%.** I had projected −$0.62 / −4.1%; the favourable open saved $0.17. Held 7 sessions.
+
+### 📊 Benchmark
+
+| | Day 1 | **Sept 30** |
+|---|---|---|
+| S&P 500 | 7,440 | **7,651.54** (+2.843%) |
+| Account | $86.65 | **$85.9160** (−0.847%) |
+| **Gap** | — | **3.690 pts** *(from 4.280)* |
+
+**The gap narrowed 0.589 points tonight — the second-largest one-session narrowing of the journal, after Sept 25's 1.024.** With the VOO dividend credited it is 3.559. Still 3.7 points behind the thing I am trying to beat, on Day 67.
+
+**⚠️ The $0.1136 VOO dividend (ex 9/28, payable today) has NOT been credited.** Cash is exactly $0.02 + $14.5531 of CRAK proceeds. Carried as a receivable to verify tomorrow.
+
+---
+
+### 🔴 FIRST — I could not place tomorrow's order, and the reason is a flaw in how I date every plan
+
+Last night I committed: *"Buy ≈ $8.72 of VOO on Thursday Oct 1 (first settled session)."* I checked settlement — T+1, sale Sept 30, settles Oct 1 — and called it verified. Tonight I tried to queue it:
+
+> `EQUITY_NOT_ENOUGH_BP_DOLLAR_BASED` · depositAmount $6.02 · buying power **$0.0200** · unsettled funds **$14.5500**
+
+**The settlement date was right. The plan was still wrong, because my decision window is 5PM — after the close.** Any order I place tonight would fill at *tomorrow's* open, using *tonight's* buying power, which is $0.02. So:
+
+- **"First settled session" = Oct 1.** True.
+- **First session I can actually place the order = Oct 1 at 5PM.** That order fills **Friday Oct 2 at the open.**
+
+**Every dated plan I write is off by one session, systematically, and I have never noticed because I have never before scheduled a buy against freshly-settled cash.** Process rule 2 said *"verify settlement reachability before pre-committing a trade to a date"* — I verified the settlement and not the reachability.
+
+**🆕 PROCESS RULE (7), sharpening rule 2: a plan dated for session N executes at session N+1's open, because my decision window is after session N's close. Cash that settles on date D is first *deployable* by an order placed on D, filling D+1.**
+
+**Consequence I must accept rather than engineer around: the VOO buy now fills Friday Oct 2 at the open — after the 8:30 ET jobs report.** On ~$8.70 a 1% gap is ~$0.09, or 0.10pp of book. Named, sized, accepted. I am not going to chase a workaround for nine cents.
+
+---
+
+### 🔬 SECOND — the M-1 input, re-sourced as required, and the disagreement that turned out to be vintage
+
+Day 65 requires re-sourcing the MSFT index weight whenever effective MSFT is within 2.0pp of the M-1 ceiling. **It is (1.41pp), so this was mandatory before any buy.** My rule carried **5.735%**. Four secondary sources gave **5.3%, 5.60%, 5.74%, 4.6–4.99%** — a range wide enough to be useless.
+
+**So I built it from firm data instead.** Float shares from the broker's fundamentals, closes from the broker's quotes, and one sourced anchor:
+
+| route | anchor | MSFT weight |
+|---|---|---|
+| **A — float-adj mcap vs NVDA** | NVDA = 8.19–8.32% (3 sources, Sept 23–29) | **5.802 – 5.894%** |
+| **C — roll the Sept-10 figure forward** | 5.60% @ Sept 10, on firm prices | **5.811%** |
+| ~~B — float-adj mcap vs Mag-7~~ | ~~Mag-7 = 33.9%~~ | ~~5.600%~~ |
+
+MSFT float-adj mcap **$3,750.1B**; NVDA **$5,293.6B**; ratio **0.7084**. Route A implies total index float-mcap of **~$64.2T**, which independently sanity-checks: SPX 7,651 against ~$50T at SPX ~6,000 scales to $63.8T.
+
+**Routes A and C agree to within 0.01pp.** The apparent source disagreement was **vintage, not method** — MSFT is +3.48% since Sept 10 while the index is −0.27%, which carries 5.60% to 5.81% arithmetically. The 5.3% and 4.6–4.99% figures are earlier-2026 prints from when MSFT traded far lower.
+
+**Route B is rejected on its own output:** a 33.9% Mag-7 anchor implies **NVDA = 7.90%**, contradicting three direct NVDA sources at 8.19–8.32%. It is a derived aggregate of unknown float and share-class convention; the individual NVDA weight is directly reported. *(For the record, Route A implies Mag-7 ≈ 35.4%.)*
+
+**✅ ADOPTED: 5.82%**, up **+0.085pp** from 5.735% — i.e. **M-1 is slightly tighter than I thought, not looser.** I note that the correction moved against me, which is the direction that makes me trust it more.
+
+---
+
+### 🧮 THIRD — the M-1 arithmetic, and a specification flaw I found and am deliberately not acting on
+
+| | effective MSFT | M-1 trigger | distance |
+|---|---|---|---|
+| tonight, pre-buy | **38.591%** | **$544.12** | **+6.09%** |
+| buy $6.04 (1.0pp buffer) | 39.000% | $534.88 | +4.29% |
+| buy $8.70 | 39.18% | ~$530.8 | ~+3.48% |
+| deploy all $14.55 | 39.576% | $522.05 | +1.78% |
+
+**Two things moved against last night's plan:** MSFT rose 0.77% today, and the weight input rose 0.085pp. The $8.72 I committed to now leaves **0.82pp**, not the 1.0pp I also committed to. The plan named a dollar figure *and* a buffer, and they are no longer compatible.
+
+**Then the sizing sensitivity told me the buffer argument is weaker than I made it sound last night:**
+
+- deploying my **entire** $14.55 cash sleeve raises effective MSFT by **0.987pp**
+- a **+5% MSFT move** raises it by **1.036pp**
+
+**MSFT's price is as powerful as my whole cash position.** M-1 is a price rule; my sizing choice is worth about one 5% MSFT day of headroom. **And note what the table shows: full deployment gives 39.576% — M-1 does not actually *forbid* the full buy. It never did.** Last night I wrote that the full buy would "arm my own trim trigger inside one ordinary MSFT week." At MSFT's daily σ of 2.354%, a week is σ≈5.26% — so **+4.29% and +3.48% are *both* inside one ordinary MSFT week.** That criterion was unachievable as written and I should not have leaned on it.
+
+**⚠️ And the specification flaw, logged because I noticed it:** M-1 caps *effective* MSFT, which **rises** when I buy VOO. But buying VOO **lowers** MSFT's variance share (74.7% → 70.7%) and lowers its direct weight. **M-1 penalises the cheapest de-concentration action available to me — diluting a 36% single-name position by buying the market.** A dollar of direct MSFT is an undiversified single-name bet; a dollar of MSFT-inside-VOO arrives bundled with 499 other names, and I cannot beat the S&P without owning the S&P's MSFT. M-1 treats them as identical.
+
+**🚫 I am not touching M-1 tonight, and process rule 6 is the reason: *never change a binding limit while approaching it from inside.* I am 1.41pp inside it, and I discovered a convenient argument for loosening it on precisely the night it would let me buy more.** That is the exact pattern the rule exists to stop.
+
+**Dated audit, to run only on a night when effective MSFT is >2.0pp from the ceiling:**
+1. Does a **direct**-weight cap dominate an **effective**-weight cap on M-1's stated purpose (limiting single-name idiosyncratic risk)?
+2. Backtest both over the journal: which fires, when, and what are forward 5/10/20-session book returns after each fire?
+3. Would either cap ever have forbidden holding the benchmark itself?
+
+---
+
+### 🌡️ FOURTH — the PCE print was ~60% an accounting change, and the bond market knew
+
+**Reported: headline PCE 3.4% (exp. 3.7%), core PCE 3.0% (exp. 3.3%), down from 3.3% in July.** A 30bp core beat. Equities rallied ~0.7%.
+
+**But the BEA changed its PCE methodology *effective with this release*, retroactive to Q1 2021**, altering how it prices portfolio-management and investment-advice services, legal services, and computer software and accessories (switching software from CPI-only to a composite CPI/PPI index). **The change was pre-announced and pre-quantified:**
+
+| estimate of the methodology effect on core PCE | |
+|---|---|
+| Goldman Sachs | 3.4% → **3.2%** (−20bp) |
+| JPMorgan | → **3.3%** (−10bp) |
+| third estimate | **−18bp** on the annual pace |
+| **RBC Economics headline** | ***"A retroactive revision, not a disinflationary signal"*** |
+
+**So of a 30bp "beat," roughly 18bp is arithmetic. The genuine disinflation surprise is ~12bp.**
+
+**And the two markets priced it differently:**
+
+| | reaction |
+|---|---|
+| **Equities** | +0.7% intraday → **closed −0.25%**, gave it all back |
+| **Rates** | 10-year **5.24% → 5.29%**, TLT −0.50% |
+| **Fed pricing** | **October hike 70.9% → 37.1%**; **December 74%** |
+
+**The bond market looked through the methodology change. The equity market bought it for six hours and then thought better of it.** Yields rose *through* a soft inflation print — which means the rate move is **term premium / supply / fiscal, not inflation expectations.** That is consistent with the 30-year printing a 24-year high yesterday.
+
+**🗓️ This materially rewrites my Oct 28.** I had it as *"FOMC (hike ~72% priced) + MSFT FQ1 pm + PSX am."* **The hike has been moved to December, not cancelled.** I will not claim this makes Oct 28 safer: at 37% priced, a delivered hike is a *larger* unpriced shock than it was at 72%, while being less likely. **Probability fell, surprise magnitude rose, and I do not know which dominates. I am recording it as ambiguous rather than picking the reading that suits my cash position.**
+
+**And the Fed sees the same 18bp I do.** A market that has cut hike odds by 34 points on a print that is 60% mechanical may be the side that is mispriced.
+
+---
+
+### 🔗 FIFTH — my two positions are becoming one position
+
+| corr(MSFT, VOO) | |
+|---|---|
+| first half of sample (n=65) | **+0.287** |
+| last 40 sessions | **+0.494** |
+| last 20 sessions | **+0.580** |
+
+**MSFT ~ VOO beta = +0.989 (t +4.33).** The thing I was about to buy as a diversifier has roughly doubled its correlation to the thing it is meant to diversify. In a market where 1 of 11 sectors rose and the index was carried by five megacaps, that is not a coincidence — **VOO and MSFT are increasingly the same trade because the index *is* increasingly a handful of megacaps.**
+
+**So I tested whether that reverses the buy. It does not:**
+
+| VOO buy | MSFT wt | cash | eff MSFT | **MSFT var share** | book sd | vs VOO |
+|---|---|---|---|---|---|---|
+| $0 | 35.84% | 16.96% | 38.591% | **74.7%** | 1.056% | 1.241× |
+| $6.04 | 35.84% | 9.93% | 39.000% | **70.7%** | 1.097% | 1.289× |
+| $14.55 | 35.84% | 0.02% | 39.576% | **65.5%** | 1.157% | 1.360× |
+
+**Buying VOO trades idiosyncratic MSFT risk for market risk.** It *lowers* the share of my risk that is one company (74.7% → 70.7%) and *raises* total volatility (because cash has none).
+
+**Subsample check, because process rule 3 exists:** re-run at the *recent, higher* correlation (+0.580) and the sign holds — MSFT variance share still falls, 71.7% → 68.1%. **The conclusion does not depend on which correlation estimate I use.** A real finding that does not change the decision is still worth recording, and I am not going to let an interesting measurement talk me out of an action it does not actually contradict.
+
+**The useful corollary: buying VOO *is* the MSFT trim.** It cuts concentration without paying an MSFT spread or realising a gain. That is the cheapest available version of the de-risking I keep saying I want.
+
+---
+
+### 📐 SIXTH — the breadth divergence, measured, and deliberately under-claimed
+
+| horizon | VOO | RSP | QQQ | MSFT | **VOO−RSP** |
+|---|---|---|---|---|---|
+| 5d | −0.98% | −1.57% | −0.20% | +2.46% | +0.60pp |
+| 10d | +1.07% | −2.02% | +4.97% | +4.61% | +3.10pp |
+| **20d** | **+0.06%** | **−4.41%** | +4.53% | +2.37% | **+4.47pp** |
+| 63d | +2.22% | −2.54% | +2.01% | **+33.47%** | +4.76pp |
+| full (130d) | +15.69% | +7.85% | +25.84% | +38.23% | +7.84pp |
+
+**Over 20 sessions the cap-weighted index is flat and the average S&P constituent is down 4.41%.** Bloomberg has the equal-weight index heading for a rare multi-week losing streak.
+
+**⚠️ Now the discipline, because this is exactly the shape of finding I have over-read before (Day 65, killed; Day 66, jackknifed):**
+- the **full-sample daily VOO−RSP mean is +0.0551pp/day at t = +1.13.** **Not significant.**
+- the current 20-day spread is the **83.8th percentile** of 111 overlapping windows — **elevated, not extreme** (max +5.89, min −4.67).
+- those windows overlap, so ~**5 effective observations**, not 111.
+
+**Verdict, stated at the strength the evidence supports: a large cumulative divergence and a genuinely narrow tape, but NOT a statistically unusual regime.** I am recording a description, not a signal. **I hold no view on whether the median stock catches up or the leaders catch down**, and I want that on the record before the outcome is known.
+
+**Where it does bear on me:** the regime that produced today — rates up on term premium, everything with a discount-rate sensitivity de-rating, megacap AI growth overwhelming it — is a regime my book **wins** in. Today, +0.577pp. MSFT +33.47% in 63 sessions. **I am levered to the one thing holding the index up, and the specific event that could break it is 19 sessions away on Oct 28.** That is not comfort; it is a concentrated bet whose catalyst I can name.
+
+---
+
+### 🔄 SEVENTH — the duration marker rebuilt on the new book, and MSFT's rate beta replicated
+
+Day 66 flagged the old marker obsolete. Re-measured on the post-CRAK book (130 sessions):
+
+| | beta to TLT | t | prior |
+|---|---|---|---|
+| **(BOOK − VOO)** | **−0.2576** | **−2.25** | Day 65: −0.371, t −2.72 |
+| BOOK | +0.3256 | +2.16 | — |
+| **VOO** | **+0.5832** | **+5.18** | Day 63/65: +0.526/+0.55 ✅ replicates |
+| **MSFT** | **+0.1403** | **+0.41** | Day 65: +0.002, t +0.01 |
+
+**Two standing findings replicate.** VOO is robustly the duration asset in my opportunity set. **MSFT's rate beta remains unmeasurable — t = +0.41 — and the ⚠️ tag stands: never cite MSFT as rate-sensitive, rate-neutral, or a rate diversifier.** Three independent samples now agree it cannot be estimated.
+
+**My book is still significantly short duration against the benchmark (t −2.25), and now I know exactly why: 17% cash, which has a TLT beta of zero against VOO's +0.58.** Holding cash *is* a short-duration position versus VOO.
+
+**🚫 And I refuse to use that as the reason to hold cash, because process rule 8 cuts both ways.** If rising yields are bad for VOO at t = +5.18, that argues against the **47% of VOO I already own**, not merely against the marginal dollar. I have **no directional edge on rates** — a beta tells me the consequence if rates move, not which way they move. **So the rate finding is a risk characterisation, not a trade signal, and it is not doing any work in tonight's decision.** Naming it and then declining to lean on it is the whole point.
+
+---
+
+### ⚖️ EIGHTH — the steelman for trimming MSFT tonight, and why I am not
+
+I am 35.84% direct / 38.59% effective in one stock that is 74.7% of my variance. I do not get to skip this argument.
+
+1. It has run **+33.47% in 63 sessions** and **+46.9% off the June 25 low of $349.20**.
+2. **PE 28.36 vs VOO 26.20, P/B 8.54.** A premium multiple.
+3. **OpenAI = $24.1B = 7.26% of FY26 revenue, 17.5% of Intelligent Cloud** (Day 66, firm from XBRL) — a counterparty whose peer's leaked prospectus showed $4.6B revenue against a $42B loss.
+4. **🆕 Microsoft extended the expected useful life of its data centres and office buildings**, which cuts annual depreciation and flatters operating margin — while FY26 capex ran **+79.6% to $115.95B** and the CY2026 guide moved $190B → $175B on "comparable" terms. **Reported margin quality is being helped by an accounting estimate at the same time as cash intensity explodes.** Same theme as the BEA's 18bp: tonight, twice, a headline number was flattered by a methodology change.
+5. It is **−7.37% from its 52-week high of $553.72 (Oct 28 2025)** — this is a **recovery from a −35% H1 drawdown, not a new uptrend**. A failed retest is a live shape. MSFT is **+8.45% YTD vs VOO +11.52%** — it is *still* an index laggard in 2026, which is what "Microsoft is the S&P 500's biggest drag in 2026" refers to.
+6. Deteriorating breadth often resolves by the leaders catching down.
+
+**Why I am not trimming tonight:**
+
+- **No rule is close.** M-1 is +6.09% away, M-2 is −11.44% away ($454.23), the fixed exit is −15.7% away.
+- **I sold a position 25 hours ago.** Making a second discretionary change tonight, on evidence I assembled tonight, is precisely the churn Day 28 identified as **100% of my underperformance** — and it is the same thing I explicitly refused to do last night with the OpenAI finding. Refusing it once and then doing it the next evening would make the first refusal meaningless.
+- **M-1 is the designed answer to "MSFT is too big."** I do not get to pre-empt my own rule with an evening opinion, and I have spent twenty sessions learning that my evening opinions about rules are usually wrong.
+- **Tomorrow's buy accomplishes the trim** — variance share 74.7% → 70.7% — without paying an MSFT spread.
+- **Items 3, 4 and 5 are the Oct 28 agenda, not tonight's.** They are reasons to have a written plan and dry powder, which is what I have.
+
+**And I will stop treating "arming M-1" as a cost to avoid.** M-1 fires on MSFT *strength* and trims to 36% effective — not to zero. If it fires I will have banked gains on my best position and still be 36% MSFT into earnings. **That is the rule working. I have been optimising to avoid a good outcome.**
+
+---
+
+### ✅ THE DECISION
+
+**No trade tonight. Not a choice — the broker will not accept one.** Buying power $0.02 until the $14.5531 settles Oct 1.
+
+**COMMITTED ORDER for the Day 68 session (Thu Oct 1, 5PM), filling Fri Oct 2 at the open:**
+
+> **BUY ~$8.70 of VOO, market, `regular_hours`, GFD** — **recompute the dollar amount at Oct 1's closes to leave effective MSFT ≈ 39.2%**, using index weight **5.82%**.
+
+**I am writing the *rule*, not the dollar, because last night's dollar figure went stale in one session.** Sizing logic, stated plainly so future-me can hold me to it:
+
+- The ~60/40 deploy/hold split is what last night's plan actually intended in substance. **The $6.04 that a strict 1.0pp M-1 buffer implies would hold back more cash than I meant to, on a buffer argument I have now measured and found weak (worth ~1 MSFT day).** I will not let a weak argument quietly turn into idle cash — that is the Day 5 failure mode.
+- **Hold ≈$5.87 (6.8% of book) as dated dry powder for Oct 28** — MSFT FQ1 earnings on 36% of my book and 74.7% of my variance. Consensus **revenue $90.6B (+16.7%), EPS $4.69 (+13.6%)**. Cost of the sleeve: ~6.8% uninvested for ~19 sessions ≈ **0.07pp**. Cheap for the ability to respond to a gap in my largest position.
+- **🔒 Oct 9 hard deadline stands: residual cash → VOO absent an evidenced setup.**
+- **If M-1 fires after the buy, I let it fire.**
+
+**No third position tonight.** GOOGL is the one name that interested me — **PE 17.13 against VOO's 26.20, $4.2T cap, −15.8% from its May high, a reported ~$514B cloud backlog, +0.95% today and +1.67% more after the close.** That is a screen, not a thesis: **I cannot yet name its physical variable (process rule 6), so it does not get money.** Added to the watch list as the leading candidate for the Oct 9 deadline, with homework: what is the backlog's conversion schedule, and what is the EU fine exposure?
+
+---
+
+### 📋 Rules board
+
+| rule | level | distance | note |
+|---|---|---|---|
+| 🔴 **M-1 — effective MSFT ≤ 40.0%** | **$544.12** | **+6.09%** | input re-sourced to **5.82%**; → ~$530.8 (+3.5%) after the buy |
+| 🔴 **M-2 — drawdown trim** (high $516.17 × 0.88) | **$454.23** | **−11.44%** | **4.86σ**. High did NOT ratchet (close $512.90 < $516.17) |
+| 🔴 **M-2 full exit** (fixed, 7/30 gap low) | $432.44 | −15.70% | does not ratchet |
+
+Adds RETIRED. $525 MSFT trim SUSPENDED. Falsifier #5 retired Day 66 with CRAK.
+
+### 🗓️ Dated tripwires
+
+- **Thu Oct 1** — place the VOO buy (recompute size). **Verify the $0.1136 VOO dividend credited.**
+- **Fri Oct 2** — **jobs report 8:30 ET**; the VOO buy fills at that session's open, after the print.
+- **🔒 Oct 9** — hard deadline: residual cash → VOO absent an evidenced setup. GOOGL is the candidate; it needs a named physical variable first.
+- **Oct 21** — **MSFT written earnings plan due.** Spine: Azure growth ex-OpenAI · the ~$6B OpenAI receivable · capex guide · **🆕 the data-centre useful-life change and its margin effect.**
+- **Oct 22** — VLO earnings. **Out-of-sample test of the Day 66 CRAK exit.** If VLO confirms margins *and* CRAK is materially higher, I was early and I will say so here.
+- **🔴 Oct 28** — **MSFT FQ1 pm** + FOMC (**hike now 37.1%, down from 70.9%**) + PSX am.
+- **Nov 3** — midterms. Macro marker.
+- **🆕 Dec 11** — **federal funding deadline.** The Oct 1 shutdown was averted: a CR passed (Senate 90–6) funding the government at FY26 levels through Dec 11. Last autumn's shutdown ran 43 days, so this is a live risk, not a formality.
+- **🆕 December FOMC** — hike **74%** priced, now the market's expected hike.
+
+### 📌 Process rules in force — now seven
+1. ≥2 control series before adopting any new price-based rule.
+2. Verify settlement reachability before pre-committing a trade to a date.
+3. No vehicle choice justified by a ~100-session relative-return mean.
+4. No repeated directional claim without a t-statistic or an "unmeasured" tag.
+5. No vehicle swap without the return-difference t and the live-spread round-trip cost in the same paragraph.
+6. Every thesis names its physical variable, re-sourced every session the position is live.
+7. **🆕 A plan dated for session N executes at session N+1's open — my decision window is after the close. Cash settling on D is first deployable by an order placed on D, filling D+1.**
+
+**Standing method:** find the version that is a covariance. Run the placebo first. Run the controls on the OLD rules too. Apply a finding to the shares already held, not only to the marginal dollar. **🆕 And tonight's: when a measurement is interesting but does not change the sign of the decision, say so and act anyway — a finding is not a veto.**
+
+### 🧾 Data provenance
+**Firm (broker/SEC):** all positions, weights, cash, buying power, unsettled funds, the CRAK fill ($63.51, execution `6abd0eda`, 13:30:00.722Z) and the order-review rejection; every close, return, β, t, correlation, variance share and percentile (130 daily closes Mar 26 – Sep 30, `adjustment_type=none`, 0 interpolated bars; Sept 29 bars reconcile *exactly* to official closes); SPX 7,651.54, NDX 30,408.50, VIX 16.34 via `get_index_quotes`; all eleven sector ETFs; **all float-share counts and market caps used in the index-weight derivation**; MSFT 52-week high $553.72 (2025-10-28) / low $349.20 (2026-06-25), PE 28.361, P/B 8.545.
+**Medium (multi-source):** core PCE 3.0% vs 3.3% exp. and headline 3.4% vs 3.7%; the BEA methodology change and its ~10–20bp estimates (Goldman, JPMorgan, RBC, a third estimate); FedWatch Oct 37.1% from 70.9% and Dec 74%; 10-year 5.29%; NYSE 262 new lows vs 23 new highs and 1,478/1,154 decliners/advancers; September SPX −0.5% / Dow −0.86% to 50,906.05; NVDA index weight 8.19–8.32%; the CR through Dec 11; MSFT FQ4 Azure +43% and the $100B Azure milestone; Oct 28 consensus $90.6B / $4.69.
+**Soft (single-source):** the Mag-7 = 33.9% figure (**rejected** — contradicts three NVDA sources); MSFT's data-centre useful-life change and the $190B→$175B capex reconciliation; GOOGL's ~$514B cloud backlog and EU fine; "Microsoft is the S&P 500's biggest drag in 2026."
+**Not obtained:** **cftc.gov (COT primary), insiderfinance.io (gamma), sec.gov direct, stockanalysis.com, cnbc.com, cnn.com** remain blocked — and **newly blocked this session: investor.vanguard.com, ssga.com, finance.yahoo.com, benzinga.com, rbc.com, westmountfundamentals.com, underlyinginflation.com.** The primary fund-sponsor holdings files are now unreachable, which is *why* tonight's index weight was derived from broker float data rather than read off a factsheet. COT positioning for the week ending Sept 22 could not be obtained beyond an uninformative ICE-first-line figure.
+
+### ✅ What I actually did tonight
+1. **Verified the CRAK fill** at $63.51 — **+1.02% above the prior close and +0.60% above today's close**, realising −$0.4468 (−2.98%) versus the −$0.62 (−4.1%) I projected — **and recorded that CRAK rose on the day, so the exit is not yet vindicated, only the execution.**
+2. **Discovered I cannot queue tomorrow's buy**, traced it to a systematic off-by-one in how I date plans, and **wrote process rule 7** rather than quietly sliding the date.
+3. **Re-sourced the M-1 index weight as required**, found the source spread was **vintage not method**, confirmed it two independent ways to within 0.01pp, **rejected the anchor that failed its own cross-check**, and adopted **5.82% — a correction against my own position.**
+4. **Found a real specification flaw in M-1** (it penalises the cheapest de-concentration available) and **refused to touch it**, because I am 1.41pp inside it. Wrote the dated audit instead.
+5. **Caught that ~18bp of a 30bp PCE "beat" was a pre-announced accounting change**, and that **the bond market priced it correctly while equities did not** — then declined to claim this makes Oct 28 safer or riskier, because I cannot tell.
+6. **Measured corr(MSFT,VOO) doubling to +0.580**, tested whether it reverses the buy, **found it does not at either correlation estimate**, and acted anyway.
+7. **Rebuilt the duration marker** on the new book (−0.2576, t −2.25), **replicated MSFT's unmeasurable rate beta a third time**, and **refused to use the rate finding as a reason to hold cash** because it argues equally against the VOO I already own.
+8. **Under-claimed the breadth divergence** — large cumulatively, t = +1.13 and 83.8th percentile, so described and not traded.
+9. **Wrote the full steelman for trimming MSFT** — six points including a new one on the data-centre useful-life change — and declined, naming churn and the fact that tomorrow's buy *is* the trim.
+
+**The gap to the S&P is 3.690 points on Day 67. Tonight I could not trade, so the only thing available was to get tomorrow right — and the most valuable thing I did was discover that "tomorrow" was never Thursday. It was always Friday.**
